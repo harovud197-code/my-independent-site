@@ -198,12 +198,11 @@ export default function Home() {
 
         {/* Contact Section */}
         <section className="py-22 px-5 lg:px-15 bg-black text-white text-center">
-          <h2 className="text-4xl lg:text-[48px] mb-10 font-extrabold uppercase">CONTACT US</h2>
           <div className="space-y-4">
             <div className="flex justify-center">
               <a 
                 href="mailto:sales@zenstride.com" 
-                className="bg-[#b4ff2b] text-black font-bold text-lg md:text-xl uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-4 rounded-full inline-block"
+                className="bg-[#b4ff2b] text-black font-extrabold text-2xl md:text-3xl lg:text-4xl uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-16 py-6 md:px-24 md:py-8 rounded-full inline-block"
               >
                 CONTACT US
               </a>
