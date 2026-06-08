@@ -29,7 +29,12 @@ export default function Home() {
               OEM & ODM Services · Custom Logo · Low MOQ · Fast Global Shipping
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
-              <a href="#" className="px-8 py-4 rounded font-bold inline-block text-center bg-[#b4ff2b] text-black hover:bg-[#a3e627] transition-colors">
+              <a 
+                href="https://wa.me/8617357769219" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="px-8 py-4 rounded font-bold inline-block text-center bg-[#b4ff2b] text-black hover:bg-[#a3e627] transition-colors"
+              >
                 GET QUOTE
               </a>
             </div>
@@ -201,7 +206,9 @@ export default function Home() {
           <div className="space-y-4">
             <div className="flex justify-center">
               <a 
-                href="mailto:sales@zenstride.com" 
+                href="https://wa.me/8617357769219" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="bg-[#b4ff2b] text-black font-extrabold text-2xl md:text-3xl lg:text-4xl uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-16 py-6 md:px-24 md:py-8 rounded-full inline-block"
               >
                 CONTACT US
@@ -214,7 +221,9 @@ export default function Home() {
 
       {/* WhatsApp Floating Button */}
       <a 
-        href="#" 
+        href="https://wa.me/8617357769219" 
+        target="_blank" 
+        rel="noopener noreferrer"
         className="fixed right-5 bottom-5 bg-[#25D366] text-white w-16 h-16 flex items-center justify-center rounded-full text-3xl shadow-xl z-[1000] hover:scale-110 transition-transform"
       >
         💬
