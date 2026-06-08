@@ -61,35 +61,68 @@ export default function Home() {
             High-performance custom sports socks for every sport and activity.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
             {[
               { 
                 title: 'Football Socks', 
-                desc: 'Breathable compression football socks with custom logo support.', 
-                badge: 'OEM AVAILABLE',
-                img: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1200&auto=format&fit=crop'
+                moq: '300 Pairs',
+                tag: 'FOOTBALL',
+                img: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1200&auto=format&fit=crop',
+                colors: ['#000', '#fff', '#ff0000', '#0000ff'],
+                moreColors: '+12'
               },
               { 
                 title: 'Grip Socks', 
-                desc: 'Anti-slip grip socks for yoga, pilates and football training.', 
-                badge: 'HOT PRODUCT',
-                img: 'https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop'
+                moq: '500 Pairs',
+                tag: 'HOT ITEM',
+                img: 'https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop',
+                colors: ['#000', '#444', '#888', '#ccc'],
+                moreColors: '+8'
               },
               { 
                 title: 'Running Socks', 
-                desc: 'Moisture-wicking running socks with arch support cushioning.', 
-                badge: 'CUSTOM COLORS',
-                img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop'
+                moq: '300 Pairs',
+                tag: 'CUSTOM LOGO',
+                img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop',
+                colors: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444'],
+                moreColors: '+6'
+              },
+              { 
+                title: 'Basketball Socks', 
+                moq: '300 Pairs',
+                tag: 'NEW ARRIVAL',
+                img: 'https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=1200&auto=format&fit=crop',
+                colors: ['#000', '#facc15', '#fff', '#4b5563'],
+                moreColors: '+10'
               },
             ].map((product, i) => (
-              <div key={i} className="bg-white border border-gray-100 rounded-xl overflow-hidden transition-transform hover:-translate-y-1.5 shadow-sm hover:shadow-md">
-                <img src={product.img} alt={product.title} className="w-full h-80 object-cover" />
-                <div className="p-6">
-                  <div className="inline-block px-3 py-1 bg-gray-100 rounded-full text-[12px] font-semibold mb-3.5 uppercase">
-                    {product.badge}
+              <div key={i} className="bg-white group">
+                <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-4">
+                  <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <div className="absolute top-3 left-3 bg-black text-white text-[10px] font-bold px-2 py-1 uppercase">
+                    {product.tag}
                   </div>
-                  <h3 className="text-2xl font-bold mb-3">{product.title}</h3>
-                  <p className="text-gray-600">{product.desc}</p>
+                  <button className="absolute top-3 right-3 p-1.5 bg-white/80 backdrop-blur-sm rounded-full text-gray-900 hover:text-red-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+                  </button>
+                </div>
+                <div className="space-y-1.5">
+                  <h3 className="text-lg font-bold truncate uppercase">{product.title}</h3>
+                  <p className="text-gray-500 text-sm font-medium">MOQ: {product.moq}</p>
+                  <div className="flex items-center justify-between pt-2">
+                    <div className="flex -space-x-1">
+                      {product.colors.map((color, idx) => (
+                        <span 
+                          key={idx} 
+                          className="w-3.5 h-3.5 rounded-full border border-white" 
+                          style={{ backgroundColor: color }}
+                        />
+                      ))}
+                    </div>
+                    <span className="text-[12px] font-bold text-gray-400">{product.moreColors}</span>
+                  </div>
                 </div>
               </div>
             ))}
