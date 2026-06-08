@@ -3,7 +3,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-white font-sans text-slate-900">
       {/* Header */}
       <header className="bg-black text-white px-5 lg:px-15 py-4.5 flex flex-col md:flex-row justify-between items-center sticky top-0 z-[999] gap-5 md:gap-0">
-        <div className="text-3xl font-bold tracking-wider">ZENSTRIDE</div>
+        <div className="text-3xl font-bold tracking-wider">PeakMotion Socks</div>
         <nav className="flex flex-wrap justify-center gap-7">
           <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">HOME</a>
           <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
@@ -167,7 +167,7 @@ export default function Home() {
 
         {/* Features Section */}
         <section className="py-22 px-5 lg:px-15 bg-[#111] text-white">
-          <h2 className="text-4xl lg:text-[48px] mb-12 font-extrabold uppercase">WHY CHOOSE ZENSTRIDE</h2>
+          <h2 className="text-4xl lg:text-[48px] mb-12 font-extrabold uppercase">WHY CHOOSE PEAKMOTION SOCKS</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: 'OEM / ODM Support', desc: 'Custom logo, material, packaging and color matching available.' },
@@ -231,7 +231,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="p-7 bg-[#111] text-[#999] text-center border-t border-[#222]">
-        <p className="text-sm">© 2026 ZENSTRIDE SPORTS SOCKS MANUFACTURER</p>
+        <p className="text-sm">© 2026 PEAKMOTION SOCKS MANUFACTURER</p>
       </footer>
     </div>
   );
