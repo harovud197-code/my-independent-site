@@ -30,9 +30,6 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <a href="#" className="px-8 py-4 rounded font-bold inline-block text-center bg-[#b4ff2b] text-black hover:bg-[#a3e627] transition-colors">
-                VIEW PRODUCTS
-              </a>
-              <a href="#" className="px-8 py-4 rounded font-bold inline-block text-center border border-white text-white hover:bg-white hover:text-black transition-all">
                 GET QUOTE
               </a>
             </div>
