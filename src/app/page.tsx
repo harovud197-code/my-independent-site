@@ -66,8 +66,8 @@ export default function Home() {
               { 
                 title: 'Football Socks', 
                 moq: '300 Pairs',
-                tag: 'FOOTBALL',
-                img: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1200&auto=format&fit=crop',
+                tag: '',
+                img: 'https://sc01.alicdn.com/kf/H24e846d29f474519b14c97c37de99adeY.png',
                 colors: ['#000', '#fff', '#ff0000', '#0000ff'],
                 moreColors: '+12'
               },
@@ -99,9 +99,11 @@ export default function Home() {
               <div key={i} className="bg-white group">
                 <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-4">
                   <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                  <div className="absolute top-3 left-3 bg-black text-white text-[10px] font-bold px-2 py-1 uppercase">
-                    {product.tag}
-                  </div>
+                  {product.tag && (
+                    <div className="absolute top-3 left-3 bg-black text-white text-[10px] font-bold px-2 py-1 uppercase">
+                      {product.tag}
+                    </div>
+                  )}
                   <button className="absolute top-3 right-3 p-1.5 bg-white/80 backdrop-blur-sm rounded-full text-gray-900 hover:text-red-500 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
