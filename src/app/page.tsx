@@ -18,7 +18,7 @@ export default function Home() {
         <section 
           className="h-[85vh] md:h-[95vh] bg-cover bg-center flex items-center px-5 lg:px-15 text-white relative"
           style={{ 
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1800&auto=format&fit=crop')` 
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://sc02.alicdn.com/kf/A7100e3b2b42840589be5eb5e4d33354ad.png')` 
           }}
         >
           <div className="max-w-[720px]">
