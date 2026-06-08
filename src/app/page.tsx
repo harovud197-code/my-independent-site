@@ -1,173 +1,161 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white font-sans text-slate-900">
-      {/* Navigation Placeholder */}
-      <nav className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="text-xl font-bold tracking-tight">BrandName</div>
-          <div className="hidden space-x-8 md:flex">
-            <a href="#about" className="text-sm font-medium hover:text-blue-600 transition-colors">About</a>
-            <a href="#features" className="text-sm font-medium hover:text-blue-600 transition-colors">Features</a>
-            <a href="#contact" className="text-sm font-medium hover:text-blue-600 transition-colors">Contact</a>
-          </div>
-          <button className="rounded-full bg-blue-600 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition-all">
-            Get Started
-          </button>
-        </div>
-      </nav>
+      {/* Header */}
+      <header className="bg-black text-white px-5 lg:px-15 py-4.5 flex flex-col md:flex-row justify-between items-center sticky top-0 z-[999] gap-5 md:gap-0">
+        <div className="text-3xl font-bold tracking-wider">ZENSTRIDE</div>
+        <nav className="flex flex-wrap justify-center gap-7">
+          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">HOME</a>
+          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
+          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">OEM/ODM</a>
+          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">ABOUT</a>
+          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CONTACT</a>
+        </nav>
+      </header>
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-slate-50 py-24 sm:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl">
-                Build Your Future with Our Premium Solutions
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-slate-600">
-                Experience the next generation of digital excellence. We provide the tools and expertise to scale your business to new heights.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all"
-                >
-                  Start Free Trial
-                </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-slate-900">
-                  Learn more <span aria-hidden="true">→</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          {/* Background Decorative Element */}
-          <div className="absolute top-0 -z-10 h-full w-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-100/20 via-transparent to-transparent opacity-50" />
-        </section>
-
-        {/* About Section */}
-        <section id="about" className="py-24 sm:py-32 bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base font-semibold leading-7 text-blue-600">About Us</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Redefining the Industry Standards
-              </p>
-              <p className="mt-6 text-lg leading-8 text-slate-600 text-left md:text-center">
-                Our mission is to simplify complex workflows and empower creators through innovative technology. 
-                With years of experience in digital transformation, we understand what it takes to succeed in 
-                today's fast-paced market.
-              </p>
+        <section 
+          className="h-[85vh] md:h-[95vh] bg-cover bg-center flex items-center px-5 lg:px-15 text-white relative"
+          style={{ 
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1800&auto=format&fit=crop')` 
+          }}
+        >
+          <div className="max-w-[720px]">
+            <h1 className="text-5xl lg:text-[78px] leading-[1.05] mb-6 font-extrabold uppercase">
+              PROFESSIONAL <span className="text-[#b4ff2b]">SPORTS SOCKS</span> MANUFACTURER
+            </h1>
+            <p className="text-xl lg:text-[22px] mb-9">
+              OEM & ODM Services · Custom Logo · Low MOQ · Fast Global Shipping
+            </p>
+            <div className="flex flex-col sm:flex-row gap-5">
+              <a href="#" className="px-8 py-4 rounded font-bold inline-block text-center bg-[#b4ff2b] text-black hover:bg-[#a3e627] transition-colors">
+                VIEW PRODUCTS
+              </a>
+              <a href="#" className="px-8 py-4 rounded font-bold inline-block text-center border border-white text-white hover:bg-white hover:text-black transition-all">
+                GET QUOTE
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Feature/Product Section */}
-        <section id="features" className="bg-slate-50 py-24 sm:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base font-semibold leading-7 text-blue-600">Core Features</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Everything you need to succeed
-              </p>
+        {/* Stats Section */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-15 px-5 lg:px-15 relative z-10">
+          {[
+            { label: '15+', sub: 'Years Experience' },
+            { label: '200+', sub: 'Advanced Machines' },
+            { label: '500+', sub: 'Global Clients' },
+            { label: '100%', sub: 'QC Inspection' },
+          ].map((stat, i) => (
+            <div key={i} className="bg-white p-7 shadow-[0_10px_25px_rgba(0,0,0,0.08)] rounded-lg text-center">
+              <h3 className="text-4xl font-bold mb-2">{stat.label}</h3>
+              <p className="text-gray-600">{stat.sub}</p>
             </div>
-            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-                {[
-                  {
-                    name: 'Lightning Fast',
-                    description: 'Optimized for speed and performance, ensuring your users have a seamless experience.',
-                    icon: '⚡',
-                  },
-                  {
-                    name: 'Highly Secure',
-                    description: 'Enterprise-grade security features built-in from the ground up to protect your data.',
-                    icon: '🔒',
-                  },
-                  {
-                    name: 'Full Analytics',
-                    description: 'Deep insights into your business performance with our advanced dashboard.',
-                    icon: '📊',
-                  },
-                ].map((feature) => (
-                  <div key={feature.name} className="flex flex-col bg-white p-8 rounded-2xl shadow-sm border border-slate-100 transition-transform hover:scale-[1.02]">
-                    <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-slate-900">
-                      <span className="text-2xl">{feature.icon}</span>
-                      {feature.name}
-                    </dt>
-                    <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-slate-600">
-                      <p className="flex-auto">{feature.description}</p>
-                    </dd>
+          ))}
+        </section>
+
+        {/* Products Section */}
+        <section className="py-22 px-5 lg:px-15">
+          <h2 className="text-4xl lg:text-[48px] mb-5 font-extrabold uppercase">OUR PRODUCT COLLECTION</h2>
+          <p className="text-gray-500 mb-12">
+            High-performance custom sports socks for every sport and activity.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+            {[
+              { 
+                title: 'Football Socks', 
+                desc: 'Breathable compression football socks with custom logo support.', 
+                badge: 'OEM AVAILABLE',
+                img: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1200&auto=format&fit=crop'
+              },
+              { 
+                title: 'Grip Socks', 
+                desc: 'Anti-slip grip socks for yoga, pilates and football training.', 
+                badge: 'HOT PRODUCT',
+                img: 'https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop'
+              },
+              { 
+                title: 'Running Socks', 
+                desc: 'Moisture-wicking running socks with arch support cushioning.', 
+                badge: 'CUSTOM COLORS',
+                img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop'
+              },
+            ].map((product, i) => (
+              <div key={i} className="bg-white border border-gray-100 rounded-xl overflow-hidden transition-transform hover:-translate-y-1.5 shadow-sm hover:shadow-md">
+                <img src={product.img} alt={product.title} className="w-full h-80 object-cover" />
+                <div className="p-6">
+                  <div className="inline-block px-3 py-1 bg-gray-100 rounded-full text-[12px] font-semibold mb-3.5 uppercase">
+                    {product.badge}
                   </div>
-                ))}
-              </dl>
-            </div>
+                  <h3 className="text-2xl font-bold mb-3">{product.title}</h3>
+                  <p className="text-gray-600">{product.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="bg-blue-600 py-16 sm:py-24">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Ready to take the next step?
-              </h2>
-              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-blue-100">
-                Join thousands of satisfied customers and start your journey today.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="#"
-                  className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-blue-600 shadow-sm hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all"
-                >
-                  Get started
-                </a>
+        {/* Features Section */}
+        <section className="py-22 px-5 lg:px-15 bg-[#111] text-white">
+          <h2 className="text-4xl lg:text-[48px] mb-12 font-extrabold uppercase">WHY CHOOSE ZENSTRIDE</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: 'OEM / ODM Support', desc: 'Custom logo, material, packaging and color matching available.' },
+              { title: 'Fast Sampling', desc: 'Quick sample production with professional design support.' },
+              { title: 'Global Shipping', desc: 'Worldwide delivery service for Amazon, wholesale and brands.' },
+              { title: 'Factory Direct', desc: 'Competitive factory pricing with stable production capacity.' },
+            ].map((feature, i) => (
+              <div key={i} className="p-7 border border-[#333] rounded-xl hover:border-[#555] transition-colors">
+                <h3 className="text-2xl font-bold mb-3.5">{feature.title}</h3>
+                <p className="text-gray-400">{feature.desc}</p>
               </div>
-            </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Customization Section */}
+        <section className="py-22 px-5 lg:px-15 bg-[#f7f7f7]">
+          <h2 className="text-4xl lg:text-[48px] mb-12 font-extrabold uppercase">OEM / ODM CUSTOMIZATION</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: 'Custom Logo', desc: 'Jacquard, embroidery and printing logo options.' },
+              { title: 'Custom Material', desc: 'Cotton, nylon, polyester, bamboo and spandex.' },
+              { title: 'Custom Packaging', desc: 'Hang tag, zipper bag, gift box and retail packaging.' },
+              { title: 'Custom Colors', desc: 'Pantone color matching and full color customization.' },
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-7 rounded-lg border border-gray-200 shadow-sm">
+                <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-22 px-5 lg:px-15 bg-black text-white text-center">
+          <h2 className="text-4xl lg:text-[48px] mb-10 font-extrabold uppercase">CONTACT US</h2>
+          <div className="space-y-4">
+            <p className="text-xl md:text-2xl">Email: sales@zenstride.com</p>
+            <p className="text-xl md:text-2xl">WhatsApp: +1 888 888 8888</p>
+            <p className="text-gray-400 mt-5">Professional Sports Socks OEM Manufacturer</p>
           </div>
         </section>
       </main>
 
+      {/* WhatsApp Floating Button */}
+      <a 
+        href="#" 
+        className="fixed right-5 bottom-5 bg-[#25D366] text-white w-16 h-16 flex items-center justify-center rounded-full text-3xl shadow-xl z-[1000] hover:scale-110 transition-transform"
+      >
+        💬
+      </a>
+
       {/* Footer */}
-      <footer id="contact" className="bg-slate-900 py-12 text-slate-400">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
-            <div className="col-span-2 lg:col-span-2">
-              <span className="text-xl font-bold text-white">BrandName</span>
-              <p className="mt-4 max-w-xs text-sm leading-6">
-                Leading the way in digital innovation and professional web solutions.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-white">Solutions</h3>
-              <ul className="mt-4 space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">Marketing</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Analytics</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Commerce</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-white">Company</h3>
-              <ul className="mt-4 space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Jobs</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-white">Legal</h3>
-              <ul className="mt-4 space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">Privacy</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Terms</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-12 border-t border-slate-800 pt-8 text-center text-xs">
-            <p>&copy; 2026 BrandName Inc. All rights reserved.</p>
-          </div>
-        </div>
+      <footer className="p-7 bg-[#111] text-[#999] text-center border-t border-[#222]">
+        <p className="text-sm">© 2026 ZENSTRIDE SPORTS SOCKS MANUFACTURER</p>
       </footer>
     </div>
   );
 }
+
