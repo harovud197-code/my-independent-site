@@ -73,9 +73,9 @@ export default function Home() {
               },
               { 
                 title: 'Grip Socks', 
-                moq: '500 Pairs',
+                moq: '50 Pairs',
                 tag: 'HOT ITEM',
-                img: 'https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop',
+                img: '/images/grip-socks.jpg',
                 colors: ['#000', '#444', '#888', '#ccc'],
                 moreColors: '+8'
               },
