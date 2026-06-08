@@ -95,6 +95,38 @@ export default function Home() {
                 colors: ['#000', '#facc15', '#fff', '#4b5563'],
                 moreColors: '+10'
               },
+              { 
+                title: 'RUNNING SOCKS', 
+                moq: '100 Pairs',
+                tag: 'PERFORMANCE',
+                img: 'https://sc01.alicdn.com/kf/H09037aa1201e4f33bb158fb0fdb8952b0.jpg',
+                colors: ['#fff', '#000', '#999', '#444'],
+                moreColors: '+15'
+              },
+              { 
+                title: 'CYCLING SOCKS', 
+                moq: '100 Pairs',
+                tag: 'PRO CYCLING',
+                img: 'https://sc01.alicdn.com/kf/Hdae44d1392c94ba8a64fa6e7a2a04788S.jpg',
+                colors: ['#ff0000', '#000', '#fff', '#555'],
+                moreColors: '+8'
+              },
+              { 
+                title: 'BASKETBALL SOCKS', 
+                moq: '100 Pairs',
+                tag: 'BASKETBALL',
+                img: 'https://sc01.alicdn.com/kf/He74db17712624ae6b958a35bbc77905fm.jpg',
+                colors: ['#000', '#fff', '#ff8800', '#444'],
+                moreColors: '+20'
+              },
+              { 
+                title: 'TRAINING SOCKS', 
+                moq: '100 Pairs',
+                tag: 'TRAINING',
+                img: 'https://sc01.alicdn.com/kf/H60c78675744d494a80a474324febc8ca6.png',
+                colors: ['#5fb9b0', '#000', '#fff', '#888'],
+                moreColors: '+12'
+              },
             ].map((product, i) => (
               <div key={i} className="bg-white group">
                 <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-4">
