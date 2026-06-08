@@ -200,8 +200,14 @@ export default function Home() {
         <section className="py-22 px-5 lg:px-15 bg-black text-white text-center">
           <h2 className="text-4xl lg:text-[48px] mb-10 font-extrabold uppercase">CONTACT US</h2>
           <div className="space-y-4">
-            <p className="text-xl md:text-2xl">Email: sales@zenstride.com</p>
-            <p className="text-xl md:text-2xl">WhatsApp: +1 888 888 8888</p>
+            <div className="flex justify-center">
+              <a 
+                href="mailto:sales@zenstride.com" 
+                className="bg-[#b4ff2b] text-black font-bold text-lg md:text-xl uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-4 rounded-full inline-block"
+              >
+                CONTACT US
+              </a>
+            </div>
             <p className="text-gray-400 mt-5">Professional Sports Socks OEM Manufacturer</p>
           </div>
         </section>
