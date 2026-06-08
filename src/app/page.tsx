@@ -80,12 +80,12 @@ export default function Home() {
                 moreColors: '+8'
               },
               { 
-                title: 'Running Socks', 
-                moq: '300 Pairs',
-                tag: 'CUSTOM LOGO',
-                img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop',
+                title: 'Pilates Socks', 
+                moq: '20 Pairs',
+                tag: '',
+                img: 'https://sc01.alicdn.com/kf/H5802291c8b594627b703a635e1341f4eb.jpg',
                 colors: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444'],
-                moreColors: '+6'
+                moreColors: '+14'
               },
               { 
                 title: 'Basketball Socks', 
