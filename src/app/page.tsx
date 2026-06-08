@@ -98,7 +98,7 @@ export default function Home() {
               { 
                 title: 'RUNNING SOCKS', 
                 moq: '100 Pairs',
-                tag: 'PERFORMANCE',
+                tag: '',
                 img: 'https://sc01.alicdn.com/kf/H09037aa1201e4f33bb158fb0fdb8952b0.jpg',
                 colors: ['#fff', '#000', '#999', '#444'],
                 moreColors: '+15'
@@ -106,7 +106,7 @@ export default function Home() {
               { 
                 title: 'CYCLING SOCKS', 
                 moq: '100 Pairs',
-                tag: 'PRO CYCLING',
+                tag: '',
                 img: 'https://sc01.alicdn.com/kf/Hdae44d1392c94ba8a64fa6e7a2a04788S.jpg',
                 colors: ['#ff0000', '#000', '#fff', '#555'],
                 moreColors: '+8'
@@ -114,7 +114,7 @@ export default function Home() {
               { 
                 title: 'BASKETBALL SOCKS', 
                 moq: '100 Pairs',
-                tag: 'BASKETBALL',
+                tag: '',
                 img: 'https://sc01.alicdn.com/kf/He74db17712624ae6b958a35bbc77905fm.jpg',
                 colors: ['#000', '#fff', '#ff8800', '#444'],
                 moreColors: '+20'
@@ -122,7 +122,7 @@ export default function Home() {
               { 
                 title: 'TRAINING SOCKS', 
                 moq: '100 Pairs',
-                tag: 'TRAINING',
+                tag: '',
                 img: 'https://sc01.alicdn.com/kf/H60c78675744d494a80a474324febc8ca6.png',
                 colors: ['#5fb9b0', '#000', '#fff', '#888'],
                 moreColors: '+12'
