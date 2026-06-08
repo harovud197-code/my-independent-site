@@ -65,11 +65,11 @@ export default function Home() {
             {[
               { 
                 title: 'Football Socks', 
-                moq: '300 Pairs',
+                moq: '50 Pairs',
                 tag: '',
                 img: 'https://sc01.alicdn.com/kf/H24e846d29f474519b14c97c37de99adeY.png',
                 colors: ['#000', '#fff', '#ff0000', '#0000ff'],
-                moreColors: '+12'
+                moreColors: '+22'
               },
               { 
                 title: 'Grip Socks', 
@@ -193,4 +193,3 @@ export default function Home() {
     </div>
   );
 }
-
