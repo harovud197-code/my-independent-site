@@ -88,10 +88,10 @@ export default function Home() {
                 moreColors: '+14'
               },
               { 
-                title: 'Basketball Socks', 
-                moq: '300 Pairs',
+                title: 'CUSTOM SOCKS', 
+                moq: '50 Pairs',
                 tag: 'NEW ARRIVAL',
-                img: 'https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=1200&auto=format&fit=crop',
+                img: 'https://sc01.alicdn.com/kf/H5f5a0565cd19412aacd5d633c514ab8aC.png',
                 colors: ['#000', '#facc15', '#fff', '#4b5563'],
                 moreColors: '+10'
               },
