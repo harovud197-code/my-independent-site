@@ -26,7 +26,7 @@ export default function Home() {
               PROFESSIONAL <span className="text-[#b4ff2b]">SPORTS SOCKS</span> MANUFACTURER
             </h1>
             <p className="text-xl lg:text-[22px] mb-9">
-              OEM & ODM Services · Custom Logo · Low MOQ · Fast Global Shipping
+              OEM Grip Socks Football Socks & Private Label Solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <a 
