@@ -73,11 +73,9 @@ export default function Home() {
               },
               { 
                 title: 'Football Socks', 
-                moq: '50 Pairs',
                 tag: '',
                 img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks.png',
-                colors: ['#000', '#fff', '#ff0000', '#0000ff'],
-                moreColors: '+22'
+                desc: 'Custom football socks manufacturer specializing in high-performance soccer socks for teams, clubs, and sports brands. Designed for comfort, durability, and moisture management during intense matches and training sessions. We provide OEM and private label solutions with flexible MOQ, supporting full customization of colors, logos, and packaging.'
               },
               { 
                 title: 'Pilates Socks', 
