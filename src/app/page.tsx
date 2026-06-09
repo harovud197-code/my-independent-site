@@ -84,12 +84,10 @@ export default function Home() {
                 desc: 'Custom Pilates socks manufacturer specializing in non-slip grip socks for Pilates, yoga, and studio training. Designed to improve balance, stability, and safety during low-impact workouts on reformer machines and studio floors. We offer OEM and private label services with flexible MOQ and full customization options for global fitness and wellness brands.'
               },
               { 
-                title: 'CUSTOM SOCKS', 
-                moq: '50 Pairs',
-                tag: 'NEW ARRIVAL',
+                title: 'Custom Socks', 
+                tag: '',
                 img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks.png',
-                colors: ['#000', '#facc15', '#fff', '#4b5563'],
-                moreColors: '+10'
+                desc: 'A professional sock manufacturing partner offering end-to-end customization services for global brands. From concept development to bulk production, we support full OEM and private label solutions including design execution, material sourcing, logo application, and packaging customization. Built for startups, DTC brands, and established retailers requiring scalable and flexible manufacturing support.'
               },
               { 
                 title: 'RUNNING SOCKS', 
@@ -146,7 +144,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="space-y-1.5">
-                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks', 'Pilates Socks'].includes(product.title) ? '' : 'uppercase'}`}>
+                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks', 'Pilates Socks', 'Custom Socks'].includes(product.title) ? '' : 'uppercase'}`}>
                     <a 
                       href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
                       target="_blank"
