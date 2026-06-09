@@ -79,11 +79,9 @@ export default function Home() {
               },
               { 
                 title: 'Pilates Socks', 
-                moq: '20 Pairs',
                 tag: '',
                 img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/pilates-socks.jpg',
-                colors: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444'],
-                moreColors: '+14'
+                desc: 'Custom Pilates socks manufacturer specializing in non-slip grip socks for Pilates, yoga, and studio training. Designed to improve balance, stability, and safety during low-impact workouts on reformer machines and studio floors. We offer OEM and private label services with flexible MOQ and full customization options for global fitness and wellness brands.'
               },
               { 
                 title: 'CUSTOM SOCKS', 
@@ -148,7 +146,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="space-y-1.5">
-                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks'].includes(product.title) ? '' : 'uppercase'}`}>
+                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks', 'Pilates Socks'].includes(product.title) ? '' : 'uppercase'}`}>
                     <a 
                       href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
                       target="_blank"
