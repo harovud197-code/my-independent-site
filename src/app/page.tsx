@@ -170,7 +170,7 @@ export default function Home() {
                       <div className="flex items-center justify-between pt-2">
                         <div className="flex items-center space-x-2">
                           <div className="flex -space-x-1">
-                            {product.colors?.map((color, idx) => (
+                            {product.colors?.map((color: string, idx: number) => (
                               <span 
                                 key={idx} 
                                 className="w-3.5 h-3.5 rounded-full border border-white" 
