@@ -18,7 +18,7 @@ export default function Home() {
         <section 
           className="h-[85vh] md:h-[95vh] bg-cover bg-center flex items-center px-5 lg:px-15 text-white relative"
           style={{ 
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://sc02.alicdn.com/kf/A7100e3b2b42840589be5eb5e4d33354ad.png')` 
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/hero-poster.png')` 
           }}
         >
           <div className="max-w-[720px]">
@@ -69,7 +69,7 @@ export default function Home() {
                 title: 'Football Socks', 
                 moq: '50 Pairs',
                 tag: '',
-                img: 'https://sc01.alicdn.com/kf/H24e846d29f474519b14c97c37de99adeY.png',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks.png',
                 colors: ['#000', '#fff', '#ff0000', '#0000ff'],
                 moreColors: '+22'
               },
@@ -77,7 +77,7 @@ export default function Home() {
                 title: 'Grip Socks', 
                 moq: '50 Pairs',
                 tag: 'HOT ITEM',
-                img: '/images/grip-socks.jpg',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/grip-socks.jpg',
                 colors: ['#000', '#444', '#888', '#ccc'],
                 moreColors: '+8'
               },
@@ -85,7 +85,7 @@ export default function Home() {
                 title: 'Pilates Socks', 
                 moq: '20 Pairs',
                 tag: '',
-                img: 'https://sc01.alicdn.com/kf/H5802291c8b594627b703a635e1341f4eb.jpg',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/pilates-socks.jpg',
                 colors: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444'],
                 moreColors: '+14'
               },
@@ -93,7 +93,7 @@ export default function Home() {
                 title: 'CUSTOM SOCKS', 
                 moq: '50 Pairs',
                 tag: 'NEW ARRIVAL',
-                img: 'https://sc01.alicdn.com/kf/H5f5a0565cd19412aacd5d633c514ab8aC.png',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks.png',
                 colors: ['#000', '#facc15', '#fff', '#4b5563'],
                 moreColors: '+10'
               },
@@ -101,7 +101,7 @@ export default function Home() {
                 title: 'RUNNING SOCKS', 
                 moq: '100 Pairs',
                 tag: '',
-                img: 'https://sc01.alicdn.com/kf/H09037aa1201e4f33bb158fb0fdb8952b0.jpg',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/running-socks.jpg',
                 colors: ['#fff', '#000', '#999', '#444'],
                 moreColors: '+15'
               },
@@ -109,7 +109,7 @@ export default function Home() {
                 title: 'CYCLING SOCKS', 
                 moq: '100 Pairs',
                 tag: '',
-                img: 'https://sc01.alicdn.com/kf/Hdae44d1392c94ba8a64fa6e7a2a04788S.jpg',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/cycling-socks.jpg',
                 colors: ['#ff0000', '#000', '#fff', '#555'],
                 moreColors: '+8'
               },
@@ -117,7 +117,7 @@ export default function Home() {
                 title: 'BASKETBALL SOCKS', 
                 moq: '100 Pairs',
                 tag: '',
-                img: 'https://sc01.alicdn.com/kf/He74db17712624ae6b958a35bbc77905fm.jpg',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/basketball-socks.jpg',
                 colors: ['#000', '#fff', '#ff8800', '#444'],
                 moreColors: '+20'
               },
@@ -125,7 +125,7 @@ export default function Home() {
                 title: 'TRAINING SOCKS', 
                 moq: '100 Pairs',
                 tag: '',
-                img: 'https://sc01.alicdn.com/kf/H60c78675744d494a80a474324febc8ca6.png',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/training-socks.png',
                 colors: ['#5fb9b0', '#000', '#fff', '#888'],
                 moreColors: '+12'
               },
