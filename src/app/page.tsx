@@ -132,7 +132,14 @@ export default function Home() {
             ].map((product, i) => (
               <div key={i} className="bg-white group">
                 <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-4">
-                  <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <a 
+                    href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block w-full h-full"
+                  >
+                    <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  </a>
                   {product.tag && (
                     <div className="absolute top-3 left-3 bg-black text-white text-[10px] font-bold px-2 py-1 uppercase">
                       {product.tag}
@@ -145,19 +152,37 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="space-y-1.5">
-                  <h3 className="text-lg font-bold truncate uppercase">{product.title}</h3>
+                  <h3 className="text-lg font-bold truncate uppercase hover:text-[#b4ff2b] transition-colors">
+                    <a 
+                      href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {product.title}
+                    </a>
+                  </h3>
                   <p className="text-gray-500 text-sm font-medium">MOQ: {product.moq}</p>
                   <div className="flex items-center justify-between pt-2">
-                    <div className="flex -space-x-1">
-                      {product.colors.map((color, idx) => (
-                        <span 
-                          key={idx} 
-                          className="w-3.5 h-3.5 rounded-full border border-white" 
-                          style={{ backgroundColor: color }}
-                        />
-                      ))}
+                    <div className="flex items-center space-x-2">
+                      <div className="flex -space-x-1">
+                        {product.colors.map((color, idx) => (
+                          <span 
+                            key={idx} 
+                            className="w-3.5 h-3.5 rounded-full border border-white" 
+                            style={{ backgroundColor: color }}
+                          />
+                        ))}
+                      </div>
+                      <span className="text-[12px] font-bold text-gray-400">{product.moreColors}</span>
                     </div>
-                    <span className="text-[12px] font-bold text-gray-400">{product.moreColors}</span>
+                    <a 
+                      href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-bold text-gray-900 hover:text-[#b4ff2b] transition-colors uppercase"
+                    >
+                      Inquire
+                    </a>
                   </div>
                 </div>
               </div>
