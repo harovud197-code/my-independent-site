@@ -161,7 +161,7 @@ export default function Home() {
                   </h3>
                   
                   {product.desc ? (
-                    <p className="text-gray-500 text-xs md:text-sm leading-relaxed text-justify pt-1">
+                    <p className="text-gray-500 text-xs md:text-sm leading-relaxed text-left pt-1">
                       {product.desc}
                     </p>
                   ) : (
