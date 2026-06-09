@@ -66,12 +66,10 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
             {[
               { 
-                title: 'Grip Socks', 
-                moq: '50 Pairs',
-                tag: 'HOT ITEM',
+                title: 'Grip socks', 
+                tag: '',
                 img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/grip-socks.jpg',
-                colors: ['#000', '#444', '#888', '#ccc'],
-                moreColors: '+8'
+                desc: 'Professional custom grip socks manufacturer offering non-slip sports socks for football, soccer, pilates, and gym training. Designed with advanced anti-slip grip technology to enhance stability, performance, and comfort during high-intensity movement. OEM and private label services available with flexible MOQ for global sports brands and teams.'
               },
               { 
                 title: 'Football Socks', 
@@ -129,7 +127,7 @@ export default function Home() {
                 colors: ['#5fb9b0', '#000', '#fff', '#888'],
                 moreColors: '+12'
               },
-            ].map((product, i) => (
+            ].map((product: any, i) => (
               <div key={i} className="bg-white group">
                 <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-4">
                   <a 
@@ -152,7 +150,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="space-y-1.5">
-                  <h3 className="text-lg font-bold truncate uppercase hover:text-[#b4ff2b] transition-colors">
+                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${product.title === 'Grip socks' ? '' : 'uppercase'}`}>
                     <a 
                       href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
                       target="_blank"
@@ -161,29 +159,38 @@ export default function Home() {
                       {product.title}
                     </a>
                   </h3>
-                  <p className="text-gray-500 text-sm font-medium">MOQ: {product.moq}</p>
-                  <div className="flex items-center justify-between pt-2">
-                    <div className="flex items-center space-x-2">
-                      <div className="flex -space-x-1">
-                        {product.colors.map((color, idx) => (
-                          <span 
-                            key={idx} 
-                            className="w-3.5 h-3.5 rounded-full border border-white" 
-                            style={{ backgroundColor: color }}
-                          />
-                        ))}
+                  
+                  {product.desc ? (
+                    <p className="text-gray-500 text-xs md:text-sm leading-relaxed text-justify pt-1">
+                      {product.desc}
+                    </p>
+                  ) : (
+                    <>
+                      <p className="text-gray-500 text-sm font-medium">MOQ: {product.moq}</p>
+                      <div className="flex items-center justify-between pt-2">
+                        <div className="flex items-center space-x-2">
+                          <div className="flex -space-x-1">
+                            {product.colors?.map((color, idx) => (
+                              <span 
+                                key={idx} 
+                                className="w-3.5 h-3.5 rounded-full border border-white" 
+                                style={{ backgroundColor: color }}
+                              />
+                            ))}
+                          </div>
+                          <span className="text-[12px] font-bold text-gray-400">{product.moreColors}</span>
+                        </div>
+                        <a 
+                          href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-bold text-gray-900 hover:text-[#b4ff2b] transition-colors uppercase"
+                        >
+                          Inquire
+                        </a>
                       </div>
-                      <span className="text-[12px] font-bold text-gray-400">{product.moreColors}</span>
-                    </div>
-                    <a 
-                      href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-bold text-gray-900 hover:text-[#b4ff2b] transition-colors uppercase"
-                    >
-                      Inquire
-                    </a>
-                  </div>
+                    </>
+                  )}
                 </div>
               </div>
             ))}
