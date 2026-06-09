@@ -66,20 +66,20 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
             {[
               { 
-                title: 'Football Socks', 
-                moq: '50 Pairs',
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks.png',
-                colors: ['#000', '#fff', '#ff0000', '#0000ff'],
-                moreColors: '+22'
-              },
-              { 
                 title: 'Grip Socks', 
                 moq: '50 Pairs',
                 tag: 'HOT ITEM',
                 img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/grip-socks.jpg',
                 colors: ['#000', '#444', '#888', '#ccc'],
                 moreColors: '+8'
+              },
+              { 
+                title: 'Football Socks', 
+                moq: '50 Pairs',
+                tag: '',
+                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks.png',
+                colors: ['#000', '#fff', '#ff0000', '#0000ff'],
+                moreColors: '+22'
               },
               { 
                 title: 'Pilates Socks', 
