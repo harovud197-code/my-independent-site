@@ -14,7 +14,7 @@ export default function SportsSocks() {
     },
     {
       title: 'Football Socks',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks.png',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-football.png',
       desc: 'Durable team socks built for match performance and professional football use.',
     },
     {
@@ -24,7 +24,7 @@ export default function SportsSocks() {
     },
     {
       title: 'Basketball Socks',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/basketball-socks.jpg',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-basketball.jpg',
       desc: 'High-impact sports socks engineered for court performance and support.',
     },
     {
