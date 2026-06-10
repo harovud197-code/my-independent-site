@@ -102,7 +102,7 @@ export default function SportsSocks() {
         <section 
           className="h-[80vh] md:h-[85vh] bg-cover bg-center flex items-center px-5 lg:px-15 text-white relative"
           style={{ 
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/hero-poster.png')` 
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero.png')` 
           }}
         >
           <div className="max-w-[800px] space-y-6">
