@@ -46,9 +46,9 @@ export default function Home() {
         {/* Stats Section */}
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-15 px-5 lg:px-15 relative z-10">
           {[
-            { label: '15+', sub: 'Years Experience' },
+            { label: '20+', sub: 'Years Experience' },
             { label: '200+', sub: 'Advanced Machines' },
-            { label: '500+', sub: 'Global Clients' },
+            { label: '5000+', sub: 'Global Clients' },
             { label: '100%', sub: 'QC Inspection' },
           ].map((stat, i) => (
             <div key={i} className="bg-white p-7 shadow-[0_10px_25px_rgba(0,0,0,0.08)] rounded-lg text-center">
