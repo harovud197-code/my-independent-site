@@ -96,12 +96,10 @@ export default function Home() {
                 desc: 'Performance running socks designed to support athletes through every mile. Featuring lightweight construction, advanced moisture management, strategic cushioning, and ergonomic fit, our running socks help improve comfort and reduce friction during training and competition. Available for OEM and private label programs with custom colors, branding, and packaging solutions.'
               },
               { 
-                title: 'CYCLING SOCKS', 
-                moq: '100 Pairs',
+                title: 'Cycling Socks', 
                 tag: '',
                 img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/cycling-socks.jpg',
-                colors: ['#ff0000', '#000', '#fff', '#555'],
-                moreColors: '+8'
+                desc: 'Purpose-built cycling socks designed for riders who prioritize speed, efficiency, and all-day comfort. Featuring a lightweight construction and performance-focused fit, our cycling socks help maintain airflow and reduce excess bulk inside cycling shoes. Ideal for road cycling teams, competitive riders, cycling events, and private label collections, with extensive customization options for branding, colors, and packaging.'
               },
               { 
                 title: 'BASKETBALL SOCKS', 
@@ -142,7 +140,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="space-y-1.5">
-                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks', 'Pilates Socks', 'Custom Socks', 'Running Socks'].includes(product.title) ? '' : 'uppercase'}`}>
+                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks', 'Pilates Socks', 'Custom Socks', 'Running Socks', 'Cycling Socks'].includes(product.title) ? '' : 'uppercase'}`}>
                     <a 
                       href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
                       target="_blank"
