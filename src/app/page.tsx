@@ -108,12 +108,10 @@ export default function Home() {
                 desc: 'Built for the demands of the court, our basketball socks combine targeted cushioning, secure support, and durable construction to help athletes perform with confidence. Designed for quick direction changes, jumps, and high-impact play, they deliver comfort and stability throughout training sessions and competitive games. Ideal for basketball brands, teams, academies, and custom uniform programs.'
               },
               { 
-                title: 'TRAINING SOCKS', 
-                moq: '100 Pairs',
+                title: 'Gym Socks', 
                 tag: '',
                 img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/training-socks.png',
-                colors: ['#5fb9b0', '#000', '#fff', '#888'],
-                moreColors: '+12'
+                desc: 'High-performance gym socks designed for strength training, fitness workouts, and cross-training in the gym environment. Built with breathable materials, moisture control, and a supportive fit, they provide lasting comfort and stability during weightlifting, treadmill sessions, and high-intensity workouts. Available for OEM and private label customization with full branding options.'
               },
             ].map((product: any, i) => (
               <div key={i} className="bg-white group">
@@ -138,7 +136,7 @@ export default function Home() {
                   </button>
                 </div>
                 <div className="space-y-1.5">
-                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks', 'Pilates Socks', 'Custom Socks', 'Running Socks', 'Cycling Socks', 'Basketball Socks'].includes(product.title) ? '' : 'uppercase'}`}>
+                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks', 'Pilates Socks', 'Custom Socks', 'Running Socks', 'Cycling Socks', 'Basketball Socks', 'Gym Socks'].includes(product.title) ? '' : 'uppercase'}`}>
                     <a 
                       href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
                       target="_blank"
