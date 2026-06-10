@@ -6,10 +6,12 @@ export default function Home() {
         <div className="text-3xl font-bold tracking-wider">PeakMotion Socks</div>
         <nav className="flex flex-wrap justify-center gap-7">
           <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">HOME</a>
-          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
-          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">OEM/ODM</a>
-          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">ABOUT</a>
-          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CONTACT</a>
+          <a href="#sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
+          <a href="#sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
+          <a href="#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CUSTOM SOCKS</a>
+          <a href="#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">OEM</a>
+          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
+          <a href="#contact" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CONTACT</a>
         </nav>
       </header>
 
@@ -57,7 +59,7 @@ export default function Home() {
         </section>
 
         {/* Products Section */}
-        <section className="py-22 px-5 lg:px-15">
+        <section className="py-22 px-5 lg:px-15" id="sports-socks">
           <h2 className="text-4xl lg:text-[48px] mb-5 font-extrabold uppercase">OUR PRODUCT COLLECTION</h2>
           <p className="text-gray-500 mb-12">
             High-performance custom sports socks for every sport and activity.
@@ -202,7 +204,7 @@ export default function Home() {
         </section>
 
         {/* Customization Section */}
-        <section className="py-22 px-5 lg:px-15 bg-[#f7f7f7]">
+        <section className="py-22 px-5 lg:px-15 bg-[#f7f7f7]" id="custom-socks">
           <h2 className="text-4xl lg:text-[48px] mb-12 font-extrabold uppercase">OEM / ODM CUSTOMIZATION</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -220,7 +222,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-22 px-5 lg:px-15 bg-black text-white text-center">
+        <section className="py-22 px-5 lg:px-15 bg-black text-white text-center" id="contact">
           <div className="space-y-4">
             <div className="flex justify-center">
               <a 
