@@ -39,6 +39,12 @@ export default function Home() {
               >
                 GET QUOTE
               </a>
+              <a 
+                href="/sports-socks" 
+                className="px-8 py-4 rounded font-bold inline-block text-center border-2 border-white text-white bg-transparent hover:bg-white hover:text-black transition-all duration-300"
+              >
+                Explore Sports Socks
+              </a>
             </div>
           </div>
         </section>
