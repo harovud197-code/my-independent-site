@@ -15,7 +15,7 @@ export default function SportsSocks() {
     },
     {
       title: 'Football Socks',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-football-runner.jpg',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-football-kicking.jpg',
       desc: 'Durable team socks built for match performance and professional football use.',
     },
     {
