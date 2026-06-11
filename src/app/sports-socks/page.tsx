@@ -20,7 +20,7 @@ export default function SportsSocks() {
     },
     {
       title: 'Running Socks',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/running-socks.jpg',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-running-runner.jpg',
       desc: 'Lightweight breathable socks designed for long-distance running and endurance.',
     },
     {
