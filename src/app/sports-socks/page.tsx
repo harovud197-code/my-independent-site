@@ -30,7 +30,7 @@ export default function SportsSocks() {
     },
     {
       title: 'Cycling Socks',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/cycling-socks.jpg',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-cycling-orange.jpg',
       desc: 'Lightweight aerodynamic socks designed for cycling performance and ventilation.',
     },
     {
