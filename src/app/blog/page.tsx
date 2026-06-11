@@ -18,7 +18,7 @@ export default function Blog() {
       title: 'Custom Sports Socks Manufacturer: Complete OEM Guide',
       href: '/blog/custom-sports-socks-manufacturer-guide',
       desc: 'Everything brands need to know about OEM and private label sports socks production.',
-      img: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-oem-guide.jpg',
       category: 'OEM Manufacturing',
     },
     {
