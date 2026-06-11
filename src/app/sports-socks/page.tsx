@@ -35,7 +35,7 @@ export default function SportsSocks() {
     },
     {
       title: 'Pilates Socks',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/pilates-socks.jpg',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-pilates-reformer.jpg',
       desc: 'Non-slip studio socks designed for balance and controlled movement.',
     }
   ];
