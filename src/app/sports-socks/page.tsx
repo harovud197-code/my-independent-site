@@ -170,7 +170,7 @@ export default function SportsSocks() {
                 const waUrl = `https://wa.me/8617357769219?text=${waText}`;
                 return (
                   <div key={i} className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 overflow-hidden group hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full">
-                    <div className="relative overflow-hidden aspect-[4/3] bg-gray-50">
+                    <div className="relative overflow-hidden aspect-square bg-gray-50">
                       <a href={waUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                         <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                       </a>
