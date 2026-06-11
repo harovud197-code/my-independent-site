@@ -32,7 +32,7 @@ export default function Blog() {
       title: "Football Socks vs Grip Socks: What's the Difference?",
       href: '#',
       desc: 'Compare football socks and grip socks to choose the right option for your team.',
-      img: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-football-vs-grip.jpg',
       category: 'Football Socks',
     },
     {
