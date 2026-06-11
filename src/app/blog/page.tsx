@@ -11,7 +11,7 @@ export default function Blog() {
       title: 'What Are Grip Socks? Benefits, Uses and Buying Guide',
       href: '/blog/what-are-grip-socks',
       desc: 'Learn how grip socks improve stability, performance, and comfort across multiple sports.',
-      img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-what-are-grip-socks.jpg',
       category: 'Grip Socks',
     },
     {
