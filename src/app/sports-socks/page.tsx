@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 
+// Force trigger a new deployment due to Vercel platform transient build error on previous commit
 export const metadata: Metadata = {
   title: 'Custom Sports Socks Manufacturer | Grip, Football, Running & More | PeakMotion',
   description: 'Professional custom sports socks manufacturer offering grip socks, football socks, running socks, basketball socks, cycling socks, and Pilates socks. OEM & private label with low MOQ.',
