@@ -67,7 +67,7 @@ export default function WhatAreGripSocks() {
           </div>
 
           {/* Featured Image */}
-          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[21/9] bg-gray-50">
+          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-square max-w-xl mx-auto bg-gray-50">
             <img 
               src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-what-are-grip-socks.jpg" 
               alt="Athletic training with grip socks" 
