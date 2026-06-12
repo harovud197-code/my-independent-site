@@ -73,7 +73,7 @@ export default function HowToStartCustomSocksBrand() {
           {/* Featured Image */}
           <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
             <img 
-              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-hero.jpg" 
+              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-hero.jpg?v=2" 
               alt="Start a custom socks brand" 
               className="w-full h-full object-cover"
             />
@@ -230,7 +230,7 @@ export default function HowToStartCustomSocksBrand() {
             {/* Custom Socks Business Model Image */}
             <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
               <img 
-                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-models.jpg" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-models.jpg?v=2" 
                 alt="Socks and folded apparel texture" 
                 className="w-full h-full object-cover"
               />
@@ -293,7 +293,7 @@ export default function HowToStartCustomSocksBrand() {
             {/* Sock Style Niches Image */}
             <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
               <img 
-                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-athletes.jpg" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-athletes.jpg?v=2" 
                 alt="Athletic custom cotton socks details" 
                 className="w-full h-full object-cover"
               />
