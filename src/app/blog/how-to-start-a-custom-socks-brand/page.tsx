@@ -293,7 +293,7 @@ export default function HowToStartCustomSocksBrand() {
             {/* Sock Style Niches Image */}
             <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
               <img 
-                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-athletes.jpg?v=3" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-athletes-clean.jpg?v=4" 
                 alt="Athletic custom cotton socks details" 
                 className="w-full h-full object-cover"
               />
