@@ -1,32 +1,48 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Custom Sports Socks Manufacturer: Complete OEM & Private Label Guide | PeakMotion',
-  description: 'Looking for a reliable custom sports socks manufacturer? Learn all about OEM sports socks, private label socks services, customization process, pricing, and sourcing tips in this full guide.',
+  title: 'Custom Sports Socks Manufacturer: Complete OEM Guide (2026) | PeakMotion',
+  description: 'Looking for a reliable custom sports socks manufacturer? Learn everything about OEM sports socks, private label socks, customization options, MOQ, pricing, production process, and sourcing tips.',
 };
 
 export default function CustomSportsSocksManufacturerGuide() {
   const faqs = [
     {
-      question: 'What is the typical Minimum Order Quantity (MOQ) for custom sports socks?',
-      answer: 'Typically, the MOQ for custom sports socks ranges from 500 to 1,000 pairs per style/color/size, depending on the manufacturing complexity and raw materials used. Some private label services support lower MOQs for test markets.',
+      question: 'What is the MOQ for custom sports socks?',
+      answer: 'Most projects start from 50 pairs depending on design complexity.'
     },
     {
-      question: 'How long does the custom sports socks production process take?',
-      answer: 'The process generally takes 4 to 6 weeks. This includes about 1 to 2 weeks for requirement confirmation and pre-production sample making, followed by 3 to 4 weeks for mass production, quality inspection, and packaging.',
+      question: 'Can I use my own logo?',
+      answer: 'Yes. We support woven logos, knitted logos, embroidery, and printing.'
     },
     {
-      question: 'Can you manufacture custom athletic socks with our team logo?',
-      answer: 'Yes! As a professional sports socks manufacturer, we offer multi-channel logo customization including high-definition woven logos, heat-transfer printing, and customized embroidery to display your brand or team logo beautifully.',
+      question: 'How long does production take?',
+      answer: 'Typically 15–30 days after sample approval.'
     },
     {
-      question: 'What materials are best for private label sports socks?',
-      answer: 'The best materials are moisture-wicking and breathable performance blends. Typically, we use a combination of premium combed cotton, polyester, nylon, and spandex (elastane) to achieve optimal elasticity, durability, and comfort.',
+      question: 'Do you provide custom packaging?',
+      answer: 'Yes. We offer header cards, belly bands, custom boxes, and retail-ready packaging.'
+    },
+    {
+      question: 'Do you ship worldwide?',
+      answer: 'Yes. We export globally.'
+    },
+    {
+      question: 'What is the difference between OEM and private label socks?',
+      answer: 'OEM uses your unique design specifications, while private label applies your branding to existing styles.'
+    },
+    {
+      question: 'Can startups order custom sports socks?',
+      answer: 'Yes. Low MOQ options are available.'
+    },
+    {
+      question: 'What sports are your socks suitable for?',
+      answer: 'Football, running, basketball, cycling, Pilates, gym training, and more.'
     }
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-white font-sans text-slate-900">
+    <div className="flex flex-col min-h-screen bg-white font-sans text-slate-900 scroll-smooth">
       {/* Header */}
       <header className="bg-black text-white px-5 lg:px-15 py-4.5 flex flex-col md:flex-row justify-between items-center sticky top-0 z-[999] gap-5 md:gap-0">
         <a href="/" className="text-3xl font-bold tracking-wider hover:text-[#b4ff2b] transition-colors">PeakMotion Socks</a>
@@ -43,7 +59,7 @@ export default function CustomSportsSocksManufacturerGuide() {
 
       <main className="flex-1 bg-white">
         {/* Article Container */}
-        <article className="max-w-3xl mx-auto py-12 px-5 text-gray-700 leading-relaxed text-left">
+        <article className="max-w-3xl mx-auto py-12 px-5 text-slate-700 leading-relaxed text-left">
           {/* Breadcrumb & Meta */}
           <div className="mb-6 text-sm text-slate-500 font-semibold uppercase tracking-wider flex items-center gap-2">
             <a href="/blog" className="hover:text-black transition-colors">Blog</a>
@@ -53,7 +69,7 @@ export default function CustomSportsSocksManufacturerGuide() {
 
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-4">
-            Custom Sports Socks Manufacturer: Complete OEM & Private Label Guide
+            Custom Sports Socks Manufacturer: Complete OEM Guide
           </h1>
 
           {/* Author/Date Meta */}
@@ -66,210 +82,328 @@ export default function CustomSportsSocksManufacturerGuide() {
             <span>Published June 2026</span>
           </div>
 
-          {/* Featured Image */}
-          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[21/9] max-w-full mx-auto bg-gray-50">
+          {/* Introduction */}
+          <div className="space-y-6 text-slate-700 text-[17px] leading-relaxed">
+            <p>
+              If you are looking for a reliable custom sports socks manufacturer, this guide explains everything you need to know about OEM sports socks, private label socks, customization options, production processes, pricing factors, and how to choose the right manufacturing partner.
+            </p>
+          </div>
+
+          {/* Featured/Introduction Image */}
+          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
             <img 
-              src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200" 
-              alt="Custom sports socks on professional cycling race team" 
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200" 
+              alt="Custom Sports Socks Manufacturer" 
               className="w-full h-full object-cover"
             />
           </div>
 
-          {/* Introduction */}
-          <div className="space-y-6 text-slate-700 text-[17px] leading-relaxed">
-            <p>
-              If you are running a sportswear brand, fitness store, or sports team apparel program, partnering with a professional <strong className="font-semibold text-slate-900">custom sports socks manufacturer</strong> is the best way to build unique, high-quality sock products for your audience. More brands today are switching from generic wholesale socks to <strong className="font-semibold text-slate-900">OEM sports socks</strong> and <strong className="font-semibold text-slate-900">private label socks</strong> to improve brand recognition, product differentiation, and profit margins.
-            </p>
-            <p>
-              In this complete OEM guide, we will explain everything you need to know about custom sports socks, the difference between OEM sports socks and private label socks, available customization options, the standard production process, and how to choose a trustworthy custom sports socks manufacturer for your bulk orders.
-            </p>
+          {/* Table of Contents Box */}
+          <div className="toc bg-slate-50 border border-slate-200/60 p-6 md:p-8 rounded-2xl my-8 shadow-sm">
+            <h2 className="text-xl font-extrabold text-slate-900 mb-4 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+              Table of Contents
+            </h2>
+            <ul className="space-y-2.5">
+              <li>
+                <a href="#what" className="text-slate-600 hover:text-slate-900 transition-colors font-medium flex items-center gap-2 group">
+                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 group-hover:bg-slate-900 transition-colors"></span>
+                  What Are Custom Sports Socks?
+                </a>
+              </li>
+              <li>
+                <a href="#benefits" className="text-slate-600 hover:text-slate-900 transition-colors font-medium flex items-center gap-2 group">
+                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 group-hover:bg-slate-900 transition-colors"></span>
+                  Benefits of OEM Sports Socks
+                </a>
+              </li>
+              <li>
+                <a href="#customization" className="text-slate-600 hover:text-slate-900 transition-colors font-medium flex items-center gap-2 group">
+                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 group-hover:bg-slate-900 transition-colors"></span>
+                  Customization Options
+                </a>
+              </li>
+              <li>
+                <a href="#materials" className="text-slate-600 hover:text-slate-900 transition-colors font-medium flex items-center gap-2 group">
+                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 group-hover:bg-slate-900 transition-colors"></span>
+                  Best Materials
+                </a>
+              </li>
+              <li>
+                <a href="#process" className="text-slate-600 hover:text-slate-900 transition-colors font-medium flex items-center gap-2 group">
+                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 group-hover:bg-slate-900 transition-colors"></span>
+                  Production Process
+                </a>
+              </li>
+              <li>
+                <a href="#manufacturer" className="text-slate-600 hover:text-slate-900 transition-colors font-medium flex items-center gap-2 group">
+                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 group-hover:bg-slate-900 transition-colors"></span>
+                  Choosing a Manufacturer
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-slate-600 hover:text-slate-900 transition-colors font-medium flex items-center gap-2 group">
+                  <span className="h-1.5 w-1.5 rounded-full bg-slate-400 group-hover:bg-slate-900 transition-colors"></span>
+                  FAQ
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <hr className="my-10 border-gray-100" />
-
-          {/* Section 1 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">1. What Are Custom Sports Socks, OEM Sports Socks, and Private Label Socks?</h2>
+          {/* Section: What Are Custom Sports Socks? */}
+          <section className="mb-12 scroll-mt-20">
+            <h2 id="what" className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              What Are Custom Sports Socks?
+            </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Many new buyers often confuse <strong className="font-semibold text-slate-900">custom sports socks manufacturer</strong> services, OEM orders, and private label projects. Before sourcing, it is essential to understand these three core business models clearly.
+              Custom sports socks are athletic socks manufactured according to specific brand requirements. Unlike generic wholesale socks, custom socks can be tailored in design, materials, colors, logo placement, cushioning, compression level, and packaging.
             </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">1.1 Custom Sports Socks</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Custom sports socks refer to any sports socks that are tailored according to customer requirements, including sizes, colors, materials, thicknesses, cushioning, and designs. Unlike standard ready-made socks, custom sports socks are produced specifically for sports scenarios such as football, running, gym training, yoga, and outdoor fitness, with functional features like anti-slip, sweat-wicking, and compression support.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">1.2 OEM Sports Socks</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              <strong className="font-semibold text-slate-900">OEM sports socks</strong> means Original Equipment Manufacturing. In this mode, you provide your design drafts, technical requirements, logo files, and product standards, while the <strong className="font-semibold text-slate-900">custom sports socks manufacturer</strong> is responsible for material procurement, production, knitting, quality inspection, and packaging.
-            </p>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              OEM sports socks are ideal for brands that already have mature product designs but need a factory to mass-produce products. The manufacturer produces socks under your brand specifications without changing your unique design formula.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">1.3 Private Label Socks</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              <strong className="font-semibold text-slate-900">Private label socks</strong> are the most popular choice for startup brands and resellers. Unlike OEM sports socks that require finished designs, private label socks allow you to select the factory’s existing mature sock styles, then add your custom brand elements, including woven logos, printed logos, custom tags, customized packaging, and exclusive color matching.
-            </p>
-            <p className="text-slate-700 text-[17px] leading-relaxed mt-4">
-              Private label socks feature lower MOQs, shorter lead times, and lower design costs, making them perfect for brand building, small-batch trial sales, and team uniform customization.
-            </p>
-          </section>
-
-          {/* Section 2 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">2. Core Benefits of Working With a Custom Sports Socks Manufacturer</h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Cooperating with a professional custom sports socks manufacturer to launch OEM sports socks and private label socks can bring long-term competitive advantages for your business.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.1 Unique Brand Differentiation</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Generic wholesale sports socks face serious market homogeneity and price competition. With private label socks and custom OEM services, you can create exclusive styles, colors, and brand logos, allowing your products to stand out on e-commerce platforms, retail stores, and team markets.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.2 Higher Profit Margins</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Directly sourcing from a custom sports socks manufacturer eliminates middleman markups. Whether you order OEM sports socks in bulk or customize private label socks for retail, you can control costs flexibly and obtain much higher profit margins than reselling finished generic products.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.3 Customized Functional Performance</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Sports socks have strict functional requirements. A professional manufacturer can customize professional features according to your positioning: anti-slip silicone for football grip socks, moisture-wicking polyester for running socks, compression knitting for fitness socks, and thick terry cushioning for training socks.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.4 Flexible Order Solutions</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              Regular custom sports socks manufacturers support both large-batch OEM sports socks mass production and small-batch private label socks trial orders. This flexible model meets the needs of new brand testing and mature brand bulk replenishment.
-            </p>
-          </section>
-
-          {/* Section 3 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">3. Customization Options From a Custom Sports Socks Manufacturer</h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-4">
-              A reliable custom sports socks manufacturer provides one-stop customization services for OEM sports socks and private label socks, covering every detail of the product:
+              Popular categories include:
             </p>
-            <ul className="list-disc pl-6 space-y-2 my-4">
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Material Customization:</strong> Combed cotton, polyester, spandex, nylon, breathable mesh, and antibacterial yarn for different sports scenarios.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Style Customization:</strong> Ankle socks, crew socks, mid-calf socks, knee-high socks, grip sports socks, compression socks.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Function Customization:</strong> Anti-slip silicone dots, sweat absorption, quick drying, arch support, terry cushioning, breathable knitting.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Brand Customization:</strong> Woven logos, heat-transfer printed logos, embossed patterns, custom size tags, private packaging bags.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Color & Pattern Customization:</strong> Custom color matching, gradient patterns, team uniform color schemes, exclusive brand patterns.
-              </li>
+
+            {/* Custom Grid Layout for Category Links */}
+            <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 my-6">
+              {[
+                { name: 'Grip Socks', href: '/grip-socks' },
+                { name: 'Football Socks', href: '/football-socks' },
+                { name: 'Running Socks', href: '/running-socks' },
+                { name: 'Basketball Socks', href: '/basketball-socks' },
+                { name: 'Cycling Socks', href: '/cycling-socks' },
+                { name: 'Pilates Socks', href: '/pilates-socks' },
+              ].map((item, idx) => (
+                <li key={idx}>
+                  <a href={item.href} className="block p-4 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100 hover:border-slate-200 transition-all font-semibold text-slate-800 text-center shadow-sm">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </section>
 
-          {/* Section 4 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">4. Standard Production Process for OEM Sports Socks & Private Label Socks</h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Understanding the production process helps you better cooperate with your custom sports socks manufacturer and avoid communication errors.
-            </p>
+          {/* Section: Benefits of OEM Sports Socks */}
+          <section className="mb-12 scroll-mt-20">
+            <h2 id="benefits" className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Benefits of OEM Sports Socks
+            </h2>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">Step 1: Requirement Confirmation</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Communicate your needs with the manufacturer, including product type (OEM sports socks or private label socks), materials, functions, sizes, logo styles, order quantity, and packaging requirements.
-            </p>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-2">Build a Unique Brand</h3>
+                <p className="text-slate-700 text-[17px] leading-relaxed">
+                  OEM sports socks allow brands to create exclusive products rather than competing with identical wholesale products.
+                </p>
+              </div>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">Step 2: Sample Making</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              The custom sports socks manufacturer will produce pre-production samples according to your requirements. You can check the fabric feel, printing effect, size, and workmanship, and put forward revision suggestions.
-            </p>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-2">Increase Profit Margins</h3>
+                <p className="text-slate-700 text-[17px] leading-relaxed">
+                  Direct manufacturing reduces sourcing costs and increases profitability.
+                </p>
+              </div>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">Step 3: Mass Production</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              After the sample is confirmed, the factory will arrange raw material procurement and formal mass production strictly following the sample standards.
-            </p>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-2">Customize Performance Features</h3>
+                <p className="text-slate-700 text-[17px] leading-relaxed">
+                  Sports socks can include arch support, terry cushioning, breathable mesh zones, moisture-wicking yarns, and anti-slip grip technology.
+                </p>
+              </div>
+            </div>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">Step 4: Quality Inspection</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Professional manufacturers conduct multi-channel quality inspections to check for thread ends, defective knitting, logo deviation, and unqualified sizes to ensure product consistency.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">Step 5: Packaging & Shipment</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              Finish private label packaging, label pasting, and bulk packing, then arrange delivery according to the agreed delivery cycle.
-            </p>
+            {/* Custom Socks Options Image */}
+            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
+              <img 
+                src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=1200" 
+                alt="Custom Sports Socks Options" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </section>
 
-          {/* Section 5 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">5. Key Factors to Choose a Reliable Custom Sports Socks Manufacturer</h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-4">
-              The quality of OEM sports socks and private label socks directly depends on your manufacturer. Here are the key standards for selection:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 my-4">
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Professional Production Experience:</strong> Choose a factory focusing on sports sock customization, familiar with various sports functional knitting technologies.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Customization Capability:</strong> Confirm whether the manufacturer supports full custom OEM sports socks and flexible private label socks services.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Quality Stability:</strong> Check product wash resistance, silicone grip firmness, and fabric durability to avoid defective rates.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">MOQ Flexibility:</strong> Excellent manufacturers support low MOQ private label socks for startups and large-volume OEM orders for brands.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">After-sales & Service:</strong> One-stop service including design consultation, sample making, production tracking, and after-sales support.
-              </li>
+          {/* Section: Customization Options */}
+          <section className="mb-12 scroll-mt-20">
+            <h2 id="customization" className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Customization Options
+            </h2>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+              {[
+                'Custom Logos',
+                'Custom Colors',
+                'Custom Materials',
+                'Custom Packaging',
+                'Private Label Branding',
+                'Retail Packaging',
+                'Compression Support',
+                'Grip Technology'
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3 p-3 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-slate-900 text-[#b4ff2b] font-bold text-xs shrink-0">✓</span>
+                  <span className="font-semibold text-slate-800 text-[15px]">{item}</span>
+                </li>
+              ))}
             </ul>
           </section>
 
-          {/* Section 6 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">6. Who Should Order OEM Sports Socks & Private Label Socks?</h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-4">
-              Custom sports socks services are suitable for multiple customer groups:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 my-4">
-              <li className="text-slate-700 text-[17px] leading-relaxed">Sportswear brand owners who need exclusive customized sock lines.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">E-commerce sellers looking for differentiated private label socks.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">Football clubs, sports teams, and fitness studios needing team custom socks.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">Wholesalers and distributors seeking stable OEM sports socks suppliers.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">Corporate customers needing customized sports socks for promotional gifts and activities.</li>
-            </ul>
+          {/* Section: Best Materials */}
+          <section className="mb-12 scroll-mt-20">
+            <h2 id="materials" className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Best Materials for Sports Socks
+            </h2>
+
+            {/* Elegant, Modern Flat Table */}
+            <div className="overflow-x-auto my-8 border border-slate-200 rounded-xl shadow-sm">
+              <table className="min-w-full divide-y divide-slate-200 text-left">
+                <thead className="bg-slate-900 text-white">
+                  <tr>
+                    <th className="px-6 py-4 text-sm font-semibold tracking-wider uppercase">Material</th>
+                    <th className="px-6 py-4 text-sm font-semibold tracking-wider uppercase">Advantages</th>
+                    <th className="px-6 py-4 text-sm font-semibold tracking-wider uppercase">Best Use</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 bg-white">
+                  <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-slate-900 font-bold">Combed Cotton</td>
+                    <td className="px-6 py-4 text-sm text-slate-700">Comfortable and soft</td>
+                    <td className="px-6 py-4 text-sm text-slate-600 font-medium">Training Socks</td>
+                  </tr>
+                  <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-slate-900 font-bold">Polyester</td>
+                    <td className="px-6 py-4 text-sm text-slate-700">Moisture-wicking</td>
+                    <td className="px-6 py-4 text-sm text-slate-600 font-medium">Running Socks</td>
+                  </tr>
+                  <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-slate-900 font-bold">Nylon</td>
+                    <td className="px-6 py-4 text-sm text-slate-700">Durable and lightweight</td>
+                    <td className="px-6 py-4 text-sm text-slate-600 font-medium">Cycling Socks</td>
+                  </tr>
+                  <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-slate-900 font-bold">Spandex</td>
+                    <td className="px-6 py-4 text-sm text-slate-700">Stretch and support</td>
+                    <td className="px-6 py-4 text-sm text-slate-600 font-medium">Compression Socks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
 
-          {/* Section 7 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">7. Final Thoughts</h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-4">
-              Working with a professional <strong className="font-semibold text-slate-900">custom sports socks manufacturer</strong> is the most efficient way to launch high-quality sports sock products. Whether you need fully tailored <strong className="font-semibold text-slate-900">OEM sports socks</strong> with exclusive designs or cost-effective <strong className="font-semibold text-slate-900">private label socks</strong> for brand building, custom sock manufacturing can help you solve market homogeneity problems, enhance brand influence, and maximize your business profits.
-            </p>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              If you are looking for stable, low-MOQ, and high-quality custom sports sock customization services, choosing a formal and experienced manufacturer will lay a solid foundation for your long-term sports apparel business.
-            </p>
+          {/* Section: Production Process */}
+          <section className="mb-12 scroll-mt-20">
+            <h2 id="process" className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              OEM Sports Socks Production Process
+            </h2>
+
+            {/* Yarn Spools Production Process Image */}
+            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
+              <img 
+                src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=1200" 
+                alt="Sports Socks Manufacturing Process" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 1 – Design Confirmation</h3>
+                <p className="text-slate-700 text-[17px] leading-relaxed">Confirm logos, colors, materials, sizing, and packaging requirements.</p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 2 – Sample Development</h3>
+                <p className="text-slate-700 text-[17px] leading-relaxed">Create physical samples for approval.</p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 3 – Mass Production</h3>
+                <p className="text-slate-700 text-[17px] leading-relaxed">Manufacture according to approved specifications.</p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 4 – Quality Inspection</h3>
+                <p className="text-slate-700 text-[17px] leading-relaxed">Inspect workmanship, sizing, logos, and packaging.</p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 5 – Packaging & Shipping</h3>
+                <p className="text-slate-700 text-[17px] leading-relaxed">Prepare retail packaging and arrange shipment.</p>
+              </div>
+            </div>
+
+            {/* Timeline Table */}
+            <div className="overflow-x-auto my-8 border border-slate-200 rounded-xl shadow-sm">
+              <table className="min-w-full divide-y divide-slate-200 text-left">
+                <thead className="bg-slate-900 text-white">
+                  <tr>
+                    <th className="px-6 py-4 text-sm font-semibold tracking-wider uppercase">Stage</th>
+                    <th className="px-6 py-4 text-sm font-semibold tracking-wider uppercase">Typical Timeline</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 bg-white">
+                  <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-slate-900 font-bold">Design Confirmation</td>
+                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">1–3 Days</td>
+                  </tr>
+                  <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-slate-900 font-bold">Sampling</td>
+                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">5–10 Days</td>
+                  </tr>
+                  <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-slate-900 font-bold">Production</td>
+                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">15–30 Days</td>
+                  </tr>
+                  <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
+                    <td className="px-6 py-4 text-sm text-slate-900 font-bold">Shipping</td>
+                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">5–20 Days</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          {/* Section: Choosing a Manufacturer */}
+          <section className="mb-12 scroll-mt-20">
+            <h2 id="manufacturer" className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              How to Choose a Reliable Custom Sports Socks Manufacturer
+            </h2>
+
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+              {[
+                'Experience in sports socks manufacturing',
+                'OEM and private label capabilities',
+                'Low MOQ options',
+                'Stable quality control',
+                'Fast sampling service',
+                'Worldwide shipping support'
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 shadow-sm">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-full bg-slate-900 text-[#b4ff2b] font-bold text-xs shrink-0 mt-0.5">✓</span>
+                  <span className="font-semibold text-slate-700 text-[15px]">{item}</span>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <hr className="my-12 border-gray-100" />
 
-          {/* FAQ Section with details */}
-          <section className="my-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">Frequently Asked Questions</h2>
+          {/* Section: FAQ */}
+          <section className="my-12 scroll-mt-20">
+            <h2 id="faq" className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">
+              Frequently Asked Questions
+            </h2>
             <div className="space-y-4">
               {faqs.map((faq, i) => (
-                <details key={i} className="group border border-gray-100 rounded-2xl bg-slate-50 shadow-[0_2px_10px_rgba(0,0,0,0.01)] [&_summary::-webkit-details-marker]:hidden">
-                  <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 md:p-8 text-gray-950 select-none">
-                    <h3 className="font-extrabold text-lg md:text-xl pr-4 text-gray-900">{faq.question}</h3>
-                    <span className="shrink-0 rounded-full bg-white p-2 text-gray-900 border border-gray-100 group-open:rotate-180 transition-transform duration-300">
+                <details key={i} className="group border border-slate-200 rounded-2xl bg-slate-50/50 shadow-sm [&_summary::-webkit-details-marker]:hidden">
+                  <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 md:p-8 text-slate-950 select-none">
+                    <h3 className="font-extrabold text-lg md:text-xl pr-4 text-slate-900">{faq.question}</h3>
+                    <span className="shrink-0 rounded-full bg-white p-2 text-slate-900 border border-slate-100 group-open:rotate-180 transition-transform duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
                       </svg>
                     </span>
                   </summary>
-                  <div className="px-6 md:px-8 pb-8 pt-2 border-t border-gray-100 text-gray-600 leading-relaxed text-base">
+                  <div className="px-6 md:px-8 pb-8 pt-2 border-t border-slate-200/50 text-slate-600 leading-relaxed text-base">
                     {faq.answer}
                   </div>
                 </details>
@@ -277,35 +411,41 @@ export default function CustomSportsSocksManufacturerGuide() {
             </div>
           </section>
 
-          {/* Elegant Bottom CTA Module */}
-          <section className="bg-slate-50 rounded-3xl p-8 md:p-12 text-center my-16 border border-gray-100 space-y-6">
-            <h3 className="text-2xl font-bold text-slate-900 uppercase tracking-wide">
-              Ready to Launch Your Custom Sports Socks Line?
-            </h3>
-            <p className="text-slate-600 max-w-xl mx-auto leading-relaxed">
-              PeakMotion is a professional custom sports socks OEM manufacturer. We produce high-performance, wash-resistant sports socks with low MOQ, premium materials, and customized branding for global sports brands, teams, and retailers.
+          {/* Section: Bottom CTA */}
+          <section className="bg-slate-900 text-white rounded-3xl p-8 md:p-12 text-center my-16 border border-slate-800 space-y-6 shadow-xl">
+            <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide text-white leading-tight">
+              Looking for a Reliable Custom Sports Socks Manufacturer?
+            </h2>
+            <p className="text-slate-300 max-w-xl mx-auto leading-relaxed">
+              PeakMotion provides OEM and private label sports socks manufacturing services for sports brands, teams, retailers, and distributors worldwide.
             </p>
+            <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 text-left max-w-2xl mx-auto my-6 bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50">
+              <li className="flex items-center gap-2 text-sm text-slate-200">
+                <span className="text-[#b4ff2b] font-extrabold">✓</span> MOQ From 50 Pairs
+              </li>
+              <li className="flex items-center gap-2 text-sm text-slate-200">
+                <span className="text-[#b4ff2b] font-extrabold">✓</span> Custom Logo & Pkg
+              </li>
+              <li className="flex items-center gap-2 text-sm text-slate-200">
+                <span className="text-[#b4ff2b] font-extrabold">✓</span> Fast Sampling
+              </li>
+              <li className="flex items-center gap-2 text-sm text-slate-200">
+                <span className="text-[#b4ff2b] font-extrabold">✓</span> Worldwide Shipping
+              </li>
+            </ul>
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
               <a 
-                href="https://wa.me/8617357769219" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="/#contact" 
                 className="bg-[#b4ff2b] text-black font-extrabold text-lg uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center shadow-[0_10px_25px_rgba(180,255,43,0.25)]"
               >
-                WhatsApp Us
-              </a>
-              <a 
-                href="/#contact" 
-                className="bg-black text-white font-extrabold text-lg uppercase hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center"
-              >
-                Contact Our Team
+                Request a Free Quote
               </a>
             </div>
           </section>
         </article>
       </main>
 
-      {/* WhatsApp Floating Button */}
+      {/* Floating WhatsApp Button */}
       <a 
         href="https://wa.me/8617357769219" 
         target="_blank" 
