@@ -1,27 +1,31 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'What Are Grip Socks? Benefits, Uses & Buying Guide | PeakMotion',
-  description: 'Wondering what grip socks are? Learn top benefits, popular uses including grip socks for football, and tips to choose products or work with a trusted grip socks manufacturer.',
+  title: 'What Are Grip Socks? Benefits, Uses and Buying Guide | PeakMotion',
+  description: 'Learn what are grip socks, key grip socks benefits, popular uses including grip socks for football. Also find tips to choose reliable grip socks manufacturer and top buying advice.',
 };
 
 export default function WhatAreGripSocks() {
   const faqs = [
     {
-      question: 'How do grip socks prevent sliding?',
-      answer: 'Grip socks feature silicone or rubber grip pads on the sole. These premium traction materials create high friction against smooth floors or the insoles of sports shoes, locking your feet in place and preventing any sliding.',
+      question: 'What are grip socks used for?',
+      answer: 'Grip socks are widely used for yoga, Pilates, football, home safety, medical rehabilitation and indoor recreation activities.',
     },
     {
-      question: 'Are grip socks beneficial for football/soccer?',
-      answer: 'Yes, they are highly popular among professional and amateur football players. Soccer grip socks eliminate internal slippage inside football boots, which prevents blisters, improves energy transfer for sprints, and provides better traction during quick pivots and direction changes.',
+      question: 'What are the main grip socks benefits?',
+      answer: 'Grip socks provide strong traction, reduce injury and blister risks, boost sports performance and improve foot hygiene.',
     },
     {
-      question: 'How should I wash my grip socks to protect the silicone grips?',
-      answer: 'To extend their lifespan, always wash grip socks inside out on a cold, gentle cycle. Air dry them flat naturally. Avoid using bleach, fabric softeners, or high-heat tumble drying, as extreme heat can degrade the adhesive bond of the silicone pads.',
+      question: 'Why choose grip socks for football?',
+      answer: 'Grip socks for football prevent foot slippage inside cleats, enhance stability and improve directional changes during matches and training.',
     },
     {
-      question: 'Can you wear grip socks daily at home?',
-      answer: 'Absolutely! Grip socks are an excellent, lightweight alternative to bulky slippers for home safety, especially for young toddlers learning to walk, seniors, or individuals undergoing rehabilitation on smooth hardwood, laminate, or tile floors.',
+      question: 'How to select a professional grip socks manufacturer?',
+      answer: 'Focus on production experience, quality control, MOQ, customization ability and after-sales service when picking a grip socks manufacturer.',
+    },
+    {
+      question: 'How to maintain grip socks to extend service life?',
+      answer: 'Wash grip socks with cold gentle cycle, avoid high heat and bleach, and air dry naturally.',
     }
   ];
 
@@ -53,7 +57,7 @@ export default function WhatAreGripSocks() {
 
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-4">
-            What Are Grip Socks? Benefits, Uses, Grip Socks for Football & Buying Guide
+            What Are Grip Socks? Benefits, Uses and Buying Guide
           </h1>
 
           {/* Author/Date Meta */}
@@ -78,189 +82,256 @@ export default function WhatAreGripSocks() {
           {/* Introduction */}
           <div className="space-y-6 text-slate-700 text-[17px] leading-relaxed">
             <p>
-              If you’ve ever slipped on polished hardwood floors, lost balance during yoga poses, or felt your feet sliding inside workout shoes, <strong className="font-semibold text-slate-900">grip socks</strong> are the practical solution you need. Also known as <strong className="font-semibold text-slate-900">non-slip socks</strong> or <strong className="font-semibold text-slate-900">anti-slip socks</strong>, grip socks have evolved from a niche fitness accessory into a must-have for home safety, studio workouts, indoor sports and daily wear.
+              If you often slip on smooth floors or struggle with unstable footing during sports and fitness, you may wonder <strong className="font-semibold text-slate-900">what are grip socks</strong>. These practical non-slip accessories have become essential for fitness lovers, athletes, families and medical facilities. In this complete guide, we will introduce core <strong className="font-semibold text-slate-900">grip socks benefits</strong>, versatile applications including <strong className="font-semibold text-slate-900">grip socks for football</strong>, professional buying tips and how to cooperate with a trusted <strong className="font-semibold text-slate-900">grip socks manufacturer</strong>.
             </p>
-            <p>
-              Many shoppers search: <em className="italic text-slate-800">what are grip socks</em>, how do grip socks work, and how to choose the <strong className="font-semibold text-slate-900">best grip socks</strong> for different scenarios. In this complete guide, we cover everything about grip socks — their definition, key benefits, versatile uses, and a detailed <strong className="font-semibold text-slate-900">grip socks buying guide</strong> to help you shop smart.
-            </p>
+          </div>
+
+          {/* Table of Contents Box */}
+          <div className="bg-slate-50 border border-gray-100 rounded-2xl p-6 md:p-8 my-8 text-left max-w-xl shadow-[0_2px_10px_rgba(0,0,0,0.01)]">
+            <h2 className="text-lg md:text-xl font-extrabold text-slate-900 mb-4 flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+              Table of Contents
+            </h2>
+            <ul className="space-y-2 text-sm md:text-base font-semibold">
+              <li>
+                <a href="#definition" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  1. What Are Grip Socks?
+                </a>
+              </li>
+              <li>
+                <a href="#benefits" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  2. Key Grip Socks Benefits
+                </a>
+              </li>
+              <li>
+                <a href="#uses" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  3. Common Uses of Grip Socks
+                </a>
+              </li>
+              <li>
+                <a href="#football" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  4. Grip Socks for Football
+                </a>
+              </li>
+              <li>
+                <a href="#buying" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  5. Complete Buying Guide
+                </a>
+              </li>
+              <li>
+                <a href="#manufacturer" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  6. Work with Grip Socks Manufacturer
+                </a>
+              </li>
+              <li>
+                <a href="#care" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  7. Grip Socks Care Tips
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  8. Frequently Asked Questions
+                </a>
+              </li>
+            </ul>
           </div>
 
           <hr className="my-10 border-gray-100" />
 
           {/* Section 1 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">1. What Are Grip Socks?</h2>
+          <section id="definition" className="mb-12 scroll-mt-24">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              What Are Grip Socks?
+            </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              <strong className="font-semibold text-slate-900">Grip socks</strong> are specialized footwear designed with anti-slip traction on the sole, unlike ordinary cotton socks. Most quality grip socks feature <strong className="font-semibold text-slate-900">silicone or rubber grip dots, stripes or full traction pads</strong> bonded to the fabric bottom.
+              <strong className="font-semibold text-slate-900">Grip socks</strong>, also known as anti-slip socks or non-slip socks, are specialized footwear designed with silicone or rubber traction pads on the sole. Different from ordinary cotton socks, they focus on anti-slip performance, stability and safety rather than simple warmth. The grip patterns include dots, stripes and full-coverage pads, which can firmly lock feet on tile, hardwood, studio floors and artificial turf surfaces.
             </p>
             <p className="text-slate-700 text-[17px] leading-relaxed">
-              Regular socks only provide warmth and basic comfort, while non-slip grip socks focus on stability and safety. The traction layer locks feet onto slippery surfaces including tile, hardwood, laminate and studio floors. They keep your feet protected from dirt and germs (better than going barefoot) and eliminate sliding risks (better than standard socks). Simply put, grip socks are performance socks built for stable movement for fitness, home and medical use.
+              Grip socks act as a perfect middle choice between bare feet and regular socks. They isolate bacteria on public surfaces to keep feet hygienic, and effectively eliminate slipping risks. They are widely used in fitness, sports, family daily life and medical rehabilitation scenarios.
             </p>
           </section>
 
           {/* Section 2 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">2. Top Benefits of Grip Socks</h2>
+          <section id="benefits" className="mb-12 scroll-mt-24">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Key Grip Socks Benefits
+            </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Using high-quality grip socks brings multiple advantages for fitness lovers, families, seniors and athletes. Below are the core <strong className="font-semibold text-slate-900">grip socks benefits</strong> you should know:
+              Understanding core <strong className="font-semibold text-slate-900">grip socks benefits</strong> helps you know why they are popular across different groups. Here are the most valuable advantages:
             </p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.1 Excellent Traction & Better Balance</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              Excellent Anti-Slip Traction & Balance
+            </h3>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              The No.1 advantage of anti-slip socks is strong traction. Silicone grip socks prevent unexpected slips and wobbles on smooth floors. Whether you hold yoga poses, do Pilates or walk around the house, grip socks keep your feet firmly positioned, greatly improving overall balance and movement confidence.
+              The biggest advantage of grip socks is reliable traction. The sole grips prevent unexpected slips and wobbles on all kinds of smooth surfaces, greatly improving body balance and movement confidence for users of all ages.
             </p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.2 Lower Risk of Injuries & Blisters</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              Reduce Injuries and Blister Risks
+            </h3>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Sliding feet often cause blisters, twisted ankles and joint strain. Grip socks stop feet from shifting inside sports shoes or training footwear during jumps, sprints and quick turns. For households, non-slip grip socks effectively reduce fall accidents, especially for kids and elderly family members.
+              Foot slippage is the main cause of blisters, twisted ankles and joint strains. Grip socks fix feet in place effectively, lowering injury risks during exercise and daily walking. For kids and seniors, they are great safety protection tools at home.
             </p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.3 Boost Sports & Workout Performance</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              Boost Overall Performance
+            </h3>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Grip socks are widely used for indoor training and athletics. They enhance foot control, allow faster direction changes and more precise pivots. Without worrying about slippery feet, you can fully focus on workout techniques, making them a favorite among fitness enthusiasts and amateur athletes.
+              With stable footing, users can focus more on movement techniques instead of balancing their bodies. Whether in yoga poses or intense sports, grip socks greatly improve movement efficiency and performance.
             </p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.4 Improved Foot Hygiene</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              Superior Foot Hygiene
+            </h3>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Public yoga studios, gym floors and trampoline parks carry bacteria and fungi. Grip socks create a protective barrier between your feet and shared surfaces, lowering the risk of athlete’s foot, warts and germ exposure. Most breathable grip sock fabrics also absorb sweat to keep feet dry all day.
+              Public gyms, studios and playgrounds are full of bacteria and fungi. Grip socks create a protective barrier between feet and shared surfaces, reducing the risk of athlete’s foot and other skin problems. Breathable fabrics also absorb sweat to keep feet dry all day.
             </p>
 
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">2.5 All-Age Home Safety</h3>
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              Wide Application for All Ages
+            </h3>
             <p className="text-slate-700 text-[17px] leading-relaxed">
-              Anti-slip socks are affordable safety gear for every family. Toddlers learning to walk, seniors with limited mobility, and people with balance issues can all benefit from grip socks for daily home use. They are lightweight and more comfortable than bulky house slippers.
+              Grip socks are suitable for toddlers learning to walk, office workers, fitness enthusiasts, athletes and the elderly. Lightweight and comfortable, they are more practical than bulky house shoes.
             </p>
           </section>
 
           {/* Section 3 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">3. Common Uses for Grip Socks</h2>
+          <section id="uses" className="mb-12 scroll-mt-24">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Common Uses of Grip Socks
+            </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Thanks to their functional design, grip socks fit a wide range of daily and professional scenarios. Here are the most popular uses:
+              Thanks to multi-functional design, grip socks cover a wide range of daily and professional scenarios:
             </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">3.1 Yoga, Pilates & Barre Studio Classes</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              <strong className="font-semibold text-slate-900">Grip socks for yoga</strong> and <strong className="font-semibold text-slate-900">grip socks for Pilates</strong> are the most popular pick in fitness studios. Most studios require non-slip socks to maintain hygiene and prevent slips on polished floors. Lightweight grip socks let you stretch, hold static poses and move freely without sliding.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">3.2 Indoor Sports & Athletic Training</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              <strong className="font-semibold text-slate-900">Grip socks for football</strong>, soccer, futsal, basketball and cross-training are extremely popular among athletes. Many players wear grip socks under cleats and training shoes. They reduce internal foot slippage, prevent blisters and improve agility during high-intensity training and matches.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">3.3 Daily Home Wear & Fall Prevention</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Hardwood, tile and laminate floors are common slip hazards. Wearing grip socks around the house keeps you safe while cooking, cleaning or relaxing. They are a simple safety upgrade for families with young children and seniors.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">3.4 Medical & Physical Rehabilitation</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Hospitals, clinics and physical therapy centers widely use medical-grade anti-slip socks. They protect patients during walking rehabilitation and prevent falls on smooth hospital floors, supporting long-time wear with comfort and breathability.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">3.5 Recreational Venues</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              Indoor playgrounds, trampoline parks and dance studios usually mandate grip socks for all visitors. The non-slip design keeps people safe during jumping and dynamic movements, while keeping public areas clean.
-            </p>
+            <ul className="list-none pl-0 space-y-3 my-4">
+              {[
+                'Yoga, Pilates and Barre studio classes',
+                'Indoor fitness, HIIT and strength training',
+                'Daily home wear and fall prevention for families',
+                'Medical care and post-operation rehabilitation',
+                'Trampoline parks and indoor playgrounds',
+                'Dance training and stage activities'
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3 text-slate-700 text-[17px] leading-relaxed">
+                  <span className="text-black bg-[#b4ff2b] rounded-full w-5 h-5 flex items-center justify-center text-xs mt-1 shrink-0 font-extrabold">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </section>
 
           {/* Section 4 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">4. Complete Grip Socks Buying Guide</h2>
+          <section id="football" className="mb-12 scroll-mt-24">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Grip Socks for Football
+            </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Not all grip socks perform the same. Cheap products lose traction or peel after a few washes. Follow this <strong className="font-semibold text-slate-900">grip socks buying guide</strong> to pick durable, comfortable and high-performance pairs based on your needs.
+              <strong className="font-semibold text-slate-900">Grip socks for football</strong> have become a must-have gear for professional and amateur football players worldwide. Unlike ordinary socks, football-specific grip socks adopt targeted anti-slip layouts on the sole, heel and forefoot, solving the common problem of feet sliding inside cleats.
             </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">4.1 Grip Material & Pattern</h3>
-            <ul className="list-disc pl-6 space-y-1 my-4">
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Silicone grips:</strong> Top choice for daily use, yoga and home wear. Flexible, durable and resistant to washing. Most shoppers prefer silicone grip socks for long-term use.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Rubber grips:</strong> Thicker and stronger, ideal for heavy sports training, but less breathable.
-              </li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">
-                <strong className="font-semibold text-slate-900">Avoid low-cost PVC grips:</strong> They harden, peel and lose traction quickly after washing.
-              </li>
-            </ul>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-4 mt-6">
-              <strong className="font-semibold text-slate-900">Pattern tips:</strong>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              During high-intensity training and matches, players need frequent sharp turns, sprints and sudden stops. Foot slippage inside football boots will waste power, affect ball control and easily cause blisters. Grip socks for football firmly connect feet with cleats, improve power transmission and movement precision, while reducing friction and blister issues.
             </p>
-            <ul className="list-disc pl-6 space-y-1 my-4">
-              <li className="text-slate-700 text-[17px] leading-relaxed"><strong className="font-semibold text-slate-900">Yoga & Pilates:</strong> Full-coverage grip dots for all-round stability.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed"><strong className="font-semibold text-slate-900">Sports training:</strong> Striped targeted grips for flexible direction changes.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed"><strong className="font-semibold text-slate-900">Home use:</strong> Basic dot patterns for enough traction at a budget price.</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">4.2 Fabric & Breathability</h3>
             <p className="text-slate-700 text-[17px] leading-relaxed">
-              Choose moisture-wicking blends (cotton-spandex, polyester-spandex). These materials pull sweat away from skin, stay soft after repeated washes and avoid stuffy feet. Check reinforced stitching on toes and heels — it greatly improves durability. Stay away from thick, non-breathable fabrics.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">4.3 Fit & Elasticity</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              Quality grip socks should be snug but not overly tight. Loose socks will bunch up and lose anti-slip function; overly tight socks restrict blood flow. Look for high-elastic cuffs that stay in place without slipping down or leaving leg marks.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">4.4 Durability & Wash Resistance</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              Glued grips peel easily after several washes. Prioritize grip socks with <strong className="font-semibold text-slate-900">heat-bonded or stitched grips</strong>. These can stand frequent machine washing while keeping traction intact.
-            </p>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">4.5 Choose by Purpose</h3>
-            <ul className="list-disc pl-6 space-y-1 my-4">
-              <li className="text-slate-700 text-[17px] leading-relaxed"><strong className="font-semibold text-slate-900">Fitness studio (Yoga/Pilates):</strong> Thin, lightweight ankle or crew grip socks.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed"><strong className="font-semibold text-slate-900">Sports training:</strong> Mid-calf stretchy grip socks with targeted traction.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed"><strong className="font-semibold text-slate-900">Home & senior safety:</strong> Soft, thick full-grip socks for all-day comfort.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed"><strong className="font-semibold text-slate-900">Kids:</strong> Non-toxic silicone grips and gentle, skin-friendly fabric.</li>
-            </ul>
-
-            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">4.6 Extra Features & Style</h3>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              Modern grip socks come in various colors, lengths and designs. Premium styles add arch support and heel padding for extra comfort during long workouts. Pick styles that match your personal preference while putting function first.
+              Most football players choose thin, elastic grip socks to wear under team socks. They are lightweight, will not affect the fit of football boots, and maintain stable anti-slip performance after long-time running on artificial turf and natural grass.
             </p>
           </section>
 
           {/* Section 5 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">5. Care Tips to Extend Grip Socks Lifespan</h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-4">
-              Proper care keeps your non-slip socks working longer:
+          <section id="buying" className="mb-12 scroll-mt-24">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Complete Buying Guide
+            </h2>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              Not all grip socks have the same quality. Follow this buying guide to select durable, comfortable and high-performance products:
             </p>
-            <ul className="list-disc pl-6 space-y-1 my-4">
-              <li className="text-slate-700 text-[17px] leading-relaxed">Wash on cold gentle cycle to protect silicone/rubber grips.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">Turn socks inside out before washing to prevent peeling.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">Do not use bleach or high-heat tumble dry.</li>
-              <li className="text-slate-700 text-[17px] leading-relaxed">Air dry flat naturally to keep elasticity and traction.</li>
+
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              1. Choose Reliable Grip Materials
+            </h3>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              Silicone grips are the top choice for most scenarios, featuring good flexibility and excellent wash resistance. Rubber grips are thicker for heavy sports use but less breathable. Avoid cheap PVC grips, which will harden and peel after several washes.
+            </p>
+
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              2. Select Suitable Fabrics
+            </h3>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              Priority to moisture-wicking blended fabrics such as cotton-spandex and polyester-spandex. Reinforced stitching on toes and heels can effectively extend the service life of grip socks. Stay away from thick and airtight materials.
+            </p>
+
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              3. Check Fit and Elasticity
+            </h3>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              Qualified grip socks should be snug but not tight. High-elastic cuffs can prevent socks from slipping down without leaving marks on legs. Loose socks will lose anti-slip function easily.
+            </p>
+
+            <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
+              4. Match Styles by Usage
+            </h3>
+            <ul className="list-none pl-0 space-y-3 my-4">
+              {[
+                { title: 'Yoga & Pilates', desc: 'Full coverage dot grip, thin lightweight style' },
+                { title: 'Football & Sports', desc: 'Targeted strip grip, mid-calf stretch style' },
+                { title: 'Home & Seniors', desc: 'Full non-slip design, thick soft fabric' },
+                { title: 'Kids', desc: 'Non-toxic silicone and skin-friendly material' }
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3 text-slate-700 text-[17px] leading-relaxed">
+                  <span className="text-black bg-[#b4ff2b] rounded-full w-5 h-5 flex items-center justify-center text-xs mt-1 shrink-0 font-extrabold">✓</span>
+                  <span>
+                    <strong className="font-semibold text-slate-900">{item.title}:</strong> {item.desc}
+                  </span>
+                </li>
+              ))}
             </ul>
           </section>
 
           {/* Section 6 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">6. Tips for Working with Grip Socks Manufacturer</h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-4">
-              If you plan to purchase in bulk or source products for retail, choosing a reliable <strong className="font-semibold text-slate-900">grip socks manufacturer</strong> is critical. A professional manufacturer uses durable silicone materials, strict stitching standards and wash-resistant grip technology to ensure consistent quality.
+          <section id="manufacturer" className="mb-12 scroll-mt-24">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Work with Grip Socks Manufacturer
+            </h2>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              If you are a wholesaler, retailer, fitness studio owner or sports team manager, cooperating with a professional <strong className="font-semibold text-slate-900">grip socks manufacturer</strong> is the best way to get cost-effective bulk products and custom styles.
+            </p>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              A trustworthy grip socks manufacturer owns mature production lines, strict quality control standards and rich customization experience. They can provide custom patterns, exclusive logos, personalized sizes and packaging services to meet private label and OEM demands.
             </p>
             <p className="text-slate-700 text-[17px] leading-relaxed">
-              When contacting a grip socks manufacturer, you can ask about custom patterns, sizes, logo printing and bulk pricing to meet your business or wholesale needs.
+              When contacting a grip socks manufacturer, you need to confirm MOQ, sample policy, production cycle, material certification and global shipping service. Formal manufacturers will provide pre-production samples for your confirmation before mass production, to ensure products fully meet your requirements.
             </p>
           </section>
 
           {/* Section 7 */}
-          <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">7. Final Thoughts</h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-4">
-              Grip socks (also called non-slip socks or anti-slip socks) are more than a fitness trend — they are practical essentials for safety, comfort and better performance. Whether you need <strong className="font-semibold text-slate-900">grip socks for football</strong>, yoga, sports training, home safety or rehabilitation, a good pair brings huge value to your daily life.
+          <section id="care" className="mb-12 scroll-mt-24">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              Grip Socks Care Tips
+            </h2>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              Correct maintenance can greatly extend the service life of grip socks and keep anti-slip performance stable:
             </p>
-            <p className="text-slate-700 text-[17px] leading-relaxed">
-              Use our <strong className="font-semibold text-slate-900">grip socks buying guide</strong> to select the best grip socks matching your budget and usage. Replace slippery regular socks with quality grip socks, and enjoy safer, more confident movement every day!
-            </p>
+            <ul className="list-none pl-0 space-y-3 my-4">
+              {[
+                'Wash with cold water and gentle washing mode',
+                'Turn socks inside out before washing to protect grips',
+                'Do not use bleach or high-temperature drying',
+                'Air dry naturally in a flat state'
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3 text-slate-700 text-[17px] leading-relaxed">
+                  <span className="text-black bg-[#b4ff2b] rounded-full w-5 h-5 flex items-center justify-center text-xs mt-1 shrink-0 font-extrabold">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <hr className="my-12 border-gray-100" />
 
           {/* FAQ Section with details */}
-          <section className="my-12">
+          <section id="faq" className="my-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-4">
               {faqs.map((faq, i) => (
@@ -287,8 +358,24 @@ export default function WhatAreGripSocks() {
               Looking for a Trusted Grip Socks Manufacturer?
             </h3>
             <p className="text-slate-600 max-w-xl mx-auto leading-relaxed">
-              PeakMotion is a professional custom sports socks OEM manufacturer. We produce high-performance, wash-resistant grip socks with low MOQ, premium silicone, and customized branding for global sports brands, teams, and retailers.
+              We supply high-quality grip socks for yoga, football, home use and medical scenarios. PeakMotion is a professional custom sports socks OEM manufacturer. We produce high-performance, wash-resistant grip socks with low MOQ, premium silicone, and customized branding for global sports brands, teams, and retailers.
             </p>
+            
+            <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-semibold text-slate-700 max-w-2xl mx-auto py-2">
+              <li className="flex items-center gap-1">
+                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">✓</span> Low Minimum Order
+              </li>
+              <li className="flex items-center gap-1">
+                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">✓</span> Custom Logo & Packaging
+              </li>
+              <li className="flex items-center gap-1">
+                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">✓</span> Free Sample Service
+              </li>
+              <li className="flex items-center gap-1">
+                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">✓</span> Worldwide Shipping
+              </li>
+            </ul>
+
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
               <a 
                 href="https://wa.me/8617357769219" 
