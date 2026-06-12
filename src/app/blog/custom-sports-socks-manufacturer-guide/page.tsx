@@ -92,7 +92,7 @@ export default function CustomSportsSocksManufacturerGuide() {
           {/* Featured/Introduction Image */}
           <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
             <img 
-              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200" 
+              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-knitting.jpg" 
               alt="Custom Sports Socks Manufacturer" 
               className="w-full h-full object-cover"
             />
@@ -215,7 +215,7 @@ export default function CustomSportsSocksManufacturerGuide() {
             {/* Custom Socks Options Image */}
             <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
               <img 
-                src="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=1200" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-grey.jpg" 
                 alt="Custom Sports Socks Options" 
                 className="w-full h-full object-cover"
               />
@@ -298,7 +298,7 @@ export default function CustomSportsSocksManufacturerGuide() {
             {/* Yarn Spools Production Process Image */}
             <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
               <img 
-                src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=1200" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-factory.jpg" 
                 alt="Sports Socks Manufacturing Process" 
                 className="w-full h-full object-cover"
               />
