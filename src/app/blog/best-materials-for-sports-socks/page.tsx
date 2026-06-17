@@ -73,7 +73,7 @@ export default function BestMaterialsForSportsSocks() {
           {/* Featured Hero Image */}
           <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50">
             <img 
-              src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=1200" 
+              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-hero.jpg?v=2" 
               alt="High-precision knitting machines producing performance sports socks" 
               className="w-full h-full object-cover"
             />
