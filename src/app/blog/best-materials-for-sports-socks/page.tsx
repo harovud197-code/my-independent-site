@@ -269,15 +269,15 @@ export default function BestMaterialsForSportsSocks() {
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Modern sports socks are produced using computerized knitting machines that control elasticity zones, ventilation panels, and cushioning density. As a leading socks OEM manufacturer, we leverage high-needle count machinery to weave complex material configurations seamlessly, guaranteeing consistent durability and batch-to-batch excellence.
             </p>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 aspect-[16/9] bg-gray-50">
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
-                src="https://images.pexels.com/photos/3768913/pexels-photo-3768913.jpeg" 
-                alt="Sports socks factory knitting machine production line" 
-                className="w-full h-full object-cover"
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-precision-manufacturing.jpg?v=2" 
+                alt="Precision manufacturing factory workshop knitting machines process" 
+                className="w-full h-auto"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
-              Modern computerized knitting machines in production line
+              State-of-the-art computerized circular knitting machines ensuring precision execution
             </p>
           </section>
 
