@@ -13,8 +13,8 @@ const Bucket = "peakmotion-assets";
 
 const imagesToUpload = [
   {
-    url: "https://sc02.alicdn.com/kf/H9c74624fc6e9419c8a76cfbf63615422Q.jpg",
-    key: "blog-best-materials-performance-fabrics.jpg",
+    url: "https://sc02.alicdn.com/kf/Haea3da4da20f474aa13e0163a74970747.jpg",
+    key: "blog-best-materials-card.jpg",
     contentType: "image/jpeg"
   }
 ];
