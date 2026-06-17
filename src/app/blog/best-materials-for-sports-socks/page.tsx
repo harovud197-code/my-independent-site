@@ -152,11 +152,11 @@ export default function BestMaterialsForSportsSocks() {
               <li><strong className="font-semibold text-slate-900">Nylon:</strong> Durable reinforcement fiber. Commonly knitted into the heel, toe, and sole regions to prevent wear-and-tear and extend the lifespan of high-friction areas.</li>
               <li><strong className="font-semibold text-slate-900">Spandex:</strong> Elastic compression support fiber. Provides necessary stretch and compression, keeping the socks securely fitted around the foot arches and ankles.</li>
             </ul>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 aspect-[16/9] bg-gray-50">
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-common-infographic.jpg?v=2" 
                 alt="Common sports socks materials overview: polyester, nylon, cotton, and spandex" 
-                className="w-full h-full object-cover"
+                className="w-full h-auto"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
