@@ -207,15 +207,15 @@ export default function BestMaterialsForSportsSocks() {
               </table>
             </div>
 
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 aspect-[16/9] bg-gray-50">
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
-                src="https://images.pexels.com/photos/1598506/pexels-photo-1598506.jpeg" 
-                alt="Cotton vs polyester textile comparison sports fabric" 
-                className="w-full h-full object-cover"
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-cotton-vs-polyester.jpg?v=2" 
+                alt="Cotton vs polyester sports socks materials properties comparison chart" 
+                className="w-full h-auto"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
-              Fabric comparison used in sports sock manufacturing
+              Detailed properties comparison: Cotton vs Polyester in athletic socks manufacturing
             </p>
           </section>
 
