@@ -154,13 +154,13 @@ export default function BestMaterialsForSportsSocks() {
             </ul>
             <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 aspect-[16/9] bg-gray-50">
               <img 
-                src="https://images.pexels.com/photos/2526878/pexels-photo-2526878.jpeg" 
-                alt="Close-up sports socks breathable fabric texture" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-common-infographic.jpg?v=2" 
+                alt="Common sports socks materials overview: polyester, nylon, cotton, and spandex" 
                 className="w-full h-full object-cover"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
-              Performance sock fabric designed for ventilation and comfort
+              Detailed comparison of polyester, nylon, cotton, and spandex in athletic socks manufacturing
             </p>
           </section>
 
