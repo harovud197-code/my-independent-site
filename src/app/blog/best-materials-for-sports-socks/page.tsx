@@ -233,15 +233,15 @@ export default function BestMaterialsForSportsSocks() {
               <li><strong className="font-semibold text-slate-900">Basketball Socks:</strong> Thick polyester cushioning. Focuses on shock absorption, heavy-duty cushioning underfoot, and ankle compression.</li>
               <li><strong className="font-semibold text-slate-900">Gym Socks:</strong> Breathable mesh polyester. Emphasizes ventilation zones and multi-directional flexibility.</li>
             </ul>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 aspect-[16/9] bg-gray-50">
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
-                src="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg" 
-                alt="Athlete wearing sports socks training performance gym running" 
-                className="w-full h-full object-cover"
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-performance-fabrics.jpg?v=2" 
+                alt="High-performance sports socks fabrics key features comparison" 
+                className="w-full h-auto"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
-              Athlete training with high-performance sports socks
+              Core performance features of specialized athletic sock fibers
             </p>
           </section>
 
