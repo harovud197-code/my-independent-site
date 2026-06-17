@@ -37,7 +37,7 @@ export default function Blog() {
     },
     {
       title: 'Best Materials for Sports Socks',
-      href: '#',
+      href: '/blog/best-materials-for-sports-socks',
       desc: 'Discover the advantages of cotton, polyester, nylon, and performance blends.',
       img: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=800',
       category: 'Materials',
