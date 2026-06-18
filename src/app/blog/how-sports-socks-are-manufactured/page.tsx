@@ -234,8 +234,8 @@ export default function HowSportsSocksAreManufactured() {
             </h2>
             <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
-                src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=800" 
-                alt="computerized sports socks knitting machine" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-knitting-machines.jpg?v=2" 
+                alt="Advanced computerized knitting machines for sports socks production" 
                 className="w-full h-auto"
               />
             </div>
