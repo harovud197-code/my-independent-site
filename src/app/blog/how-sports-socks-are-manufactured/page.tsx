@@ -96,47 +96,47 @@ export default function HowSportsSocksAreManufactured() {
             <ul className="space-y-2 text-sm md:text-base font-semibold">
               <li>
                 <a href="#why-different" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  1. Why Sports Socks Manufacturing Is Different
+                  Why Sports Socks Manufacturing Is Different
                 </a>
               </li>
               <li>
                 <a href="#material-selection" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  2. Step 1: Material Selection
+                  Step 1: Material Selection
                 </a>
               </li>
               <li>
                 <a href="#design-development" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  3. Step 2: Design & Development
+                  Step 2: Design & Development
                 </a>
               </li>
               <li>
                 <a href="#knitting" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  4. Step 3: Computerized Knitting
+                  Step 3: Computerized Knitting
                 </a>
               </li>
               <li>
                 <a href="#toe-linking" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  5. Step 4: Toe Linking
+                  Step 4: Toe Linking
                 </a>
               </li>
               <li>
                 <a href="#silicone-printing" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  6. Step 5: Silicone Grip Printing
+                  Step 5: Silicone Grip Printing
                 </a>
               </li>
               <li>
                 <a href="#quality-inspection" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  7. Step 6: Quality Inspection
+                  Step 6: Quality Inspection
                 </a>
               </li>
               <li>
                 <a href="#packaging" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  8. Step 7: Packaging
+                  Step 7: Packaging
                 </a>
               </li>
               <li>
                 <a href="#faq" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  9. Frequently Asked Questions
+                  Frequently Asked Questions
                 </a>
               </li>
             </ul>
@@ -147,7 +147,7 @@ export default function HowSportsSocksAreManufactured() {
           {/* Section 1 */}
           <section id="why-different" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              1. Why Sports Socks Manufacturing Is Different
+              Why Sports Socks Manufacturing Is Different
             </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Unlike regular socks, sports socks are engineered for athletic performance. Manufacturers must balance cushioning, breathability, compression support, moisture management, and durability.
@@ -164,7 +164,7 @@ export default function HowSportsSocksAreManufactured() {
           {/* Section 2 */}
           <section id="material-selection" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              2. Step 1: Material Selection
+              Step 1: Material Selection
             </h2>
             <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
@@ -210,7 +210,7 @@ export default function HowSportsSocksAreManufactured() {
           {/* Section 3 */}
           <section id="design-development" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              3. Step 2: Design & Development
+              Step 2: Design & Development
             </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Before production begins, the custom socks manufacturer creates technical specifications including logo placement, sock height, colors, materials, and performance features. This stage ensures that the vision of the brand is perfectly translated into a manufacturable design.
@@ -220,7 +220,7 @@ export default function HowSportsSocksAreManufactured() {
           {/* Section 4 */}
           <section id="knitting" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              4. Step 3: Computerized Knitting
+              Step 3: Computerized Knitting
             </h2>
             <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
@@ -237,7 +237,7 @@ export default function HowSportsSocksAreManufactured() {
           {/* Section 5 */}
           <section id="toe-linking" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              5. Step 4: Toe Linking
+              Step 4: Toe Linking
             </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               After knitting, the toe area is closed using specialized linking machines. Seamless linking is a hallmark of high-quality sports socks, as it improves comfort and reduces friction that can cause blisters during athletic activities.
@@ -247,7 +247,7 @@ export default function HowSportsSocksAreManufactured() {
           {/* Section 6 */}
           <section id="silicone-printing" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              6. Step 5: Silicone Grip Printing
+              Step 5: Silicone Grip Printing
             </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               For grip socks, anti-slip silicone patterns are applied and heat cured to improve traction inside sports shoes. This process requires precision to ensure the silicone provides maximum grip without peeling off over time.
@@ -257,7 +257,7 @@ export default function HowSportsSocksAreManufactured() {
           {/* Section 7 */}
           <section id="quality-inspection" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              7. Step 6: Quality Inspection
+              Step 6: Quality Inspection
             </h2>
             <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
@@ -274,7 +274,7 @@ export default function HowSportsSocksAreManufactured() {
           {/* Section 8 */}
           <section id="packaging" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              8. Step 7: Packaging
+              Step 7: Packaging
             </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Sports socks are packed using custom labels, hang tags, retail boxes, or private label packaging according to customer requirements. Professional packaging not only protects the product but also enhances the brand's presentation in the retail market.
