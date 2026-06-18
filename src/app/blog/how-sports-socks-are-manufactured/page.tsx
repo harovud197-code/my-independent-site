@@ -69,13 +69,13 @@ export default function HowSportsSocksAreManufactured() {
           {/* Featured Hero Image */}
           <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50">
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200" 
-              alt="Modern sports socks manufacturing facility" 
+              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-hero-runners.jpg?v=2" 
+              alt="Close-up of athletic socks on a runner on the track" 
               className="w-full h-full object-cover"
             />
           </div>
           <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
-            Modern sports socks manufacturing facility
+            Close-up of athletic socks on a runner on the track
           </p>
 
           {/* Introduction */}
