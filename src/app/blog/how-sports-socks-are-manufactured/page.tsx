@@ -215,6 +215,16 @@ export default function HowSportsSocksAreManufactured() {
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Before production begins, the custom socks manufacturer creates technical specifications including logo placement, sock height, colors, materials, and performance features. This stage ensures that the vision of the brand is perfectly translated into a manufacturable design.
             </p>
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
+              <img 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-design-development.jpg?v=1" 
+                alt="Design and technical development of custom sports socks" 
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-gray-500 italic mb-8 -mt-4 text-center">
+              Professional technical specifications and design development process
+            </p>
           </section>
 
           {/* Section 4 */}
