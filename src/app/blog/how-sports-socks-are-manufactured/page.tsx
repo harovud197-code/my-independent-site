@@ -249,6 +249,16 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 4: Toe Linking
             </h2>
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
+              <img 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-toe-linking.jpg?v=1" 
+                alt="Socks toe linking process" 
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-gray-500 italic mb-8 -mt-4 text-center">
+              Specialized linking machines ensuring seamless comfort
+            </p>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               After knitting, the toe area is closed using specialized linking machines. Seamless linking is a hallmark of high-quality sports socks, as it improves comfort and reduces friction that can cause blisters during athletic activities.
             </p>
