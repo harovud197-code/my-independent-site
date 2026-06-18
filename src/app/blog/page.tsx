@@ -44,7 +44,7 @@ export default function Blog() {
     },
     {
       title: 'How Sports Socks Are Manufactured',
-      href: '#',
+      href: '/blog/how-sports-socks-are-manufactured',
       desc: 'Explore the complete production process from knitting to packaging.',
       img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800',
       category: 'OEM Manufacturing',
