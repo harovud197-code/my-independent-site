@@ -269,6 +269,16 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 5: Silicone Grip Printing
             </h2>
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
+              <img 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-silicone-printing.jpg?v=1" 
+                alt="Silicone grip printing on sports socks" 
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-gray-500 italic mb-8 -mt-4 text-center">
+              Precision silicone application for maximum anti-slip performance
+            </p>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               For grip socks, anti-slip silicone patterns are applied and heat cured to improve traction inside sports shoes. This process requires precision to ensure the silicone provides maximum grip without peeling off over time.
             </p>
