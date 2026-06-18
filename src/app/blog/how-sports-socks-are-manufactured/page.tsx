@@ -168,8 +168,8 @@ export default function HowSportsSocksAreManufactured() {
             </h2>
             <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
-                src="https://images.unsplash.com/photo-1528476513691-07e6f563d97f?w=800" 
-                alt="sports socks yarn materials" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-material-selection.jpg?v=2" 
+                alt="High-quality yarn spools for sports socks manufacturing" 
                 className="w-full h-auto"
               />
             </div>
