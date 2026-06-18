@@ -291,7 +291,7 @@ export default function HowSportsSocksAreManufactured() {
             </h2>
             <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
               <img 
-                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-quality-inspection.jpg?v=2" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-quality-inspection-final.jpg?v=3" 
                 alt="Quality control team inspecting custom sports socks" 
                 className="w-full h-auto"
               />
