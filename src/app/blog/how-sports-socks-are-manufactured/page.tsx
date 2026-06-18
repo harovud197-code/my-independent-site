@@ -306,6 +306,16 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 7: Packaging
             </h2>
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
+              <img 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-packaging.jpg?v=1" 
+                alt="Professional packaging of sports socks" 
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-sm text-gray-500 italic mb-8 -mt-4 text-center">
+              Custom retail packaging and private labeling options
+            </p>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Sports socks are packed using custom labels, hang tags, retail boxes, or private label packaging according to customer requirements. Professional packaging not only protects the product but also enhances the brand's presentation in the retail market.
             </p>
