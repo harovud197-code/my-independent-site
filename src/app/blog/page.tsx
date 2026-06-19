@@ -49,6 +49,13 @@ export default function Blog() {
       img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-manufacturing-process-card.jpg?v=2',
       category: 'OEM Manufacturing',
     },
+    {
+      title: 'How to Choose Running Socks: The Ultimate Guide for Performance',
+      href: '/blog/how-to-choose-running-socks',
+      desc: 'Discover how to select the best materials, cushioning, and fit for your running journey.',
+      img: 'https://images.unsplash.com/photo-1543322748-33df6d3db806?w=800',
+      category: 'Running Socks',
+    },
   ];
 
   const categories = [
