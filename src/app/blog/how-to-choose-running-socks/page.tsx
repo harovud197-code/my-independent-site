@@ -157,7 +157,7 @@ export default function HowToChooseRunningSocks() {
             </h2>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100">
               <img 
-                src="https://images.unsplash.com/photo-1582533561751-ef6f6ab93a2e?w=800" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-materials.jpg?v=2" 
                 alt="Sports socks material close up texture" 
                 className="w-full h-full object-cover"
               />
