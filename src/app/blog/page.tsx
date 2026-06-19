@@ -53,7 +53,7 @@ export default function Blog() {
       title: 'How to Choose Running Socks: The Ultimate Guide for Performance',
       href: '/blog/how-to-choose-running-socks',
       desc: 'Discover how to select the best materials, cushioning, and fit for your running journey.',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-how-to-choose-running-socks-card.jpg',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-how-to-choose-running-socks-collection.jpg?v=2',
       category: 'Running Socks',
     },
   ];
