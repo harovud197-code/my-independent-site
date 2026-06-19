@@ -76,8 +76,8 @@ export default function HowToChooseRunningSocks() {
           {/* Featured Image */}
           <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50">
             <img 
-              src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1200" 
-              alt="Athlete running with high-performance socks" 
+              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-track.jpg?v=2" 
+              alt="Runner's legs on a red track wearing white shoes and black performance socks" 
               className="w-full h-full object-cover"
             />
           </div>
