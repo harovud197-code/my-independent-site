@@ -193,7 +193,7 @@ export default function HowToChooseRunningSocks() {
             </h2>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100">
               <img 
-                src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-mesh.jpg?v=2" 
                 alt="Breathable mesh running socks close up" 
                 className="w-full h-full object-cover"
               />
