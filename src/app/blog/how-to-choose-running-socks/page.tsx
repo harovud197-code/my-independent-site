@@ -221,8 +221,8 @@ export default function HowToChooseRunningSocks() {
             </h2>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100">
               <img 
-                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800" 
-                alt="Runner selecting sports socks comparison" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-collection.jpg?v=2" 
+                alt="A collection of PeakMotion performance sports socks in various colors" 
                 className="w-full h-full object-cover"
               />
             </div>
