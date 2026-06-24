@@ -138,7 +138,7 @@ export default function CyclingVsRunningSocks() {
           <section id="overview-running" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">Overview of Running Socks</h2>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100">
-              <img src="https://images.unsplash.com/photo-1538291323976-37dcaafccb12?w=1000&q=80" alt="Runner on asphalt with focus on shoes and socks" className="w-full h-full object-cover" />
+              <img src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-overview.jpg?v=2" alt="Runner's legs and white shoes in motion" className="w-full h-full object-cover" />
             </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Running socks focus on impact protection and blister prevention. They typically include strategic cushioning in high-friction areas like the heel and ball of the foot to handle repetitive ground impact.
