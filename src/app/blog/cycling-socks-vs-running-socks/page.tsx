@@ -73,8 +73,8 @@ export default function CyclingVsRunningSocks() {
 
           <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50">
             <img 
-              src="https://images.unsplash.com/photo-1541625602330-2277a4c4b281?w=1200&q=80" 
-              alt="Professional cyclist on a road bike focusing on high performance" 
+              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-cycling-vs-running-comparison.jpg?v=2" 
+              alt="Comparison infographic: Cycling Socks vs Running Socks features and performance" 
               className="w-full h-full object-cover"
             />
           </div>
