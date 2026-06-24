@@ -147,6 +147,13 @@ export default function CyclingVsRunningSocks() {
 
           <section id="differences" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">Comparison: Cycling vs Running Socks</h2>
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
+              <img 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-cycling-vs-running-side-by-side.jpg?v=1" 
+                alt="Side-by-side comparison: Cycling Socks vs Running Socks" 
+                className="w-full h-auto"
+              />
+            </div>
             <div className="overflow-x-auto my-8 border border-gray-200 rounded-xl shadow-sm">
               <table className="w-full text-left border-collapse">
                 <thead>
