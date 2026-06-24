@@ -129,9 +129,6 @@ export default function Blog() {
                   <a href={post.href} className="block w-full h-full">
                     <img src={post.img} alt={post.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   </a>
-                  <div className="absolute top-4 left-4 bg-black text-white text-[10px] font-bold px-3 py-1 uppercase tracking-wider rounded">
-                    {post.category}
-                  </div>
                 </div>
                 <div className="p-8 flex flex-col flex-1 justify-between space-y-6">
                   <div className="space-y-3">
