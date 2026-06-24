@@ -109,7 +109,11 @@ export default function CyclingVsRunningSocks() {
               Cycling socks are designed for aerodynamic efficiency and moisture control inside tight-fitting cycling shoes. Because cycling is a non-impact sport where the foot remains fixed, the primary goals are minimizing bulk and maximizing breathability.
             </p>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100">
-              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1000&q=80" alt="Detail of performance cycling gear" className="w-full h-full object-cover" />
+              <img 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-cycling-vs-running-shoes.jpg?v=2" 
+                alt="Close-up of a white PeakMotion cycling sock and black cycling shoe on a road bike" 
+                className="w-full h-full object-cover" 
+              />
             </div>
           </section>
 
