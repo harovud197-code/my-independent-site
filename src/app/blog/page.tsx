@@ -56,6 +56,13 @@ export default function Blog() {
       img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-how-to-choose-running-socks-collection.jpg?v=2',
       category: 'Running Socks',
     },
+    {
+      title: 'Cycling Socks vs Running Socks: Key Differences & Buying Guide',
+      href: '/blog/cycling-socks-vs-running-socks',
+      desc: 'Learn the specific design differences between cycling and running socks to choose the best gear for your training.',
+      img: 'https://images.unsplash.com/photo-1541625602330-2277a4c4b281?w=800',
+      category: 'Buying Guides',
+    },
   ];
 
   const categories = [
