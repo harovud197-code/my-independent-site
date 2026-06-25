@@ -1,33 +1,36 @@
-import Image from 'next/image';
+﻿import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Football Socks vs Grip Socks: Key Differences & Buying Guide | PeakMotion',
-  description: 'Compare football socks vs grip socks. Learn key differences, benefits, materials, usage scenarios, and which socks are best for performance, training, and matches.',
+  title: 'How to Choose Running Socks: Best Running Socks Guide for Performance | PeakMotion',
+  description: 'Learn how to choose running socks for performance, comfort, and breathability. Discover the best running socks materials, cushioning, and fit for athletes and runners.',
 };
 
-export default function FootballSocksVsGripSocks() {
+export default function HowToChooseRunningSocks() {
   const faqs = [
     {
-      question: 'Do grip socks improve football performance?',
-      answer: 'Yes. Grip socks improve traction inside boots, reducing slippage and enhancing stability and control.',
+      question: 'What are the best running socks?',
+      answer: 'Breathable synthetic blend socks with moisture-wicking and compression support are the best running socks.',
     },
     {
-      question: 'Can I wear grip socks with football socks?',
-      answer: 'Yes. Many players wear grip socks as an inner layer under football socks (often by cutting the foot off their team socks) for extra stability.',
+      question: 'How to choose running socks for beginners?',
+      answer: 'Beginners should choose lightweight, breathable socks with good cushioning and arch support.',
     },
     {
-      question: 'Which is better for football training?',
-      answer: 'Grip socks are better for training due to improved foot stability and reduced internal movement.',
+      question: 'Are cotton socks good for running?',
+      answer: 'No. Cotton retains moisture and increases the risk of blisters.',
     },
     {
-      question: 'Are grip socks allowed in matches?',
-      answer: 'Yes, in most leagues they are allowed as long as outer socks meet uniform rules.',
-    },
-    {
-      question: 'Who should use grip socks?',
-      answer: 'They are ideal for football players, athletes, and training-focused users.',
+      question: 'Why are breathable running socks important?',
+      answer: 'They help regulate temperature, reduce sweat buildup, and prevent friction injuries.',
     }
+  ];
+
+  const materials = [
+    { name: 'Polyester', benefit: 'Moisture-wicking & fast drying' },
+    { name: 'Nylon', benefit: 'Durability & structure support' },
+    { name: 'Spandex', benefit: 'Elastic fit & compression' },
+    { name: 'Merino blend', benefit: 'Natural odor control' },
   ];
 
   return (
@@ -41,7 +44,7 @@ export default function FootballSocksVsGripSocks() {
           <a href="/#sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CUSTOM SOCKS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">OEM</a>
-          <a href="/blog" className="text-[#b4ff2b] no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
+          <a href="/blog-new" className="text-[#b4ff2b] no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
           <a href="/#contact" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CONTACT</a>
         </nav>
       </header>
@@ -51,14 +54,14 @@ export default function FootballSocksVsGripSocks() {
         <article className="max-w-3xl mx-auto py-12 px-5 text-gray-700 leading-relaxed text-left">
           {/* Breadcrumb & Meta */}
           <div className="mb-6 text-sm text-slate-500 font-semibold uppercase tracking-wider flex items-center gap-2">
-            <a href="/blog" className="hover:text-black transition-colors">Blog</a>
+            <a href="/blog-new" className="hover:text-black transition-colors">Blog</a>
             <span>•</span>
-            <span className="text-slate-900">Football Socks</span>
+            <span className="text-slate-900">Running Socks</span>
           </div>
 
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-4">
-            Football Socks vs Grip Socks: What’s the Difference?
+            How to Choose Running Socks: Best Running Socks Guide for Performance
           </h1>
 
           {/* Author/Date Meta */}
@@ -74,8 +77,8 @@ export default function FootballSocksVsGripSocks() {
           {/* Featured Image */}
           <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50 relative">
             <Image 
-              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-football-vs-grip-comparison.jpg?v=2" 
-              alt="Football Socks vs Grip Socks Comparison" 
+              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-track.jpg?v=2" 
+              alt="Runner's legs on a red track wearing white shoes and black performance socks" 
               fill
               priority
               className="object-cover"
@@ -83,9 +86,9 @@ export default function FootballSocksVsGripSocks() {
           </div>
 
           {/* Introduction */}
-          <div className="space-y-6 text-slate-700 text-[17px] leading-relaxed mb-8">
+          <div className="space-y-6 text-slate-700 text-[17px] leading-relaxed">
             <p>
-              If you play football regularly, you may have noticed two popular sock types on the pitch: traditional football socks and modern soccer grip socks. Although they may look similar at first glance, they serve different purposes and offer different performance benefits.
+              Choosing the right <strong className="font-semibold text-slate-900">running socks</strong> is essential for preventing blisters, improving comfort, and enhancing running performance. The right pair of socks can significantly improve breathability, cushioning, and stability during long-distance running.
             </p>
           </div>
 
@@ -99,28 +102,28 @@ export default function FootballSocksVsGripSocks() {
             </h2>
             <ul className="space-y-2 text-sm md:text-base font-semibold">
               <li>
-                <a href="#what" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  1. What Are Football Socks?
+                <a href="#importance" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  1. Why Running Socks Matter
                 </a>
               </li>
               <li>
-                <a href="#grip" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  2. What Are Grip Socks?
+                <a href="#materials" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  2. Best Running Socks Materials
                 </a>
               </li>
               <li>
-                <a href="#difference" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  3. Key Differences Between Football Socks and Grip Socks
+                <a href="#features" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  3. Breathable Running Socks Features
                 </a>
               </li>
               <li>
-                <a href="#benefits" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  4. Why Players Choose Grip Socks
+                <a href="#how-to-choose" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  4. How to Choose Running Socks
                 </a>
               </li>
               <li>
-                <a href="#choose" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
-                  5. Which One Should You Choose?
+                <a href="#mistakes" className="text-slate-600 hover:text-black hover:underline transition-colors block py-0.5">
+                  5. Common Mistakes
                 </a>
               </li>
               <li>
@@ -134,91 +137,144 @@ export default function FootballSocksVsGripSocks() {
           <hr className="my-10 border-gray-100" />
 
           {/* Section 1 */}
-          <section id="what" className="mb-12 scroll-mt-24">
+          <section id="importance" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              What Are Football Socks?
+              Why Running Socks Matter
             </h2>
+            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+              <Image 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-closeup.jpg?v=2" 
+                alt="Close-up of an athlete putting on a black PeakMotion performance running sock" 
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Football socks are traditional long-length sports socks designed to be worn over shin guards. Their main purpose is team uniform consistency, basic comfort, and light protection during matches and training sessions.
+              Running socks are designed to reduce friction, manage moisture, and provide support. Unlike regular cotton socks, performance running socks use engineered fibers to enhance breathability and durability.
             </p>
           </section>
 
           {/* Section 2 */}
-          <section id="grip" className="mb-12 scroll-mt-24">
+          <section id="materials" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              What Are Grip Socks?
+              Best Running Socks Materials
             </h2>
+            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+              <Image 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-materials.jpg?v=2" 
+                alt="Sports socks material close up texture" 
+                fill
+                className="object-cover"
+              />
+            </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Grip socks are performance socks with silicone or rubber grip patterns on the sole. They are designed to reduce foot slippage inside football boots and improve stability, acceleration, and control.
+              The <strong className="font-semibold text-slate-900">best running socks</strong> are made from synthetic blends that optimize performance.
             </p>
-          </section>
 
-          {/* Section 3 */}
-          <section id="difference" className="mb-12 scroll-mt-24">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              Key Differences Between Football Socks and Grip Socks
-            </h2>
-            <div className="overflow-x-auto my-6 border border-gray-200 rounded-xl shadow-sm">
-              <table className="w-full border-collapse text-left">
+            <div className="overflow-x-auto my-8 border border-gray-200 rounded-xl shadow-sm">
+              <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-slate-900 text-white border-b border-gray-200 text-[15px] font-bold">
-                    <th className="p-4 border-r border-slate-800">Feature</th>
-                    <th className="p-4 border-r border-slate-800">Football Socks</th>
-                    <th className="p-4">Grip Socks</th>
+                  <tr className="bg-slate-900 text-white">
+                    <th className="p-4 font-bold uppercase tracking-wider text-sm">Material</th>
+                    <th className="p-4 font-bold uppercase tracking-wider text-sm">Benefit</th>
                   </tr>
                 </thead>
-                <tbody className="text-slate-700 text-[15px] divide-y divide-gray-100">
-                  <tr className="even:bg-slate-50/70">
-                    <td className="p-4 font-semibold text-slate-900 border-r border-gray-200">Function</td>
-                    <td className="p-4 border-r border-gray-200">Team uniform + shin guard coverage</td>
-                    <td className="p-4">Performance + anti-slip support</td>
-                  </tr>
-                  <tr className="even:bg-slate-50/70">
-                    <td className="p-4 font-semibold text-slate-900 border-r border-gray-200">Grip Technology</td>
-                    <td className="p-4 border-r border-gray-200">No grip</td>
-                    <td className="p-4">Silicone anti-slip sole</td>
-                  </tr>
-                  <tr className="even:bg-slate-50/70">
-                    <td className="p-4 font-semibold text-slate-900 border-r border-gray-200">Performance Impact</td>
-                    <td className="p-4 border-r border-gray-200">Basic</td>
-                    <td className="p-4">High stability & control</td>
-                  </tr>
-                  <tr className="even:bg-slate-50/70">
-                    <td className="p-4 font-semibold text-slate-900 border-r border-gray-200">Usage</td>
-                    <td className="p-4 border-r border-gray-200">Match uniform requirement</td>
-                    <td className="p-4">Training & performance enhancement</td>
-                  </tr>
+                <tbody className="divide-y divide-gray-200">
+                  {materials.map((m, idx) => (
+                    <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50'}>
+                      <td className="p-4 font-semibold text-slate-900">{m.name}</td>
+                      <td className="p-4 text-slate-700">{m.benefit}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
           </section>
 
-          {/* Section 4 */}
-          <section id="benefits" className="mb-12 scroll-mt-24">
+          {/* Section 3 */}
+          <section id="features" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              Why Players Choose Grip Socks
+              Breathable Running Socks Features
             </h2>
-            <ul className="list-disc pl-6 space-y-2 my-4 text-slate-700 text-[17px] leading-relaxed">
-              <li>Improved foot stability inside boots</li>
-              <li>Reduced friction and blister risk</li>
-              <li>Better acceleration and agility</li>
-              <li>Enhanced ball control and movement precision</li>
+            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+              <Image 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-mesh.jpg?v=2" 
+                alt="Breathable mesh running socks close up" 
+                fill
+                className="object-cover"
+              />
+            </div>
+            <ul className="list-none pl-0 space-y-3 my-4">
+              {[
+                'Mesh ventilation zones',
+                'Moisture-wicking fabric',
+                'Seamless toe design',
+                'Arch compression support',
+                'Anti-blister cushioning'
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3 text-slate-700 text-[17px] leading-relaxed">
+                  <span className="text-black bg-[#b4ff2b] rounded-full w-5 h-5 flex items-center justify-center text-xs mt-1 shrink-0 font-extrabold">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Section 4 */}
+          <section id="how-to-choose" className="mb-12 scroll-mt-24">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
+              How to Choose Running Socks
+            </h2>
+            <div className="my-6 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 relative aspect-[16/10]">
+              <Image 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-collection.jpg?v=2" 
+                alt="A collection of PeakMotion performance sports socks in various colors" 
+                fill
+                className="object-contain"
+              />
+            </div>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              When selecting running socks, consider the following factors:
+            </p>
+            <ul className="list-none pl-0 space-y-3 my-4">
+              {[
+                'Fit: snug but not tight',
+                'Cushioning: light vs thick padding',
+                'Breathability: mesh zones preferred',
+                'Material: synthetic blends over cotton',
+                'Length: ankle vs crew depending on sport'
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3 text-slate-700 text-[17px] leading-relaxed">
+                  <span className="text-black bg-[#b4ff2b] rounded-full w-5 h-5 flex items-center justify-center text-xs mt-1 shrink-0 font-extrabold">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
           </section>
 
           {/* Section 5 */}
-          <section id="choose" className="mb-12 scroll-mt-24">
+          <section id="mistakes" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
-              Which One Should You Choose?
+              Common Mistakes
             </h2>
-            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              If your goal is team uniform compliance, football socks are necessary. However, if your focus is performance improvement, grip socks offer a clear advantage in stability and control.
-            </p>
+            <ul className="list-none pl-0 space-y-3 my-4">
+              {[
+                'Using cotton socks for long-distance running',
+                'Wearing oversized socks causing friction',
+                'Ignoring moisture control',
+                'Choosing style over performance'
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3 text-slate-700 text-[17px] leading-relaxed">
+                  <span className="text-black bg-[#b4ff2b] rounded-full w-5 h-5 flex items-center justify-center text-xs mt-1 shrink-0 font-extrabold">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </section>
 
           <hr className="my-12 border-gray-100" />
 
-          {/* Section 6 (FAQ) */}
+          {/* FAQ Section */}
           <section id="faq" className="my-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">Frequently Asked Questions</h2>
             <div className="space-y-4">
@@ -243,10 +299,10 @@ export default function FootballSocksVsGripSocks() {
           {/* Elegant Bottom CTA Module */}
           <section className="bg-slate-50 rounded-3xl p-8 md:p-12 text-center my-16 border border-gray-100 space-y-6">
             <h3 className="text-2xl font-bold text-slate-900 uppercase tracking-wide">
-              Looking for Custom Grip Socks?
+              Need Custom Running Socks for Your Brand?
             </h3>
             <p className="text-slate-600 max-w-xl mx-auto leading-relaxed">
-              PeakMotion manufactures OEM & private label sports socks for football teams, sports brands, and retailers worldwide.
+              PeakMotion offers OEM & private label running socks manufacturing for global sports brands. We provide high-performance, breathable running socks with custom materials, cushioning, and branding to meet your specific market needs.
             </p>
             
             <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-semibold text-slate-700 max-w-2xl mx-auto py-2">

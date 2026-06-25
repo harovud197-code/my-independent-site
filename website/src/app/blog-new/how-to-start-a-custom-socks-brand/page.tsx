@@ -1,4 +1,4 @@
-import Image from 'next/image';
+﻿import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default function HowToStartCustomSocksBrand() {
           <a href="/#sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CUSTOM SOCKS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">OEM</a>
-          <a href="/blog" className="text-[#b4ff2b] no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
+          <a href="/blog-new" className="text-[#b4ff2b] no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
           <a href="/#contact" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CONTACT</a>
         </nav>
       </header>
@@ -51,7 +51,7 @@ export default function HowToStartCustomSocksBrand() {
         <article className="max-w-3xl mx-auto py-12 px-5 text-slate-700 leading-relaxed text-left">
           {/* Breadcrumb & Meta */}
           <div className="mb-6 text-sm text-slate-500 font-semibold uppercase tracking-wider flex items-center gap-2">
-            <a href="/blog" className="hover:text-black transition-colors">Blog</a>
+            <a href="/blog-new" className="hover:text-black transition-colors">Blog</a>
             <span>•</span>
             <span className="text-slate-900">Custom Socks</span>
           </div>
