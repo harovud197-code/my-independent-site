@@ -127,14 +127,20 @@ export default function Home() {
               },
             ].map((product: any, i) => (
               <div key={i} className="bg-white group">
-                <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-4">
+                <div className="relative overflow-hidden rounded-xl aspect-square mb-4">
                   <a 
                     href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="block w-full h-full"
+                    className="block w-full h-full relative"
                   >
-                    <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    <Image 
+                      src={product.img} 
+                      alt={product.title} 
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110" 
+                    />
                   </a>
                   {product.tag && (
                     <div className="absolute top-3 left-3 bg-black text-white text-[10px] font-bold px-2 py-1 uppercase">
