@@ -25,7 +25,8 @@ export default function Home() {
             alt="PeakMotion Sports Socks Hero" 
             fill 
             priority
-            className="object-cover -z-10 brightness-[0.45]" 
+            unoptimized={true}
+            className="object-cover z-0 brightness-[0.45]" 
           />
           <div className="max-w-[720px] relative z-10">
             <h1 className="text-5xl lg:text-[78px] leading-[1.05] mb-6 font-extrabold uppercase">

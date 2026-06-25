@@ -107,7 +107,8 @@ export default function SportsSocks() {
             alt="Custom Sports Socks Manufacturer" 
             fill 
             priority
-            className="object-cover -z-10 brightness-[0.5]" 
+            unoptimized={true}
+            className="object-cover z-0 brightness-[0.5]" 
           />
           <div className="max-w-[800px] space-y-6 relative z-10">
             <h1 className="text-5xl lg:text-[72px] leading-[1.1] font-extrabold uppercase">
