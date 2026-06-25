@@ -69,7 +69,7 @@ export default function Blog() {
       title: 'Private Label Socks: Everything You Need to Know',
       href: '/blog/private-label-socks-guide',
       desc: 'A comprehensive guide to starting your own private label socks business, covering manufacturing, branding, and global distribution.',
-      img: 'https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-socks-card.jpg?v=1',
       category: 'Business & OEM',
     },
   ];
