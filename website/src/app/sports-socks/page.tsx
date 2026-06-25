@@ -94,7 +94,7 @@ export default function SportsSocks() {
           <a href="/#sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CUSTOM SOCKS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">OEM</a>
-          <a href="/blog-new" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
+          <a href="/blog" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
           <a href="/#contact" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CONTACT</a>
         </nav>
       </header>
@@ -113,138 +113,89 @@ export default function SportsSocks() {
             <h1 className="text-5xl lg:text-[72px] leading-[1.1] font-extrabold uppercase">
               Custom <span className="text-[#b4ff2b]">Sports Socks</span> Manufacturer
             </h1>
-            <p className="text-xl lg:text-2xl text-gray-200">
-              Premium OEM & Private Label Athletic Socks Solutions for Global Brands
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-[600px]">
+              PeakMotion delivers high-performance sports socks with professional OEM & private label services. Elevate your brand with custom designs, premium materials, and flexible production.
             </p>
             <div className="pt-4">
               <a 
                 href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20custom%20sports%20socks.%20Please%20send%20me%20a%20quote." 
                 target="_blank" 
-                rel="noopener noreferrer" 
-                className="px-10 py-5 rounded-full font-extrabold inline-block text-center bg-[#b4ff2b] text-black hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300"
+                rel="noopener noreferrer"
+                className="bg-[#b4ff2b] text-black font-extrabold text-lg uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 rounded-full inline-block shadow-[0_10px_30px_rgba(180,255,43,0.3)]"
               >
-                GET CUSTOM QUOTE
+                Start Your Custom Project
               </a>
             </div>
           </div>
         </section>
 
-        {/* "What Are Sports Socks?" introductory paragraph Section */}
-        <section className="py-20 px-5 lg:px-15 bg-white">
-          <div className="max-w-5xl mx-auto space-y-12">
-            <div className="text-center space-y-4">
-              <h2 className="text-4xl font-extrabold text-black uppercase">What Are Sports Socks?</h2>
-              <div className="w-20 h-1.5 bg-[#b4ff2b] mx-auto"></div>
+        {/* Product Grid */}
+        <section className="py-24 px-5 lg:px-15 bg-white max-w-7xl mx-auto" id="products">
+          <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+            <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl font-extrabold uppercase text-gray-900 leading-tight">
+                Our Performance <br />
+                <span className="text-[#a3e627]">Socks Categories</span>
+              </h2>
+              <div className="w-24 h-1.5 bg-[#b4ff2b]"></div>
             </div>
-            
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
-              Sports socks are specialized athletic socks designed to improve comfort, support, moisture management, and performance during physical activity. Different sports require different sock constructions, including grip technology, cushioning, compression support, breathability, and impact protection.
+            <p className="text-gray-600 max-w-md text-lg leading-relaxed">
+              Explore our wide range of professional sports socks, each engineered for specific athletic demands and high-level performance.
             </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-600 pt-6">
-              <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 space-y-4">
-                <p className="leading-relaxed">
-                  PeakMotion is a professional custom sports socks manufacturer specializing in high-performance socks for sports brands, teams, retailers, and distributors worldwide. We offer a complete range of athletic socks including grip socks, football socks, running socks, basketball socks, cycling socks, Pilates socks, and gym training socks.
-                </p>
-              </div>
-              <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 space-y-4">
-                <p className="leading-relaxed">
-                  With advanced knitting technology, premium materials, and flexible OEM and private label solutions, we help brands create custom sports socks tailored to their market needs. From product development and sampling to bulk production and packaging, our manufacturing services support both emerging brands and established companies.
-                </p>
-              </div>
-            </div>
           </div>
-        </section>
 
-        {/* Products Section */}
-        <section className="py-20 px-5 lg:px-15 bg-[#fcfcfc]">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center space-y-4 mb-16">
-              <h2 className="text-4xl font-extrabold uppercase text-gray-900">OUR PREMIUM SPORTS SOCKS COLLECTION</h2>
-              <p className="text-gray-500 max-w-2xl mx-auto">
-                Explore our professionally engineered athletic socks designed to meet the rigorous demands of every sport and activity.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map((product, i) => {
-                const waText = encodeURIComponent(`Hello PeakMotion Socks, I am interested in your custom ${product.title}. Please send me a quote.`);
-                const waUrl = `https://wa.me/8617357769219?text=${waText}`;
-                return (
-                  <div key={i} className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 overflow-hidden group hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full">
-                    <div className="relative overflow-hidden aspect-square bg-gray-50">
-                      <a href={waUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full relative">
-                        <Image 
-                          src={product.img} 
-                          alt={product.title} 
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="object-cover transition-transform duration-500 group-hover:scale-105" 
-                        />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {products.map((product, i) => {
+              const waText = encodeURIComponent(`Hello PeakMotion Socks, I am interested in your custom ${product.title}. Please send me a quote.`);
+              const waUrl = `https://wa.me/8617357769219?text=${waText}`;
+              return (
+                <div key={i} className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 overflow-hidden group hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full">
+                  <div className="relative overflow-hidden aspect-square bg-gray-50">
+                    <a href={waUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full relative">
+                      <Image 
+                        src={product.img} 
+                        alt={product.title} 
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105" 
+                      />
+                    </a>
+                  </div>
+                  <div className="p-8 flex flex-col flex-1 justify-between space-y-4">
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#a3e627] transition-colors">{product.title}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">{product.desc}</p>
+                    </div>
+                    <div className="pt-4 border-t border-gray-50">
+                      <a href={waUrl} target="_blank" rel="noopener noreferrer" className="text-black font-extrabold text-sm uppercase tracking-wider flex items-center gap-2 group/link">
+                        Get Pricing <span className="text-[#a3e627] transition-transform duration-300 group-hover/link:translate-x-1">→</span>
                       </a>
                     </div>
-                    <div className="p-8 flex flex-col flex-1 justify-between space-y-6">
-                      <div className="space-y-3">
-                        <h3 className="text-2xl font-bold text-gray-900 hover:text-[#b4ff2b] transition-colors">
-                          <a href={waUrl} target="_blank" rel="noopener noreferrer">{product.title}</a>
-                        </h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">
-                          {product.desc}
-                        </p>
-                      </div>
-                      <div className="pt-2 border-t border-gray-50">
-                        <a 
-                          href={waUrl} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-sm font-extrabold text-black group/link hover:text-[#a3e627] transition-colors"
-                        >
-                          INQUIRE VIA WHATSAPP
-                          <span className="text-[#a3e627] transition-transform duration-300 group-hover/link:translate-x-1">→</span>
-                        </a>
-                      </div>
-                    </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </section>
 
-        {/* Why Choose Us & Custom Options Section */}
-        <section className="py-20 px-5 lg:px-15 bg-[#111] text-white">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-            
-            {/* Column 1: Why Sports Brands Choose Us */}
+        {/* Customization Options */}
+        <section className="py-24 bg-black text-white relative overflow-hidden" id="custom-socks">
+          <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+            <div className="absolute inset-0 bg-gradient-to-l from-[#b4ff2b]/20 to-transparent"></div>
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-5 lg:px-15 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <h2 className="text-3xl lg:text-4xl font-extrabold uppercase border-b border-gray-800 pb-4">
-                Why Sports Brands Choose Us
-              </h2>
-              <ul className="space-y-6">
-                {[
-                  'Improve athlete performance and comfort',
-                  'Strengthen brand identity through custom designs',
-                  'Create professional team uniforms',
-                  'Enhance product differentiation in competitive markets',
-                  'Increase customer loyalty through premium quality products',
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
-                    <span className="bg-[#b4ff2b] text-black rounded-full p-1 mt-1 flex-shrink-0">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                    <span className="text-lg text-gray-300 font-semibold">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Column 2: Custom Manufacturing Options */}
-            <div className="space-y-8">
-              <h2 className="text-3xl lg:text-4xl font-extrabold uppercase border-b border-gray-800 pb-4">
-                Custom Manufacturing Options
-              </h2>
+              <div className="space-y-4">
+                <h2 className="text-4xl md:text-5xl font-extrabold uppercase leading-tight">
+                  Full Customization <br />
+                  <span className="text-[#b4ff2b]">At Your Fingertips</span>
+                </h2>
+                <div className="w-20 h-1.5 bg-[#b4ff2b]"></div>
+              </div>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                As a specialized socks manufacturer, we provide complete flexibility in design and production. Whether you need specific performance yarns or unique branding, our factory is equipped to bring your vision to life.
+              </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
                   'Custom Logos',
@@ -267,6 +218,38 @@ export default function SportsSocks() {
               </div>
             </div>
 
+            <div className="bg-[#111] p-10 rounded-3xl border border-[#222] shadow-2xl space-y-8">
+              <h3 className="text-3xl font-extrabold uppercase">Ready to elevate your brand?</h3>
+              <p className="text-gray-400">Join 200+ global sports brands and teams who trust PeakMotion for their custom sock manufacturing needs.</p>
+              <div className="space-y-4">
+                <div className="flex items-center gap-4 text-gray-300">
+                  <div className="w-12 h-12 rounded-full bg-[#b4ff2b]/10 flex items-center justify-center text-[#b4ff2b]">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold">Low Minimum Orders</h4>
+                    <p className="text-sm text-gray-500">Flexible MOQ for startups and teams.</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 text-gray-300">
+                  <div className="w-12 h-12 rounded-full bg-[#b4ff2b]/10 flex items-center justify-center text-[#b4ff2b]">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold">Fast Sampling & Prototyping</h4>
+                    <p className="text-sm text-gray-500">7-10 day turnaround for custom samples.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="pt-4">
+                <a 
+                  href="/#contact" 
+                  className="w-full bg-[#b4ff2b] text-black font-extrabold text-center py-5 rounded-2xl block hover:bg-[#a3e627] transition-all text-xl uppercase tracking-wider"
+                >
+                  Get A Custom Quote
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 

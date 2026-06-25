@@ -1,4 +1,4 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default function HowSportsSocksAreManufactured() {
           <a href="/#sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CUSTOM SOCKS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">OEM</a>
-          <a href="/blog-new" className="text-[#b4ff2b] no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
+          <a href="/blog" className="text-[#b4ff2b] no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
           <a href="/#contact" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CONTACT</a>
         </nav>
       </header>
@@ -47,8 +47,8 @@ export default function HowSportsSocksAreManufactured() {
         <article className="max-w-3xl mx-auto py-12 px-5 text-gray-700 leading-relaxed text-left">
           {/* Breadcrumb & Meta */}
           <div className="mb-6 text-sm text-slate-500 font-semibold uppercase tracking-wider flex items-center gap-2">
-            <a href="/blog-new" className="hover:text-black transition-colors">Blog</a>
-            <span>•</span>
+            <a href="/blog" className="hover:text-black transition-colors">Blog</a>
+            <span>?</span>
             <span className="text-slate-900">OEM Manufacturing</span>
           </div>
 
@@ -366,16 +366,16 @@ export default function HowSportsSocksAreManufactured() {
             
             <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-semibold text-slate-700 max-w-2xl mx-auto py-2">
               <li className="flex items-center gap-1">
-                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">✓</span> Factory Direct Pricing
+                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">?</span> Factory Direct Pricing
               </li>
               <li className="flex items-center gap-1">
-                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">✓</span> Flexible MOQ
+                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">?</span> Flexible MOQ
               </li>
               <li className="flex items-center gap-1">
-                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">✓</span> OEM & Private Label Support
+                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">?</span> OEM & Private Label Support
               </li>
               <li className="flex items-center gap-1">
-                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">✓</span> Worldwide Shipping
+                <span className="text-black bg-[#b4ff2b] rounded-full w-4 h-4 flex items-center justify-center text-xs font-bold">?</span> Worldwide Shipping
               </li>
             </ul>
 
@@ -406,12 +406,12 @@ export default function HowSportsSocksAreManufactured() {
         rel="noopener noreferrer"
         className="fixed right-5 bottom-5 bg-[#25D366] text-white w-16 h-16 flex items-center justify-center rounded-full text-3xl shadow-xl z-[1000] hover:scale-110 transition-transform"
       >
-        💬
+        ??
       </a>
 
       {/* Footer */}
       <footer className="p-7 bg-[#111] text-[#999] text-center border-t border-[#222]">
-        <p className="text-sm">© 2026 PEAKMOTION SOCKS MANUFACTURER</p>
+        <p className="text-sm">? 2026 PEAKMOTION SOCKS MANUFACTURER</p>
       </footer>
     </div>
   );

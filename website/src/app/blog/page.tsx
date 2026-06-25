@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Metadata } from 'next';
 
-// Trigger a force re-deployment to resolve Vercel routing cache issues causing 404 on /blog
+// Standardized /blog index page.
 export const metadata: Metadata = {
   title: 'Sports Socks Blog | Custom Socks Manufacturing & Industry Insights | PeakMotion',
   description: 'Explore expert guides on sports socks, custom sock manufacturing, OEM production, private label services, materials, design trends, and industry insights for sports brands and retailers.',
@@ -99,7 +99,7 @@ export default function Blog() {
           <a href="/#sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CUSTOM SOCKS</a>
           <a href="/#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">OEM</a>
-          <a href="/blog-new" className="text-[#b4ff2b] no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
+          <a href="/blog" className="text-[#b4ff2b] no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">BLOG</a>
           <a href="/#contact" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CONTACT</a>
         </nav>
       </header>
