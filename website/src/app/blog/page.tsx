@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Metadata } from 'next';
 
+// Trigger a force re-deployment to resolve Vercel routing cache issues causing 404 on /blog
 export const metadata: Metadata = {
   title: 'Sports Socks Blog | Custom Socks Manufacturing & Industry Insights | PeakMotion',
   description: 'Explore expert guides on sports socks, custom sock manufacturing, OEM production, private label services, materials, design trends, and industry insights for sports brands and retailers.',
