@@ -1,0 +1,56 @@
+# 阿里巴巴国际站上周（2026-04-13 到 2026-04-19）真实询盘和TM商机数据报告
+
+## 第一部分：消息中心（Message Center）询盘数据
+筛选条件：2026-04-13 到 2026-04-19
+截图存档：message_center_2026_filtered.png
+
+| 询价单号 | 创建日期 | 客户姓名 | 国家/地区 | 消息内容摘要 | 状态 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 13813674254 | 2026-4-19 | Scott Webb | 澳大利亚 | Inquiry from TM [图片] | 洽谈中 |
+| 13807594124 | 2026-4-19 | Andreas Steiner | 美国 | Inquiry from TM You want to order plain color socks or customized with your logo? | 洽谈中 |
+| 13803687968 | 2026-4-18 | Pedro Chaparro | 西班牙 | Inquiry from TM El precio de un calcetín es de 2,95USD por par para 50 pares... | 洽谈中 |
+| 13803149885 | 2026-4-18 | Alain Yango | 法国 | Inquiry from TM Le prix de la petite quantité est plus élevé. | 洽谈中 |
+| 13847436687 | 2026-4-18 | Josbal VenegasRosario | 委内瑞拉 | Inquiry from TM Hola Josbal, encantado de conocerte. ¿Quieres pedir calcetines... | 洽谈中 |
+| 13805457933 | 2026-4-18 | Olatz Bolumburu Eguia | 西班牙 | Inquiry from TM Vale, no hay problema. ¿Pero podrías decirme primero la cantidad... | 洽谈中 |
+| 13805827739 | 2026-4-18 | Siddharth Gurung | 英国 | Inquiry from TM You are welcome. | 洽谈中 |
+| 13801910284 | 2026-4-18 | Lubov Ermolceva | 俄罗斯 | Inquiry from TM Это здорово. | 洽谈中 |
+| 13801838512 | 2026-4-18 | Wilian Galvan | 秘鲁 | Inquiry from TM Hi Wilian, I hope you are you well. We also support to make 168N... | 洽谈中 |
+| 13805707725 | 2026-4-18 | John Busby | 美国 | Inquiry from TM | 洽谈中 |
+| 13811063053 | 2026-4-18 | Vanessa Harrison | 英国 | Inquiry from TM The MOQ is 100 pairs. May I know how many pairs you want? | 洽谈中 |
+| 13805349077 | 2026-4-18 | Gretta Novoa | 哥伦比亚 | Inquiry from TM ¿Puedo saber qué forma de agarre quieres? | 洽谈中 |
+| 13802921863 | 2026-4-18 | Rish B | 印度 | Inquiry from TM You need to pay the extra sample fee if you want to make new design. | 洽谈中 |
+| 13805647340 | 2026-4-18 | hani mohammed | 沙特阿拉伯 | Inquiry from TM [图片] | 洽谈中 |
+| 13791277957 | 2026-4-17 | kevin Martinent | 法国 | Inquiry from TM Ces deux 2 couleurs sont vente chaude, en particulier le blanc. | 洽谈中 |
+| 13802657114 | 2026-4-17 | Louis Melton | 美国 | Inquiry from TM Yes my friend. Could you match our MOQ? | 洽谈中 |
+| 13806934354 | 2026-4-17 | Onele Mbambeni | 南非 | Inquiry from TM Or we help you with shipping. So we need your detailed address | 洽谈中 |
+| 13809344612 | 2026-4-17 | Danielle Joslin | 英国 | Inquiry from TM Hi Danielle, nice to meet you. May I know the products you want? | 洽谈中 |
+| 13802835928 | 2026-4-17 | Lino Embargo | 法国 | Inquiry from TM Puis-je savoir combien de paires vous voulez? | 洽谈中 |
+| 50000127557666 | 2026-4-17 | Bahar Fashionbuyer | 土耳其 | Inquiry from Product Details Page 2.85 USD per pair for adults size. 2.35 USD... | 洽谈中 |
+
+## 第二部分：CRM客户数据（TM商机）
+当前日期：2026-04-22（周三）
+筛选时间段：2026-04-13 到 2026-04-19
+截图存档：crm_filtered.png
+
+| 客户姓名 | 对应日期（基于22日推算） | 国家/地区 | 客户阶段 | 跟进状态 |
+| :--- | :--- | :--- | :--- | :--- |
+| Heidi Leung | 2026-04-18 (4天前) | 加拿大 | 成交客户 | 已下单 |
+| IndiaRose Lal | 2026-04-17 (5天前) | 美国 | 成交客户 | 已下单 |
+| jayden bannis | 2026-04-16 (6天前) | 美国 | 成交客户 | TM沟通 |
+| Eden Edwards | 2026-04-15 (7天前) | 英国 | 成交客户 | TM沟通 |
+| shady arioli | 2026-04-14 (8天前) | 美国 | 成交客户 | 已下单 |
+| Jessica Do | 2026-04-14 (8天前) | 加拿大 | 成交客户 | TM沟通 |
+
+## 第三部分：Console 原始返回文本记录
+
+### 消息中心 Console 返回 (部分摘要)
+"询价单号：13813674254 iOS_A_26.12.0_261200 更新时间： 2026-4-19 创建时间： 2026-4-19 Inquiry from TM [图片] S Scott Webb TM 商机 Kay Zhang 洽谈中 查看详情..."
+
+### CRM Console 返回 (部分摘要)
+"Wye Morter AW INNOVATION Kay Zhang 成交客户 已下单 1天前... Heidi Leung Heidi Leung Kay Zhang 成交客户 已下单 4天前... IndiaRose Lal IndiaRose Lal Kay Zhang 成交客户 已下单 5天前..."
+
+## 第四部分：API 尝试记录
+尝试访问 API：
+1. https://message.alibaba.com/message/json/api/feedbackMsgList.json -> 返回 404
+2. https://message.alibaba.com/message/buyerList.htm -> 返回 404
+结论：API 路径可能已更新或需要特定 Token，数据已通过页面真实读取。

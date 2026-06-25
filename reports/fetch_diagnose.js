@@ -1,0 +1,11 @@
+(async () => {
+  try {
+    const url = 'https://crm.alibaba.com/crmlogin/aisales/dingwukong/diagnoseData.json';
+    const r = await fetch(url, { method: 'POST', credentials: 'include' });
+    if (!r.ok) throw new Error(`HTTP error: ${r.status}`);
+    const data = await r.json();
+    return { success: true, data: data };
+  } catch (e) {
+    return { success: false, error: e.message };
+  }
+})()

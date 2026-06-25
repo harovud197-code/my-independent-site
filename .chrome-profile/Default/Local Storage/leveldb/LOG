@@ -1,0 +1,5 @@
+2026/04/02-15:21:27.478 71f8 Creating DB C:\Users\admin\.accio\accounts\7073546698\agents\DID-F456DA-2B0D4C\project\.chrome-profile\Default\Local Storage\leveldb since it was missing.
+2026/04/02-15:21:27.528 71f8 Reusing MANIFEST C:\Users\admin\.accio\accounts\7073546698\agents\DID-F456DA-2B0D4C\project\.chrome-profile\Default\Local Storage\leveldb/MANIFEST-000001
+2026/04/02-15:23:49.401 630c Level-0 table #5: started
+2026/04/02-15:23:49.409 630c Level-0 table #5: 205830 bytes OK
+2026/04/02-15:23:49.412 630c Delete type=0 #3

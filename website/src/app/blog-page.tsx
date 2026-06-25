@@ -1,4 +1,4 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 // Trigger a force re-deployment to resolve Vercel routing cache issues causing 404 on /blog

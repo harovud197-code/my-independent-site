@@ -1,0 +1,1 @@
+const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\n  Header, Footer, AlignmentType, LevelFormat, HeadingLevel, BorderStyle,\n  WidthType, ShadingType, VerticalAlign, PageNumber, PageBreak } = require("docx");\nconst fs2 = require("fs");\nconsole.log("imports ok");
