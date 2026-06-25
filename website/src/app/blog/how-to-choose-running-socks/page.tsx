@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -74,11 +75,13 @@ export default function HowToChooseRunningSocks() {
           </div>
 
           {/* Featured Image */}
-          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50">
-            <img 
+          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50 relative">
+            <Image 
               src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-track.jpg?v=2" 
               alt="Runner's legs on a red track wearing white shoes and black performance socks" 
-              className="w-full h-full object-cover"
+              fill
+              priority
+              className="object-cover"
             />
           </div>
 
@@ -138,11 +141,12 @@ export default function HowToChooseRunningSocks() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Why Running Socks Matter
             </h2>
-            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100">
-              <img 
+            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-closeup.jpg?v=2" 
                 alt="Close-up of an athlete putting on a black PeakMotion performance running sock" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
@@ -155,11 +159,12 @@ export default function HowToChooseRunningSocks() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Best Running Socks Materials
             </h2>
-            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100">
-              <img 
+            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-materials.jpg?v=2" 
                 alt="Sports socks material close up texture" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
@@ -191,11 +196,12 @@ export default function HowToChooseRunningSocks() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Breathable Running Socks Features
             </h2>
-            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100">
-              <img 
+            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-mesh.jpg?v=2" 
                 alt="Breathable mesh running socks close up" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <ul className="list-none pl-0 space-y-3 my-4">
@@ -219,11 +225,12 @@ export default function HowToChooseRunningSocks() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               How to Choose Running Socks
             </h2>
-            <div className="my-6 rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
-              <img 
+            <div className="my-6 rounded-xl overflow-hidden bg-gray-50 border border-gray-100 relative aspect-[16/10]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-running-socks-collection.jpg?v=2" 
                 alt="A collection of PeakMotion performance sports socks in various colors" 
-                className="w-full h-auto"
+                fill
+                className="object-contain"
               />
             </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">

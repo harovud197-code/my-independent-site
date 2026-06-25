@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -71,11 +72,13 @@ export default function BestMaterialsForSportsSocks() {
           </div>
 
           {/* Featured Hero Image */}
-          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50">
-            <img 
+          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50 relative">
+            <Image 
               src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-hero.jpg?v=2" 
               alt="High-precision knitting machines producing performance sports socks" 
-              className="w-full h-full object-cover"
+              fill
+              priority
+              className="object-cover"
             />
           </div>
           <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
@@ -152,11 +155,12 @@ export default function BestMaterialsForSportsSocks() {
               <li><strong className="font-semibold text-slate-900">Nylon:</strong> Durable reinforcement fiber. Commonly knitted into the heel, toe, and sole regions to prevent wear-and-tear and extend the lifespan of high-friction areas.</li>
               <li><strong className="font-semibold text-slate-900">Spandex:</strong> Elastic compression support fiber. Provides necessary stretch and compression, keeping the socks securely fitted around the foot arches and ankles.</li>
             </ul>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/10]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-common-infographic.jpg?v=2" 
                 alt="Common sports socks materials overview: polyester, nylon, cotton, and spandex" 
-                className="w-full h-auto"
+                fill
+                className="object-contain"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
@@ -207,11 +211,12 @@ export default function BestMaterialsForSportsSocks() {
               </table>
             </div>
 
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/10]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-cotton-vs-polyester.jpg?v=2" 
                 alt="Cotton vs polyester sports socks materials properties comparison chart" 
-                className="w-full h-auto"
+                fill
+                className="object-contain"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
@@ -233,11 +238,12 @@ export default function BestMaterialsForSportsSocks() {
               <li><strong className="font-semibold text-slate-900">Basketball Socks:</strong> Thick polyester cushioning. Focuses on shock absorption, heavy-duty cushioning underfoot, and ankle compression.</li>
               <li><strong className="font-semibold text-slate-900">Gym Socks:</strong> Breathable mesh polyester. Emphasizes ventilation zones and multi-directional flexibility.</li>
             </ul>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/10]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-performance-fabrics.jpg?v=2" 
                 alt="High-performance sports socks fabrics key features comparison" 
-                className="w-full h-auto"
+                fill
+                className="object-contain"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
@@ -269,11 +275,12 @@ export default function BestMaterialsForSportsSocks() {
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Modern sports socks are produced using computerized knitting machines that control elasticity zones, ventilation panels, and cushioning density. As a leading socks OEM manufacturer, we leverage high-needle count machinery to weave complex material configurations seamlessly, guaranteeing consistent durability and batch-to-batch excellence.
             </p>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/9]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-best-materials-precision-manufacturing.jpg?v=2" 
                 alt="Precision manufacturing factory workshop knitting machines process" 
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">

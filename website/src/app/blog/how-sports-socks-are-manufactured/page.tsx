@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export default function HowSportsSocksAreManufactured() {
       answer: 'Most custom sports socks orders require approximately 20-35 days after sample approval.',
     },
     {
-      question: 'What materials are used in sports socks manufacturing?',
+      question: 'What is the materials used in sports socks manufacturing?',
       answer: 'Polyester, nylon, spandex and cotton blends are the most common materials used in sports socks production.',
     },
     {
@@ -67,11 +68,13 @@ export default function HowSportsSocksAreManufactured() {
           </div>
 
           {/* Featured Hero Image */}
-          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50">
-            <img 
+          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50 relative">
+            <Image 
               src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-hero-runners.jpg?v=2" 
               alt="Close-up of athletic socks on a runner on the track" 
-              className="w-full h-full object-cover"
+              fill
+              priority
+              className="object-cover"
             />
           </div>
           <p className="text-sm text-slate-500 italic mt-2 mb-8 text-center">
@@ -166,11 +169,12 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 1: Material Selection
             </h2>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/9]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-material-selection.jpg?v=2" 
                 alt="High-quality yarn spools for sports socks manufacturing" 
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
@@ -212,11 +216,12 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 2: Design & Development
             </h2>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/9]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-design-development.jpg?v=1" 
                 alt="Design and technical development of custom sports socks" 
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-sm text-gray-500 italic mb-8 -mt-4 text-center">
@@ -232,11 +237,12 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 3: Computerized Knitting
             </h2>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/9]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-knitting-machines.jpg?v=2" 
                 alt="Advanced computerized knitting machines for sports socks production" 
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
@@ -249,11 +255,12 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 4: Toe Linking
             </h2>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/9]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-toe-linking.jpg?v=1" 
                 alt="Socks toe linking process" 
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-sm text-gray-500 italic mb-8 -mt-4 text-center">
@@ -269,11 +276,12 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 5: Silicone Grip Printing
             </h2>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/9]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-silicone-printing.jpg?v=1" 
                 alt="Silicone grip printing on sports socks" 
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-sm text-gray-500 italic mb-8 -mt-4 text-center">
@@ -289,11 +297,12 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 6: Quality Inspection
             </h2>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/9]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-quality-inspection-final.jpg?v=3" 
                 alt="Quality control team inspecting custom sports socks" 
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
@@ -306,11 +315,12 @@ export default function HowSportsSocksAreManufactured() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">
               Step 7: Packaging
             </h2>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/9]">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-packaging.jpg?v=1" 
                 alt="Professional packaging of sports socks" 
-                className="w-full h-auto"
+                fill
+                className="object-cover"
               />
             </div>
             <p className="text-sm text-gray-500 italic mb-8 -mt-4 text-center">

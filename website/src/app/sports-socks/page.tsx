@@ -1,6 +1,6 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
 
-// Force trigger a new deployment due to Vercel platform transient build error on previous commit
 export const metadata: Metadata = {
   title: 'Custom Sports Socks Manufacturer | Grip, Football, Running & More | PeakMotion',
   description: 'Professional custom sports socks manufacturer offering grip socks, football socks, running socks, basketball socks, cycling socks, and Pilates socks. OEM & private label with low MOQ.',
@@ -101,13 +101,15 @@ export default function SportsSocks() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section 
-          className="h-[80vh] md:h-[85vh] bg-cover bg-center flex items-center px-5 lg:px-15 text-white relative"
-          style={{ 
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero.png')` 
-          }}
-        >
-          <div className="max-w-[800px] space-y-6">
+        <section className="h-[80vh] md:h-[85vh] flex items-center px-5 lg:px-15 text-white relative overflow-hidden">
+          <Image 
+            src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero.png" 
+            alt="Custom Sports Socks Manufacturer" 
+            fill 
+            priority
+            className="object-cover -z-10 brightness-[0.5]" 
+          />
+          <div className="max-w-[800px] space-y-6 relative z-10">
             <h1 className="text-5xl lg:text-[72px] leading-[1.1] font-extrabold uppercase">
               Custom <span className="text-[#b4ff2b]">Sports Socks</span> Manufacturer
             </h1>
@@ -171,8 +173,14 @@ export default function SportsSocks() {
                 return (
                   <div key={i} className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 overflow-hidden group hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full">
                     <div className="relative overflow-hidden aspect-square bg-gray-50">
-                      <a href={waUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                        <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                      <a href={waUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full relative">
+                        <Image 
+                          src={product.img} 
+                          alt={product.title} 
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105" 
+                        />
                       </a>
                     </div>
                     <div className="p-8 flex flex-col flex-1 justify-between space-y-6">

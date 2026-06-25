@@ -25,7 +25,7 @@ export default function Blog() {
       title: 'How to Start a Custom Socks Brand',
       href: '/blog/how-to-start-a-custom-socks-brand',
       desc: 'A practical roadmap for launching your own sports socks business.',
-      img: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800',
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-how-to-start-brand-card.jpg?v=2',
       category: 'Custom Socks',
     },
     {
@@ -126,8 +126,14 @@ export default function Blog() {
             {posts.map((post, i) => (
               <div key={i} className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 overflow-hidden group hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
                 <div className="relative overflow-hidden aspect-square bg-gray-50">
-                  <a href={post.href} className="block w-full h-full">
-                    <img src={post.img} alt={post.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <a href={post.href} className="block w-full h-full relative">
+                    <Image 
+                      src={post.img} 
+                      alt={post.title} 
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105" 
+                    />
                   </a>
                 </div>
                 <div className="p-8 flex flex-col flex-1 justify-between space-y-6">
@@ -162,15 +168,24 @@ export default function Blog() {
               <div className="w-12 h-1 bg-[#b4ff2b]"></div>
             </div>
             <div className="flex flex-wrap gap-3">
-              {categories.map((cat, i) => (
-                <a 
-                  key={i} 
-                  href="#" 
-                  className="px-5 py-2.5 bg-white hover:bg-[#b4ff2b] hover:text-black hover:border-[#b4ff2b] transition-all rounded-full text-sm font-semibold text-gray-800 border border-gray-200"
-                >
-                  {cat}
-                </a>
-              ))}
+              {categories.map((cat, i) => {
+                const linkMap: Record<string, string> = {
+                  'Grip Socks': '/sports-socks',
+                  'Running Socks': '/blog/how-to-choose-running-socks',
+                  'Football Socks': '/blog/football-socks-vs-grip-socks',
+                  'OEM Manufacturing': '/blog/custom-sports-socks-manufacturer-guide',
+                };
+                const href = linkMap[cat] || '#';
+                return (
+                  <a 
+                    key={i} 
+                    href={href}
+                    className="px-5 py-2.5 bg-white hover:bg-[#b4ff2b] hover:text-black hover:border-[#b4ff2b] transition-all rounded-full text-sm font-semibold text-gray-800 border border-gray-200"
+                  >
+                    {cat}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </section>

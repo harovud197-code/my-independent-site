@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -71,11 +72,13 @@ export default function HowToStartCustomSocksBrand() {
           </div>
 
           {/* Featured Image */}
-          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
-            <img 
+          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50 relative">
+            <Image 
               src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-hero.jpg?v=2" 
               alt="Start a custom socks brand" 
-              className="w-full h-full object-cover"
+              fill
+              priority
+              className="object-cover"
             />
           </div>
 
@@ -228,11 +231,12 @@ export default function HowToStartCustomSocksBrand() {
             </div>
 
             {/* Custom Socks Business Model Image */}
-            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50 relative">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-models.jpg?v=2" 
                 alt="Socks and folded apparel texture" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </section>
@@ -291,11 +295,12 @@ export default function HowToStartCustomSocksBrand() {
             </ul>
 
             {/* Sock Style Niches Image */}
-            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50 relative">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-start-brand-athletes-clean.jpg?v=4" 
                 alt="Athletic custom cotton socks details" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </section>

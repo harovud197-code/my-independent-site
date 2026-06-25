@@ -1,11 +1,13 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white font-sans text-slate-900">
       {/* Header */}
       <header className="bg-black text-white px-5 lg:px-15 py-4.5 flex flex-col md:flex-row justify-between items-center sticky top-0 z-[999] gap-5 md:gap-0">
-        <div className="text-3xl font-bold tracking-wider">PeakMotion Socks</div>
+        <a href="/" className="text-3xl font-bold tracking-wider hover:text-[#b4ff2b] transition-colors">PeakMotion Socks</a>
         <nav className="flex flex-wrap justify-center gap-7">
-          <a href="#" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">HOME</a>
+          <a href="/" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">HOME</a>
           <a href="/sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
           <a href="#sports-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">PRODUCTS</a>
           <a href="#custom-socks" className="text-white no-underline text-sm font-medium hover:text-[#b4ff2b] transition-colors">CUSTOM SOCKS</a>
@@ -17,13 +19,15 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section 
-          className="h-[85vh] md:h-[95vh] bg-cover bg-center flex items-center px-5 lg:px-15 text-white relative"
-          style={{ 
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/hero-poster.png')` 
-          }}
-        >
-          <div className="max-w-[720px]">
+        <section className="h-[85vh] md:h-[95vh] flex items-center px-5 lg:px-15 text-white relative overflow-hidden">
+          <Image 
+            src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/hero-poster.png" 
+            alt="PeakMotion Sports Socks Hero" 
+            fill 
+            priority
+            className="object-cover -z-10 brightness-[0.45]" 
+          />
+          <div className="max-w-[720px] relative z-10">
             <h1 className="text-5xl lg:text-[78px] leading-[1.05] mb-6 font-extrabold uppercase">
               PROFESSIONAL <span className="text-[#b4ff2b]">SPORTS SOCKS</span> MANUFACTURER
             </h1>

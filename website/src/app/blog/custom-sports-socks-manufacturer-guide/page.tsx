@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -90,11 +91,12 @@ export default function CustomSportsSocksManufacturerGuide() {
           </div>
 
           {/* Featured/Introduction Image */}
-          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
-            <img 
+          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50 relative">
+            <Image 
               src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-knitting.jpg" 
               alt="Custom Sports Socks Manufacturer" 
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           </div>
 
@@ -213,11 +215,12 @@ export default function CustomSportsSocksManufacturerGuide() {
             </div>
 
             {/* Custom Socks Options Image */}
-            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50 relative">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-grey.jpg" 
                 alt="Custom Sports Socks Options" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           </section>
@@ -296,11 +299,12 @@ export default function CustomSportsSocksManufacturerGuide() {
             </h2>
 
             {/* Yarn Spools Production Process Image */}
-            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50">
-              <img 
+            <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-slate-100 aspect-[16/9] bg-slate-50 relative">
+              <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-factory.jpg" 
                 alt="Sports Socks Manufacturing Process" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
 
@@ -395,9 +399,9 @@ export default function CustomSportsSocksManufacturerGuide() {
             <div className="space-y-4">
               {faqs.map((faq, i) => (
                 <details key={i} className="group border border-slate-200 rounded-2xl bg-slate-50/50 shadow-sm [&_summary::-webkit-details-marker]:hidden">
-                  <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 md:p-8 text-slate-950 select-none">
-                    <h3 className="font-extrabold text-lg md:text-xl pr-4 text-slate-900">{faq.question}</h3>
-                    <span className="shrink-0 rounded-full bg-white p-2 text-slate-900 border border-slate-100 group-open:rotate-180 transition-transform duration-300">
+                  <summary className="flex cursor-pointer items-center justify-between gap-1.5 p-6 md:p-8 text-gray-950 select-none">
+                    <h3 className="font-extrabold text-lg md:text-xl pr-4 text-gray-900">{faq.question}</h3>
+                    <span className="shrink-0 rounded-full bg-white p-2 text-gray-900 border border-gray-100 group-open:rotate-180 transition-transform duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
                       </svg>
