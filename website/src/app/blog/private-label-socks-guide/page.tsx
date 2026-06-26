@@ -204,8 +204,8 @@ export default function PrivateLabelSocksGuide() {
             </ol>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
               <Image 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1000" 
-                alt="oem socks supplier production line factory" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-process-infographic.jpg?v=2" 
+                alt="5-step private label socks production process: Design, Sample, Production, Quality Check, and Packaging" 
                 fill
                 className="object-cover"
               />
