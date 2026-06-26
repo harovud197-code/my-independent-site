@@ -284,8 +284,50 @@ export default function Blog() {
       </a>
 
       {/* Footer */}
-      <footer className="p-7 bg-[#111] text-[#999] text-center border-t border-[#222]">
-        <p className="text-sm">© 2026 PEAKMOTION SOCKS MANUFACTURER</p>
+      <footer className="bg-[#0b0b0b] text-[#aaa] py-16 px-5 lg:px-15 border-t border-[#222]">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-left">
+          <div className="space-y-4">
+            <h3 className="text-white text-xl font-bold">Haiyan Huaerte Knitting Co., Ltd.</h3>
+            <p className="text-sm leading-relaxed">
+              Custom Sports Socks Manufacturer | OEM & Private Label Supplier. Delivering high-performance solutions for global sports brands.
+            </p>
+          </div>
+          
+          <div className="space-y-4">
+            <h4 className="text-white text-lg font-bold">Contact Details</h4>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-start gap-3">
+                <span className="text-[#b4ff2b] font-bold shrink-0">Add:</span>
+                <span>No. 8, Yucai Village Industrial Park, Tongyuan Town, Haiyan County, Zhejiang Province, China</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b4ff2b] font-bold shrink-0">Tel:</span>
+                <span>+86 573 8657 1288</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-[#b4ff2b] font-bold shrink-0">Mail:</span>
+                <a href="mailto:abayacloth@hotmail.com" className="hover:text-white transition-colors">abayacloth@hotmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="text-white text-lg font-bold">Quick Links</h4>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+              <a href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</a>
+              <a href="/sports-socks" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
+              <a href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</a>
+              <a href="/#inquiry" className="hover:text-[#b4ff2b] transition-colors">GET QUOTE</a>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-[#222] text-xs flex flex-col md:flex-row justify-between gap-4">
+          <p>© 2026 Haiyan Walter Knitting Co., Ltd. All Rights Reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white">Privacy Policy</a>
+            <a href="#" className="hover:text-white">Terms of Service</a>
+          </div>
+        </div>
       </footer>
     </div>
   );
