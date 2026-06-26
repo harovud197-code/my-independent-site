@@ -291,6 +291,17 @@ Project Details: ${details}
               </div>
             ))}
           </div>
+
+          <div className="mt-12 flex justify-center">
+            <a 
+              href={`https://wa.me/8617357769219?text=${encodeURIComponent("Hello PeakMotion Socks, I am ready to start step 1 of my custom socks project. Please let me know how to proceed.")}`}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-[#b4ff2b] text-black font-bold uppercase px-10 py-4 rounded-full text-lg hover:bg-[#a3e627] hover:scale-105 transition-all duration-300 shadow-lg"
+            >
+              Start Step 1 Now — It's Free →
+            </a>
+          </div>
         </section>
 
         {/* Inquiry Form Section */}
