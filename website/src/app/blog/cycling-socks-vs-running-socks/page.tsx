@@ -183,12 +183,13 @@ export default function CyclingVsRunningSocks() {
 
           <section id="materials" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">Material Comparison</h2>
-            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-50 relative aspect-[16/10]">
+            <div className="my-8 rounded-2xl overflow-hidden shadow-md border border-gray-100">
               <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-cycling-vs-running-materials-texture.jpg?v=1" 
                 alt="Close-up of sports socks performance material textures" 
-                fill
-                className="object-contain"
+                width={800}
+                height={400}
+                className="w-full h-auto"
               />
             </div>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">Both types of performance socks avoid 100% cotton to prevent moisture retention and blisters. Common performance materials include:</p>
