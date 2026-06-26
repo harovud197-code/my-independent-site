@@ -297,35 +297,17 @@ Project Details: ${details}
             </div>
 
             {/* Production Process */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-[#222]">
+            <div className="space-y-12 text-center">
+              <h2 className="text-4xl lg:text-[48px] font-extrabold uppercase">Production Process</h2>
+              <div className="relative w-full overflow-hidden rounded-2xl border border-[#222]">
                 <Image 
-                  src="https://images.unsplash.com/photo-1528476513691-07e6f563d97f?w=1200"
-                  alt="custom socks production process factory"
-                  fill
-                  className="object-cover"
+                  src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-production-process.jpg"
+                  alt="PeakMotion sports socks production process circular infographic"
+                  width={1000}
+                  height={1000}
+                  unoptimized={true}
+                  className="w-full h-auto max-w-4xl mx-auto"
                 />
-              </div>
-              <div className="space-y-8 text-left">
-                <h2 className="text-4xl font-extrabold uppercase">Production Process</h2>
-                <div className="space-y-4">
-                  {[
-                    'Material Selection',
-                    'Design & Development',
-                    'Computerized Knitting',
-                    'Toe Linking',
-                    'Silicone Grip Printing',
-                    'Quality Inspection',
-                    'Packaging & Shipping'
-                  ].map((step, idx) => (
-                    <div key={idx} className="flex items-center gap-5 group">
-                      <span className="w-10 h-10 rounded-full border-2 border-[#b4ff2b] text-[#b4ff2b] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#b4ff2b] group-hover:text-black transition-all">
-                        {idx + 1}
-                      </span>
-                      <span className="text-xl font-medium text-gray-300 group-hover:text-white transition-colors">{step}</span>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
 
