@@ -260,55 +260,61 @@ export default function Home() {
               </p>
             </div>
 
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={handleSubmit}>
               <input 
                 type="text" 
+                name="name"
                 placeholder="Your Name *" 
                 required 
                 className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
               />
               <input 
                 type="text" 
+                name="company"
                 placeholder="Company Name" 
                 className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
               />
               <input 
                 type="email" 
+                name="email"
                 placeholder="Email Address *" 
                 required 
                 className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
               />
               <input 
                 type="text" 
+                name="whatsapp"
                 placeholder="WhatsApp / Phone" 
                 className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
               />
               
-              <select className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all appearance-none cursor-pointer">
-                <option className="bg-[#0b0b0b]">Product Type</option>
-                <option className="bg-[#0b0b0b]">Grip Socks</option>
-                <option className="bg-[#0b0b0b]">Football Socks</option>
-                <option className="bg-[#0b0b0b]">Running Socks</option>
-                <option className="bg-[#0b0b0b]">Cycling Socks</option>
-                <option className="bg-[#0b0b0b]">Basketball Socks</option>
-                <option className="bg-[#0b0b0b]">Custom OEM Socks</option>
+              <select name="productType" className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all appearance-none cursor-pointer">
+                <option value="" className="bg-[#0b0b0b]">Product Type</option>
+                <option value="Grip Socks" className="bg-[#0b0b0b]">Grip Socks</option>
+                <option value="Football Socks" className="bg-[#0b0b0b]">Football Socks</option>
+                <option value="Running Socks" className="bg-[#0b0b0b]">Running Socks</option>
+                <option value="Cycling Socks" className="bg-[#0b0b0b]">Cycling Socks</option>
+                <option value="Basketball Socks" className="bg-[#0b0b0b]">Basketball Socks</option>
+                <option value="Custom OEM Socks" className="bg-[#0b0b0b]">Custom OEM Socks</option>
               </select>
 
-              <select className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all appearance-none cursor-pointer">
-                <option className="bg-[#0b0b0b]">Estimated Quantity</option>
-                <option className="bg-[#0b0b0b]">50–100 pairs (Sample / Low MOQ)</option>
-                <option className="bg-[#0b0b0b]">100–300 pairs</option>
-                <option className="bg-[#0b0b0b]">300–1000 pairs</option>
-                <option className="bg-[#0b0b0b]">1000+ Bulk Order</option>
+              <select name="quantity" className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all appearance-none cursor-pointer">
+                <option value="" className="bg-[#0b0b0b]">Estimated Quantity</option>
+                <option value="50–100 pairs" className="bg-[#0b0b0b]">50–100 pairs (Sample / Low MOQ)</option>
+                <option value="100–300 pairs" className="bg-[#0b0b0b]">100–300 pairs</option>
+                <option value="300–1000 pairs" className="bg-[#0b0b0b]">300–1000 pairs</option>
+                <option value="1000+ Bulk Order" className="bg-[#0b0b0b]">1000+ Bulk Order</option>
               </select>
 
               <input 
                 type="text" 
+                name="logoPlacement"
                 placeholder="Logo Placement (Cuff / Sole / Packaging)" 
                 className="md:col-span-2 bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
               />
               
               <textarea 
+                name="details"
                 placeholder="Tell us your project details (material, color, sport, function...)" 
                 className="md:col-span-2 bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all h-32 resize-none placeholder:text-gray-600"
               ></textarea>
