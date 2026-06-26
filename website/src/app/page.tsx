@@ -347,6 +347,22 @@ Project Details: ${details}
               </div>
             </div>
 
+            {/* Call to Action Section (Moved from Bottom) */}
+            <div className="bg-[#141414] border border-[#222] rounded-3xl p-12 text-center shadow-sm max-w-5xl mx-auto mt-8 mb-8">
+              <h2 className="text-white font-extrabold text-3xl md:text-4xl mb-6">
+                Start Your Custom Socks Project Today
+              </h2>
+              <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+                Work directly with a professional socks factory and build your own brand with OEM & private label solutions.
+              </p>
+              <a 
+                href="#inquiry" 
+                className="bg-[#b4ff2b] text-black font-black px-10 py-4 rounded-2xl hover:bg-[#a3e627] hover:scale-105 transition-all uppercase tracking-widest inline-block"
+              >
+                GET FREE QUOTE
+              </a>
+            </div>
+
           </div>
         </section>
 
@@ -507,24 +523,6 @@ Project Details: ${details}
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        {/* Call to Action Section */}
-        <section className="max-w-5xl mx-auto px-5 mb-16">
-          <div className="bg-[#141414] border border-[#222] rounded-3xl p-12 text-center shadow-sm">
-            <h2 className="text-white font-extrabold text-3xl md:text-4xl mb-6">
-              Start Your Custom Socks Project Today
-            </h2>
-            <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-              Work directly with a professional socks factory and build your own brand with OEM & private label solutions.
-            </p>
-            <a 
-              href="#inquiry" 
-              className="bg-[#b4ff2b] text-black font-black px-10 py-4 rounded-2xl hover:bg-[#a3e627] hover:scale-105 transition-all uppercase tracking-widest inline-block"
-            >
-              GET FREE QUOTE
-            </a>
           </div>
         </section>
 
