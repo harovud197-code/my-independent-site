@@ -531,23 +531,6 @@ Project Details: ${details}
             </div>
           </div>
         </section>
-
-        {/* Contact Section */}
-        <section className="py-22 px-5 lg:px-15 bg-black text-white text-center" id="contact">
-          <div className="space-y-4">
-            <div className="flex justify-center">
-              <a 
-                href="https://wa.me/8617357769219" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-[#b4ff2b] text-black font-extrabold text-2xl md:text-3xl lg:text-4xl uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-16 py-6 md:px-24 md:py-8 rounded-full inline-block"
-              >
-                CONTACT US
-              </a>
-            </div>
-            <p className="text-gray-400 mt-5">Professional Sports Socks OEM Manufacturer</p>
-          </div>
-        </section>
       </main>
 
       {/* WhatsApp Floating Button */}
