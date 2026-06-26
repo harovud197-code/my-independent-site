@@ -257,6 +257,99 @@ Project Details: ${details}
           </div>
         </section>
 
+        {/* Manufacturing Excellence Section */}
+        <section className="py-22 px-5 lg:px-15 bg-[#0b0b0b] text-white">
+          <div className="max-w-7xl mx-auto space-y-24">
+            
+            {/* Manufacturing Facility */}
+            <div className="space-y-12">
+              <div className="text-center space-y-4">
+                <h2 className="text-4xl lg:text-[48px] font-extrabold uppercase">Our Manufacturing Facility</h2>
+                <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+                  We operate advanced knitting machines and quality control systems to ensure every pair of socks meets international standards.
+                </p>
+              </div>
+
+              <div className="relative aspect-[21/9] w-full overflow-hidden rounded-2xl border border-[#222]">
+                <Image 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200"
+                  alt="sports socks knitting machine factory"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {[
+                  { title: 'Knitting Production', desc: 'High-speed computerized knitting machines for precision sock manufacturing.', icon: '🧶' },
+                  { title: 'Material Control', desc: 'Carefully selected yarns for durability, breathability, and comfort.', icon: '🧵' },
+                  { title: 'Quality Inspection', desc: 'Strict QC system ensures defect-free socks before packaging.', icon: '🧪' },
+                ].map((item, i) => (
+                  <div key={i} className="bg-[#141414] border border-[#222] p-8 rounded-2xl hover:border-[#b4ff2b]/30 transition-colors group text-left">
+                    <span className="text-4xl mb-6 block">{item.icon}</span>
+                    <h3 className="text-2xl font-bold mb-4 group-hover:text-[#b4ff2b] transition-colors">{item.title}</h3>
+                    <p className="text-gray-400 leading-relaxed">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Production Process */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-[#222]">
+                <Image 
+                  src="https://images.unsplash.com/photo-1528476513691-07e6f563d97f?w=1200"
+                  alt="custom socks production process factory"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="space-y-8 text-left">
+                <h2 className="text-4xl font-extrabold uppercase">Production Process</h2>
+                <div className="space-y-4">
+                  {[
+                    'Material Selection',
+                    'Design & Development',
+                    'Computerized Knitting',
+                    'Toe Linking',
+                    'Silicone Grip Printing',
+                    'Quality Inspection',
+                    'Packaging & Shipping'
+                  ].map((step, idx) => (
+                    <div key={idx} className="flex items-center gap-5 group">
+                      <span className="w-10 h-10 rounded-full border-2 border-[#b4ff2b] text-[#b4ff2b] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#b4ff2b] group-hover:text-black transition-all">
+                        {idx + 1}
+                      </span>
+                      <span className="text-xl font-medium text-gray-300 group-hover:text-white transition-colors">{step}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Manufacturing Capabilities */}
+            <div className="space-y-12">
+              <div className="text-center">
+                <h2 className="text-4xl lg:text-[48px] font-extrabold uppercase">Our Manufacturing Capabilities</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {[
+                  { title: 'Low MOQ', desc: 'Start your brand with only 50–100 pairs per design.', icon: '⚡' },
+                  { title: 'Full Customization', desc: 'Logo, color, thickness, grip design, packaging.', icon: '🎨' },
+                  { title: 'Fast Delivery', desc: 'Sample in 3–5 days, bulk production in 15–25 days.', icon: '🚚' },
+                ].map((cap, i) => (
+                  <div key={i} className="bg-[#141414] border border-[#222] p-8 rounded-2xl hover:border-[#b4ff2b]/30 transition-colors group text-left">
+                    <span className="text-4xl mb-6 block">{cap.icon}</span>
+                    <h3 className="text-2xl font-bold mb-4 group-hover:text-[#b4ff2b] transition-colors">{cap.title}</h3>
+                    <p className="text-gray-400 leading-relaxed">{cap.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         {/* Features Section */}
         <section className="py-22 px-5 lg:px-15 bg-[#111] text-white">
           <h2 className="text-4xl lg:text-[48px] mb-12 font-extrabold uppercase">WHY CHOOSE PEAKMOTION SOCKS</h2>
