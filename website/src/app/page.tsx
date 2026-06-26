@@ -1,28 +1,50 @@
 'use client';
 
+'use client';
+
 import Image from 'next/image';
 
 export default function Home() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
+    console.log("Submit clicked");
+    
+    try {
+      const form = e.currentTarget;
+      const formData = new FormData(form);
+      
+      const name = formData.get('name') || 'Customer';
+      const company = formData.get('company') || 'N/A';
+      const email = formData.get('email') || 'N/A';
+      const whatsapp = formData.get('whatsapp') || 'N/A';
+      const productType = formData.get('productType') || 'N/A';
+      const quantity = formData.get('quantity') || 'N/A';
+      const logoPlacement = formData.get('logoPlacement') || 'N/A';
+      const details = formData.get('details') || 'N/A';
 
-    const subject = `New Inquiry from ${data.name} - PeakMotion Socks`;
-    const body = `
+      const subject = `New Inquiry from ${name} - PeakMotion Socks`;
+      const body = `
 New Custom Socks Inquiry:
 --------------------------
-Name: ${data.name}
-Company: ${data.company}
-Email: ${data.email}
-WhatsApp/Phone: ${data.whatsapp}
-Product Type: ${data.productType}
-Quantity: ${data.quantity}
-Logo Placement: ${data.logoPlacement}
-Project Details: ${data.details}
-    `;
+Name: ${name}
+Company: ${company}
+Email: ${email}
+WhatsApp/Phone: ${whatsapp}
+Product Type: ${productType}
+Quantity: ${quantity}
+Logo Placement: ${logoPlacement}
+Project Details: ${details}
+      `;
 
-    window.location.href = `mailto:abayacloth@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoUrl = `mailto:abayacloth@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      
+      alert("Preparing your inquiry... Your email client will now open to send the details to abayacloth@hotmail.com.");
+      window.location.href = mailtoUrl;
+      
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("There was an error preparing the email. Please contact us directly at abayacloth@hotmail.com.");
+    }
   };
 
   return (
