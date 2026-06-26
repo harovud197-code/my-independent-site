@@ -360,7 +360,9 @@ Project Details: ${details}
                 Work directly with a professional socks factory and build your own brand with OEM & private label solutions.
               </p>
               <a 
-                href="#inquiry" 
+                href={`https://wa.me/8617357769219?text=${encodeURIComponent('Hello PeakMotion Socks, I am interested in starting a custom socks project. Please let me know the details.')}`}
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="bg-[#b4ff2b] text-black font-black px-10 py-4 rounded-2xl hover:bg-[#a3e627] hover:scale-105 transition-all uppercase tracking-widest inline-block"
               >
                 GET FREE QUOTE
