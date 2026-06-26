@@ -238,6 +238,113 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Inquiry Form Section */}
+        <section className="py-22 px-5 lg:px-15 bg-[#0b0b0b] text-white" id="inquiry">
+          <div className="max-w-5xl mx-auto">
+            <div className="space-y-4 mb-10">
+              <h2 className="text-4xl lg:text-[48px] font-extrabold uppercase leading-tight">
+                🎁 Free Quote + <span className="text-[#b4ff2b]">Custom Socks Mockup</span> in 24 Hours
+              </h2>
+              <p className="text-gray-400 text-lg md:text-xl max-w-3xl">
+                Custom sports socks manufacturer for OEM & private label brands. Low MOQ, fast response, factory direct pricing.
+              </p>
+            </div>
+
+            <div className="bg-[#141414] p-6 rounded-2xl border border-gray-800 mb-10 inline-block shadow-sm">
+              <div className="flex items-center gap-3">
+                <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+                <strong className="text-gray-200 font-bold uppercase tracking-wide text-sm">PeakMotion Socks Factory</strong>
+              </div>
+              <p className="text-gray-500 text-xs mt-2 font-medium">
+                We respond within 2–4 hours on business days
+              </p>
+            </div>
+
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input 
+                type="text" 
+                placeholder="Your Name *" 
+                required 
+                className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
+              />
+              <input 
+                type="text" 
+                placeholder="Company Name" 
+                className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
+              />
+              <input 
+                type="email" 
+                placeholder="Email Address *" 
+                required 
+                className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
+              />
+              <input 
+                type="text" 
+                placeholder="WhatsApp / Phone" 
+                className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
+              />
+              
+              <select className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all appearance-none cursor-pointer">
+                <option className="bg-[#0b0b0b]">Product Type</option>
+                <option className="bg-[#0b0b0b]">Grip Socks</option>
+                <option className="bg-[#0b0b0b]">Football Socks</option>
+                <option className="bg-[#0b0b0b]">Running Socks</option>
+                <option className="bg-[#0b0b0b]">Cycling Socks</option>
+                <option className="bg-[#0b0b0b]">Basketball Socks</option>
+                <option className="bg-[#0b0b0b]">Custom OEM Socks</option>
+              </select>
+
+              <select className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all appearance-none cursor-pointer">
+                <option className="bg-[#0b0b0b]">Estimated Quantity</option>
+                <option className="bg-[#0b0b0b]">50–100 pairs (Sample / Low MOQ)</option>
+                <option className="bg-[#0b0b0b]">100–300 pairs</option>
+                <option className="bg-[#0b0b0b]">300–1000 pairs</option>
+                <option className="bg-[#0b0b0b]">1000+ Bulk Order</option>
+              </select>
+
+              <input 
+                type="text" 
+                placeholder="Logo Placement (Cuff / Sole / Packaging)" 
+                className="md:col-span-2 bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
+              />
+              
+              <textarea 
+                placeholder="Tell us your project details (material, color, sport, function...)" 
+                className="md:col-span-2 bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all h-32 resize-none placeholder:text-gray-600"
+              ></textarea>
+
+              <div className="md:col-span-2">
+                <label className="block text-gray-500 text-xs mb-2 px-1">Upload Reference Design / Logo (Optional)</label>
+                <input 
+                  type="file" 
+                  className="w-full bg-[#121212] border border-gray-800 p-3 rounded-xl text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gray-800 file:text-gray-200 hover:file:bg-gray-700 cursor-pointer" 
+                />
+              </div>
+
+              <button 
+                type="submit" 
+                className="md:col-span-2 bg-[#b4ff2b] text-black py-5 rounded-2xl font-black text-xl shadow-[0_0_25px_rgba(180,255,43,0.25)] hover:scale-[1.01] active:scale-95 transition-all uppercase tracking-wider mt-4"
+              >
+                🚀 SEND REQUEST — GET FREE MOCKUP
+              </button>
+            </form>
+
+            <div className="flex flex-wrap gap-3 mt-12">
+              {[
+                '✔ Low MOQ 50 pairs',
+                '✔ OEM & Private Label',
+                '✔ Factory Direct',
+                '✔ Free Design Mockup',
+                '✔ Fast Response',
+              ].map((tag, idx) => (
+                <div key={idx} className="bg-[#111] px-4 py-2 rounded-xl border border-gray-800 text-gray-500 text-xs font-bold uppercase tracking-tight">
+                  {tag}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section className="py-22 px-5 lg:px-15 bg-black text-white text-center" id="contact">
           <div className="space-y-4">
