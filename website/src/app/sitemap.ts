@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'how-to-choose-running-socks',
     'how-to-start-a-custom-socks-brand',
     'what-are-grip-socks',
+    'private-label-socks-guide',
   ];
 
   const blogUrls = blogPosts.map((post) => ({
