@@ -123,8 +123,8 @@ export default function PrivateLabelSocksGuide() {
             </p>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
               <Image 
-                src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=1000" 
-                alt="custom sports socks private label packaging" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-vs-oem-infographic.jpg?v=1" 
+                alt="OEM Socks vs Private Label Socks comparison infographic" 
                 fill
                 className="object-cover"
               />
