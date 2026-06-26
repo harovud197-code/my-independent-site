@@ -86,8 +86,8 @@ export default function PrivateLabelSocksGuide() {
           {/* Featured Image */}
           <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50 relative">
             <Image 
-              src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200" 
-              alt="private label socks custom branding factory" 
+              src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-socks-hero.jpg?v=1" 
+              alt="Private Label Socks: Build Your Brand infographic with custom packaging and premium quality performance socks" 
               fill
               priority
               className="object-cover"
