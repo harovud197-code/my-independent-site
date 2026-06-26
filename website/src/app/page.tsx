@@ -1,6 +1,30 @@
+'use client';
+
 import Image from 'next/image';
 
 export default function Home() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData.entries());
+
+    const subject = `New Inquiry from ${data.name} - PeakMotion Socks`;
+    const body = `
+New Custom Socks Inquiry:
+--------------------------
+Name: ${data.name}
+Company: ${data.company}
+Email: ${data.email}
+WhatsApp/Phone: ${data.whatsapp}
+Product Type: ${data.productType}
+Quantity: ${data.quantity}
+Logo Placement: ${data.logoPlacement}
+Project Details: ${data.details}
+    `;
+
+    window.location.href = `mailto:abayacloth@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-white font-sans text-slate-900">
       {/* Header */}
