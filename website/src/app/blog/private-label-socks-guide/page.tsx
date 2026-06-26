@@ -259,8 +259,8 @@ export default function PrivateLabelSocksGuide() {
             </ul>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
               <Image 
-                src="https://images.unsplash.com/photo-1589410185121-6f0f5b9d8a2a?w=1000" 
-                alt="start custom socks brand packaging design" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-packaging-final.jpg?v=1" 
+                alt="Custom private label socks with brand packaging and retail tags" 
                 fill
                 className="object-cover"
               />
