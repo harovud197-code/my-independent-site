@@ -272,9 +272,10 @@ Project Details: ${details}
 
               <div className="relative aspect-[21/9] w-full overflow-hidden rounded-2xl border border-[#222]">
                 <Image 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200"
+                  src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/factory-advanced-knitting.jpg"
                   alt="sports socks knitting machine factory"
                   fill
+                  unoptimized={true}
                   className="object-cover"
                 />
               </div>
