@@ -184,8 +184,8 @@ export default function SportsSocksMoqGuide() {
             </ul>
             <div className="my-6 rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
               <Image 
-                src="https://images.unsplash.com/photo-1589410185121-6f0f5b9d8a2a?w=800" 
-                alt="custom socks minimum order packaging factory" 
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-moq-guide-packaging.jpg?v=1" 
+                alt="Custom private label socks in professional retail packaging" 
                 width={1000}
                 height={600}
                 className="w-full h-auto"
