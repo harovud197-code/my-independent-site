@@ -60,13 +60,14 @@ export default function SportsSocksMoqGuide() {
           </div>
 
           {/* Featured Image */}
-          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 aspect-[16/9] bg-gray-50 relative">
+          <div className="my-8 rounded-2xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50">
             <Image 
               src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200" 
               alt="sports socks factory MOQ production knitting machine" 
-              fill
+              width={1200}
+              height={600}
               priority
-              className="object-cover"
+              className="w-full h-auto"
             />
           </div>
 
@@ -155,12 +156,13 @@ export default function SportsSocksMoqGuide() {
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               A sports socks factory MOQ depends on machine setup cost, yarn waste, and production efficiency.
             </p>
-            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+            <div className="my-6 rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
               <Image 
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800" 
                 alt="sports socks factory quality inspection OEM socks supplier" 
-                fill
-                className="object-cover"
+                width={1000}
+                height={600}
+                className="w-full h-auto"
               />
             </div>
           </section>
@@ -180,12 +182,13 @@ export default function SportsSocksMoqGuide() {
                 </li>
               ))}
             </ul>
-            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+            <div className="my-6 rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
               <Image 
                 src="https://images.unsplash.com/photo-1589410185121-6f0f5b9d8a2a?w=800" 
                 alt="custom socks minimum order packaging factory" 
-                fill
-                className="object-cover"
+                width={1000}
+                height={600}
+                className="w-full h-auto"
               />
             </div>
           </section>
