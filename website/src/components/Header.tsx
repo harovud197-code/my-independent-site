@@ -25,7 +25,9 @@ export default function Header() {
 
         {/* CTA BUTTON */}
         <Link 
-          href="/#inquiry" 
+          href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20custom%20socks." 
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#b4ff2b] text-black px-5 py-2.5 rounded-xl font-black text-sm uppercase tracking-wider shadow-[0_0_15px_rgba(184,255,42,0.3)] hover:scale-105 active:scale-95 transition-all"
         >
           GET QUOTE
