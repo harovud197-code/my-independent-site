@@ -113,12 +113,13 @@ export default function SportsSocksMoqGuide() {
                 </li>
               ))}
             </ul>
-            <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
+            <div className="my-6 rounded-xl overflow-hidden bg-gray-50 border border-gray-100">
               <Image 
-                src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=800" 
-                alt="custom socks manufacturer knitting machine sports socks production" 
-                fill
-                className="object-cover"
+                src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-moq-guide-knitting.jpg?v=1" 
+                alt="Computerized knitting machine producing custom neon green and black sports socks" 
+                width={1000}
+                height={450}
+                className="w-full h-auto"
               />
             </div>
           </section>
