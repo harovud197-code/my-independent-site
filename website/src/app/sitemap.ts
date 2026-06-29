@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'how-to-start-a-custom-socks-brand',
     'what-are-grip-socks',
     'private-label-socks-guide',
+    'sports-socks-moq-guide',
   ];
 
   const blogUrls = blogPosts.map((post) => ({
