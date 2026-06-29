@@ -11,18 +11,18 @@ const s3 = new S3Client({
 });
 
 async function upload() {
-  const imageUrl = "https://sc04.alicdn.com/kf/H3f421f1de2ad4ac7aa22662eef20abb92.jpg";
+  const imageUrl = "https://sc02.alicdn.com/kf/H7af8747a70544ae7bf9e3bc38e9741d8n.jpg";
   const response = await fetch(imageUrl);
   const buffer = await response.buffer();
 
   await s3.send(new PutObjectCommand({
     Bucket: "peakmotion-assets",
-    Key: "blog-running-socks-overview.jpg",
+    Key: "sports-socks-hero-v3.jpg",
     Body: buffer,
     ContentType: "image/jpeg",
   }));
 
-  console.log("Upload successful: blog-running-socks-overview.jpg");
+  console.log("Upload successful: sports-socks-hero-v3.jpg");
 }
 
 upload().catch(console.error);
