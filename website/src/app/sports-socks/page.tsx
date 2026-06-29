@@ -103,7 +103,7 @@ export default function SportsSocks() {
         {/* Hero Section */}
         <section className="h-[80vh] md:h-[85vh] flex items-center px-5 lg:px-15 text-white relative overflow-hidden">
           <Image 
-            src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero.png" 
+            src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero-new.jpg" 
             alt="Custom Sports Socks Manufacturer" 
             fill 
             priority
