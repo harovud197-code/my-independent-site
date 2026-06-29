@@ -101,31 +101,34 @@ export default function SportsSocks() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="h-[80vh] md:h-[85vh] flex items-center px-5 lg:px-15 text-white relative overflow-hidden">
+        <section className="relative overflow-hidden w-full">
           <Image 
             src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero-v3.jpg?v=1" 
             alt="Custom Sports Socks Manufacturer" 
-            fill 
+            width={1920}
+            height={1080}
             priority
             unoptimized={true}
-            className="object-contain z-0 bg-black" 
+            className="w-full h-auto z-0" 
           />
-          <div className="max-w-[800px] space-y-6 relative z-10">
-            <h1 className="text-5xl lg:text-[72px] leading-[1.1] font-extrabold uppercase">
-              Custom <span className="text-[#b4ff2b]">Sports Socks</span> Manufacturer
-            </h1>
-            <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-[600px]">
-              PeakMotion delivers high-performance sports socks with professional OEM & private label services. Elevate your brand with custom designs, premium materials, and flexible production.
-            </p>
-            <div className="pt-4">
-              <a 
-                href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20custom%20sports%20socks.%20Please%20send%20me%20a%20quote." 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-[#b4ff2b] text-black font-extrabold text-lg uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 rounded-full inline-block shadow-[0_10px_30px_rgba(180,255,43,0.3)]"
-              >
-                Start Your Custom Project
-              </a>
+          <div className="absolute inset-0 flex items-center px-5 lg:px-15 text-white">
+            <div className="max-w-[800px] space-y-6 relative z-10">
+              <h1 className="text-5xl lg:text-[72px] leading-[1.1] font-extrabold uppercase">
+                Custom <span className="text-[#b4ff2b]">Sports Socks</span> Manufacturer
+              </h1>
+              <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-[600px]">
+                PeakMotion delivers high-performance sports socks with professional OEM & private label services. Elevate your brand with custom designs, premium materials, and flexible production.
+              </p>
+              <div className="pt-4">
+                <a 
+                  href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20custom%20sports%20socks.%20Please%20send%20me%20a%20quote." 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-[#b4ff2b] text-black font-extrabold text-lg uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 rounded-full inline-block shadow-[0_10px_30px_rgba(180,255,43,0.3)]"
+                >
+                  Start Your Custom Project
+                </a>
+              </div>
             </div>
           </div>
         </section>
