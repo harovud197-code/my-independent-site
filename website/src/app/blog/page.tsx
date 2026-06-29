@@ -72,6 +72,13 @@ export default function Blog() {
       img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-socks-card.jpg?v=1',
       category: 'Business & OEM',
     },
+    {
+      title: 'Sports Socks MOQ Guide for New Brands',
+      href: '/blog/sports-socks-moq-guide',
+      desc: 'Learn everything about Minimum Order Quantities (MOQ) for starting your sports socks brand, from pricing to production scaling.',
+      img: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800',
+      category: 'Business & OEM',
+    },
   ];
 
   const categories = [
