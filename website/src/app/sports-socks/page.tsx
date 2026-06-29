@@ -103,12 +103,12 @@ export default function SportsSocks() {
         {/* Hero Section */}
         <section className="h-[80vh] md:h-[85vh] flex items-center px-5 lg:px-15 text-white relative overflow-hidden">
           <Image 
-            src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero-new.jpg" 
+            src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero-full.jpg" 
             alt="Custom Sports Socks Manufacturer" 
             fill 
             priority
             unoptimized={true}
-            className="object-cover z-0 brightness-[0.5]" 
+            className="object-contain z-0 bg-black" 
           />
           <div className="max-w-[800px] space-y-6 relative z-10">
             <h1 className="text-5xl lg:text-[72px] leading-[1.1] font-extrabold uppercase">
