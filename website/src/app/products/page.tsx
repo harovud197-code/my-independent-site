@@ -91,7 +91,7 @@ export default function ProductsPage() {
       <main className="flex-1">
         {/* Banner Section */}
         <section className="bg-[#111] py-24 md:py-32 px-5 lg:px-15 text-white">
-          <div className="max-w-7xl mx-auto">
+          <div className="max-w-[1440px] mx-auto">
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight uppercase">
               CUSTOM <span className="text-[#b4ff2b]">SPORTS SOCKS</span><br />
               MANUFACTURER
@@ -122,14 +122,14 @@ export default function ProductsPage() {
         </section>
 
         {/* Product Grid */}
-        <section className="py-16 px-5 lg:px-15 max-w-7xl mx-auto min-h-[600px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <section className="py-16 px-5 lg:px-15 max-w-[1440px] mx-auto min-h-[600px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProducts.map((product) => (
               <div 
                 key={product.id} 
                 className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative aspect-[4/3] bg-gray-100">
+                <div className="relative aspect-square bg-gray-100">
                   <Image
                     src={product.img}
                     alt={product.title}
