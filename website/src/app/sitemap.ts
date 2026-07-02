@@ -30,6 +30,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/products`,
+      lastModified,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/sports-socks`,
       lastModified,
       priority: 0.8,

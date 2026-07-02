@@ -15,7 +15,7 @@ export default function Header() {
         {/* NAV */}
         <nav className="hidden md:flex items-center gap-7 text-[15px] font-bold tracking-wide uppercase">
           <Link href="/" className="text-white hover:text-[#b4ff2b] transition-colors">HOME</Link>
-          <Link href="/#sports-socks" className="text-white hover:text-[#b4ff2b] transition-colors">PRODUCTS</Link>
+          <Link href="/products" className="text-white hover:text-[#b4ff2b] transition-colors">PRODUCTS</Link>
           <Link href="/#factory" className="text-white hover:text-[#b4ff2b] transition-colors">FACTORY</Link>
           <Link href="/#custom-socks" className="text-white hover:text-[#b4ff2b] transition-colors">OEM</Link>
           <Link href="/blog" className="text-white hover:text-[#b4ff2b] transition-colors">BLOG</Link>
