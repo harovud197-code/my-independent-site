@@ -22,7 +22,7 @@ export default function ProductsPage() {
       title: 'Low Cut Yoga Pilates Grip Socks',
       desc: 'Soft cotton blend, full bottom silicone anti-slip',
       moq: '50 Pairs',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-pilates-three-colors.jpg'
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-pilates-low-cut-colors.jpg?v=1'
     },
     {
       id: 3,
