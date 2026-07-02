@@ -104,7 +104,7 @@ export default function ProductsPage() {
 
         {/* Filter Navigation */}
         <section className="bg-white border-b border-gray-100 py-10 px-5 sticky top-[72px] md:top-[84px] z-40">
-          <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-4">
+          <div className="max-w-[1440px] mx-auto flex flex-wrap justify-center gap-4">
             {categories.map((cat) => (
               <button
                 key={cat.id}
@@ -208,3 +208,4 @@ export default function ProductsPage() {
     </div>
   );
 }
+
