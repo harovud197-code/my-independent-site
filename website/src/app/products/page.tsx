@@ -14,7 +14,7 @@ export default function ProductsPage() {
       title: 'Crew Soccer Grip Sports Socks',
       desc: 'Silicone non-slip sole, breathable rib cuff, seamless toe',
       moq: '50 Pairs',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-grip-yellow.jpg'
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-crew-grip-three-colors.jpg?v=1'
     },
     {
       id: 2,
