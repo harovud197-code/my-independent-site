@@ -30,7 +30,7 @@ export default function ProductsPage() {
       title: 'Professional Running Athletic Socks',
       desc: 'Quick dry, odor resistant, padded heel & toe',
       moq: '50 Pairs',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-running-long-three-colors.jpg?v=1'
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-running-long-three-colors-final.jpg?v=1'
     },
     {
       id: 4,
