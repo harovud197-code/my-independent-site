@@ -86,7 +86,7 @@ export default function ProductsPage() {
       category: "sports",
       moq: "50 Pairs",
       desc: "Ultra-lightweight socks combining fine-gauge merino wool with performance nylon for superior breathability.",
-      img: "https://sc02.alicdn.com/kf/A9b5260d2146740f594a974993fbe82af4.png"
+      img: "https://sc04.alicdn.com/kf/H02660559be2c468ba4a57f26945c2efbx.jpg"
     },
     {
       id: 11,
