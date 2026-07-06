@@ -46,7 +46,7 @@ export default function ProductsPage() {
         title: 'Mid-calf Football Grip Socks',
         desc: 'Advanced grip pattern for maximum stability on turf',
         moq: '100 Pairs',
-        img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-football-vs-grip.jpg'
+        img: 'https://sc04.alicdn.com/kf/H473a5986318646e191318ddd5b81ab81k.jpg'
     },
     {
         id: 6,
