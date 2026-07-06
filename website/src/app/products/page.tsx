@@ -71,6 +71,38 @@ export default function ProductsPage() {
         desc: 'Premium soft handfeel with reinforced heel and toe',
         moq: '100 Pairs',
         img: 'https://sc04.alicdn.com/kf/H214c83a08ece4a748e07a26a9cbd00322.jpg'
+    },
+    {
+      id: 9,
+      title: "Elite Compression Training Socks",
+      category: "sports",
+      moq: "50 Pairs",
+      desc: "Engineered for high-intensity training, these compression socks feature a graduated pressure system to enhance blood circulation.",
+      img: "https://sc02.alicdn.com/kf/Afc5216c166d74a138fbc0e3d4d831119f.png"
+    },
+    {
+      id: 10,
+      title: "ProRun Lightweight Performance Socks",
+      category: "sports",
+      moq: "50 Pairs",
+      desc: "Ultra-lightweight socks combining fine-gauge merino wool with performance nylon for superior breathability.",
+      img: "https://sc02.alicdn.com/kf/A9b5260d2146740f594a974993fbe82af4.png"
+    },
+    {
+      id: 11,
+      title: "FlexGrip Yoga & Pilates Socks",
+      category: "grip",
+      moq: "50 Pairs",
+      desc: "Toeless grip socks feature a full-coverage silicone dot matrix for 360° non-slip traction on studio floors.",
+      img: "https://sc02.alicdn.com/kf/A432c128510a84481bbf40c6c8329f6b5r.png"
+    },
+    {
+      id: 12,
+      title: "PowerGrip Football Traction Socks",
+      category: "grip",
+      moq: "50 Pairs",
+      desc: "High-density silicone traction strips in a chevron formation for elite on-pitch performance and stability.",
+      img: "https://sc02.alicdn.com/kf/A0e1aace101ee4548adaaa120635cd24f6.png"
     }
   ];
 
