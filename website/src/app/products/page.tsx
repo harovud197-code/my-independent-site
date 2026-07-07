@@ -39,7 +39,7 @@ export default function ProductsPage() {
       title: 'Custom Logo Embroidery Socks',
       desc: 'OEM private label, custom color & packaging support',
       moq: '50 Pairs',
-      img: 'https://sc04.alicdn.com/kf/Heeb60118269047e19493c3d32b6a45dbo.jpg'
+      img: 'https://sc02.alicdn.com/kf/A3e09c593cd004f33be06f381248dd180a.png'
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export default function ProductsPage() {
         title: 'Mid-calf Football Grip Socks',
         desc: 'Advanced grip pattern for maximum stability on turf',
         moq: '100 Pairs',
-        img: 'https://sc04.alicdn.com/kf/H473a5986318646e191318ddd5b81ab81k.jpg'
+        img: 'https://sc02.alicdn.com/kf/A81ea0bc8176f4f6c8e6671cde945f272l.png'
     },
     {
         id: 6,
@@ -55,7 +55,7 @@ export default function ProductsPage() {
         title: 'Performance Basketball Socks',
         desc: 'High-impact cushioning with secure ankle support',
         moq: '100 Pairs',
-        img: 'https://sc04.alicdn.com/kf/H79d40d2c1d884992bd5e3ba914f719e6W.jpg'
+        img: 'https://sc02.alicdn.com/kf/A887c54a1c7b04fc8bbfc1d794c60297dT.png'
     },
     {
         id: 7,
@@ -63,7 +63,7 @@ export default function ProductsPage() {
         title: 'Open Top Pilates Studio Socks',
         desc: 'Breathable upper with non-toxic silicone grips',
         moq: '50 Pairs',
-        img: 'https://sc04.alicdn.com/kf/H7be1730dfbed484fbdb7b48fa9303e5dd.jpg'
+        img: 'https://sc02.alicdn.com/kf/A7d452abda29949428d2273136a9bbcc2H.png'
     },
     {
         id: 8,
@@ -71,7 +71,7 @@ export default function ProductsPage() {
         title: 'Luxury Combed Cotton Casual Socks',
         desc: 'Premium soft handfeel with reinforced heel and toe',
         moq: '100 Pairs',
-        img: 'https://sc04.alicdn.com/kf/H214c83a08ece4a748e07a26a9cbd00322.jpg'
+        img: 'https://sc02.alicdn.com/kf/A308253ebd5bd41f49182299493d55a144.png'
     },
     {
       id: 9,
@@ -79,7 +79,7 @@ export default function ProductsPage() {
       category: "sports",
       moq: "50 Pairs",
       desc: "Engineered for high-intensity training, these compression socks feature a graduated pressure system to enhance blood circulation.",
-      img: "https://sc02.alicdn.com/kf/Afc5216c166d74a138fbc0e3d4d831119f.png"
+      img: "https://sc02.alicdn.com/kf/A1e09c90a204a41a489a4b0a1edfb61fek.png"
     },
     {
       id: 10,
@@ -95,7 +95,7 @@ export default function ProductsPage() {
       category: "grip",
       moq: "50 Pairs",
       desc: "Toeless grip socks feature a full-coverage silicone dot matrix for 360° non-slip traction on studio floors.",
-      img: "https://sc02.alicdn.com/kf/A432c128510a84481bbf40c6c8329f6b5r.png"
+      img: "https://sc02.alicdn.com/kf/Ab7584183cae24b358aac26a30766d256v.png"
     },
     {
       id: 12,
@@ -103,7 +103,7 @@ export default function ProductsPage() {
       category: "grip",
       moq: "50 Pairs",
       desc: "High-density silicone traction strips in a chevron formation for elite on-pitch performance and stability.",
-      img: "https://sc02.alicdn.com/kf/A0e1aace101ee4548adaaa120635cd24f6.png"
+      img: "https://sc02.alicdn.com/kf/Aca6f77397da2405d8b938fbb172676adJ.png"
     }
   ];
 
