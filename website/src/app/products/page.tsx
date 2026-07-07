@@ -119,7 +119,7 @@ export default function ProductsPage() {
     : products.filter(p => p.category === filter);
 
   return (
-    <div className="flex flex-col min-h-screen bg-neutral-100">
+    <div className="flex flex-col min-h-screen bg-[#F1F1F1]">
       <main className="flex-1">
         {/* Banner Section */}
         <section className="bg-[#111] py-24 md:py-32 px-5 lg:px-15 text-white">
@@ -135,7 +135,7 @@ export default function ProductsPage() {
         </section>
 
         {/* Filter Navigation */}
-        <section className="bg-neutral-100 border-b border-gray-100 py-10 px-5 sticky top-[72px] md:top-[84px] z-40">
+        <section className="bg-[#F1F1F1] border-b border-gray-100 py-10 px-5 sticky top-[72px] md:top-[84px] z-40">
           <div className="max-w-[1440px] mx-auto flex flex-wrap justify-center gap-4">
             {categories.map((cat) => (
               <button
@@ -159,9 +159,9 @@ export default function ProductsPage() {
             {filteredProducts.map((product) => (
               <div 
                 key={product.id} 
-                className="bg-neutral-100 rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="bg-[#F1F1F1] rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative aspect-square bg-neutral-100">
+                <div className="relative aspect-square bg-[#F1F1F1]">
                   <Image
                     src={product.img}
                     alt={product.title}
