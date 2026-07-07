@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+// Force cache invalidation for #F1F1F1 background fusion
 export default function ProductsPage() {
   const [filter, setFilter] = useState('all');
 
