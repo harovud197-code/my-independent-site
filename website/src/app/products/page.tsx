@@ -87,7 +87,7 @@ export default function ProductsPage() {
       category: "custom",
       moq: "50 Pairs",
       desc: "Premium jacquard knit socks featuring complex patterns and vibrant colors. Durable, breathable, and perfect for brand merchandising or unique gift sets.",
-      img: "https://sc04.alicdn.com/kf/H1294d3283969490f9608cd949ae7aa49n.jpg"
+      img: "https://sc04.alicdn.com/kf/H8e9f793275a54dceae8e1e3822289034Q.jpg"
     }
   ];
 
