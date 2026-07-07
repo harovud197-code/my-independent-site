@@ -63,7 +63,7 @@ export default function ProductsPage() {
         title: 'Open Top Pilates Studio Socks',
         desc: 'Breathable upper with non-toxic silicone grips',
         moq: '50 Pairs',
-        img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-pilates-reformer.jpg'
+        img: 'https://sc04.alicdn.com/kf/H22c08373a4d84baa8f3e4441ae797ec0F.jpg'
     },
     {
         id: 8,
