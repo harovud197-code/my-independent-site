@@ -38,7 +38,7 @@ export default function ProductsPage() {
       title: 'Custom Logo Embroidery Socks',
       desc: 'OEM private label, custom color & packaging support',
       moq: '50 Pairs',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-grey.jpg'
+      img: 'https://sc04.alicdn.com/kf/Hf0227ce04baa4ceeb08555037101cb53W.jpg'
     },
     {
         id: 5,
