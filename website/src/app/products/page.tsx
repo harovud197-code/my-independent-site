@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Force cache invalidation for #F1F1F1 background fusion
 export default function ProductsPage() {
   const [filter, setFilter] = useState('all');
 
@@ -23,7 +22,7 @@ export default function ProductsPage() {
       title: 'Low Cut Yoga Pilates Grip Socks',
       desc: 'Soft cotton blend, full bottom silicone anti-slip',
       moq: '50 Pairs',
-      img: 'https://sc02.alicdn.com/kf/Afe98017665bb4818a37f95f3adfbd5639.png'
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-pilates-low-cut-straps-final.jpg?v=1'
     },
     {
       id: 3,
@@ -39,7 +38,7 @@ export default function ProductsPage() {
       title: 'Custom Logo Embroidery Socks',
       desc: 'OEM private label, custom color & packaging support',
       moq: '50 Pairs',
-      img: 'https://sc02.alicdn.com/kf/A4fc510ee4e1e440882302be4ac3a7ab1w.png'
+      img: 'https://sc04.alicdn.com/kf/Heeb60118269047e19493c3d32b6a45dbo.jpg'
     },
     {
         id: 5,
@@ -47,7 +46,7 @@ export default function ProductsPage() {
         title: 'Mid-calf Football Grip Socks',
         desc: 'Advanced grip pattern for maximum stability on turf',
         moq: '100 Pairs',
-        img: 'https://sc02.alicdn.com/kf/A8e6953c1b33b425ca453f0ed72d9d8f2e.png'
+        img: 'https://sc04.alicdn.com/kf/H473a5986318646e191318ddd5b81ab81k.jpg'
     },
     {
         id: 6,
@@ -55,7 +54,7 @@ export default function ProductsPage() {
         title: 'Performance Basketball Socks',
         desc: 'High-impact cushioning with secure ankle support',
         moq: '100 Pairs',
-        img: 'https://sc02.alicdn.com/kf/A42dd1bb0d3084cc4a58481a56759e4cfU.png'
+        img: 'https://sc04.alicdn.com/kf/H79d40d2c1d884992bd5e3ba914f719e6W.jpg'
     },
     {
         id: 7,
@@ -63,7 +62,7 @@ export default function ProductsPage() {
         title: 'Open Top Pilates Studio Socks',
         desc: 'Breathable upper with non-toxic silicone grips',
         moq: '50 Pairs',
-        img: 'https://sc02.alicdn.com/kf/A7839deee3efe46cb8b1eb8e0180160c7K.png'
+        img: 'https://sc04.alicdn.com/kf/H7be1730dfbed484fbdb7b48fa9303e5dd.jpg'
     },
     {
         id: 8,
@@ -71,7 +70,7 @@ export default function ProductsPage() {
         title: 'Luxury Combed Cotton Casual Socks',
         desc: 'Premium soft handfeel with reinforced heel and toe',
         moq: '100 Pairs',
-        img: 'https://sc02.alicdn.com/kf/A57b862116f864a528e3a67820effb924S.png'
+        img: 'https://sc04.alicdn.com/kf/H214c83a08ece4a748e07a26a9cbd00322.jpg'
     },
     {
       id: 9,
@@ -79,7 +78,7 @@ export default function ProductsPage() {
       category: "sports",
       moq: "50 Pairs",
       desc: "Engineered for high-intensity training, these compression socks feature a graduated pressure system to enhance blood circulation.",
-      img: "https://sc02.alicdn.com/kf/A4874871d85af45dba22330c3b30729ba9.png"
+      img: "https://sc02.alicdn.com/kf/Afc5216c166d74a138fbc0e3d4d831119f.png"
     },
     {
       id: 10,
@@ -87,7 +86,7 @@ export default function ProductsPage() {
       category: "sports",
       moq: "50 Pairs",
       desc: "Ultra-lightweight socks combining fine-gauge merino wool with performance nylon for superior breathability.",
-      img: "https://sc02.alicdn.com/kf/Aa440c3769a1042ab96c00d2938eafb2cM.png"
+      img: "https://sc04.alicdn.com/kf/H02660559be2c468ba4a57f26945c2efbx.jpg"
     },
     {
       id: 11,
@@ -95,7 +94,7 @@ export default function ProductsPage() {
       category: "grip",
       moq: "50 Pairs",
       desc: "Toeless grip socks feature a full-coverage silicone dot matrix for 360° non-slip traction on studio floors.",
-      img: "https://sc02.alicdn.com/kf/A51cfbbd4e78f403e827566776fd554acl.png"
+      img: "https://sc02.alicdn.com/kf/A432c128510a84481bbf40c6c8329f6b5r.png"
     },
     {
       id: 12,
@@ -103,7 +102,7 @@ export default function ProductsPage() {
       category: "grip",
       moq: "50 Pairs",
       desc: "High-density silicone traction strips in a chevron formation for elite on-pitch performance and stability.",
-      img: "https://sc02.alicdn.com/kf/A1e9645f9b9b946d583ce69eb469d6edcx.png"
+      img: "https://sc02.alicdn.com/kf/A0e1aace101ee4548adaaa120635cd24f6.png"
     }
   ];
 
@@ -120,7 +119,7 @@ export default function ProductsPage() {
     : products.filter(p => p.category === filter);
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#F1F1F1]">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <main className="flex-1">
         {/* Banner Section */}
         <section className="bg-[#111] py-24 md:py-32 px-5 lg:px-15 text-white">
@@ -136,7 +135,7 @@ export default function ProductsPage() {
         </section>
 
         {/* Filter Navigation */}
-        <section className="bg-[#F1F1F1] border-b border-gray-100 py-10 px-5 sticky top-[72px] md:top-[84px] z-40">
+        <section className="bg-white border-b border-gray-100 py-10 px-5 sticky top-[72px] md:top-[84px] z-40">
           <div className="max-w-[1440px] mx-auto flex flex-wrap justify-center gap-4">
             {categories.map((cat) => (
               <button
@@ -160,9 +159,9 @@ export default function ProductsPage() {
             {filteredProducts.map((product) => (
               <div 
                 key={product.id} 
-                className="bg-[#F1F1F1] rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative aspect-[4/3] bg-[#F1F1F1]">
+                <div className="relative aspect-square bg-neutral-100">
                   <Image
                     src={product.img}
                     alt={product.title}
@@ -242,4 +241,3 @@ export default function ProductsPage() {
     </div>
   );
 }
-
