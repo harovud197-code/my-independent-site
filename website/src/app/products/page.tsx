@@ -23,7 +23,7 @@ export default function ProductsPage() {
       title: 'Low Cut Yoga Pilates Grip Socks',
       desc: 'Soft cotton blend, full bottom silicone anti-slip',
       moq: '50 Pairs',
-      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-pilates-low-cut-straps-final.jpg?v=1'
+      img: 'https://sc02.alicdn.com/kf/Afe98017665bb4818a37f95f3adfbd5639.png'
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export default function ProductsPage() {
       title: 'Custom Logo Embroidery Socks',
       desc: 'OEM private label, custom color & packaging support',
       moq: '50 Pairs',
-      img: 'https://sc02.alicdn.com/kf/A3e09c593cd004f33be06f381248dd180a.png'
+      img: 'https://sc02.alicdn.com/kf/A4fc510ee4e1e440882302be4ac3a7ab1w.png'
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export default function ProductsPage() {
         title: 'Mid-calf Football Grip Socks',
         desc: 'Advanced grip pattern for maximum stability on turf',
         moq: '100 Pairs',
-        img: 'https://sc02.alicdn.com/kf/A81ea0bc8176f4f6c8e6671cde945f272l.png'
+        img: 'https://sc02.alicdn.com/kf/A8e6953c1b33b425ca453f0ed72d9d8f2e.png'
     },
     {
         id: 6,
@@ -55,7 +55,7 @@ export default function ProductsPage() {
         title: 'Performance Basketball Socks',
         desc: 'High-impact cushioning with secure ankle support',
         moq: '100 Pairs',
-        img: 'https://sc02.alicdn.com/kf/A887c54a1c7b04fc8bbfc1d794c60297dT.png'
+        img: 'https://sc02.alicdn.com/kf/A42dd1bb0d3084cc4a58481a56759e4cfU.png'
     },
     {
         id: 7,
@@ -63,7 +63,7 @@ export default function ProductsPage() {
         title: 'Open Top Pilates Studio Socks',
         desc: 'Breathable upper with non-toxic silicone grips',
         moq: '50 Pairs',
-        img: 'https://sc02.alicdn.com/kf/A7d452abda29949428d2273136a9bbcc2H.png'
+        img: 'https://sc02.alicdn.com/kf/A7839deee3efe46cb8b1eb8e0180160c7K.png'
     },
     {
         id: 8,
@@ -71,7 +71,7 @@ export default function ProductsPage() {
         title: 'Luxury Combed Cotton Casual Socks',
         desc: 'Premium soft handfeel with reinforced heel and toe',
         moq: '100 Pairs',
-        img: 'https://sc02.alicdn.com/kf/A308253ebd5bd41f49182299493d55a144.png'
+        img: 'https://sc02.alicdn.com/kf/A57b862116f864a528e3a67820effb924S.png'
     },
     {
       id: 9,
@@ -79,7 +79,7 @@ export default function ProductsPage() {
       category: "sports",
       moq: "50 Pairs",
       desc: "Engineered for high-intensity training, these compression socks feature a graduated pressure system to enhance blood circulation.",
-      img: "https://sc02.alicdn.com/kf/A1e09c90a204a41a489a4b0a1edfb61fek.png"
+      img: "https://sc02.alicdn.com/kf/A4874871d85af45dba22330c3b30729ba9.png"
     },
     {
       id: 10,
@@ -95,7 +95,7 @@ export default function ProductsPage() {
       category: "grip",
       moq: "50 Pairs",
       desc: "Toeless grip socks feature a full-coverage silicone dot matrix for 360° non-slip traction on studio floors.",
-      img: "https://sc02.alicdn.com/kf/Ab7584183cae24b358aac26a30766d256v.png"
+      img: "https://sc02.alicdn.com/kf/A51cfbbd4e78f403e827566776fd554acl.png"
     },
     {
       id: 12,
@@ -103,7 +103,7 @@ export default function ProductsPage() {
       category: "grip",
       moq: "50 Pairs",
       desc: "High-density silicone traction strips in a chevron formation for elite on-pitch performance and stability.",
-      img: "https://sc02.alicdn.com/kf/Aca6f77397da2405d8b938fbb172676adJ.png"
+      img: "https://sc02.alicdn.com/kf/A1e9645f9b9b946d583ce69eb469d6edcx.png"
     }
   ];
 
@@ -162,7 +162,7 @@ export default function ProductsPage() {
                 key={product.id} 
                 className="bg-[#F1F1F1] rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative aspect-square bg-[#F1F1F1]">
+                <div className="relative aspect-[4/3] bg-[#F1F1F1]">
                   <Image
                     src={product.img}
                     alt={product.title}
