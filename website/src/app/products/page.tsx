@@ -80,6 +80,14 @@ export default function ProductsPage() {
       moq: "50 Pairs",
       desc: "Professional-grade football socks with zoned cushioning, dynamic arch support, and moisture-wicking technology for peak performance on the field.",
       img: "https://sc04.alicdn.com/kf/H02660559be2c468ba4a57f26945c2efbx.jpg"
+    },
+    {
+      id: 10,
+      title: "Jacquard Custom Socks",
+      category: "custom",
+      moq: "50 Pairs",
+      desc: "Premium jacquard knit socks featuring complex patterns and vibrant colors. Durable, breathable, and perfect for brand merchandising or unique gift sets.",
+      img: "https://sc04.alicdn.com/kf/H7d667c29e74f4b2ea67776fdd554ac0G.jpg"
     }
   ];
 
