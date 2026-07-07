@@ -72,6 +72,14 @@ export default function ProductsPage() {
         desc: 'Premium soft handfeel with reinforced heel and toe',
         moq: '100 Pairs',
         img: 'https://sc04.alicdn.com/kf/H805aef31a3cf4a18aaddcda39f77d2c41.jpg'
+    },
+    {
+      id: 9,
+      title: "Soccer Sports Socks",
+      category: "sports",
+      moq: "50 Pairs",
+      desc: "Professional-grade football socks with zoned cushioning, dynamic arch support, and moisture-wicking technology for peak performance on the field.",
+      img: "https://sc04.alicdn.com/kf/H02660559be2c468ba4a57f26945c2efbx.jpg"
     }
   ];
 
