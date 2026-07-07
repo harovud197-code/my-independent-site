@@ -129,12 +129,12 @@ export default function ProductsPage() {
                 key={product.id} 
                 className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative aspect-square bg-gray-100">
+                <div className="relative aspect-square bg-white">
                   <Image
                     src={product.img}
                     alt={product.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
