@@ -7,6 +7,7 @@ import Image from 'next/image';
 export default function ProductsPage() {
   const [filter, setFilter] = useState('all');
 
+  // Verified Basketball Socks image update to three-color version
   const products = [
     {
       id: 1,
