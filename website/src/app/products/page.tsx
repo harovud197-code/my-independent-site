@@ -71,7 +71,7 @@ export default function ProductsPage() {
         title: 'Luxury Combed Cotton Casual Socks',
         desc: 'Premium soft handfeel with reinforced heel and toe',
         moq: '100 Pairs',
-        img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-grey.jpg'
+        img: 'https://sc04.alicdn.com/kf/H805aef31a3cf4a18aaddcda39f77d2c41.jpg'
     }
   ];
 
