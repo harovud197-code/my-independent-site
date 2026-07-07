@@ -159,7 +159,7 @@ export default function ProductsPage() {
             {filteredProducts.map((product) => (
               <div 
                 key={product.id} 
-                className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="bg-neutral-100 rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="relative aspect-square bg-neutral-100">
                   <Image
