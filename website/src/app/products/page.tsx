@@ -38,7 +38,7 @@ export default function ProductsPage() {
       title: 'Custom Logo Embroidery Socks',
       desc: 'OEM private label, custom color & packaging support',
       moq: '50 Pairs',
-      img: 'https://sc04.alicdn.com/kf/Heeb60118269047e19493c3d32b6a45dbo.jpg'
+      img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-grey.jpg'
     },
     {
         id: 5,
@@ -46,7 +46,7 @@ export default function ProductsPage() {
         title: 'Mid-calf Football Grip Socks',
         desc: 'Advanced grip pattern for maximum stability on turf',
         moq: '100 Pairs',
-        img: 'https://sc04.alicdn.com/kf/H473a5986318646e191318ddd5b81ab81k.jpg'
+        img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-football-vs-grip.jpg'
     },
     {
         id: 6,
@@ -54,7 +54,7 @@ export default function ProductsPage() {
         title: 'Performance Basketball Socks',
         desc: 'High-impact cushioning with secure ankle support',
         moq: '100 Pairs',
-        img: 'https://sc04.alicdn.com/kf/H79d40d2c1d884992bd5e3ba914f719e6W.jpg'
+        img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-basketball.jpg'
     },
     {
         id: 7,
@@ -62,7 +62,7 @@ export default function ProductsPage() {
         title: 'Open Top Pilates Studio Socks',
         desc: 'Breathable upper with non-toxic silicone grips',
         moq: '50 Pairs',
-        img: 'https://sc04.alicdn.com/kf/H7be1730dfbed484fbdb7b48fa9303e5dd.jpg'
+        img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-pilates-reformer.jpg'
     },
     {
         id: 8,
@@ -70,39 +70,7 @@ export default function ProductsPage() {
         title: 'Luxury Combed Cotton Casual Socks',
         desc: 'Premium soft handfeel with reinforced heel and toe',
         moq: '100 Pairs',
-        img: 'https://sc04.alicdn.com/kf/H214c83a08ece4a748e07a26a9cbd00322.jpg'
-    },
-    {
-      id: 9,
-      title: "Elite Compression Training Socks",
-      category: "sports",
-      moq: "50 Pairs",
-      desc: "Engineered for high-intensity training, these compression socks feature a graduated pressure system to enhance blood circulation.",
-      img: "https://sc02.alicdn.com/kf/Afc5216c166d74a138fbc0e3d4d831119f.png"
-    },
-    {
-      id: 10,
-      title: "ProRun Lightweight Performance Socks",
-      category: "sports",
-      moq: "50 Pairs",
-      desc: "Ultra-lightweight socks combining fine-gauge merino wool with performance nylon for superior breathability.",
-      img: "https://sc04.alicdn.com/kf/H02660559be2c468ba4a57f26945c2efbx.jpg"
-    },
-    {
-      id: 11,
-      title: "FlexGrip Yoga & Pilates Socks",
-      category: "grip",
-      moq: "50 Pairs",
-      desc: "Toeless grip socks feature a full-coverage silicone dot matrix for 360° non-slip traction on studio floors.",
-      img: "https://sc02.alicdn.com/kf/A432c128510a84481bbf40c6c8329f6b5r.png"
-    },
-    {
-      id: 12,
-      title: "PowerGrip Football Traction Socks",
-      category: "grip",
-      moq: "50 Pairs",
-      desc: "High-density silicone traction strips in a chevron formation for elite on-pitch performance and stability.",
-      img: "https://sc02.alicdn.com/kf/A0e1aace101ee4548adaaa120635cd24f6.png"
+        img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks-guide-grey.jpg'
     }
   ];
 
@@ -161,13 +129,12 @@ export default function ProductsPage() {
                 key={product.id} 
                 className="bg-white rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative aspect-square bg-neutral-100">
+                <div className="relative aspect-square bg-gray-100">
                   <Image
                     src={product.img}
                     alt={product.title}
                     fill
-                    unoptimized={product.img.includes('alicdn.com')}
-                    className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
@@ -241,4 +208,3 @@ export default function ProductsPage() {
     </div>
   );
 }
-

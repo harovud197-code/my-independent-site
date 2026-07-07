@@ -11,22 +11,6 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
-      {
-        protocol: 'https',
-        hostname: 'sc01.alicdn.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'sc02.alicdn.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'sc03.alicdn.com',
-      },
-      {
-        protocol: 'https',
-        hostname: 'sc04.alicdn.com',
-      },
     ],
   },
 };
