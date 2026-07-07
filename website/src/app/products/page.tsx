@@ -135,6 +135,7 @@ export default function ProductsPage() {
                     src={product.img}
                     alt={product.title}
                     fill
+                    unoptimized={product.img.includes('alicdn.com')}
                     className="object-contain p-6 transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
