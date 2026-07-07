@@ -54,7 +54,7 @@ export default function ProductsPage() {
         title: 'Performance Basketball Socks',
         desc: 'High-impact cushioning with secure ankle support',
         moq: '100 Pairs',
-        img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-basketball.jpg'
+        img: 'https://sc04.alicdn.com/kf/He5e136ac5cd3410a9851bb16916b6f9cG.jpg'
     },
     {
         id: 7,
