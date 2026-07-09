@@ -8,19 +8,19 @@ export default function Header() {
       <div className="max-w-[1440px] mx-auto px-5 lg:px-8 nav-wrap">
         
         {/* LOGO */}
-        <Link href="/" className="brand hover:opacity-80 transition-opacity">
+        <Link href="/" className="brand hover:opacity-80 transition-opacity !text-3xl md:!text-[32px]">
           PeakMotion Socks
         </Link>
 
         {/* NAV */}
         <nav className="hidden md:flex main-nav">
-          <Link href="/">HOME</Link>
-          <Link href="/products">PRODUCTS</Link>
-          <Link href="/#factory">FACTORY</Link>
+          <Link href="/">Home</Link>
+          <Link href="/products">Products</Link>
+          <Link href="/#factory">Factory</Link>
           <Link href="/#custom-socks">OEM</Link>
-          <Link href="/blog">BLOG</Link>
-          <Link href="/blog/sports-socks-moq-guide" className="whitespace-nowrap">MOQ GUIDE</Link>
-          <Link href="/#inquiry">CONTACT</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/blog/sports-socks-moq-guide" className="whitespace-nowrap">Moq Guide</Link>
+          <Link href="/#inquiry">Contact</Link>
         </nav>
 
         {/* CTA BUTTON */}
