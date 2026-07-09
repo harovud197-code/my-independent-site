@@ -123,15 +123,20 @@ Project Details: ${details}
           </div>
           <div className="cards product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'Grip Socks', desc: 'Anti-slip socks for football, pilates, yoga, trampoline parks and performance training.', class: 'grip' },
-              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', class: 'football' },
-              { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', class: 'running' },
-              { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private' },
+              { title: 'Grip Socks', desc: 'Anti-slip socks for football, pilates, yoga, trampoline parks and performance training.', img: '/assets/images/grip-socks-product.png' },
+              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', img: 'https://sc02.alicdn.com/kf/A22c8ea23abb345b880b9c8c2e6d60df0w.png' },
+              { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-running-long-three-colors-final.jpg' },
+              { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-packaging-final.jpg' },
             ].map((card, i) => (
               <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all">
-                <div className={`card-image ${card.class} h-48 ${card.class === 'football' ? 'bg-transparent' : 'bg-white'} rounded-2xl mb-6 relative overflow-hidden`}>
-                  {card.class === 'grip' && <Image src="/assets/images/grip-socks-product.png" alt="Grip Socks" fill className="object-contain p-4" />}
-                  {card.class === 'football' && <Image src="https://sc02.alicdn.com/kf/A22c8ea23abb345b880b9c8c2e6d60df0w.png" alt="Football Socks" fill className="object-contain p-4" unoptimized={true} />}
+                <div className="card-image-wrap h-48 bg-white rounded-2xl mb-6 relative overflow-hidden">
+                  <Image 
+                    src={card.img} 
+                    alt={card.title} 
+                    fill 
+                    className="object-contain p-6"
+                    unoptimized={card.img.startsWith('http')}
+                  />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
                 <p className="text-gray-500 mb-6">{card.desc}</p>
