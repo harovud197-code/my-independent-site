@@ -129,9 +129,9 @@ Project Details: ${details}
               { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private' },
             ].map((card, i) => (
               <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all">
-                <div className={`card-image ${card.class} h-48 bg-white rounded-2xl mb-6 relative overflow-hidden`}>
+                <div className={`card-image ${card.class} h-48 ${card.class === 'football' ? 'bg-transparent' : 'bg-white'} rounded-2xl mb-6 relative overflow-hidden`}>
                   {card.class === 'grip' && <Image src="/assets/images/grip-socks-product.png" alt="Grip Socks" fill className="object-contain p-4" />}
-                  {card.class === 'football' && <Image src="https://sc04.alicdn.com/kf/Hb1bff02fa03849e8a69c0d6ba3583bad8.jpg" alt="Football Socks" fill className="object-contain p-4" unoptimized={true} />}
+                  {card.class === 'football' && <Image src="https://sc02.alicdn.com/kf/A22c8ea23abb345b880b9c8c2e6d60df0w.png" alt="Football Socks" fill className="object-contain p-4" unoptimized={true} />}
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
                 <p className="text-gray-500 mb-6">{card.desc}</p>
