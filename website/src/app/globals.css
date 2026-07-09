@@ -51,4 +51,4 @@ body {
 
 /* Product card image override */
 .card-image.grip{background:#fff}
-.card-image.grip:before{background:#fff url("images/grip-socks-product.png") center/92% auto no-repeat}
+.card-image.grip:before{background:#fff url("/assets/images/grip-socks-product.png") center/92% auto no-repeat}
