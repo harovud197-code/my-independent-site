@@ -124,12 +124,12 @@ Project Details: ${details}
           <div className="cards product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { title: 'Grip Socks', desc: 'Anti-slip socks for football, pilates, yoga, trampoline parks and performance training.', class: 'grip', img: '/assets/images/grip-socks-product.png' },
-              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', class: 'football', img: 'https://sc02.alicdn.com/kf/A22c8ea23abb345b880b9c8c2e6d60df0w.png' },
+              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', class: 'football-plain', img: 'https://sc04.alicdn.com/kf/Hf9a2b2cfbdc94b0886728ed3c2ae68441.jpg' },
               { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', class: 'running', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-running-long-three-colors-white-bg-outline.jpg' },
               { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/private-label-custom-socks-2026.png' },
             ].map((card, i) => (
               <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all">
-                <div className={`card-image-design ${card.class} h-56 rounded-2xl mb-6 relative overflow-hidden`}>
+                <div className={`${card.class === 'football-plain' ? 'bg-white' : `card-image-design ${card.class}`} h-56 rounded-2xl mb-6 relative overflow-hidden`}>
                   <Image 
                     src={card.img} 
                     alt={card.title} 
