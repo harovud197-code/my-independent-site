@@ -8,12 +8,12 @@ export default function Header() {
       <div className="max-w-[1440px] mx-auto px-5 lg:px-8 nav-wrap">
         
         {/* LOGO */}
-        <Link href="/" className="brand hover:opacity-80 transition-opacity !text-3xl md:!text-[32px]">
+        <Link href="/" className="brand hover:opacity-80 transition-opacity !text-3xl md:!text-[34px]">
           PeakMotion Socks
         </Link>
 
         {/* NAV */}
-        <nav className="hidden md:flex main-nav">
+        <nav className="hidden md:flex main-nav !normal-case">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
           <Link href="/#factory">Factory</Link>
