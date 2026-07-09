@@ -1,6 +1,8 @@
 'use client';
 
+import { useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -12,25 +14,19 @@ export default function Home() {
       const formData = new FormData(form);
       
       const name = formData.get('name') || 'Customer';
-      const company = formData.get('company') || 'N/A';
       const email = formData.get('email') || 'N/A';
-      const whatsapp = formData.get('whatsapp') || 'N/A';
-      const productType = formData.get('productType') || 'N/A';
+      const productType = formData.get('product') || 'N/A';
       const quantity = formData.get('quantity') || 'N/A';
-      const logoPlacement = formData.get('logoPlacement') || 'N/A';
-      const details = formData.get('details') || 'N/A';
+      const details = formData.get('message') || 'N/A';
 
       const subject = `New Inquiry from ${name} - PeakMotion Socks`;
       const body = `
 New Custom Socks Inquiry:
 --------------------------
 Name: ${name}
-Company: ${company}
 Email: ${email}
-WhatsApp/Phone: ${whatsapp}
 Product Type: ${productType}
 Quantity: ${quantity}
-Logo Placement: ${logoPlacement}
 Project Details: ${details}
       `;
 
@@ -45,480 +41,277 @@ Project Details: ${details}
     }
   };
 
+  useEffect(() => {
+    // Reveal animation logic
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    return () => io.disconnect();
+  }, []);
+
   return (
-    <div className="flex flex-col min-h-screen bg-white font-sans text-slate-900">
-      <main className="flex-1">
-
-        {/* Hero Section */}
-        <section className="h-[85vh] md:h-[95vh] flex items-center px-5 lg:px-15 text-white relative overflow-hidden">
-          <Image 
-            src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/hero-poster.png" 
-            alt="PeakMotion Sports Socks Hero" 
-            fill 
-            priority
-            unoptimized={true}
-            className="object-cover z-0 brightness-[0.45]" 
-          />
-          <div className="max-w-[720px] relative z-10">
-            <h1 className="text-5xl lg:text-[78px] leading-[1.05] mb-6 font-extrabold uppercase">
-              PROFESSIONAL <span className="text-[#b4ff2b]">SPORTS SOCKS</span> MANUFACTURER
-            </h1>
-            <p className="text-xl lg:text-[22px] mb-9">
-              OEM Grip Socks Football Socks & Private Label Solutions
-            </p>
-            <div className="flex flex-col sm:flex-row gap-5">
-              <a 
-                href="https://wa.me/8617357769219" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="px-8 py-4 rounded font-bold inline-block text-center bg-[#b4ff2b] text-black hover:bg-[#a3e627] transition-colors"
-              >
-                GET QUOTE
+    <main id="main">
+      {/* Hero Section */}
+      <section className="hero hero-poster">
+        <div className="container hero-grid">
+          <div className="hero-copy reveal">
+            <p className="eyebrow">Custom Sports Socks Manufacturer</p>
+            <h1 className="text-slate-900">Custom Sports Socks <span className="block">Built for Growing Brands</span></h1>
+            <p className="hero-lead">From grip socks and football socks to premium running socks, we help sports brands launch high-performance products with low MOQ, fast sampling and factory-direct manufacturing.</p>
+            <div className="hero-actions">
+              <a className="btn btn-primary" href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20custom%20socks." target="_blank" rel="noopener noreferrer">
+                Get Free Quote <em className="not-italic ml-4">→</em>
               </a>
-              <a 
-                href="/sports-socks" 
-                className="px-8 py-4 rounded font-bold inline-block text-center border-2 border-white text-white bg-transparent hover:bg-white hover:text-black transition-all duration-300"
-              >
-                Explore Sports Socks
-              </a>
+              <Link className="btn btn-secondary" href="/products">Explore Products</Link>
+            </div>
+            <div className="trust-row" aria-label="Key manufacturing advantages">
+              <span><b>MOQ From</b>100 Pairs</span>
+              <span><b>7-Day</b>Sample</span>
+              <span><b>Factory Since</b>2005</span>
+              <span><b>OEM &</b>Private Label</span>
             </div>
           </div>
-        </section>
+          <div className="hero-showcase hero-showcase-image reveal" aria-label="Custom sports socks product showcase">
+            <Image 
+              src="/assets/images/hero-showcase-green.png" 
+              alt="PeakMotion custom sports socks product showcase" 
+              width={660} 
+              height={500} 
+              priority
+              className="drop-shadow-2xl rounded-[34px]"
+            />
+          </div>
+        </div>
+        <div className="container trusted-strip reveal">
+          <h2 className="text-2xl font-bold mb-6">Trusted by Growing Sports Brands Worldwide</h2>
+          <div className="trusted-types">
+            <span>Sports Brands</span>
+            <span>Retailers</span>
+            <span>Distributors</span>
+            <span>Football Clubs</span>
+            <span>Pilates Studios</span>
+          </div>
+          <p className="text-gray-500 mt-4">Serving <b className="text-[#87a829]">40+</b> countries with premium quality and reliable service.</p>
+        </div>
+      </section>
 
-        {/* Stats Section */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-15 px-5 lg:px-15 relative z-10">
-          {[
-            { label: '20+', sub: 'Years Experience' },
-            { label: '200+', sub: 'Advanced Machines' },
-            { label: '5000+', sub: 'Global Clients' },
-            { label: '100%', sub: 'QC Inspection' },
-          ].map((stat, i) => (
-            <div key={i} className="bg-white p-7 shadow-[0_10px_25px_rgba(0,0,0,0.08)] rounded-lg text-center">
-              <h3 className="text-4xl font-bold mb-2">{stat.label}</h3>
-              <p className="text-gray-600">{stat.sub}</p>
-            </div>
-          ))}
-        </section>
+      {/* Metrics Section */}
+      <section id="about" className="metrics py-16">
+        <div className="container metrics-grid reveal grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="text-center"><strong>20+</strong><span className="block text-sm text-gray-500 uppercase font-bold">Years Manufacturing</span></div>
+          <div className="text-center"><strong>5,000+</strong><span className="block text-sm text-gray-500 uppercase font-bold">Custom Designs</span></div>
+          <div className="text-center"><strong>40+</strong><span className="block text-sm text-gray-500 uppercase font-bold">Countries Served</span></div>
+          <div className="text-center"><strong>OEM</strong><span className="block text-sm text-gray-500 uppercase font-bold">Brand-Ready Support</span></div>
+        </div>
+      </section>
 
-        {/* Products Section */}
-        <section className="py-22 px-5 lg:px-15" id="sports-socks">
-          <h2 className="text-4xl lg:text-[48px] mb-5 font-extrabold uppercase">OUR PRODUCT COLLECTION</h2>
-          <p className="text-gray-500 mb-12">
-            High-performance custom sports socks for every sport and activity.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+      {/* Solutions Section */}
+      <section id="solutions" className="section-pad bg-white">
+        <div className="container">
+          <div className="section-head reveal text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <p className="eyebrow text-[#87a829] font-black tracking-widest">Product Solutions</p>
+            <h2 className="text-4xl font-extrabold uppercase">Custom socks for every sports brand category</h2>
+            <p className="text-gray-500 text-lg">Build a focused product line with materials, structure, logo, color and packaging matched to your target market.</p>
+          </div>
+          <div className="cards product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { 
-                title: 'Grip socks', 
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/grip-socks.jpg',
-                desc: 'Professional custom grip socks manufacturer offering non-slip sports socks for football, soccer, pilates, and gym training. Designed with advanced anti-slip grip technology to enhance stability, performance, and comfort during high-intensity movement. OEM and private label services available with flexible MOQ for global sports brands and teams.'
-              },
-              { 
-                title: 'Football Socks', 
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks.png',
-                desc: 'Custom football socks manufacturer specializing in high-performance soccer socks for teams, clubs, and sports brands. Designed for comfort, durability, and moisture management during intense matches and training sessions. We provide OEM and private label solutions with flexible MOQ, supporting full customization of colors, logos, and packaging.'
-              },
-              { 
-                title: 'Pilates Socks', 
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/pilates-socks.jpg',
-                desc: 'Custom Pilates socks manufacturer specializing in non-slip grip socks for Pilates, yoga, and studio training. Designed to improve balance, stability, and safety during low-impact workouts on reformer machines and studio floors. We offer OEM and private label services with flexible MOQ and full customization options for global fitness and wellness brands.'
-              },
-              { 
-                title: 'Custom Socks', 
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/custom-socks.png',
-                desc: 'A professional sock manufacturing partner offering end-to-end customization services for global brands. From concept development to bulk production, we support full OEM and private label solutions including design execution, material sourcing, logo application, and packaging customization. Built for startups, DTC brands, and established retailers requiring scalable and flexible manufacturing support.'
-              },
-              { 
-                title: 'Running Socks', 
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/running-socks.jpg',
-                desc: 'Performance running socks designed to support athletes through every mile. Featuring lightweight construction, advanced moisture management, strategic cushioning, and ergonomic fit, our running socks help improve comfort and reduce friction during training and competition. Available for OEM and private label programs with custom colors, branding, and packaging solutions.'
-              },
-              { 
-                title: 'Cycling Socks', 
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/cycling-socks.jpg',
-                desc: 'Purpose-built cycling socks designed for riders who prioritize speed, efficiency, and all-day comfort. Featuring a lightweight construction and performance-focused fit, our cycling socks help maintain airflow and reduce excess bulk inside cycling shoes. Ideal for road cycling teams, competitive riders, cycling events, and private label collections, with extensive customization options for branding, colors, and packaging.'
-              },
-              { 
-                title: 'Basketball Socks', 
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/basketball-socks.jpg',
-                desc: 'Built for the demands of the court, our basketball socks combine targeted cushioning, secure support, and durable construction to help athletes perform with confidence. Designed for quick direction changes, jumps, and high-impact play, they deliver comfort and stability throughout training sessions and competitive games. Ideal for basketball brands, teams, academies, and custom uniform programs.'
-              },
-              { 
-                title: 'Gym Socks', 
-                tag: '',
-                img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/training-socks.png',
-                desc: 'High-performance gym socks designed for strength training, fitness workouts, and cross-training in the gym environment. Built with breathable materials, moisture control, and a supportive fit, they provide lasting comfort and stability during weightlifting, treadmill sessions, and high-intensity workouts. Available for OEM and private label customization with full branding options.'
-              },
-            ].map((product: any, i) => (
-              <div key={i} className="bg-white group">
-                <div className="relative overflow-hidden rounded-xl aspect-square mb-4">
-                  <a 
-                    href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block w-full h-full relative"
-                  >
-                    <Image 
-                      src={product.img} 
-                      alt={product.title} 
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-110" 
-                    />
-                  </a>
-                  {product.tag && (
-                    <div className="absolute top-3 left-3 bg-black text-white text-[10px] font-bold px-2 py-1 uppercase">
-                      {product.tag}
-                    </div>
-                  )}
-                  <button className="absolute top-3 right-3 p-1.5 bg-white/80 backdrop-blur-sm rounded-full text-gray-900 hover:text-red-500 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                    </svg>
-                  </button>
+              { title: 'Grip Socks', desc: 'Anti-slip socks for football, pilates, yoga, trampoline parks and performance training.', class: 'grip' },
+              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', class: 'football' },
+              { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', class: 'running' },
+              { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private' },
+            ].map((card, i) => (
+              <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all">
+                <div className={`card-image ${card.class} h-48 bg-gray-50 rounded-2xl mb-6 relative overflow-hidden`}>
+                  {card.class === 'grip' && <Image src="/assets/images/grip-socks-product.png" alt="Grip Socks" fill className="object-contain p-4" />}
                 </div>
-                <div className="space-y-1.5">
-                  <h3 className={`text-lg font-bold truncate hover:text-[#b4ff2b] transition-colors ${['Grip socks', 'Football Socks', 'Pilates Socks', 'Custom Socks', 'Running Socks', 'Cycling Socks', 'Basketball Socks', 'Gym Socks'].includes(product.title) ? '' : 'uppercase'}`}>
-                    <a 
-                      href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {product.title}
-                    </a>
-                  </h3>
-                  
-                  {product.desc ? (
-                    <p className="text-gray-500 text-xs md:text-sm leading-relaxed text-left pt-1">
-                      {product.desc}
-                    </p>
-                  ) : (
-                    <>
-                      <p className="text-gray-500 text-sm font-medium">MOQ: {product.moq}</p>
-                      <div className="flex items-center justify-between pt-2">
-                        <div className="flex items-center space-x-2">
-                          <div className="flex -space-x-1">
-                            {product.colors?.map((color: string, idx: number) => (
-                              <span 
-                                key={idx} 
-                                className="w-3.5 h-3.5 rounded-full border border-white" 
-                                style={{ backgroundColor: color }}
-                              />
-                            ))}
-                          </div>
-                          <span className="text-[12px] font-bold text-gray-400">{product.moreColors}</span>
-                        </div>
-                        <a 
-                          href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I am interested in your ${product.title}. Please send me a quote.`)}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm font-bold text-gray-900 hover:text-[#b4ff2b] transition-colors uppercase"
-                        >
-                          Inquire
-                        </a>
-                      </div>
-                    </>
-                  )}
-                </div>
+                <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
+                <p className="text-gray-500 mb-6">{card.desc}</p>
+                <Link href="/products" className="font-extrabold text-sm uppercase tracking-wider text-black hover:text-[#87a829]">Customize {card.title} →</Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us Section */}
+      <section className="why section-pad bg-[#f7f5ef]">
+        <div className="container why-grid grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="section-head align-left reveal space-y-6">
+            <p className="eyebrow text-[#87a829] font-black">Why PeakMotion</p>
+            <h2 className="text-4xl font-extrabold uppercase leading-tight text-slate-900">Built for buyers who need reliable production, not just a cheap quote.</h2>
+            <p className="text-gray-500 text-lg">We help you reduce sourcing risk with clear communication, flexible custom options and controlled production from sample to shipment.</p>
+            <a className="btn btn-primary inline-block" href="https://wa.me/8617357769219" target="_blank" rel="noopener noreferrer">Talk to Factory</a>
+          </div>
+          <div className="benefits-grid grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {[
+              { id: '01', title: 'Low MOQ', desc: 'Start with small trial orders before scaling to bulk production.' },
+              { id: '02', title: 'Fast Sampling', desc: 'Quick mockup and sample development after artwork confirmation.' },
+              { id: '03', title: 'Quality Control', desc: 'Material checks, knitting inspection, pairing, packaging and final QC.' },
+              { id: '04', title: 'Factory Direct', desc: 'Direct communication with production team for better cost and speed.' },
+            ].map((item, idx) => (
+              <div key={idx} className="benefit reveal p-8 bg-white rounded-3xl border border-gray-100 shadow-sm">
+                <span className="text-[#87a829] font-black text-xl mb-4 block">{item.id}</span>
+                <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="mt-12 flex justify-center">
-            <a 
-              href={`https://wa.me/8617357769219?text=${encodeURIComponent('Hello PeakMotion Socks, I am interested in requesting a physical sample. Please let me know the details.')}`}
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-[#b4ff2b] text-black font-bold uppercase px-10 py-4 rounded-full text-lg hover:bg-[#a3e627] hover:scale-105 transition-all duration-300 shadow-lg"
-            >
-              Request a Physical Sample Today →
-            </a>
+      {/* Process Section */}
+      <section id="factory" className="section-pad bg-white">
+        <div className="container">
+          <div className="section-head reveal text-center max-w-2xl mx-auto mb-12">
+            <p className="eyebrow text-[#87a829] font-black">Manufacturing Process</p>
+            <h2 className="text-4xl font-extrabold uppercase">From concept to shipment under one roof</h2>
           </div>
-        </section>
-
-        {/* Manufacturing Excellence Section */}
-        <section className="py-22 px-5 lg:px-15 bg-[#0b0b0b] text-white" id="factory">
-          <div className="max-w-7xl mx-auto space-y-24">
-            
-            {/* Manufacturing Facility */}
-            <div className="space-y-12">
-              <div className="text-center space-y-4">
-                <h2 className="text-4xl lg:text-[48px] font-extrabold uppercase">Our Manufacturing Facility</h2>
-                <p className="text-gray-400 max-w-3xl mx-auto text-lg">
-                  We operate advanced knitting machines and quality control systems to ensure every pair of socks meets international standards.
-                </p>
-              </div>
-
-              <div className="relative w-full overflow-hidden rounded-2xl border border-[#222]">
-                <Image 
-                  src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/factory-advanced-knitting.jpg"
-                  alt="sports socks knitting machine factory"
-                  width={1200}
-                  height={400}
-                  unoptimized={true}
-                  className="w-full h-auto"
-                />
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[
-                  { title: 'Knitting Production', desc: 'High-speed computerized knitting machines for precision sock manufacturing.', icon: '🧶' },
-                  { title: 'Material Control', desc: 'Carefully selected yarns for durability, breathability, and comfort.', icon: '🧵' },
-                  { title: 'Quality Inspection', desc: 'Strict QC system ensures defect-free socks before packaging.', icon: '🧪' },
-                ].map((item, i) => (
-                  <div key={i} className="bg-[#141414] border border-[#222] p-8 rounded-2xl hover:border-[#b4ff2b]/30 transition-colors group text-left">
-                    <span className="text-4xl mb-6 block">{item.icon}</span>
-                    <h3 className="text-2xl font-bold mb-4 group-hover:text-[#b4ff2b] transition-colors">{item.title}</h3>
-                    <p className="text-gray-400 leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Production Process */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div className="relative w-full overflow-hidden rounded-2xl border border-[#222]">
-                <Image 
-                  src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/manufacturing-production-process.jpg"
-                  alt="PeakMotion sports socks production process circular infographic"
-                  width={1000}
-                  height={1000}
-                  unoptimized={true}
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="space-y-8 text-left">
-                <h2 className="text-4xl font-extrabold uppercase">Production Process</h2>
-                <div className="space-y-4">
-                  {[
-                    'Material Selection',
-                    'Design & Development',
-                    'Computerized Knitting',
-                    'Toe Linking',
-                    'Silicone Grip Printing',
-                    'Quality Inspection',
-                    'Packaging & Shipping'
-                  ].map((step, idx) => (
-                    <div key={idx} className="flex items-center gap-5 group">
-                      <span className="w-10 h-10 rounded-full border-2 border-[#b4ff2b] text-[#b4ff2b] flex items-center justify-center font-bold shrink-0 group-hover:bg-[#b4ff2b] group-hover:text-black transition-all">
-                        {idx + 1}
-                      </span>
-                      <span className="text-xl font-medium text-gray-300 group-hover:text-white transition-colors">{step}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Manufacturing Capabilities */}
-            <div className="space-y-12">
-              <div className="text-center">
-                <h2 className="text-4xl lg:text-[48px] font-extrabold uppercase">Our Manufacturing Capabilities</h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[
-                  { title: 'Low MOQ', desc: 'Start your brand with only 50–100 pairs per design.', icon: '⚡' },
-                  { title: 'Full Customization', desc: 'Logo, color, thickness, grip design, packaging.', icon: '🎨' },
-                  { title: 'Fast Delivery', desc: 'Sample in 3–5 days, bulk production in 15–25 days.', icon: '🚚' },
-                ].map((cap, i) => (
-                  <div key={i} className="bg-[#141414] border border-[#222] p-8 rounded-2xl hover:border-[#b4ff2b]/30 transition-colors group text-left">
-                    <span className="text-4xl mb-6 block">{cap.icon}</span>
-                    <h3 className="text-2xl font-bold mb-4 group-hover:text-[#b4ff2b] transition-colors">{cap.title}</h3>
-                    <p className="text-gray-400 leading-relaxed">{cap.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Call to Action Section (Moved from Bottom) */}
-            <div className="bg-[#141414] border border-[#222] rounded-3xl p-12 text-center shadow-sm max-w-5xl mx-auto mt-8 mb-8">
-              <h2 className="text-white font-extrabold text-3xl md:text-4xl mb-6">
-                Start Your Custom Socks Project Today
-              </h2>
-              <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-                Work directly with a professional socks factory and build your own brand with OEM & private label solutions.
-              </p>
-              <a 
-                href={`https://wa.me/8617357769219?text=${encodeURIComponent('Hello PeakMotion Socks, I am interested in starting a custom socks project. Please let me know the details.')}`}
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-[#b4ff2b] text-black font-black px-10 py-4 rounded-2xl hover:bg-[#a3e627] hover:scale-105 transition-all uppercase tracking-widest inline-block"
-              >
-                GET FREE QUOTE
-              </a>
-            </div>
-
-          </div>
-        </section>
-
-        {/* Features Section */}
-        <section className="py-22 px-5 lg:px-15 bg-[#111] text-white">
-          <h2 className="text-4xl lg:text-[48px] mb-12 font-extrabold uppercase">WHY CHOOSE PEAKMOTION SOCKS</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="process-line reveal flex flex-wrap justify-center gap-4">
             {[
-              { title: 'OEM / ODM Support', desc: 'Custom logo, material, packaging and color matching available.' },
-              { title: 'Fast Sampling', desc: 'Quick sample production with professional design support.' },
-              { title: 'Global Shipping', desc: 'Worldwide delivery service for Amazon, wholesale and brands.' },
-              { title: 'Factory Direct', desc: 'Competitive factory pricing with stable production capacity.' },
-            ].map((feature, i) => (
-              <div key={i} className="p-7 border border-[#333] rounded-xl hover:border-[#555] transition-colors">
-                <h3 className="text-2xl font-bold mb-3.5">{feature.title}</h3>
-                <p className="text-gray-400">{feature.desc}</p>
+              'Design Brief', 'Yarn Selection', 'Knitting', 'Toe Linking',
+              'Boarding', 'Inspection', 'Packaging', 'Shipping'
+            ].map((step, idx) => (
+              <div key={idx} className="flex flex-col items-center gap-2 p-6 bg-slate-50 rounded-2xl min-w-[140px]">
+                <b className="text-xl text-[#87a829]">0{idx + 1}</b>
+                <span className="font-bold text-sm uppercase">{step}</span>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Customization Section */}
-        <section className="py-22 px-5 lg:px-15 bg-[#f7f7f7]" id="custom-socks">
-          <h2 className="text-4xl lg:text-[48px] mb-12 font-extrabold uppercase">OEM / ODM CUSTOMIZATION</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { title: 'Custom Logo', desc: 'Jacquard, embroidery and printing logo options.' },
-              { title: 'Custom Material', desc: 'Cotton, nylon, polyester, bamboo and spandex.' },
-              { title: 'Custom Packaging', desc: 'Hang tag, zipper bag, gift box and retail packaging.' },
-              { title: 'Custom Colors', desc: 'Pantone color matching and full color customization.' },
-            ].map((item, i) => (
-              <div key={i} className="bg-white p-7 rounded-lg border border-gray-200 shadow-sm">
-                <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.desc}</p>
-              </div>
+      {/* OEM Section */}
+      <section id="custom-socks" className="section-pad bg-[#0c1713] text-white">
+        <div className="container oem-grid grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="section-head align-left reveal space-y-6">
+            <p className="eyebrow text-[#c5ff3d]">OEM Customization</p>
+            <h2 className="text-4xl font-extrabold uppercase">Everything your brand needs to launch a sock collection</h2>
+            <p className="text-gray-400 text-lg leading-relaxed">Choose logo method, fabric blend, grip design, needle count, length, compression, label and retail packaging.</p>
+          </div>
+          <div className="oem-options reveal flex flex-wrap gap-3">
+            {['Logo', 'Color', 'Material', 'Grip Pattern', 'Length', 'Compression', 'Needle Count', 'Packaging', 'Barcode', 'Size Set'].map((opt, i) => (
+              <span key={i} className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-sm font-bold uppercase hover:bg-[#c5ff3d] hover:text-black transition-all cursor-default">
+                {opt}
+              </span>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="mt-12 flex justify-center">
-            <a 
-              href={`https://wa.me/8617357769219?text=${encodeURIComponent("Hello PeakMotion Socks, I am ready to start step 1 of my custom socks project. Please let me know how to proceed.")}`}
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-[#b4ff2b] text-black font-bold uppercase px-10 py-4 rounded-full text-lg hover:bg-[#a3e627] hover:scale-105 transition-all duration-300 shadow-lg"
-            >
-              Start Step 1 Now — It's Free →
-            </a>
+      {/* Case Study Section */}
+      <section id="case-study" className="section-pad bg-white">
+        <div className="container case-card reveal bg-[#f7f5ef] p-12 rounded-[42px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <p className="eyebrow text-[#87a829]">Case Study</p>
+            <h2 className="text-3xl font-extrabold uppercase">Helping a sports brand test the market with a smaller first order</h2>
+            <p className="text-gray-600 leading-relaxed">A growing football brand needed premium grip socks but wanted to avoid high inventory risk. PeakMotion supported custom grip pattern, logo placement, packaging and a trial production plan before scaling repeat orders.</p>
           </div>
-        </section>
+          <div className="case-steps space-y-4">
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Challenge</b><span className="font-bold">Small first order + premium look</span></div>
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Solution</b><span className="font-bold">Flexible MOQ + fast sample</span></div>
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Result</b><span className="font-bold">Brand-ready product for launch</span></div>
+          </div>
+        </div>
+      </section>
 
-        {/* Inquiry Form Section */}
-        <section className="py-22 px-5 lg:px-15 bg-[#0b0b0b] text-white" id="inquiry">
-          <div className="max-w-5xl mx-auto">
-            <div className="space-y-4 mb-10">
-              <h2 className="text-4xl lg:text-[48px] font-extrabold uppercase leading-tight">
-                🎁 Free Quote + <span className="text-[#b4ff2b]">Custom Socks Mockup</span> in 24 Hours
-              </h2>
-              <p className="text-gray-400 text-lg md:text-xl max-w-3xl">
-                Custom sports socks manufacturer for OEM & private label brands. Low MOQ, fast response, factory direct pricing.
-              </p>
+      {/* Blog Section */}
+      <section id="blog" className="section-pad bg-[#f7f5ef]">
+        <div className="container">
+          <div className="section-head reveal text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <p className="eyebrow text-[#87a829]">Blog & Buying Guides</p>
+            <h2 className="text-4xl font-extrabold uppercase">Helpful resources for custom sock sourcing</h2>
+            <p className="text-gray-500">Use these guide topics to educate buyers, support SEO content clusters, and lead visitors toward qualified inquiries.</p>
+          </div>
+          <div className="blog-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article className="blog-card reveal bg-white p-8 rounded-[26px] shadow-sm hover:shadow-xl transition-all space-y-4 border border-gray-100">
+              <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">Guide</span>
+              <h3 className="text-xl font-bold">How to Choose the Right Grip Socks Manufacturer</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Explain MOQ, materials, grip patterns, sampling and quality checks for brand buyers.</p>
+              <Link href="/blog/custom-sports-socks-manufacturer-guide" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">Read Guides →</Link>
+            </article>
+            <article className="blog-card reveal bg-white p-8 rounded-[26px] shadow-sm hover:shadow-xl transition-all space-y-4 border border-gray-100">
+              <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">Materials</span>
+              <h3 className="text-xl font-bold">Best Materials for Running and Training Socks</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Compare cotton, nylon, polyester, Coolmax, merino and recycled yarn options.</p>
+              <Link href="/blog/best-materials-for-sports-socks" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">Explore Materials →</Link>
+            </article>
+            <article className="blog-card reveal bg-white p-8 rounded-[26px] shadow-sm hover:shadow-xl transition-all space-y-4 border border-gray-100">
+              <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">OEM</span>
+              <h3 className="text-xl font-bold">Private Label Socks: Packaging, Logo and Launch Checklist</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Show buyers exactly what they need before starting a custom sock project.</p>
+              <Link href="/blog/private-label-socks-guide" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">View OEM Tips →</Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="section-pad bg-white">
+        <div className="container">
+          <div className="section-head reveal text-center max-w-2xl mx-auto mb-12">
+            <p className="eyebrow text-[#87a829]">FAQ</p>
+            <h2 className="text-4xl font-extrabold uppercase">Common questions from sports brand buyers</h2>
+          </div>
+          <div className="faq-list reveal max-w-3xl mx-auto space-y-4">
+            {[
+              { q: 'What is the MOQ for custom sports socks?', a: 'MOQ depends on sock category, logo method, yarn, size range and packaging. Trial orders can start from low quantities for selected products.' },
+              { q: 'Can you make socks with my logo and packaging?', a: 'Yes. We support woven logo, jacquard logo, grip pattern customization, label, header card, box and retail-ready packaging.' },
+              { q: 'How long does sampling take?', a: 'After artwork and specifications are confirmed, sample development can usually move quickly. Exact timing depends on complexity.' },
+              { q: 'Do you ship worldwide?', a: 'Yes. Orders can be arranged by express, air freight, sea freight or your appointed forwarder.' },
+              { q: 'Can you help if I only have an idea?', a: 'Yes. Send your target product, market, reference images, logo and expected quantity. We can help turn it into a production-ready brief.' },
+            ].map((item, idx) => (
+              <details key={idx} className="group border border-gray-100 rounded-2xl bg-[#f7f5ef] p-2 transition-all">
+                <summary className="p-6 cursor-pointer font-extrabold text-lg select-none list-none flex justify-between items-center group-open:text-[#87a829]">
+                  {item.q}
+                  <span className="text-xl group-open:rotate-180 transition-transform">↓</span>
+                </summary>
+                <p className="px-6 pb-6 text-gray-600 leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="inquiry" className="section-pad final-cta bg-[#0c1713] text-white">
+        <div className="container contact-grid grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
+          <div className="space-y-6 text-left">
+            <p className="eyebrow text-[#c5ff3d]">Start Your Project</p>
+            <h2 className="text-4xl font-extrabold uppercase leading-tight">Ready to build your custom sports socks collection?</h2>
+            <p className="text-gray-400 text-lg leading-relaxed">Send your design idea, quantity, target market and packaging needs. Our team will reply with practical suggestions and a quotation direction.</p>
+            <div className="contact-points flex flex-wrap gap-4 mt-8">
+              <span className="px-4 py-2 bg-white/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-white/10">Quote within 24 hours</span>
+              <span className="px-4 py-2 bg-white/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-white/10">Sample support</span>
+              <span className="px-4 py-2 bg-white/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-white/10">OEM production advice</span>
             </div>
-
-            <div className="bg-[#141414] p-6 rounded-2xl border border-gray-800 mb-10 inline-block shadow-sm">
-              <div className="flex items-center gap-3">
-                <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                <strong className="text-gray-200 font-bold uppercase tracking-wide text-sm">PeakMotion Socks Factory</strong>
-              </div>
-              <p className="text-gray-500 text-xs mt-2 font-medium">
-                We respond within 2–4 hours on business days
-              </p>
+          </div>
+          <form className="quote-form bg-white p-10 rounded-[34px] space-y-6 text-black" onSubmit={handleSubmit}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide">Name<input name="name" required className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide">Email<input type="email" name="email" required className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
             </div>
-
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={handleSubmit}>
-              <input 
-                type="text" 
-                name="name"
-                placeholder="Your Name *" 
-                required 
-                className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
-              />
-              <input 
-                type="text" 
-                name="company"
-                placeholder="Company Name" 
-                className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
-              />
-              <input 
-                type="email" 
-                name="email"
-                placeholder="Email Address *" 
-                required 
-                className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
-              />
-              <input 
-                type="text" 
-                name="whatsapp"
-                placeholder="WhatsApp / Phone" 
-                className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
-              />
-              
-              <select name="productType" className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all appearance-none cursor-pointer">
-                <option value="" className="bg-[#0b0b0b]">Product Type</option>
-                <option value="Grip Socks" className="bg-[#0b0b0b]">Grip Socks</option>
-                <option value="Football Socks" className="bg-[#0b0b0b]">Football Socks</option>
-                <option value="Running Socks" className="bg-[#0b0b0b]">Running Socks</option>
-                <option value="Cycling Socks" className="bg-[#0b0b0b]">Cycling Socks</option>
-                <option value="Basketball Socks" className="bg-[#0b0b0b]">Basketball Socks</option>
-                <option value="Custom OEM Socks" className="bg-[#0b0b0b]">Custom OEM Socks</option>
+            <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide">Product Type
+              <select name="product" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all cursor-pointer">
+                <option>Grip Socks</option>
+                <option>Football Socks</option>
+                <option>Running Socks</option>
+                <option>Private Label Collection</option>
               </select>
-
-              <select name="quantity" className="bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all appearance-none cursor-pointer">
-                <option value="" className="bg-[#0b0b0b]">Estimated Quantity</option>
-                <option value="50–100 pairs" className="bg-[#0b0b0b]">50–100 pairs (Sample / Low MOQ)</option>
-                <option value="100–300 pairs" className="bg-[#0b0b0b]">100–300 pairs</option>
-                <option value="300–1000 pairs" className="bg-[#0b0b0b]">300–1000 pairs</option>
-                <option value="1000+ Bulk Order" className="bg-[#0b0b0b]">1000+ Bulk Order</option>
-              </select>
-
-              <input 
-                type="text" 
-                name="logoPlacement"
-                placeholder="Logo Placement (Cuff / Sole / Packaging)" 
-                className="md:col-span-2 bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all placeholder:text-gray-600" 
-              />
-              
-              <textarea 
-                name="details"
-                placeholder="Tell us your project details (material, color, sport, function...)" 
-                className="md:col-span-2 bg-[#121212] border border-gray-800 p-4 rounded-xl text-white outline-none focus:border-[#b4ff2b] transition-all h-32 resize-none placeholder:text-gray-600"
-              ></textarea>
-
-              <div className="md:col-span-2">
-                <label className="block text-gray-500 text-xs mb-2 px-1">Upload Reference Design / Logo (Optional)</label>
-                <input 
-                  type="file" 
-                  className="w-full bg-[#121212] border border-gray-800 p-3 rounded-xl text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-gray-800 file:text-gray-200 hover:file:bg-gray-700 cursor-pointer" 
-                />
-              </div>
-
-              <button 
-                type="submit" 
-                className="md:col-span-2 bg-[#b4ff2b] text-black py-5 rounded-2xl font-black text-xl shadow-[0_0_25px_rgba(180,255,43,0.25)] hover:scale-[1.01] active:scale-95 transition-all uppercase tracking-wider mt-4"
-              >
-                🚀 SEND REQUEST — GET FREE MOCKUP
-              </button>
-            </form>
-
-            <div className="flex flex-wrap gap-3 mt-12">
-              {[
-                '✔ Low MOQ 50 pairs',
-                '✔ OEM & Private Label',
-                '✔ Factory Direct',
-                '✔ Free Design Mockup',
-                '✔ Fast Response',
-              ].map((tag, idx) => (
-                <div key={idx} className="bg-[#111] px-4 py-2 rounded-xl border border-gray-800 text-gray-500 text-xs font-bold uppercase tracking-tight">
-                  {tag}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </main>
+            </label>
+            <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide">Expected Quantity<input name="quantity" placeholder="e.g. 500 pairs" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+            <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide">Project Details<textarea name="message" rows={4} placeholder="Logo, materials, packaging, target delivery date..." className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all resize-none"></textarea></label>
+            <button className="w-full bg-[#0c1713] text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl" type="submit">Request Free Quote</button>
+          </form>
+        </div>
+      </section>
 
       {/* WhatsApp Floating Button */}
       <a 
@@ -529,53 +322,6 @@ Project Details: ${details}
       >
         💬
       </a>
-
-      {/* Footer */}
-      <footer className="bg-[#0b0b0b] text-[#aaa] py-16 px-5 lg:px-15 border-t border-[#222]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-left">
-          <div className="space-y-4">
-            <h3 className="text-white text-xl font-bold">Haiyan Huaerte Knitting Co., Ltd.</h3>
-            <p className="text-sm leading-relaxed">
-              Custom Sports Socks Manufacturer | OEM & Private Label Supplier. Delivering high-performance solutions for global sports brands.
-            </p>
-          </div>
-          
-          <div className="space-y-4">
-            <h4 className="text-white text-lg font-bold">Contact Details</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-3">
-                <span className="text-[#b4ff2b] font-bold shrink-0">Add:</span>
-                <span>No. 8, Yucai Village Industrial Park, Tongyuan Town, Haiyan County, Zhejiang Province, China</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-[#b4ff2b] font-bold shrink-0">Tel:</span>
-                <span>+86 573 8657 1288</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-[#b4ff2b] font-bold shrink-0">Mail:</span>
-                <a href="mailto:abayacloth@hotmail.com" className="hover:text-white transition-colors">abayacloth@hotmail.com</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h4 className="text-white text-lg font-bold">Quick Links</h4>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
-              <a href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</a>
-              <a href="/sports-socks" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
-              <a href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</a>
-              <a href="#inquiry" className="hover:text-[#b4ff2b] transition-colors">GET QUOTE</a>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-[#222] text-xs flex flex-col md:flex-row justify-between gap-4">
-          <p>© 2026 Haiyan Walter Knitting Co., Ltd. All Rights Reserved.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms of Service</a>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </main>
   );
 }
