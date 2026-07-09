@@ -205,7 +205,7 @@ export default function ProductsPage() {
                 href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20want%20to%20know%20more%20about%20your%20wholesale%20pricing%20and%20OEM%20services."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#c5ff3d] text-[#0c1713] px-10 py-5 rounded-2xl font-black text-[15px] uppercase tracking-widest hover:bg-[#a3e627] transition-all shadow-xl"
+                className="bg-[#c5ff3d] !text-[#0c1713] px-10 py-5 rounded-2xl font-black text-[15px] uppercase tracking-widest hover:bg-[#a3e627] transition-all shadow-xl"
               >
                 Get Wholesale Pricing
               </a>
