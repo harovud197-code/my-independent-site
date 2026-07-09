@@ -165,12 +165,12 @@ export default function ProductsPage() {
                       MOQ: {product.moq}
                     </div>
                     <a
-                      href={`https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%3A%20${encodeURIComponent(product.title)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href={product.id === 1 ? "/products/crew-soccer-grip" : `https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%3A%20${encodeURIComponent(product.title)}`}
+                      target={product.id === 1 ? "_self" : "_blank"}
+                      rel={product.id === 1 ? "" : "noopener noreferrer"}
                       className="block w-full bg-[#b4ff2b] text-black text-center py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-[#a3e627] transition-all"
                     >
-                      Get Quote
+                      {product.id === 1 ? "View Details" : "Get Quote"}
                     </a>
                   </div>
                 </div>
