@@ -281,19 +281,19 @@ Project Details: ${details}
       </section>
 
       {/* Contact Section */}
-      <section id="inquiry" className="section-pad final-cta bg-[#0c1713] text-white">
+      <section id="inquiry" className="section-pad final-cta bg-[#c5ff3d] text-[#0c1713]">
         <div className="container contact-grid grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
           <div className="space-y-6 text-left">
-            <p className="eyebrow text-[#c5ff3d]">Start Your Project</p>
+            <p className="eyebrow text-[#0c1713] opacity-80 font-black">Start Your Project</p>
             <h2 className="text-4xl font-extrabold uppercase leading-tight">Ready to build your custom sports socks collection?</h2>
-            <p className="text-gray-400 text-lg leading-relaxed">Send your design idea, quantity, target market and packaging needs. Our team will reply with practical suggestions and a quotation direction.</p>
+            <p className="text-[#0c1713]/80 text-lg leading-relaxed font-medium">Send your design idea, quantity, target market and packaging needs. Our team will reply with practical suggestions and a quotation direction.</p>
             <div className="contact-points flex flex-wrap gap-4 mt-8">
-              <span className="px-4 py-2 bg-white/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-white/10">Quote within 24 hours</span>
-              <span className="px-4 py-2 bg-white/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-white/10">Sample support</span>
-              <span className="px-4 py-2 bg-white/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-white/10">OEM production advice</span>
+              <span className="px-4 py-2 bg-black/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-black/10">Quote within 24 hours</span>
+              <span className="px-4 py-2 bg-black/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-black/10">Sample support</span>
+              <span className="px-4 py-2 bg-black/5 rounded-lg text-xs font-bold uppercase tracking-widest border border-black/10">OEM production advice</span>
             </div>
           </div>
-          <form className="quote-form bg-white p-10 rounded-[34px] space-y-6 text-black" onSubmit={handleSubmit}>
+          <form className="quote-form bg-white p-10 rounded-[34px] space-y-6 text-black shadow-2xl" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide">Name<input name="name" required className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
               <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide">Email<input type="email" name="email" required className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
