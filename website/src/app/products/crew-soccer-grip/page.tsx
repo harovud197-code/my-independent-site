@@ -58,9 +58,6 @@ Requirements: ${data.message}
                 >
                   Chat on WhatsApp
                 </a>
-                <a href="#quote" className="bg-black text-white px-10 py-5 rounded-2xl font-black text-lg uppercase shadow-xl hover:scale-105 transition-transform">
-                  Get A Quote
-                </a>
              </div>
           </div>
         </div>
