@@ -56,18 +56,9 @@ body {
   inset: 0;
   z-index: 0;
 }
-.card-image-design.grip:before {
-  background: #fff;
-}
-.card-image-design.football:before {
-  background: radial-gradient(circle at 30% 40%, #fff 0 7%, transparent 8%), 
-              linear-gradient(135deg, #111, #26362f 42%, var(--brand) 43% 55%, #fff 56%);
-}
-.card-image-design.running:before {
-  background: radial-gradient(circle at 70% 25%, #fff 0 7%, transparent 8%), 
-              linear-gradient(135deg, #f7f5ef, #d9e2db 42%, #101d18 43% 50%, var(--brand) 51%);
-}
+.card-image-design.grip:before,
+.card-image-design.football:before,
+.card-image-design.running:before,
 .card-image-design.private:before {
-  background: radial-gradient(circle at 50% 30%, #fff 0 7%, transparent 8%), 
-              linear-gradient(135deg, #fff, #e9ffe2 45%, var(--brand2) 46% 54%, var(--brand) 55%);
+  background: #fff;
 }
