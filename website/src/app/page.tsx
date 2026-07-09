@@ -123,18 +123,18 @@ Project Details: ${details}
           </div>
           <div className="cards product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'Grip Socks', desc: 'Anti-slip socks for football, pilates, yoga, trampoline parks and performance training.', img: '/assets/images/grip-socks-product.png' },
-              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', img: 'https://sc02.alicdn.com/kf/A22c8ea23abb345b880b9c8c2e6d60df0w.png' },
-              { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-running-long-three-colors-final.jpg' },
-              { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-packaging-final.jpg' },
+              { title: 'Grip Socks', desc: 'Anti-slip socks for football, pilates, yoga, trampoline parks and performance training.', class: 'grip', img: '/assets/images/grip-socks-product.png' },
+              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', class: 'football', img: 'https://sc02.alicdn.com/kf/A22c8ea23abb345b880b9c8c2e6d60df0w.png' },
+              { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', class: 'running', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/products-running-long-three-colors-final.jpg' },
+              { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-packaging-final.jpg' },
             ].map((card, i) => (
               <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all">
-                <div className="card-image-wrap h-48 bg-white rounded-2xl mb-6 relative overflow-hidden">
+                <div className={`card-image-design ${card.class} h-48 rounded-2xl mb-6 relative overflow-hidden`}>
                   <Image 
                     src={card.img} 
                     alt={card.title} 
                     fill 
-                    className="object-contain p-6"
+                    className="object-contain p-6 relative z-10"
                     unoptimized={card.img.startsWith('http')}
                   />
                 </div>
