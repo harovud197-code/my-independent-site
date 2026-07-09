@@ -129,12 +129,12 @@ Project Details: ${details}
               { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/private-label-custom-socks-2026.png' },
             ].map((card, i) => (
               <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all">
-                <div className={`card-image-design ${card.class} h-48 rounded-2xl mb-6 relative overflow-hidden`}>
+                <div className={`card-image-design ${card.class} h-56 rounded-2xl mb-6 relative overflow-hidden`}>
                   <Image 
                     src={card.img} 
                     alt={card.title} 
                     fill 
-                    className="object-contain p-6 relative z-10"
+                    className="object-contain p-2 relative z-10"
                     unoptimized={card.img.startsWith('http')}
                   />
                 </div>
