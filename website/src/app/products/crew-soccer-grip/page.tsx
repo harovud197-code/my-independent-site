@@ -131,9 +131,45 @@ Requirements: ${data.message}
         </div>
       </section>
 
-      {/* CTA Footer Banner */}
-      <section className="w-full relative aspect-[21/9] md:aspect-[3/1]">
-         <Image src="/assets/images/training/cta.png" alt="CTA banner" fill className="object-contain" />
+      {/* CTA Footer Section */}
+      <section className="relative py-20 md:py-32 px-5 text-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/assets/images/training/cta.png" 
+            alt="CTA Background" 
+            fill 
+            className="object-cover" 
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto space-y-8 text-white">
+          <h2 className="text-4xl md:text-6xl font-black uppercase leading-tight">
+            Ready to Build <br />Your Sock Brand?
+          </h2>
+          <p className="text-xl md:text-2xl font-medium text-gray-200">
+            Contact us today and get a free quote within 24 hours.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row justify-center gap-5 pt-4">
+            <a 
+              href="#quote" 
+              className="bg-[#b4ff2b] text-black px-12 py-5 rounded-2xl font-black text-xl uppercase shadow-2xl hover:scale-105 transition-transform inline-block"
+            >
+              Get Quote Now
+            </a>
+            <a 
+              href="https://wa.me/8617357769219" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/10 backdrop-blur-md border-2 border-white text-white px-12 py-5 rounded-2xl font-black text-xl uppercase hover:bg-white hover:text-black transition-all inline-block"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
       </section>
     </div>
   );
