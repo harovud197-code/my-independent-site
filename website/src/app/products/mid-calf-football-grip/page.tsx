@@ -56,7 +56,7 @@ export default function MidCalfFootballGripPage() {
               href={`https://wa.me/8617357769219?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-7 py-4 font-black uppercase tracking-wide text-white transition-all hover:-translate-y-0.5 hover:bg-black"
+              className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg"
             >
               Chat On WhatsApp
             </a>
