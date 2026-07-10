@@ -141,7 +141,7 @@ Project Details: ${details}
                 <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
                 <p className="text-gray-500 mb-6">{card.desc}</p>
                 <Link
-                  href={card.title === 'Grip Socks' ? '/products/crew-soccer-grip' : card.title === 'Football Socks' ? '/products/mid-calf-football-grip' : '/products'}
+                  href={card.title === 'Grip Socks' ? '/products/crew-soccer-grip' : card.title === 'Football Socks' ? '/products/mid-calf-football-grip' : card.title === 'Running Socks' ? '/products/professional-running-athletic-socks' : '/products'}
                   className="mt-auto inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#c5ff3d] px-4 py-3 text-center text-sm font-extrabold uppercase tracking-wider text-black transition-all hover:-translate-y-0.5 hover:bg-[#a8e600] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0c1713]"
                 >
                   Customize {card.title} <span aria-hidden="true">→</span>
