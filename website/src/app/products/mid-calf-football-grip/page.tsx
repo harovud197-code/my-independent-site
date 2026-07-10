@@ -127,21 +127,42 @@ export default function MidCalfFootballGripPage() {
         </div>
       </section>
 
-      <section id="quote" className="bg-[#0c1713] px-5 py-20 text-center text-white md:px-8">
-        <div className="mx-auto max-w-3xl">
-          <img src={`${assetPath}/cta.png`} alt="Custom soccer grip socks" className="mb-10 h-auto w-full rounded-2xl" />
-          <h2 className="text-3xl font-black md:text-5xl">Request A Custom Quote</h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-            Tell us your target quantity, colors, logo and packaging needs. We will reply with a tailored quote.
-          </p>
-          <a
-            href={`https://wa.me/8617357769219?text=${whatsappMessage}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-8 py-4 font-black uppercase tracking-wide text-black transition-all hover:-translate-y-0.5 hover:bg-[#a3e627] hover:shadow-lg"
-          >
-            Get Quote On WhatsApp
-          </a>
+      <section id="quote" className="relative overflow-hidden bg-[#07120c] px-5 py-20 md:px-8 md:py-28">
+        <div className="absolute inset-0">
+          <img
+            src="/assets/images/training/hero.png"
+            alt="Soccer grip socks on the field"
+            className="h-full w-full object-cover object-center opacity-45 md:object-right"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#07120c] via-[#07120c]/90 to-[#07120c]/45" />
+        </div>
+        <div className="relative mx-auto max-w-7xl">
+          <div className="max-w-2xl space-y-7 text-left text-white">
+            <h2 className="text-4xl font-black uppercase leading-tight md:text-6xl">
+              Ready to Build <br />Your Sock Brand?
+            </h2>
+            <p className="text-xl font-medium text-gray-200 md:text-2xl">
+              Contact us today and get a free quote within 24 hours.
+            </p>
+            <div className="flex flex-col gap-5 pt-3 sm:flex-row">
+              <a
+                href={`https://wa.me/8617357769219?text=${whatsappMessage}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-2xl bg-[#b4ff2b] px-10 py-5 text-lg font-black uppercase text-black shadow-2xl transition-transform hover:scale-105"
+              >
+                Get Quote Now
+              </a>
+              <a
+                href="https://wa.me/8617357769219"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-2xl border-2 border-white bg-white/10 px-10 py-5 text-lg font-black uppercase !text-white backdrop-blur-md transition-all hover:bg-white hover:!text-black"
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
