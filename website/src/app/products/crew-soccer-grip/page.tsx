@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function CrewSoccerGripPage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -25,41 +24,51 @@ Requirements: ${data.message}
   };
 
   const applications = [
-    { title: 'Football', icon: '⚽', img: 'app-football.png', text: 'Enhances grip and stability for quick turns, sprints and powerful shots.' },
-    { title: 'Training', icon: '🏃', img: 'app-training.png', text: 'Supportive fit reduces fatigue and helps improve overall performance.' },
-    { title: 'Futsal', icon: '▦', img: 'app-futsal.png', text: 'Improves foot-to-shoe connection for better control on indoor courts.' },
-    { title: 'Gym', icon: '🏋️', img: 'app-gym.png', text: 'Provides comfort and support for all kinds of workouts and lifts.' },
-    { title: 'Pilates', icon: '🧘', img: 'app-pilates.png', text: 'Flexible, breathable and smooth fit for maximum comfort and movement.' },
+    { title: 'Football', icon: '鈿?, img: 'app-football.png', text: 'Enhances grip and stability for quick turns, sprints and powerful shots.' },
+    { title: 'Training', icon: '馃弮', img: 'app-training.png', text: 'Supportive fit reduces fatigue and helps improve overall performance.' },
+    { title: 'Futsal', icon: '鈻?, img: 'app-futsal.png', text: 'Improves foot-to-shoe connection for better control on indoor courts.' },
+    { title: 'Gym', icon: '馃弸锔?, img: 'app-gym.png', text: 'Provides comfort and support for all kinds of workouts and lifts.' },
+    { title: 'Pilates', icon: '馃', img: 'app-pilates.png', text: 'Flexible, breathable and smooth fit for maximum comfort and movement.' },
   ];
 
   return (
     <div className="bg-white min-h-screen font-sans text-gray-900">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 px-5 lg:px-15 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="reveal order-2 md:order-1 relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-          <Image src="/assets/images/training/hero.png" alt="Soccer Grip Socks" fill className="object-cover" priority />
+      <section className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 px-5 py-12 md:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-20">
+        <div className="reveal relative aspect-[4/3] rounded-[28px] bg-[#f7f8f6] p-5 md:p-10">
+          <Image src="/assets/images/training/hero.png" alt="Crew soccer grip socks" fill className="object-contain p-5 md:p-10" priority />
         </div>
-        <div className="space-y-8 order-1 md:order-2">
-          <h1 className="text-5xl md:text-6xl font-black leading-tight text-gray-900 uppercase">
-            Crew Soccer Grip <br />
-            <span className="text-[#39a91f]">Sports Socks</span>
+        <div className="max-w-xl space-y-6">
+          <span className="inline-flex rounded-full bg-[#e9f8d2] px-4 py-2 text-xs font-black tracking-[0.16em] text-[#387116]">
+            BEST SELLER
+          </span>
+          <h1 className="text-4xl font-black leading-tight text-[#0c1713] md:text-6xl">
+            Crew Soccer Grip Sports Socks
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+          <p className="text-lg leading-relaxed text-slate-600">
             High-performance soccer grip socks with silicone anti-slip sole, breathable mesh and custom branding solutions.
           </p>
-          <div className="flex flex-col gap-4">
-             <p className="text-2xl font-black uppercase tracking-widest text-gray-900">MOQ: 50 Pairs</p>
-             <div className="flex flex-wrap gap-4">
-                <a 
-                  href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20your%20Crew%20Soccer%20Grip%20Socks." 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-[#39a91f] text-white px-10 py-5 rounded-2xl font-black text-lg uppercase shadow-xl hover:scale-105 transition-transform"
-                >
-                  Chat on WhatsApp
-                </a>
-             </div>
+          <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 sm:grid-cols-4">
+            {[
+              ['MOQ', '50 Pairs'],
+              ['Sample', '7 Days'],
+              ['Lead Time', '25-30 Days'],
+              ['Size', 'Kids-XL'],
+            ].map(([label, value]) => (
+              <div key={label} className="border-b border-r border-slate-200 p-4 text-center last:border-r-0 sm:border-b-0">
+                <span className="block text-xs font-bold uppercase tracking-wider text-slate-500">{label}</span>
+                <strong className="mt-1 block text-sm">{value}</strong>
+              </div>
+            ))}
           </div>
+          <a
+            href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20your%20Crew%20Soccer%20Grip%20Socks."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg"
+          >
+            Chat on WhatsApp
+          </a>
         </div>
       </section>
 
@@ -174,3 +183,4 @@ Requirements: ${data.message}
     </div>
   );
 }
+
