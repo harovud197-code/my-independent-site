@@ -149,6 +149,16 @@ Project Details: ${details}
               </article>
             ))}
           </div>
+          <div className="mt-10 flex justify-center reveal">
+            <a
+              href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20not%20sure%20which%20sock%20style%20fits%20my%20brand.%20Please%20help%20me%20choose."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-7 py-4 text-center text-sm font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#163020] hover:shadow-lg"
+            >
+              Not Sure Which Socks Fit Your Brand? Get a Free Quote
+            </a>
+          </div>
         </div>
       </section>
 
@@ -206,6 +216,14 @@ Project Details: ${details}
             <p className="eyebrow text-[#c5ff3d]">OEM Customization</p>
             <h2 className="text-4xl font-extrabold uppercase">Everything your brand needs to launch a sock collection</h2>
             <p className="text-gray-400 text-lg leading-relaxed">Choose logo method, fabric blend, grip design, needle count, length, compression, label and retail packaging.</p>
+            <a
+              href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20would%20like%20to%20discuss%20a%20custom%20sock%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl bg-[#c5ff3d] px-7 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-all hover:-translate-y-0.5 hover:bg-[#b4ff2b] hover:shadow-lg"
+            >
+              Discuss Your Custom Project
+            </a>
           </div>
           <div className="oem-options reveal flex flex-wrap gap-3">
             {['Logo', 'Color', 'Material', 'Grip Pattern', 'Length', 'Compression', 'Needle Count', 'Packaging', 'Barcode', 'Size Set'].map((opt, i) => (
