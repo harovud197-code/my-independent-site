@@ -326,12 +326,17 @@ Project Details: ${details}
 
       {/* WhatsApp Floating Button */}
       <a 
-        href="https://wa.me/8617357769219" 
+        href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20would%20like%20a%20free%20quote."
         target="_blank" 
         rel="noopener noreferrer"
-        className="fixed right-5 bottom-5 bg-[#25D366] text-white w-16 h-16 flex items-center justify-center rounded-full text-3xl shadow-xl z-[1000] hover:scale-110 transition-transform"
+        aria-label="Get a free quote on WhatsApp"
+        className="fixed bottom-5 right-5 z-[1000] inline-flex min-h-14 items-center gap-3 rounded-2xl border border-[#b4ff2b]/70 bg-[#0c1713] px-5 py-3 text-sm font-black uppercase tracking-wide !text-white shadow-[0_12px_28px_rgba(12,23,19,0.28)] transition-all hover:-translate-y-1 hover:bg-[#163020] hover:shadow-[0_16px_32px_rgba(12,23,19,0.35)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b4ff2b] sm:bottom-7 sm:right-7"
       >
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#b4ff2b] text-xs font-black text-[#0c1713]">WA</span>
+        <span>Get a Free Quote</span>
+        <span className="hidden">
         💬
+        </span>
       </a>
     </main>
   );
