@@ -132,42 +132,42 @@ Requirements: ${data.message}
       </section>
 
       {/* CTA Footer Section */}
-      <section className="relative py-20 md:py-32 px-5 text-center overflow-hidden">
-        {/* Background Image */}
+      <section className="relative overflow-hidden bg-[#07120c] px-5 py-20 md:py-28 lg:px-15">
         <div className="absolute inset-0 z-0">
-          <Image 
-            src="/assets/images/training/cta.png" 
-            alt="CTA Background" 
-            fill 
-            className="object-cover" 
+          <Image
+            src="/assets/images/training/hero.png"
+            alt="Soccer grip socks on field"
+            fill
+            className="object-cover object-center md:object-right opacity-45"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#07120c] via-[#07120c]/90 to-[#07120c]/45"></div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto space-y-8 text-white">
-          <h2 className="text-4xl md:text-6xl font-black uppercase leading-tight">
-            Ready to Build <br />Your Sock Brand?
-          </h2>
-          <p className="text-xl md:text-2xl font-medium text-gray-200">
-            Contact us today and get a free quote within 24 hours.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row justify-center gap-5 pt-4">
-            <a 
-              href="#quote" 
-              className="bg-[#b4ff2b] text-black px-12 py-5 rounded-2xl font-black text-xl uppercase shadow-2xl hover:scale-105 transition-transform inline-block"
-            >
-              Get Quote Now
-            </a>
-            <a 
-              href="https://wa.me/8617357769219" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-white/10 backdrop-blur-md border-2 border-white text-white px-12 py-5 rounded-2xl font-black text-xl uppercase hover:bg-white hover:text-black transition-all inline-block"
-            >
-              Chat on WhatsApp
-            </a>
+        <div className="relative z-10 mx-auto max-w-7xl">
+          <div className="max-w-2xl space-y-7 text-left text-white">
+            <h2 className="text-4xl md:text-6xl font-black uppercase leading-tight">
+              Ready to Build <br />Your Sock Brand?
+            </h2>
+            <p className="text-xl md:text-2xl font-medium text-gray-200">
+              Contact us today and get a free quote within 24 hours.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-5 pt-3">
+              <a
+                href="#quote"
+                className="inline-flex items-center justify-center rounded-2xl bg-[#b4ff2b] px-10 py-5 text-lg font-black uppercase text-black shadow-2xl transition-transform hover:scale-105"
+              >
+                Get Quote Now
+              </a>
+              <a
+                href="https://wa.me/8617357769219"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-2xl border-2 border-white bg-white/10 px-10 py-5 text-lg font-black uppercase text-white backdrop-blur-md transition-all hover:bg-white hover:text-black"
+              >
+                Chat on WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </section>
