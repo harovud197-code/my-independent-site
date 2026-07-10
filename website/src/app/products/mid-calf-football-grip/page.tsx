@@ -45,13 +45,7 @@ export default function MidCalfFootballGripPage() {
               </div>
             ))}
           </div>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <a
-              href="#quote"
-              className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide text-black transition-all hover:-translate-y-0.5 hover:bg-[#a3e627] hover:shadow-lg"
-            >
-              Get A Quote
-            </a>
+          <div>
             <a
               href={`https://wa.me/8617357769219?text=${whatsappMessage}`}
               target="_blank"
@@ -168,3 +162,4 @@ export default function MidCalfFootballGripPage() {
     </main>
   );
 }
+
