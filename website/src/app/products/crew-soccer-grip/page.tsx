@@ -24,11 +24,11 @@ Requirements: ${data.message}
   };
 
   const applications = [
-    { title: 'Football', icon: '鈿?, img: 'app-football.png', text: 'Enhances grip and stability for quick turns, sprints and powerful shots.' },
-    { title: 'Training', icon: '馃弮', img: 'app-training.png', text: 'Supportive fit reduces fatigue and helps improve overall performance.' },
-    { title: 'Futsal', icon: '鈻?, img: 'app-futsal.png', text: 'Improves foot-to-shoe connection for better control on indoor courts.' },
-    { title: 'Gym', icon: '馃弸锔?, img: 'app-gym.png', text: 'Provides comfort and support for all kinds of workouts and lifts.' },
-    { title: 'Pilates', icon: '馃', img: 'app-pilates.png', text: 'Flexible, breathable and smooth fit for maximum comfort and movement.' },
+    { title: 'Football', icon: 'FB', img: 'app-football.png', text: 'Enhances grip and stability for quick turns, sprints and powerful shots.' },
+    { title: 'Training', icon: 'TR', img: 'app-training.png', text: 'Supportive fit reduces fatigue and helps improve overall performance.' },
+    { title: 'Futsal', icon: 'FS', img: 'app-futsal.png', text: 'Improves foot-to-shoe connection for better control on indoor courts.' },
+    { title: 'Gym', icon: 'GY', img: 'app-gym.png', text: 'Provides comfort and support for all kinds of workouts and lifts.' },
+    { title: 'Pilates', icon: 'PL', img: 'app-pilates.png', text: 'Flexible, breathable and smooth fit for maximum comfort and movement.' },
   ];
 
   return (
