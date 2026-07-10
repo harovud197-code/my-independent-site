@@ -128,7 +128,7 @@ Project Details: ${details}
               { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', class: 'running', img: 'https://sc04.alicdn.com/kf/Hd7505abb99c34e6c9f377397517101abL.jpg', imageScale: 'scale-115' },
               { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/private-label-custom-socks-2026.png', imageScale: 'scale-110' },
             ].map((card, i) => (
-              <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all">
+              <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all flex flex-col">
                 <div className={`${card.class === 'football-plain' ? 'bg-white' : `card-image-design ${card.class}`} h-64 md:h-72 rounded-2xl mb-8 relative overflow-hidden`}>
                   <Image 
                     src={card.img} 
@@ -140,7 +140,12 @@ Project Details: ${details}
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
                 <p className="text-gray-500 mb-6">{card.desc}</p>
-                <Link href="/products" className="font-extrabold text-sm uppercase tracking-wider text-black hover:text-[#87a829]">Customize {card.title} →</Link>
+                <Link
+                  href="/products"
+                  className="mt-auto inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#c5ff3d] px-4 py-3 text-center text-sm font-extrabold uppercase tracking-wider text-black transition-all hover:-translate-y-0.5 hover:bg-[#a8e600] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0c1713]"
+                >
+                  Customize {card.title} <span aria-hidden="true">→</span>
+                </Link>
               </article>
             ))}
           </div>
