@@ -14,7 +14,7 @@ export default function HowToStartCustomSocksBrand() {
     },
     {
       question: 'What is the difference between custom socks and private label socks?',
-      answer: 'Private label socks use the manufacturer��s existing sock styles and only add your brand elements. Full custom socks mean you design styles, materials and patterns completely on your own.'
+      answer: "Private label socks use the manufacturer's existing sock styles and only add your brand elements. Full custom socks mean you design styles, materials and patterns completely on your own."
     },
     {
       question: 'Do I need professional design skills for a custom socks business?',
@@ -408,5 +408,4 @@ export default function HowToStartCustomSocksBrand() {
       </footer>
     </div>
   );
-}
-
+}
