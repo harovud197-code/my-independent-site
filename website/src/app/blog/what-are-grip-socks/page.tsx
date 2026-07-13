@@ -178,7 +178,7 @@ export default function WhatAreGripSocks() {
               Superior Foot Hygiene
             </h3>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Public gyms, studios and playgrounds are full of bacteria and fungi. Grip socks create a protective barrier between feet and shared surfaces, reducing the risk of athlete��s foot and other skin problems. Breathable fabrics also absorb sweat to keep feet dry all day.
+              Public gyms, studios and playgrounds are full of bacteria and fungi. Grip socks create a protective barrier between feet and shared surfaces, reducing the risk of athlete&apos;s foot and other skin problems. Breathable fabrics also absorb sweat to keep feet dry all day.
             </p>
 
             <h3 className="text-xl font-bold text-slate-900 mt-8 mb-3">
@@ -403,5 +403,4 @@ export default function WhatAreGripSocks() {
       </footer>
     </div>
   );
-}
-
+}
