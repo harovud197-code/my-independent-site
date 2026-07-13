@@ -165,12 +165,12 @@ export default function ProductsPage() {
                       MOQ: {product.moq}
                     </div>
                     <a
-                      href={product.id === 1 ? "/products/crew-soccer-grip" : product.id === 2 ? "/products/low-cut-yoga-pilates-grip-socks" : product.id === 3 ? "/products/professional-running-athletic-socks" : product.id === 4 ? "/products/custom-logo-embroidery-socks" : product.id === 5 ? "/products/mid-calf-football-grip" : `https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%3A%20${encodeURIComponent(product.title)}`}
-                      target={product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 ? "_self" : "_blank"}
-                      rel={product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 ? "" : "noopener noreferrer"}
+                      href={product.id === 1 ? "/products/crew-soccer-grip" : product.id === 2 ? "/products/low-cut-yoga-pilates-grip-socks" : product.id === 3 ? "/products/professional-running-athletic-socks" : product.id === 4 ? "/products/custom-logo-embroidery-socks" : product.id === 5 ? "/products/mid-calf-football-grip" : product.id === 6 ? "/products/performance-basketball-socks" : `https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%3A%20${encodeURIComponent(product.title)}`}
+                      target={product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 || product.id === 6 ? "_self" : "_blank"}
+                      rel={product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 || product.id === 6 ? "" : "noopener noreferrer"}
                       className="block w-full bg-[#b4ff2b] text-black text-center py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-[#a3e627] transition-all"
                     >
-                      {product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 ? "View Details" : "Get Quote"}
+                      {product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 || product.id === 6 ? "View Details" : "Get Quote"}
                     </a>
                   </div>
                 </div>
