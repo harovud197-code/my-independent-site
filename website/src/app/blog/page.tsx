@@ -201,7 +201,7 @@ export default function BlogPage() {
             <h1 className="text-4xl font-black leading-tight md:text-6xl">Sports Socks Blog & Manufacturing Guides</h1>
             <p className="max-w-2xl text-lg leading-relaxed text-gray-200 md:text-xl">Practical product, sourcing and OEM knowledge for sports brands, retailers, distributors and teams.</p>
             <div className="flex flex-col gap-4 pt-2 sm:flex-row">
-              <Link href={featured.href} className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide text-black transition-colors hover:bg-[#a3e627]">Start with Grip Socks</Link>
+              <Link href={featured.href} className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide !text-[#0c1713] transition-colors hover:bg-[#a3e627]">Start with Grip Socks</Link>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-white/70 bg-black/20 px-7 py-4 font-black uppercase tracking-wide !text-white backdrop-blur-sm transition-colors hover:bg-white hover:!text-black">Ask About OEM</a>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function BlogPage() {
       <section className="bg-[#0c1713] px-5 py-16 text-white md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 lg:flex-row lg:items-center">
           <div className="max-w-2xl"><p className="text-sm font-black uppercase tracking-[0.16em] text-[#b4ff2b]">From Guide to Product</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Explore Socks You Can Customize</h2><p className="mt-4 text-lg leading-relaxed text-gray-300">Compare real product options, then discuss colors, logos, materials, MOQ and packaging with our factory team.</p></div>
-          <div className="flex flex-col gap-3 sm:flex-row"><Link href="/products" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide text-black hover:bg-[#a3e627]">Browse Products</Link><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-white px-7 py-4 font-black uppercase tracking-wide !text-white hover:bg-white hover:!text-black">Get a Custom Quote</a></div>
+          <div className="flex flex-col gap-3 sm:flex-row"><Link href="/products" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide !text-[#0c1713] hover:bg-[#a3e627]">Browse Products</Link><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-white px-7 py-4 font-black uppercase tracking-wide !text-white hover:bg-white hover:!text-black">Get a Custom Quote</a></div>
         </div>
       </section>
 
@@ -274,7 +274,7 @@ export default function BlogPage() {
         <div className="mx-auto max-w-4xl"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.16em] text-[#679a20]">FAQ</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Common Questions</h2></div><div className="mt-10 space-y-4">{faqs.map((faq) => <details key={faq.question} className="group rounded-lg border border-slate-200 bg-white"><summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-6 font-black"><span>{faq.question}</span><span aria-hidden="true" className="text-2xl text-[#679a20] transition-transform group-open:rotate-45">+</span></summary><p className="border-t border-slate-100 px-6 py-5 leading-relaxed text-slate-600">{faq.answer}</p></details>)}</div></div>
       </section>
 
-      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="fixed bottom-5 right-5 z-50 inline-flex items-center rounded-full bg-[#b4ff2b] px-5 py-3.5 text-sm font-black text-black shadow-xl transition-transform hover:scale-105">Get a Free Quote</a>
+      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="fixed bottom-5 right-5 z-50 inline-flex items-center rounded-full bg-[#b4ff2b] px-5 py-3.5 text-sm font-black !text-[#0c1713] shadow-xl transition-transform hover:scale-105">Get a Free Quote</a>
     </main>
   );
 }
