@@ -2,7 +2,6 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://peakmotionsocks.com';
-  const lastModified = new Date();
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -19,31 +18,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogUrls = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post}`,
-    lastModified,
     priority: 0.64,
+  }));
+
+  const productPages = [
+    'crew-soccer-grip',
+    'mid-calf-football-grip',
+    'professional-running-athletic-socks',
+    'custom-logo-embroidery-socks',
+    'low-cut-yoga-pilates-grip-socks',
+    'performance-basketball-socks',
+    'open-top-pilates-studio-socks',
+    'luxury-combed-cotton-casual-socks',
+    'soccer-sports-socks',
+    'jacquard-custom-socks',
+  ];
+
+  const productUrls = productPages.map((product) => ({
+    url: `${baseUrl}/products/${product}`,
+    priority: 0.8,
   }));
 
   return [
     {
       url: baseUrl,
-      lastModified,
       priority: 1.0,
     },
     {
       url: `${baseUrl}/products`,
-      lastModified,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/sports-socks`,
-      lastModified,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified,
       priority: 0.8,
     },
+    ...productUrls,
     ...blogUrls,
   ];
 }
