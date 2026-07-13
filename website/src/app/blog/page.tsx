@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const siteUrl = 'https://peakmotionsocks.com';
+const blogHeroPath = '/assets/blog/blog-hero-soccer-grip.jpg';
+const blogHeroUrl = `${siteUrl}${blogHeroPath}`;
 const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20would%20like%20a%20quote%20for%20custom%20socks.';
 
 const posts = [
@@ -131,7 +133,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: posts[0].img,
+        url: blogHeroUrl,
         width: 1200,
         height: 630,
         alt: 'PeakMotion sports socks manufacturing guides',
@@ -142,7 +144,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Sports Socks Blog & OEM Guides | PeakMotion',
     description: 'Sports sock manufacturing, sourcing and product guides for brands, teams and retailers.',
-    images: [posts[0].img],
+    images: [blogHeroUrl],
   },
 };
 
@@ -191,7 +193,7 @@ export default function BlogPage() {
       />
 
       <section className="relative min-h-[560px] overflow-hidden bg-[#07120c] px-5 py-20 text-white md:px-8 md:py-28">
-        <Image src={featured.img} alt="Sports socks manufacturing guides" fill priority sizes="100vw" className="object-cover opacity-35" />
+        <Image src={blogHeroPath} alt="Football player wearing performance grip socks" fill priority sizes="100vw" className="object-cover opacity-45" />
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative mx-auto flex min-h-[390px] max-w-7xl items-end">
           <div className="max-w-3xl space-y-6">
