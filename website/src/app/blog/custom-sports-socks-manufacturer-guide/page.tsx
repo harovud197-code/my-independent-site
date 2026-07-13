@@ -18,7 +18,7 @@ export default function CustomSportsSocksManufacturerGuide() {
     },
     {
       question: 'How long does production take?',
-      answer: 'Typically 15�C30 days after sample approval.'
+      answer: 'Typically 15-30 days after sample approval.'
     },
     {
       question: 'Do you provide custom packaging?',
@@ -298,27 +298,27 @@ export default function CustomSportsSocksManufacturerGuide() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 1 �C Design Confirmation</h3>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 1 - Design Confirmation</h3>
                 <p className="text-slate-700 text-[17px] leading-relaxed">Confirm logos, colors, materials, sizing, and packaging requirements.</p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 2 �C Sample Development</h3>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 2 - Sample Development</h3>
                 <p className="text-slate-700 text-[17px] leading-relaxed">Create physical samples for approval.</p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 3 �C Mass Production</h3>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 3 - Mass Production</h3>
                 <p className="text-slate-700 text-[17px] leading-relaxed">Manufacture according to approved specifications.</p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 4 �C Quality Inspection</h3>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 4 - Quality Inspection</h3>
                 <p className="text-slate-700 text-[17px] leading-relaxed">Inspect workmanship, sizing, logos, and packaging.</p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 5 �C Packaging & Shipping</h3>
+                <h3 className="text-xl font-bold text-slate-900 mt-6 mb-1">Step 5 - Packaging & Shipping</h3>
                 <p className="text-slate-700 text-[17px] leading-relaxed">Prepare retail packaging and arrange shipment.</p>
               </div>
             </div>
@@ -335,19 +335,19 @@ export default function CustomSportsSocksManufacturerGuide() {
                 <tbody className="divide-y divide-slate-200 bg-white">
                   <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
                     <td className="px-6 py-4 text-sm text-slate-900 font-bold">Design Confirmation</td>
-                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">1�C3 Days</td>
+                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">1-3 Days</td>
                   </tr>
                   <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
                     <td className="px-6 py-4 text-sm text-slate-900 font-bold">Sampling</td>
-                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">5�C10 Days</td>
+                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">5-10 Days</td>
                   </tr>
                   <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
                     <td className="px-6 py-4 text-sm text-slate-900 font-bold">Production</td>
-                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">15�C30 Days</td>
+                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">15-30 Days</td>
                   </tr>
                   <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
                     <td className="px-6 py-4 text-sm text-slate-900 font-bold">Shipping</td>
-                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">5�C20 Days</td>
+                    <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">5-20 Days</td>
                   </tr>
                 </tbody>
               </table>
@@ -453,5 +453,4 @@ export default function CustomSportsSocksManufacturerGuide() {
       </footer>
     </div>
   );
-}
-
+}
