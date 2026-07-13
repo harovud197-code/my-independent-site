@@ -217,7 +217,7 @@ export default function BlogPage() {
           </div>
           <h2 className="text-3xl font-black leading-tight md:text-5xl">{featured.title}</h2>
           <p className="text-lg leading-relaxed text-slate-600">{featured.desc}</p>
-          <Link href={featured.href} className="inline-flex items-center gap-2 border-b-2 border-[#b4ff2b] pb-1 font-black uppercase tracking-wide text-[#0c1713]">Read the guide <span aria-hidden="true">鈫?/span></Link>
+          <Link href={featured.href} className="inline-flex items-center gap-2 border-b-2 border-[#b4ff2b] pb-1 font-black uppercase tracking-wide text-[#0c1713]">Read the guide <span aria-hidden="true">&rarr;</span></Link>
         </div>
       </section>
 
@@ -237,7 +237,7 @@ export default function BlogPage() {
                   <div className="mb-4 flex items-center justify-between gap-3 text-xs font-bold uppercase tracking-wider"><span className="text-[#4e7e1e]">{post.category}</span><span className="text-slate-400">{post.readTime}</span></div>
                   <h3 className="text-xl font-black leading-snug"><Link href={post.href} className="transition-colors hover:text-[#679a20]">{post.title}</Link></h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate-600">{post.desc}</p>
-                  <Link href={post.href} className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-black uppercase tracking-wide text-[#0c1713]">Read article <span className="text-[#679a20]" aria-hidden="true">鈫?/span></Link>
+                  <Link href={post.href} className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-black uppercase tracking-wide text-[#0c1713]">Read article <span className="text-[#679a20]" aria-hidden="true">&rarr;</span></Link>
                 </div>
               </article>
             ))}
