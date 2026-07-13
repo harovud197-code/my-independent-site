@@ -46,7 +46,7 @@ export default function FootballSocksVsGripSocks() {
 
           {/* Title */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-4">
-            Football Socks vs Grip Socks: What��s the Difference?
+            Football Socks vs Grip Socks: What&apos;s the Difference?
           </h1>
 
           {/* Author/Date Meta */}
@@ -288,5 +288,4 @@ export default function FootballSocksVsGripSocks() {
       </footer>
     </div>
   );
-}
-
+}
