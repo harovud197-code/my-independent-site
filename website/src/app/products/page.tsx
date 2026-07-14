@@ -103,6 +103,19 @@ export default function ProductsPage() {
     ? products 
     : products.filter(p => p.category === filter);
 
+  const productDetailUrls: Record<number, string> = {
+    1: '/products/crew-soccer-grip',
+    2: '/products/low-cut-yoga-pilates-grip-socks',
+    3: '/products/professional-running-athletic-socks',
+    4: '/products/custom-logo-embroidery-socks',
+    5: '/products/mid-calf-football-grip',
+    6: '/products/performance-basketball-socks',
+    7: '/products/open-top-pilates-studio-socks',
+    8: '/products/luxury-combed-cotton-casual-socks',
+    9: '/products/soccer-sports-socks',
+    10: '/products/jacquard-custom-socks',
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <main className="flex-1">
@@ -165,12 +178,10 @@ export default function ProductsPage() {
                       MOQ: {product.moq}
                     </div>
                     <a
-                      href={product.id === 1 ? "/products/crew-soccer-grip" : product.id === 2 ? "/products/low-cut-yoga-pilates-grip-socks" : product.id === 3 ? "/products/professional-running-athletic-socks" : product.id === 4 ? "/products/custom-logo-embroidery-socks" : product.id === 5 ? "/products/mid-calf-football-grip" : product.id === 6 ? "/products/performance-basketball-socks" : product.id === 7 ? "/products/open-top-pilates-studio-socks" : product.id === 8 ? "/products/luxury-combed-cotton-casual-socks" : product.id === 9 ? "/products/soccer-sports-socks" : product.id === 10 ? "/products/jacquard-custom-socks" : `https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%3A%20${encodeURIComponent(product.title)}`}
-                      target={product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 || product.id === 6 || product.id === 7 || product.id === 8 || product.id === 9 || product.id === 10 ? "_self" : "_blank"}
-                      rel={product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 || product.id === 6 || product.id === 7 || product.id === 8 || product.id === 9 || product.id === 10 ? "" : "noopener noreferrer"}
+                      href={productDetailUrls[product.id]}
                       className="block w-full bg-[#b4ff2b] text-black text-center py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-[#a3e627] transition-all"
                     >
-                      {product.id === 1 || product.id === 2 || product.id === 3 || product.id === 4 || product.id === 5 || product.id === 6 || product.id === 7 || product.id === 8 || product.id === 9 || product.id === 10 ? "View Details" : "Get Quote"}
+                      View Details
                     </a>
                   </div>
                 </div>

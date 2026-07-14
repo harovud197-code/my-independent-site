@@ -91,13 +91,13 @@ const posts = [
 ];
 
 const topics = [
-  ['Grip Socks', '/blog/what-are-grip-socks'],
-  ['Football Socks', '/blog/football-socks-vs-grip-socks'],
-  ['Running Socks', '/blog/how-to-choose-running-socks'],
+  ['Grip Socks', '/products/crew-soccer-grip'],
+  ['Football Socks', '/products/mid-calf-football-grip'],
+  ['Running Socks', '/products/professional-running-athletic-socks'],
   ['Basketball Socks', '/products/performance-basketball-socks'],
   ['Cycling Socks', '/blog/cycling-socks-vs-running-socks'],
-  ['Pilates Socks', '/products/open-top-pilates-studio-socks'],
-  ['Custom Socks', '/products'],
+  ['Pilates Socks', '/products/low-cut-yoga-pilates-grip-socks'],
+  ['Custom Socks', '/products/custom-logo-embroidery-socks'],
   ['OEM Manufacturing', '/blog/custom-sports-socks-manufacturer-guide'],
   ['Private Label', '/blog/private-label-socks-guide'],
   ['Materials', '/blog/best-materials-for-sports-socks'],

@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://peakmotionsocks.com'),
   title: 'PeakMotion Socks | Professional Sports Socks Manufacturer',
   description: 'PeakMotion is a leading professional sports socks manufacturer specializing in high-performance grip socks, running socks, and football socks. We offer expert OEM & private label services with low MOQ solutions for global brands.',
+  alternates: {
+    canonical: '/',
+  },
   applicationName: 'PeakMotion Socks',
   creator: 'Haiyan Huaerte Knitting Co., Ltd.',
   publisher: 'Haiyan Huaerte Knitting Co., Ltd.',
