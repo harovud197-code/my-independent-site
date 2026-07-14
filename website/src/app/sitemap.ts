@@ -49,6 +49,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/custom-grip-socks`,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/sports-socks`,
       priority: 0.8,
     },

@@ -91,7 +91,7 @@ const posts = [
 ];
 
 const topics = [
-  ['Grip Socks', '/products/crew-soccer-grip'],
+  ['Grip Socks', '/custom-grip-socks'],
   ['Football Socks', '/products/mid-calf-football-grip'],
   ['Running Socks', '/products/professional-running-athletic-socks'],
   ['Basketball Socks', '/products/performance-basketball-socks'],

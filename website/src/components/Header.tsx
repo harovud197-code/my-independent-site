@@ -16,6 +16,7 @@ export default function Header() {
         <nav className="hidden md:flex main-nav !normal-case">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
+          <Link href="/custom-grip-socks" className="whitespace-nowrap">Custom Grip Socks</Link>
           <Link href="/#factory">Factory</Link>
           <Link href="/#custom-socks">OEM</Link>
           <Link href="/blog">Blog</Link>
