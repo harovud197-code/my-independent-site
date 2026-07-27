@@ -216,7 +216,7 @@ export default function SportsSocksMoqGuidePage() {
           <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">Tell us your sock idea and target quantity</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">Share your product type, logo, preferred colors, quantity by design and packaging needs. We will recommend the practical MOQ route for your project.</p>
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-            <Link href="/#inquiry" className="inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-7 py-4 font-black text-white transition-transform hover:-translate-y-0.5">Request MOQ Advice</Link>
+            <Link href="/#inquiry" className="inline-flex items-center justify-center rounded-xl !bg-[#39a91f] px-7 py-4 font-black !text-white shadow-[0_10px_22px_rgba(57,169,31,0.24)] transition-all hover:-translate-y-0.5 hover:!bg-[#2f8b19]">Request MOQ Advice</Link>
             <a href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20would%20like%20MOQ%20advice%20for%20a%20custom%20sports%20sock%20project." target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] px-7 py-4 font-black text-[#0c1713] transition-colors hover:bg-white">Chat on WhatsApp</a>
           </div>
         </div>
@@ -224,4 +224,3 @@ export default function SportsSocksMoqGuidePage() {
     </main>
   );
 }
-
