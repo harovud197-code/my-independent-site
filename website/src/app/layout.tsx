@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import ConsentBanner from "@/components/ConsentBanner";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,8 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://peakmotionsocks.com'),
-  title: 'PeakMotion Socks | Professional Sports Socks Manufacturer',
-  description: 'PeakMotion is a leading professional sports socks manufacturer specializing in high-performance grip socks, running socks, and football socks. We offer expert OEM & private label services with low MOQ solutions for global brands.',
+  title: 'Custom Sports Socks Manufacturer | OEM & Private Label | PeakMotion',
+  description: 'Custom sports socks manufacturer for grip, football, running, Pilates and training brands. OEM and private label production with flexible MOQ, fast sampling and branded packaging.',
   alternates: {
     canonical: '/',
   },
@@ -39,14 +41,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'PeakMotion Socks',
-    title: 'PeakMotion Socks | Professional Sports Socks Manufacturer',
+    title: 'Custom Sports Socks Manufacturer | OEM & Private Label | PeakMotion',
     description: 'Custom grip socks, football socks, running socks and private label sports socks with flexible MOQ and factory-direct OEM support.',
     url: 'https://peakmotionsocks.com',
     images: [{ url: '/assets/images/hero-showcase-green.png', alt: 'PeakMotion custom sports socks manufacturing' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PeakMotion Socks | Professional Sports Socks Manufacturer',
+    title: 'Custom Sports Socks Manufacturer | OEM & Private Label | PeakMotion',
     description: 'Custom sports socks manufacturing, OEM and private label solutions for global brands.',
     images: ['/assets/images/hero-showcase-green.png'],
   },
@@ -59,6 +61,18 @@ const organizationJsonLd = {
   name: 'PeakMotion Socks',
   legalName: 'Haiyan Huaerte Knitting Co., Ltd.',
   url: 'https://peakmotionsocks.com',
+  logo: {
+    '@type': 'ImageObject',
+    '@id': 'https://peakmotionsocks.com/#logo',
+    url: 'https://peakmotionsocks.com/assets/brand/peakmotion-socks-logo.svg',
+    contentUrl: 'https://peakmotionsocks.com/assets/brand/peakmotion-socks-logo.svg',
+    width: 512,
+    height: 512,
+    caption: 'PeakMotion Socks',
+  },
+  image: {
+    '@id': 'https://peakmotionsocks.com/#logo',
+  },
   email: 'abayacloth@hotmail.com',
   telephone: '+86-573-8657-1288',
   address: {
@@ -96,6 +110,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <GoogleAnalytics />
+        <ConsentBanner />
         <Script 
           defer 
           data-domain="peakmotionsocks.com" 

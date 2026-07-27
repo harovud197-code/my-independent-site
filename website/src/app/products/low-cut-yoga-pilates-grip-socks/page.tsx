@@ -1,12 +1,9 @@
-import type { Metadata } from 'next';
+import Link from 'next/link';
+import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
 const assetPath = '/assets/products/low-cut-yoga-pilates-grip-socks';
 const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Low Cut Yoga Pilates Grip Socks.');
-
-export const metadata: Metadata = {
-  title: 'Low Cut Yoga Pilates Grip Socks | PeakMotion Socks',
-  description: 'Premium low cut Pilates grip socks with silicone non-slip dots, breathable knit and OEM private label customization.',
-};
+const product = productSeo['low-cut-yoga-pilates-grip-socks'];
 
 export default function LowCutYogaPilatesGripSocksPage() {
   const specifications = [
@@ -26,7 +23,14 @@ export default function LowCutYogaPilatesGripSocksPage() {
           <span className="inline-flex rounded-full bg-[#e9f8d2] px-4 py-2 text-xs font-black tracking-[0.16em] text-[#387116]">BEST SELLER</span>
           <h1 className="text-4xl font-black leading-tight md:text-6xl">Low Cut Yoga Pilates Grip Socks</h1>
           <p className="text-lg leading-relaxed text-slate-600">Soft terry fabric Pilates socks with silicone grip dots, breathable knit and full OEM customization for studios, wellness brands and retailers.</p>
-          <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 sm:grid-cols-4">{[['MOQ', '50 Pairs'], ['Sample', '7 Days'], ['Lead Time', '25-30 Days'], ['Size', 'Kids-XL']].map(([label, value]) => <div key={label} className="border-b border-r border-slate-200 p-4 text-center last:border-r-0 sm:border-b-0"><span className="block text-xs font-bold uppercase tracking-wider text-slate-500">{label}</span><strong className="mt-1 block text-sm">{value}</strong></div>)}</div>
+          <p className="text-sm leading-relaxed text-slate-600">
+            Developing a complete studio collection? Review our{' '}
+            <Link href="/yoga-pilates-grip-socks-supplier" className="font-bold text-[#387116] underline underline-offset-4">
+              Yoga &amp; Pilates grip socks supplier
+            </Link>{' '}
+            capabilities, customization options and production process.
+          </p>
+          <ProductQuickFacts product={product} />
           <a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg">Chat on WhatsApp</a>
         </div>
       </section>

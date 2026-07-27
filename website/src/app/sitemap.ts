@@ -2,10 +2,17 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://peakmotionsocks.com';
+  const publishedAt = new Date('2026-07-17T00:00:00.000Z');
+  const blogIndexUpdatedAt = new Date('2026-07-20T00:00:00.000Z');
+  const productStructuredDataUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
+  const jacquardPageUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
+  const relatedArticleUpdatedAt = new Date('2026-07-21T00:00:00.000Z');
+  const seoConsolidationUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
     'custom-sports-socks-manufacturer-guide',
+    'custom-running-socks-oem-guide',
     'cycling-socks-vs-running-socks',
     'football-socks-vs-grip-socks',
     'how-sports-socks-are-manufactured',
@@ -13,11 +20,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'how-to-start-a-custom-socks-brand',
     'what-are-grip-socks',
     'private-label-socks-guide',
+    'private-label-running-socks-brand-guide',
     'sports-socks-moq-guide',
   ];
 
   const blogUrls = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post}`,
+    lastModified: ['custom-running-socks-oem-guide', 'private-label-running-socks-brand-guide'].includes(post)
+      ? relatedArticleUpdatedAt
+      : publishedAt,
     priority: 0.64,
   }));
 
@@ -36,29 +47,65 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const productUrls = productPages.map((product) => ({
     url: `${baseUrl}/products/${product}`,
+    lastModified: product === 'jacquard-custom-socks' ? jacquardPageUpdatedAt : productStructuredDataUpdatedAt,
     priority: 0.8,
   }));
 
   return [
     {
       url: baseUrl,
+      lastModified: seoConsolidationUpdatedAt,
       priority: 1.0,
     },
     {
       url: `${baseUrl}/products`,
+      lastModified: seoConsolidationUpdatedAt,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/custom-grip-socks`,
+      lastModified: publishedAt,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/sports-socks`,
-      priority: 0.8,
+      url: `${baseUrl}/football-socks-manufacturer`,
+      lastModified: publishedAt,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/private-label-sports-socks`,
+      lastModified: relatedArticleUpdatedAt,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/yoga-pilates-grip-socks-supplier`,
+      lastModified: seoConsolidationUpdatedAt,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/custom-basketball-training-socks`,
+      lastModified: relatedArticleUpdatedAt,
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/custom-running-socks-manufacturer`,
+      lastModified: publishedAt,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/blog`,
+      lastModified: blogIndexUpdatedAt,
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: publishedAt,
+      priority: 0.3,
+    },
+    {
+      url: `${baseUrl}/terms-of-service`,
+      lastModified: publishedAt,
+      priority: 0.3,
     },
     ...productUrls,
     ...blogUrls,

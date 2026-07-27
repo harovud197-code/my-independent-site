@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -108,6 +109,12 @@ export default function PrivateLabelSocksGuide() {
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">What Are Private Label Socks?</h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Private label socks are pre-designed socks produced by a manufacturer that can be customized with your brand logo, packaging, colors, and labels. This allows startups to enter the market quickly without developing products from scratch.
+            </p>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              Sports brands can also review our <Link href="/private-label-sports-socks" className="font-semibold text-[#387116] underline underline-offset-4">private label sports socks manufacturer</Link> page for product categories, customization options, sampling, quality control and branded packaging support.
+            </p>
+            <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
+              For studio and wellness collections, see our <Link href="/yoga-pilates-grip-socks-supplier" className="font-semibold text-[#387116] underline underline-offset-4">Yoga &amp; Pilates grip socks supplier</Link> page for grip layouts, sock constructions, custom branding and packaging options.
             </p>
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
               <Image 
@@ -341,14 +348,14 @@ export default function PrivateLabelSocksGuide() {
             <h4 className="text-white text-lg font-bold">Quick Links</h4>
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
               <a href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</a>
-              <a href="/sports-socks" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
+              <a href="/products" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
               <a href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</a>
               <a href="/#contact" className="hover:text-[#b4ff2b] transition-colors">GET QUOTE</a>
             </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-[#222] text-xs flex flex-col md:flex-row justify-between gap-4">
-          <p>© 2026 Haiyan Walter Knitting Co., Ltd. All Rights Reserved.</p>
+          <p>© 2026 Haiyan Huaerte Knitting Co., Ltd. All Rights Reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>

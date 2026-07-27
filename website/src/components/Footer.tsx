@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import CookieSettingsButton from '@/components/CookieSettingsButton';
 
 export default function Footer() {
   return (
@@ -9,6 +10,7 @@ export default function Footer() {
           <p className="text-sm leading-relaxed">
             Custom Sports Socks Manufacturer | OEM & Private Label Supplier. Delivering high-performance solutions for global sports brands.
           </p>
+          <div className="mt-4"><CookieSettingsButton /></div>
         </div>
         
         <div className="space-y-4">
@@ -34,16 +36,17 @@ export default function Footer() {
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
             <Link href="/" className="hover:text-[#c5ff3d] transition-colors">HOME</Link>
             <Link href="/products" className="hover:text-[#c5ff3d] transition-colors">SPORTS SOCKS</Link>
+            <Link href="/football-socks-manufacturer" className="hover:text-[#c5ff3d] transition-colors">FOOTBALL SOCKS</Link>
             <Link href="/blog" className="hover:text-[#c5ff3d] transition-colors">BLOG</Link>
-            <a href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20custom%20socks." target="_blank" rel="noopener noreferrer" className="hover:text-[#c5ff3d] transition-colors text-xs uppercase tracking-widest bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">GET QUOTE</a>
+            <a href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20custom%20socks." target="_blank" rel="noopener noreferrer" data-analytics-event="whatsapp_click" data-analytics-placement="footer" className="hover:text-[#c5ff3d] transition-colors text-xs uppercase tracking-widest bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">GET QUOTE</a>
           </div>
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-[#222] text-xs flex flex-col md:flex-row justify-between gap-4">
-        <p>© 2026 Haiyan Walter Knitting Co., Ltd. All Rights Reserved.</p>
+        <p>© 2026 Haiyan Huaerte Knitting Co., Ltd. All Rights Reserved.</p>
         <div className="flex gap-6">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+          <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <Link href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
         </div>
       </div>
     </footer>

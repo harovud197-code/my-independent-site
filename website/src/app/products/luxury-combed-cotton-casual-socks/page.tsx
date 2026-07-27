@@ -1,12 +1,8 @@
-import type { Metadata } from 'next';
+import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
 const assetPath = '/assets/products/luxury-combed-cotton-casual-socks';
 const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Luxury Combed Cotton Casual Socks.');
-
-export const metadata: Metadata = {
-  title: 'Luxury Combed Cotton Casual Socks | PeakMotion Socks',
-  description: 'Luxury combed cotton casual socks with a premium soft handfeel, reinforced heel and toe, and OEM private label customization.',
-};
+const product = productSeo['luxury-combed-cotton-casual-socks'];
 
 export default function LuxuryCombedCottonCasualSocksPage() {
   const specifications = [
@@ -29,14 +25,7 @@ export default function LuxuryCombedCottonCasualSocksPage() {
           <span className="inline-flex rounded-full bg-[#e9f8d2] px-4 py-2 text-xs font-black tracking-[0.16em] text-[#387116]">PREMIUM COTTON</span>
           <h1 className="text-4xl font-black leading-tight md:text-6xl">Luxury Combed Cotton Casual Socks</h1>
           <p className="text-lg leading-relaxed text-slate-600">Comfortable ribbed crew socks with a premium soft handfeel, reinforced heel and toe, and flexible OEM customization for casual, training and daily-wear collections.</p>
-          <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 sm:grid-cols-4">
-            {[['MOQ', '100 Pairs'], ['Sample', '7 Days'], ['Lead Time', '25-30 Days'], ['Size', 'Kids-XL']].map(([label, value]) => (
-              <div key={label} className="border-b border-r border-slate-200 p-4 text-center last:border-r-0 sm:border-b-0">
-                <span className="block text-xs font-bold uppercase tracking-wider text-slate-500">{label}</span>
-                <strong className="mt-1 block text-sm">{value}</strong>
-              </div>
-            ))}
-          </div>
+          <ProductQuickFacts product={product} />
           <a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg">Chat on WhatsApp</a>
         </div>
       </section>

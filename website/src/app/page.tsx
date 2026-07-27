@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { trackEvent } from '@/lib/analytics';
 
 export default function Home() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -31,6 +32,9 @@ Project Details: ${details}
       `;
 
       const mailtoUrl = `mailto:abayacloth@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      trackEvent('quote_submission', { product: String(productType), channel: 'email' });
+      trackEvent('generate_lead', { product: String(productType), channel: 'email' });
       
       alert("Preparing your inquiry... Your email client will now open to send the details to abayacloth@hotmail.com.");
       window.location.href = mailtoUrl;
@@ -73,7 +77,7 @@ Project Details: ${details}
               <Link className="btn btn-secondary" href="/products">Explore Products</Link>
             </div>
             <div className="trust-row" aria-label="Key manufacturing advantages">
-              <span><b>MOQ From</b>100 Pairs</span>
+              <span><b>MOQ from</b>50 pairs</span>
               <span><b>7-Day</b>Sample</span>
               <span><b>Factory Since</b>2005</span>
               <span><b>OEM &</b>Private Label</span>

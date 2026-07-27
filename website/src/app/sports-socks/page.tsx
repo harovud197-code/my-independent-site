@@ -1,10 +1,20 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Custom Sports Socks Manufacturer | Grip, Football, Running & More | PeakMotion',
   description: 'Professional custom sports socks manufacturer offering grip socks, football socks, running socks, basketball socks, cycling socks, and Pilates socks. OEM & private label with low MOQ.',
 };
+
+const manufacturerGuides = [
+  { title: 'Private Label Sports Socks', href: '/private-label-sports-socks', description: 'Build a brand-ready collection with custom logos, materials, labels and retail packaging.' },
+  { title: 'Football Socks Manufacturer', href: '/football-socks-manufacturer', description: 'Develop match, training, crew, grip and non-grip socks for clubs and sports brands.' },
+  { title: 'Custom Running Socks', href: '/custom-running-socks-manufacturer', description: 'Plan performance yarns, ventilation, cushioning, support zones and branded packaging.' },
+  { title: 'Custom Grip Socks', href: '/custom-grip-socks', description: 'Create football, Pilates, yoga and training socks with custom silicone grip patterns.' },
+  { title: 'Pilates and Yoga Socks', href: '/yoga-pilates-grip-socks-supplier', description: 'Explore studio-ready grip constructions for wellness brands, retailers and studios.' },
+  { title: 'Basketball and Training Socks', href: '/custom-basketball-training-socks', description: 'Specify cushioned performance socks for teams, training brands and retail ranges.' },
+] as const;
 
 export default function SportsSocks() {
   const products = [
@@ -140,6 +150,7 @@ export default function SportsSocks() {
             {products.map((product, i) => {
               const waText = encodeURIComponent(`Hello PeakMotion Socks, I am interested in your custom ${product.title}. Please send me a quote.`);
               const waUrl = `https://wa.me/8617357769219?text=${waText}`;
+              const isFootballSocks = product.title === 'Football Socks';
               return (
                 <div key={i} className="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-gray-100 overflow-hidden group hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full">
                   <div className="relative overflow-hidden aspect-square bg-gray-50">
@@ -155,8 +166,9 @@ export default function SportsSocks() {
                   </div>
                   <div className="p-8 flex flex-col flex-1 justify-between space-y-4">
                     <div className="space-y-3">
-                      <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#a3e627] transition-colors">{product.title}</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#a3e627] transition-colors">{isFootballSocks ? <Link href="/football-socks-manufacturer">{product.title}</Link> : product.title}</h3>
                       <p className="text-gray-600 text-sm leading-relaxed">{product.desc}</p>
+                      {isFootballSocks && <Link href="/football-socks-manufacturer" className="inline-flex pt-1 text-sm font-extrabold text-[#387116] underline underline-offset-4">Explore Football Socks Manufacturer</Link>}
                     </div>
                     <div className="pt-4 border-t border-gray-50">
                       <a href={waUrl} target="_blank" rel="noopener noreferrer" className="text-black font-extrabold text-sm uppercase tracking-wider flex items-center gap-2 group/link">
@@ -167,6 +179,25 @@ export default function SportsSocks() {
                 </div>
               );
             })}
+          </div>
+        </section>
+
+        <section className="border-y border-slate-200 bg-[#f7f8f6] px-5 py-20 lg:px-15" aria-labelledby="manufacturer-guides-title">
+          <div className="mx-auto max-w-7xl">
+            <div className="max-w-3xl">
+              <p className="text-sm font-black uppercase tracking-[0.16em] text-[#679a20]">Factory Development Guides</p>
+              <h2 id="manufacturer-guides-title" className="mt-3 text-3xl font-extrabold uppercase text-gray-900 md:text-5xl">Choose the right custom sports sock manufacturer page</h2>
+              <p className="mt-5 text-lg leading-relaxed text-gray-600">Review the product-specific manufacturing page that best matches your market, construction and private label requirements.</p>
+            </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {manufacturerGuides.map((guide) => (
+                <article key={guide.href} className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h3 className="text-xl font-extrabold text-gray-900">{guide.title}</h3>
+                  <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-600">{guide.description}</p>
+                  <Link href={guide.href} className="mt-6 inline-flex font-extrabold text-[#387116] underline decoration-2 underline-offset-4">Explore {guide.title}</Link>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -370,14 +401,14 @@ export default function SportsSocks() {
             <h4 className="text-white text-lg font-bold">Quick Links</h4>
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
               <a href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</a>
-              <a href="/sports-socks" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
+              <a href="/products" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
               <a href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</a>
               <a href="/#inquiry" className="hover:text-[#b4ff2b] transition-colors">GET QUOTE</a>
             </div>
           </div>
         </div>
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-[#222] text-xs flex flex-col md:flex-row justify-between gap-4">
-          <p>© 2026 Haiyan Walter Knitting Co., Ltd. All Rights Reserved.</p>
+          <p>© 2026 Haiyan Huaerte Knitting Co., Ltd. All Rights Reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>

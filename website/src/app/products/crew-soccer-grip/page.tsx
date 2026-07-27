@@ -1,6 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
+
+const product = productSeo['crew-soccer-grip'];
 
 export default function CrewSoccerGripPage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,19 +51,7 @@ Requirements: ${data.message}
           <p className="text-lg leading-relaxed text-slate-600">
             High-performance soccer grip socks with silicone anti-slip sole, breathable mesh and custom branding solutions.
           </p>
-          <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 sm:grid-cols-4">
-            {[
-              ['MOQ', '50 Pairs'],
-              ['Sample', '7 Days'],
-              ['Lead Time', '25-30 Days'],
-              ['Size', 'Kids-XL'],
-            ].map(([label, value]) => (
-              <div key={label} className="border-b border-r border-slate-200 p-4 text-center last:border-r-0 sm:border-b-0">
-                <span className="block text-xs font-bold uppercase tracking-wider text-slate-500">{label}</span>
-                <strong className="mt-1 block text-sm">{value}</strong>
-              </div>
-            ))}
-          </div>
+          <ProductQuickFacts product={product} />
           <a
             href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20your%20Crew%20Soccer%20Grip%20Socks."
             target="_blank"
@@ -87,6 +78,38 @@ Requirements: ${data.message}
            <Image src="/assets/images/training/colors.png" alt="Available colors" fill className="object-contain" />
         </section>
       </div>
+
+      <section className="border-y border-slate-100 bg-white px-5 py-20 lg:px-15">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Product Specification</p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Built for a secure foot-to-shoe connection</h2>
+            <dl className="mt-8 overflow-hidden rounded-2xl border border-slate-200">
+              {[
+                ['Base material', 'Cotton, nylon and spandex blend'],
+                ['Sock height', 'Crew length, with custom cuff height available'],
+                ['Grip area', 'Silicone placement on the sole for controlled traction'],
+                ['Branding', 'Jacquard logo, embroidery, print or woven label'],
+                ['MOQ', 'From 50 pairs per selected design'],
+                ['Sample timing', 'About 7 days after artwork confirmation'],
+              ].map(([term, detail]) => <div key={term} className="grid grid-cols-[130px_1fr] gap-4 border-b border-slate-200 px-5 py-4 last:border-b-0"><dt className="font-bold">{term}</dt><dd className="text-slate-600">{detail}</dd></div>)}
+            </dl>
+          </div>
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Customization & Packaging</p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Create a collection that looks like your brand</h2>
+            <p className="mt-6 text-lg leading-relaxed text-slate-600">This crew grip style is suited to football clubs, academies, gyms, futsal programs and performance brands that need a secure fit without adding bulk inside the shoe.</p>
+            <div className="mt-7 grid gap-4 sm:grid-cols-2">
+              {[
+                ['Color & logo', 'Match team colors, add a club crest or build a signature grip layout.'],
+                ['Fit & construction', 'Specify cuff tension, compression zones, toe closure and size range.'],
+                ['Retail packaging', 'Choose polybag, header card, paper band, backer card or custom box.'],
+                ['Production support', 'Approve artwork and sample before bulk production and final inspection.'],
+              ].map(([title, text]) => <div key={title} className="rounded-xl border border-slate-200 bg-[#f7f8f6] p-5"><h3 className="font-black">{title}</h3><p className="mt-2 text-sm leading-relaxed text-slate-600">{text}</p></div>)}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Applications Section */}
       <section className="py-24 px-5 lg:px-15 bg-gray-50">
@@ -122,6 +145,19 @@ Requirements: ${data.message}
            <Image src="/assets/images/training/certifications.png" alt="Certifications" fill className="object-contain" />
         </section>
       </div>
+
+      <section className="mx-auto max-w-4xl px-5 py-20 lg:px-15">
+        <p className="text-center text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">FAQ</p>
+        <h2 className="mt-3 text-center text-3xl font-black md:text-4xl">Questions before you order crew grip socks</h2>
+        <div className="mt-10 divide-y divide-slate-200 rounded-2xl border border-slate-200">
+          {[
+            ['Can the grip pattern be customized?', 'Yes. We can discuss silicone placement, pattern coverage and color based on your sport and shoe use.'],
+            ['What is the minimum order quantity?', 'Selected crew grip designs can start from 50 pairs. Final MOQ depends on yarn, logo method, colors and packaging.'],
+            ['Can you make a team or club logo?', 'Yes. Jacquard, embroidery, print and woven-label options are available after artwork review.'],
+            ['What packaging can I choose?', 'Options include polybags, paper bands, header cards, backer cards and custom retail boxes.'],
+          ].map(([question, answer]) => <details key={question} className="group px-6 py-5"><summary className="cursor-pointer list-none font-bold marker:content-none">{question}</summary><p className="mt-3 leading-relaxed text-slate-600">{answer}</p></details>)}
+        </div>
+      </section>
 
       {/* Request Quote Section */}
       <section className="py-24 bg-[#f7fff5] text-center px-5 lg:px-15" id="quote">

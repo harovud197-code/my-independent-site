@@ -318,10 +318,10 @@ export default function HowToChooseRunningSocks() {
                 WhatsApp Us
               </a>
               <a 
-                href="/#contact" 
+                href="/custom-running-socks-manufacturer" 
                 className="bg-black text-white font-extrabold text-lg uppercase hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center"
               >
-                Contact Our Team
+                Explore Custom Running Socks
               </a>
             </div>
           </section>

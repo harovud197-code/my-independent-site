@@ -1,4 +1,6 @@
-import Image from 'next/image';
+import Image from 'next/image';
+
+import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -127,7 +129,7 @@ export default function FootballSocksVsGripSocks() {
               What Are Football Socks?
             </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Football socks are traditional long-length sports socks designed to be worn over shin guards. Their main purpose is team uniform consistency, basic comfort, and light protection during matches and training sessions.
+              Football socks are traditional long-length sports socks designed to be worn over shin guards. Their main purpose is team uniform consistency, basic comfort, and light protection during matches and training sessions. Clubs planning team colors, crests, size ranges and packaging can review our <Link href="/football-socks-manufacturer" className="font-semibold text-[#387116] underline underline-offset-4">custom football socks manufacturer</Link> capabilities.
             </p>
           </section>
 
@@ -137,7 +139,7 @@ export default function FootballSocksVsGripSocks() {
               What Are Grip Socks?
             </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Grip socks are performance socks with silicone or rubber grip patterns on the sole. They are designed to reduce foot slippage inside football boots and improve stability, acceleration, and control.
+              Grip socks are performance socks with silicone or rubber grip patterns on the sole. They are designed to reduce foot slippage inside football boots and improve stability, acceleration, and control. Brands developing sole patterns, logos and retail packaging can explore our <Link href="/custom-grip-socks" className="font-semibold text-[#387116] underline underline-offset-4">custom grip socks manufacturer</Link> page.
             </p>
           </section>
 
@@ -228,7 +230,19 @@ export default function FootballSocksVsGripSocks() {
             </div>
           </section>
 
-          {/* Elegant Bottom CTA Module */}
+          <section className="rounded-3xl border border-[#dce8c2] bg-[#f4fbe8] p-8 md:p-10">
+
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#679a20]">For clubs and brands</p>
+
+            <h2 className="mt-3 text-2xl font-black text-slate-900 md:text-3xl">Develop a custom football sock collection</h2>
+
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate-700">Compare grip and non-grip options, then specify team colors, crests, player numbers, performance construction, size range and packaging for your project.</p>
+
+            <Link href="/football-socks-manufacturer" className="mt-6 inline-flex rounded-xl bg-[#0c1713] px-6 py-4 text-sm font-black uppercase tracking-wide text-white transition-colors hover:bg-[#163020]">Visit our Football Socks Manufacturer page</Link>
+
+          </section>
+
+          {/* Elegant Bottom CTA Module */}
           <section className="bg-slate-50 rounded-3xl p-8 md:p-12 text-center my-16 border border-gray-100 space-y-6">
             <h3 className="text-2xl font-bold text-slate-900 uppercase tracking-wide">
               Looking for Custom Grip Socks?

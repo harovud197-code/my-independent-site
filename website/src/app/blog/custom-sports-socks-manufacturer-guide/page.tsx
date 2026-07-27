@@ -157,12 +157,12 @@ export default function CustomSportsSocksManufacturerGuide() {
             {/* Custom Grid Layout for Category Links */}
             <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 my-6">
               {[
-                { name: 'Grip Socks', href: '/grip-socks' },
-                { name: 'Football Socks', href: '/football-socks' },
-                { name: 'Running Socks', href: '/running-socks' },
-                { name: 'Basketball Socks', href: '/basketball-socks' },
+                { name: 'Grip Socks', href: '/custom-grip-socks' },
+                { name: 'Football Socks', href: '/products/mid-calf-football-grip' },
+                { name: 'Running Socks', href: '/products/professional-running-athletic-socks' },
+                { name: 'Basketball Socks', href: '/products/performance-basketball-socks' },
                 { name: 'Cycling Socks', href: '/cycling-socks' },
-                { name: 'Pilates Socks', href: '/pilates-socks' },
+                { name: 'Yoga & Pilates Grip Socks Supplier', href: '/yoga-pilates-grip-socks-supplier' },
               ].map((item, idx) => (
                 <li key={idx}>
                   <a href={item.href} className="block p-4 rounded-xl border border-slate-100 bg-slate-50 hover:bg-slate-100 hover:border-slate-200 transition-all font-semibold text-slate-800 text-center shadow-sm">

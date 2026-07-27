@@ -9,6 +9,23 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 const posts = [
   {
+    title: 'Custom Running Socks OEM Guide: From Brief to Bulk Production',
+    href: '/blog/custom-running-socks-oem-guide',
+    desc: 'Prepare a clearer running sock brief with practical guidance on materials, MOQ, samples, packaging and production timing.',
+    img: '/assets/products/professional-running-athletic-socks/hero-landing-light.webp',
+    category: 'Running OEM',
+    readTime: '8 min read',
+  },
+  {
+    title: 'How to Start a Private Label Running Socks Brand',
+    href: '/blog/private-label-running-socks-brand-guide',
+    desc: 'Plan a focused running sock collection with a clear audience, product story, artwork, packaging and launch brief.',
+    img: '/assets/blog/private-label-running-socks-card.webp',
+    imageClassName: 'object-cover object-[center_40%]',
+    category: 'Private Label',
+    readTime: '7 min read',
+  },
+  {
     title: 'What Are Grip Socks? Benefits, Uses and Buying Guide',
     href: '/blog/what-are-grip-socks',
     desc: 'Learn how grip socks improve stability, performance and comfort across football, Pilates and daily training.',
@@ -93,7 +110,7 @@ const posts = [
 const topics = [
   ['Grip Socks', '/custom-grip-socks'],
   ['Football Socks', '/products/mid-calf-football-grip'],
-  ['Running Socks', '/products/professional-running-athletic-socks'],
+  ['Running Socks', '/custom-running-socks-manufacturer'],
   ['Basketball Socks', '/products/performance-basketball-socks'],
   ['Cycling Socks', '/blog/cycling-socks-vs-running-socks'],
   ['Pilates Socks', '/products/low-cut-yoga-pilates-grip-socks'],
@@ -201,7 +218,7 @@ export default function BlogPage() {
             <h1 className="text-4xl font-black leading-tight md:text-6xl">Sports Socks Blog & Manufacturing Guides</h1>
             <p className="max-w-2xl text-lg leading-relaxed text-gray-200 md:text-xl">Practical product, sourcing and OEM knowledge for sports brands, retailers, distributors and teams.</p>
             <div className="flex flex-col gap-4 pt-2 sm:flex-row">
-              <Link href={featured.href} className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide !text-[#0c1713] transition-colors hover:bg-[#a3e627]">Start with Grip Socks</Link>
+              <Link href="/custom-grip-socks" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide !text-[#0c1713] transition-colors hover:bg-[#a3e627]">Explore Custom Grip Socks</Link>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-white/70 bg-black/20 px-7 py-4 font-black uppercase tracking-wide !text-white backdrop-blur-sm transition-colors hover:bg-white hover:!text-black">Ask About OEM</a>
             </div>
           </div>
@@ -233,7 +250,7 @@ export default function BlogPage() {
             {posts.slice(1).map((post) => (
               <article key={post.href} className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-[0_4px_18px_rgba(12,23,19,0.04)] transition-all hover:-translate-y-1 hover:shadow-lg">
                 <Link href={post.href} className="relative block aspect-[16/10] overflow-hidden bg-slate-100">
-                  <Image src={post.img} alt={post.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover transition-transform duration-500 hover:scale-105" />
+                  <Image src={post.img} alt={post.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className={`${post.imageClassName ?? 'object-cover'} transition-transform duration-500 hover:scale-105`} />
                 </Link>
                 <div className="flex min-h-[270px] flex-col p-6">
                   <div className="mb-4 flex items-center justify-between gap-3 text-xs font-bold uppercase tracking-wider"><span className="text-[#4e7e1e]">{post.category}</span><span className="text-slate-400">{post.readTime}</span></div>
@@ -259,7 +276,7 @@ export default function BlogPage() {
       <section className="bg-[#0c1713] px-5 py-16 text-white md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 lg:flex-row lg:items-center">
           <div className="max-w-2xl"><p className="text-sm font-black uppercase tracking-[0.16em] text-[#b4ff2b]">From Guide to Product</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Explore Socks You Can Customize</h2><p className="mt-4 text-lg leading-relaxed text-gray-300">Compare real product options, then discuss colors, logos, materials, MOQ and packaging with our factory team.</p></div>
-          <div className="flex flex-col gap-3 sm:flex-row"><Link href="/products" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide !text-[#0c1713] hover:bg-[#a3e627]">Browse Products</Link><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-white px-7 py-4 font-black uppercase tracking-wide !text-white hover:bg-white hover:!text-black">Get a Custom Quote</a></div>
+          <div className="flex flex-col gap-3 sm:flex-row"><Link href="/custom-grip-socks" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide !text-[#0c1713] hover:bg-[#a3e627]">Custom Grip Socks</Link><Link href="/products" className="inline-flex items-center justify-center rounded-xl border border-white px-7 py-4 font-black uppercase tracking-wide !text-white hover:bg-white hover:!text-black">Browse Products</Link></div>
         </div>
       </section>
 

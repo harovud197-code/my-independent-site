@@ -62,3 +62,9 @@ body {
 .card-image-design.private:before {
   background: #fff;
 }
+
+/* Trim the exported screenshot edge so the case-study photo sits cleanly on its dark panel. */
+img[src*="football-academy-custom-grip-socks-in-use.png"] {
+  clip-path: inset(2px);
+  transform: scale(1.012);
+}

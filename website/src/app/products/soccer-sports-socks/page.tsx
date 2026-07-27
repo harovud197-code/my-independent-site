@@ -1,12 +1,8 @@
-import type { Metadata } from 'next';
+import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
 const assetPath = '/assets/products/soccer-sports-socks';
 const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Soccer Sports Socks.');
-
-export const metadata: Metadata = {
-  title: 'Soccer Sports Socks | PeakMotion Socks',
-  description: 'Professional soccer sports socks with zoned cushioning, dynamic arch support, moisture-wicking performance and OEM private label customization.',
-};
+const product = productSeo['soccer-sports-socks'];
 
 export default function SoccerSportsSocksPage() {
   const specifications = [
@@ -23,7 +19,7 @@ export default function SoccerSportsSocksPage() {
     <main className="bg-white text-[#0c1713]">
       <section className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 px-5 py-12 md:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-20">
         <div className="rounded-[28px] bg-[#f7f8f6] p-5 md:p-10"><img src={`${assetPath}/hero.jpg`} alt="Soccer sports socks" className="h-auto w-full object-contain" /></div>
-        <div className="max-w-xl space-y-6"><span className="inline-flex rounded-full bg-[#e9f8d2] px-4 py-2 text-xs font-black tracking-[0.16em] text-[#387116]">TEAM PERFORMANCE</span><h1 className="text-4xl font-black leading-tight md:text-6xl">Soccer Sports Socks</h1><p className="text-lg leading-relaxed text-slate-600">Professional football socks with zoned cushioning, dynamic arch support and moisture-wicking construction for training, match days and active teamwear collections.</p><div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 sm:grid-cols-4">{[['MOQ', '50 Pairs'], ['Sample', '7 Days'], ['Lead Time', '25-30 Days'], ['Size', 'Kids-XL']].map(([label, value]) => <div key={label} className="border-b border-r border-slate-200 p-4 text-center last:border-r-0 sm:border-b-0"><span className="block text-xs font-bold uppercase tracking-wider text-slate-500">{label}</span><strong className="mt-1 block text-sm">{value}</strong></div>)}</div><a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg">Chat on WhatsApp</a></div>
+        <div className="max-w-xl space-y-6"><span className="inline-flex rounded-full bg-[#e9f8d2] px-4 py-2 text-xs font-black tracking-[0.16em] text-[#387116]">TEAM PERFORMANCE</span><h1 className="text-4xl font-black leading-tight md:text-6xl">Soccer Sports Socks</h1><p className="text-lg leading-relaxed text-slate-600">Professional football socks with zoned cushioning, dynamic arch support and moisture-wicking construction for training, match days and active teamwear collections.</p><ProductQuickFacts product={product} /><a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg">Chat on WhatsApp</a></div>
       </section>
 
       <section className="border-y border-slate-100 bg-[#fbfcfa] py-12"><div className="mx-auto max-w-[1200px] space-y-8 px-5 md:px-8"><img src={`${assetPath}/features.jpg`} alt="Soccer sock core features" className="h-auto w-full" /><img src={`${assetPath}/product-features.jpg`} alt="Soccer sock product features" className="h-auto w-full" /></div></section>

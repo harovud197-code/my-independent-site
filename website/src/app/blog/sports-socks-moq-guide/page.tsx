@@ -524,7 +524,7 @@ export default function SportsSocksMoqGuide() {
 
               <a href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</a>
 
-              <a href="/sports-socks" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
+              <a href="/products" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
 
               <a href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</a>
 
@@ -538,7 +538,7 @@ export default function SportsSocksMoqGuide() {
 
         <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-[#222] text-xs flex flex-col md:flex-row justify-between gap-4">
 
-          <p>© 2026 Haiyan Walter Knitting Co., Ltd. All Rights Reserved.</p>
+          <p>© 2026 Haiyan Huaerte Knitting Co., Ltd. All Rights Reserved.</p>
 
           <div className="flex gap-6">
 

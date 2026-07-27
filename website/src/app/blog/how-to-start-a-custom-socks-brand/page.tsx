@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import Image from 'next/image';
+import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -73,7 +74,7 @@ export default function HowToStartCustomSocksBrand() {
           {/* Introduction */}
           <div className="space-y-6 text-slate-700 text-[17px] leading-relaxed mb-6">
             <p>
-              Socks are one of the most profitable and low-barrier products in the apparel industry. If you plan to <strong className="font-semibold text-slate-900">start a sock brand</strong> with a limited budget and rich market potential, building a <strong className="font-semibold text-slate-900">custom socks business</strong> is an excellent choice for new entrepreneurs. Many beginner brand owners choose <strong className="font-semibold text-slate-900">private label socks</strong> to cut down design costs, shorten launch time, and reduce inventory risks.
+              Socks are one of the most profitable and low-barrier products in the apparel industry. If you plan to <strong className="font-semibold text-slate-900">start a sock brand</strong> with a limited budget and rich market potential, building a <strong className="font-semibold text-slate-900">custom socks business</strong> is an excellent choice for new entrepreneurs. Many beginner brand owners choose <strong className="font-semibold text-slate-900">private label socks</strong> to cut down design costs, shorten launch time, and reduce inventory risks. For a sports-focused collection, review our <Link href="/private-label-sports-socks" className="font-semibold text-[#387116] underline underline-offset-4">private label sports socks manufacturer program</Link> before planning samples and packaging.
             </p>
             <p>
               In this complete step-by-step guide, we will walk you through every detail to launch your own custom socks brand, including business models, supplier selection, branding, production flow, marketing, and common questions for new sellers.

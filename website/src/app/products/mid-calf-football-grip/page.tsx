@@ -1,15 +1,11 @@
-import type { Metadata } from 'next';
+import Link from 'next/link';
+import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
 const assetPath = '/assets/products/mid-calf-football-grip';
+const product = productSeo['mid-calf-football-grip'];
 const whatsappMessage = encodeURIComponent(
   'Hello PeakMotion Socks, I am interested in Professional Color Soccer Grip Sports Socks.'
 );
-
-export const metadata: Metadata = {
-  title: 'Professional Color Soccer Grip Sports Socks | PeakMotion Socks',
-  description:
-    'Professional soccer grip socks with silicone anti-slip technology and OEM customization.',
-};
 
 export default function MidCalfFootballGripPage() {
   return (
@@ -32,19 +28,7 @@ export default function MidCalfFootballGripPage() {
           <p className="text-lg leading-relaxed text-slate-600">
             High-performance football grip socks with silicone anti-slip technology, breathable construction and custom OEM solutions.
           </p>
-          <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 sm:grid-cols-4">
-            {[
-              ['MOQ', '50 Pairs'],
-              ['Sample', '7 Days'],
-              ['Lead Time', '25-30 Days'],
-              ['Size', 'Kids-XL'],
-            ].map(([label, value]) => (
-              <div key={label} className="border-b border-r border-slate-200 p-4 text-center last:border-r-0 sm:border-b-0">
-                <span className="block text-xs font-bold uppercase tracking-wider text-slate-500">{label}</span>
-                <strong className="mt-1 block text-sm">{value}</strong>
-              </div>
-            ))}
-          </div>
+          <ProductQuickFacts product={product} />
           <div>
             <a
               href={`https://wa.me/8617357769219?text=${whatsappMessage}`}
@@ -54,6 +38,30 @@ export default function MidCalfFootballGripPage() {
             >
               Chat On WhatsApp
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-100 bg-white px-5 py-20 md:px-8">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Who It Is For</p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">A football sock program for clubs and sports brands</h2>
+            <p className="mt-6 text-lg leading-relaxed text-slate-600">This mid-calf grip style suits football teams, academies, retailers and performance brands that need a visible team color story with a secure silicone sole. It can be developed for training, match-day, youth and adult size runs.</p>
+            <ul className="mt-7 space-y-3 text-slate-700">
+              {['Team colors, contrast cuffs and custom logo placement', 'Crew height and fit options for youth through adult sizing', 'Grip layout designed around quick direction changes and turf use', 'Sample approval before the 25-30 day bulk production window'].map((item) => <li key={item} className="flex gap-3"><span className="font-black text-[#679a20]">✓</span><span>{item}</span></li>)}
+            </ul>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-[#f7f8f6] p-7 md:p-9">
+            <p className="text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Packaging Choices</p>
+            <h2 className="mt-3 text-3xl font-black">Ready for wholesale or retail</h2>
+            <div className="mt-7 space-y-4">
+              {[
+                ['Team bulk packs', 'Sorted by size and color for clubs, academies and distributor orders.'],
+                ['Retail presentation', 'Add a paper band, header card, barcode label or custom backer card.'],
+                ['Private-label box', 'Use branded boxes for gift sets, premium collections or launch kits.'],
+              ].map(([title, text]) => <div key={title} className="rounded-xl bg-white p-5"><h3 className="font-black">{title}</h3><p className="mt-2 text-sm leading-relaxed text-slate-600">{text}</p></div>)}
+            </div>
           </div>
         </div>
       </section>
@@ -86,8 +94,9 @@ export default function MidCalfFootballGripPage() {
         </div>
         <div>
           <p className="mb-3 text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">For Your Brand</p>
-          <h2 className="text-3xl font-black md:text-4xl">OEM &amp; Customization</h2>
-          <img src={`${assetPath}/oem.png`} alt="OEM customization options" className="mt-8 h-auto w-full rounded-2xl" />
+            <h2 className="text-3xl font-black md:text-4xl">OEM &amp; Customization</h2>
+            <img src={`${assetPath}/oem.png`} alt="OEM customization options" className="mt-8 h-auto w-full rounded-2xl" />
+            <Link href="/football-socks-manufacturer" className="mt-6 inline-flex font-black text-[#387116] underline underline-offset-4">Need a full football sock collection? Explore our Football Socks Manufacturer service →</Link>
         </div>
       </section>
 
@@ -112,6 +121,8 @@ export default function MidCalfFootballGripPage() {
             ['Can I customize the socks with my logo?', 'Yes. Custom logo, colors and packaging are supported.'],
             ['What is the MOQ?', 'Production can start from 50 pairs.'],
             ['How long does sample production take?', 'Sample production usually takes about 7 days.'],
+            ['Can you match our football team colors?', 'Yes. Share your color reference, logo artwork and preferred sock layout for a practical sampling recommendation.'],
+            ['Which packaging is available?', 'Team bulk packs, paper bands, header cards, barcode labels and private-label boxes can be discussed with your quotation.'],
           ].map(([question, answer]) => (
             <details key={question} className="group px-6 py-5">
               <summary className="cursor-pointer list-none font-bold marker:content-none">{question}</summary>

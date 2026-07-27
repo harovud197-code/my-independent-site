@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">PeakMotion Socks logo</title>
+  <desc id="description">PeakMotion Socks initials and wordmark in the brand dark green and lime colors.</desc>
+  <rect width="512" height="512" rx="88" fill="#0c1713"/>
+  <path d="M94 102h324v12H94z" fill="#b4ff2b"/>
+  <text x="256" y="278" fill="#b4ff2b" font-family="Arial, Helvetica, sans-serif" font-size="210" font-weight="900" letter-spacing="-24" text-anchor="middle">PM</text>
+  <text x="256" y="370" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" letter-spacing="3" text-anchor="middle">PEAKMOTION</text>
+  <text x="256" y="418" fill="#b4ff2b" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" letter-spacing="12" text-anchor="middle">SOCKS</text>
+</svg>

@@ -195,7 +195,7 @@ export default function WhatAreGripSocks() {
               Common Uses of Grip Socks
             </h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Thanks to multi-functional design, grip socks cover a wide range of daily and professional scenarios:
+              Thanks to multi-functional design, grip socks cover a wide range of daily and professional scenarios. Studio buyers can also review our <a href="/yoga-pilates-grip-socks-supplier" className="font-semibold text-[#387116] underline underline-offset-4">Yoga &amp; Pilates grip socks supplier</a> capabilities before requesting a sample:
             </p>
             <ul className="list-none pl-0 space-y-3 my-4">
               {[

@@ -1,6 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/custom-pilates-yoga-socks',
+        destination: '/yoga-pilates-grip-socks-supplier',
+        statusCode: 301,
+      },
+      {
+        source: '/sports-socks',
+        destination: '/products',
+        statusCode: 301,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {

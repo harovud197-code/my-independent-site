@@ -1,12 +1,8 @@
-import type { Metadata } from 'next';
+import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
 const assetPath = '/assets/products/custom-logo-embroidery-socks';
 const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Custom Logo Embroidery Socks.');
-
-export const metadata: Metadata = {
-  title: 'Custom Logo Embroidery Socks | PeakMotion Socks',
-  description: 'Premium custom logo embroidery socks with OEM private label manufacturing, flexible colors and custom packaging.',
-};
+const product = productSeo['custom-logo-embroidery-socks'];
 
 export default function CustomLogoEmbroiderySocksPage() {
   const specifications = [
@@ -28,14 +24,7 @@ export default function CustomLogoEmbroiderySocksPage() {
           <span className="inline-flex rounded-full bg-[#e9f8d2] px-4 py-2 text-xs font-black tracking-[0.16em] text-[#387116]">BEST SELLER</span>
           <h1 className="text-4xl font-black leading-tight md:text-6xl">Custom Logo Embroidery Socks</h1>
           <p className="text-lg leading-relaxed text-slate-600">Comfortable everyday crew socks with breathable knit, elastic cuff and complete OEM private label customization support.</p>
-          <div className="grid grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 sm:grid-cols-4">
-            {[['MOQ', '50 Pairs'], ['Sample', '7 Days'], ['Lead Time', '25-30 Days'], ['Size', 'Kids-XL']].map(([label, value]) => (
-              <div key={label} className="border-b border-r border-slate-200 p-4 text-center last:border-r-0 sm:border-b-0">
-                <span className="block text-xs font-bold uppercase tracking-wider text-slate-500">{label}</span>
-                <strong className="mt-1 block text-sm">{value}</strong>
-              </div>
-            ))}
-          </div>
+          <ProductQuickFacts product={product} />
           <a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg">Chat on WhatsApp</a>
         </div>
       </section>
