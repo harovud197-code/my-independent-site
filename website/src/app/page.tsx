@@ -72,12 +72,14 @@ Project Details: ${details}
             <p className="hero-lead">From grip socks and football socks to premium running socks, we help sports brands launch high-performance products with low MOQ, fast sampling and factory-direct manufacturing.</p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20custom%20socks." target="_blank" rel="noopener noreferrer">
-                Get Free Quote <em className="not-italic ml-4">→</em>
+                Get Free Quote <em className="not-italic ml-4">鈫?/em>
               </a>
               <Link className="btn btn-secondary" href="/products">Explore Products</Link>
             </div>
             <div className="trust-row" aria-label="Key manufacturing advantages">
-              <span><b>MOQ from</b>50 pairs</span>
+              <Link href="/sports-socks-moq-guide" aria-label="Read the Sports Socks MOQ Guide">
+                <span><b>MOQ from</b>50 pairs</span>
+              </Link>
               <span><b>7-Day</b>Sample</span>
               <span><b>Factory Since</b>2005</span>
               <span><b>OEM &</b>Private Label</span>
@@ -148,7 +150,7 @@ Project Details: ${details}
                   href={card.title === 'Grip Socks' ? '/custom-grip-socks' : card.title === 'Football Socks' ? '/products/mid-calf-football-grip' : card.title === 'Running Socks' ? '/products/professional-running-athletic-socks' : card.title === 'Private Label' ? '/products/custom-logo-embroidery-socks' : '/products'}
                   className="mt-auto inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#c5ff3d] px-4 py-3 text-center text-sm font-extrabold uppercase tracking-wider text-black transition-all hover:-translate-y-0.5 hover:bg-[#a8e600] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0c1713]"
                 >
-                  Customize {card.title} <span aria-hidden="true">→</span>
+                  Customize {card.title} <span aria-hidden="true">鈫?/span>
                 </Link>
               </article>
             ))}
@@ -268,19 +270,19 @@ Project Details: ${details}
               <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">Guide</span>
               <h3 className="text-xl font-bold">How to Choose the Right Grip Socks Manufacturer</h3>
               <p className="text-gray-500 text-sm leading-relaxed">Explain MOQ, materials, grip patterns, sampling and quality checks for brand buyers.</p>
-              <Link href="/blog/custom-sports-socks-manufacturer-guide" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">Read Guides →</Link>
+              <Link href="/blog/custom-sports-socks-manufacturer-guide" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">Read Guides 鈫?/Link>
             </article>
             <article className="blog-card reveal bg-white p-8 rounded-[26px] shadow-sm hover:shadow-xl transition-all space-y-4 border border-gray-100">
               <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">Materials</span>
               <h3 className="text-xl font-bold">Best Materials for Running and Training Socks</h3>
               <p className="text-gray-500 text-sm leading-relaxed">Compare cotton, nylon, polyester, Coolmax, merino and recycled yarn options.</p>
-              <Link href="/blog/best-materials-for-sports-socks" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">Explore Materials →</Link>
+              <Link href="/blog/best-materials-for-sports-socks" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">Explore Materials 鈫?/Link>
             </article>
             <article className="blog-card reveal bg-white p-8 rounded-[26px] shadow-sm hover:shadow-xl transition-all space-y-4 border border-gray-100">
               <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">OEM</span>
               <h3 className="text-xl font-bold">Private Label Socks: Packaging, Logo and Launch Checklist</h3>
               <p className="text-gray-500 text-sm leading-relaxed">Show buyers exactly what they need before starting a custom sock project.</p>
-              <Link href="/blog/private-label-socks-guide" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">View OEM Tips →</Link>
+              <Link href="/blog/private-label-socks-guide" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">View OEM Tips 鈫?/Link>
             </article>
           </div>
         </div>
@@ -304,7 +306,7 @@ Project Details: ${details}
               <details key={idx} className="group border border-gray-100 rounded-2xl bg-[#f7f5ef] p-2 transition-all">
                 <summary className="p-6 cursor-pointer font-extrabold text-lg select-none list-none flex justify-between items-center group-open:text-[#87a829]">
                   {item.q}
-                  <span className="text-xl group-open:rotate-180 transition-transform">↓</span>
+                  <span className="text-xl group-open:rotate-180 transition-transform">鈫?/span>
                 </summary>
                 <p className="px-6 pb-6 text-gray-600 leading-relaxed">{item.a}</p>
               </details>
@@ -357,7 +359,7 @@ Project Details: ${details}
         <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#b4ff2b] text-xs font-black text-[#0c1713]">WA</span>
         <span>Get a Free Quote</span>
         <span className="hidden">
-        💬
+        馃挰
         </span>
       </a>
     </main>
@@ -365,3 +367,4 @@ Project Details: ${details}
 }
 
 // Deployment: v2026-07-09-final-v2
+

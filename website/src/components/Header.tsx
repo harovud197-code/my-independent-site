@@ -32,7 +32,7 @@ export default function Header() {
           </details>
           <Link href="/#custom-socks">OEM</Link>
           <Link href="/blog">Blog</Link>
-          <Link href="/blog/sports-socks-moq-guide" className="whitespace-nowrap">Moq Guide</Link>
+          <Link href="/sports-socks-moq-guide" className="whitespace-nowrap">MOQ Guide</Link>
           <Link href="/#inquiry">Contact</Link>
         </nav>
 
@@ -50,3 +50,4 @@ export default function Header() {
     </header>
   );
 }
+

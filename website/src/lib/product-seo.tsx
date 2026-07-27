@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 const siteUrl = 'https://peakmotionsocks.com';
 
@@ -278,6 +279,15 @@ export function ProductQuickFacts({ product }: { product: ProductSeoConfig }) {
           <dd className="mt-1 text-sm font-black leading-snug text-[#0c1713]">{value}</dd>
         </div>
       ))}
+      <div className="col-span-2 border-r border-slate-200 bg-[#f4fbe8] p-4 sm:col-span-3">
+        <dt className="text-xs font-bold uppercase tracking-wider text-[#4d7e1e]">Ordering help</dt>
+        <dd className="mt-1 text-sm font-black leading-snug text-[#0c1713]">
+          <Link href="/sports-socks-moq-guide" className="underline decoration-[#87a829] decoration-2 underline-offset-4 transition-colors hover:text-[#4d7e1e]">
+            Read the Sports Socks MOQ Guide
+          </Link>
+        </dd>
+      </div>
     </dl>
   );
 }
+

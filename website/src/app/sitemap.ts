@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const jacquardPageUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
   const relatedArticleUpdatedAt = new Date('2026-07-21T00:00:00.000Z');
   const seoConsolidationUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
+  const moqGuideUpdatedAt = new Date('2026-07-27T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -63,6 +64,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/sports-socks-moq-guide`,
+      lastModified: moqGuideUpdatedAt,
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/custom-grip-socks`,
       lastModified: publishedAt,
       priority: 0.9,
@@ -111,3 +117,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogUrls,
   ];
 }
+
