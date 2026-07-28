@@ -187,71 +187,11 @@ export function ProductStructuredData({ product }: { product: ProductSeoConfig }
   const url = `${siteUrl}/products/${product.slug}`;
   const data = {
     '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Product',
-        '@id': `${url}#product`,
-        name: product.name,
-        description: product.description,
-        image: [`${siteUrl}${product.image}`],
-        url,
-        category: product.category,
-        brand: {
-          '@type': 'Brand',
-          name: 'PeakMotion Socks',
-        },
-        manufacturer: {
-          '@type': 'Organization',
-          '@id': `${siteUrl}/#organization`,
-          name: 'Haiyan Huaerte Knitting Co., Ltd.',
-          url: siteUrl,
-        },
-        additionalProperty: [
-          {
-            '@type': 'PropertyValue',
-            name: 'Minimum order quantity',
-            value: product.moq,
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Product specification',
-            value: product.specification,
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Material',
-            value: product.material,
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Sample time',
-            value: product.sampleTime,
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Production lead time',
-            value: product.leadTime,
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Size range',
-            value: product.sizeRange,
-          },
-          {
-            '@type': 'PropertyValue',
-            name: 'Customization',
-            value: 'OEM and private label customization available',
-          },
-        ],
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
-          { '@type': 'ListItem', position: 2, name: 'Products', item: `${siteUrl}/products` },
-          { '@type': 'ListItem', position: 3, name: product.name, item: url },
-        ],
-      },
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+      { '@type': 'ListItem', position: 2, name: 'Products', item: `${siteUrl}/products` },
+      { '@type': 'ListItem', position: 3, name: product.name, item: url },
     ],
   };
 
