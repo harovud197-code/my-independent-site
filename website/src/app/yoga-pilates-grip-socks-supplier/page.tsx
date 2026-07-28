@@ -91,16 +91,6 @@ export default function YogaPilatesGripSocksSupplierPage() {
         ],
       },
       {
-        '@type': 'Product',
-        '@id': `${pageUrl}#product`,
-        name: 'Custom Yoga & Pilates Grip Socks',
-        image: `${siteUrl}/assets/products/low-cut-yoga-pilates-grip-socks/hero.png`,
-        description: 'Custom OEM and private label non-slip grip socks for yoga, Pilates, barre and studio fitness brands.',
-        category: 'Yoga and Pilates Grip Socks',
-        brand: { '@type': 'Brand', name: 'PeakMotion Socks' },
-        manufacturer: { '@type': 'Organization', name: 'Haiyan Huaerte Knitting Co., Ltd.', url: siteUrl },
-      },
-      {
         '@type': 'FAQPage',
         mainEntity: faqs.map(([question, answer]) => ({
           '@type': 'Question',
