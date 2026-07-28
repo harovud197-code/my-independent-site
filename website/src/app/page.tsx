@@ -20,28 +20,29 @@ export default function Home() {
       const quantity = formData.get('quantity') || 'N/A';
       const details = formData.get('message') || 'N/A';
 
-      const subject = `New Inquiry from ${name} - PeakMotion Socks`;
-      const body = `
-New Custom Socks Inquiry:
---------------------------
-Name: ${name}
-Email: ${email}
-Product Type: ${productType}
-Quantity: ${quantity}
-Project Details: ${details}
-      `;
-
-      const mailtoUrl = `mailto:abayacloth@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const market = formData.get('market') || 'Not provided';
+      const lines = [
+        'Hello PeakMotion Socks, I would like practical MOQ and quote advice for a custom sock project.',
+        `Name: ${name}`,
+        `Business email: ${email}`,
+        `Product type: ${productType}`,
+        `Estimated quantity: ${quantity}`,
+        `Country or target market: ${market}`,
+        `Project details: ${details}`,
+      ];
 
       trackEvent('quote_submission', { product: String(productType), channel: 'email' });
       trackEvent('generate_lead', { product: String(productType), channel: 'email' });
       
-      alert("Preparing your inquiry... Your email client will now open to send the details to abayacloth@hotmail.com.");
-      window.location.href = mailtoUrl;
+      window.open(
+        `https://wa.me/8617357769219?text=${encodeURIComponent(lines.join('\n'))}`,
+        '_blank',
+        'noopener,noreferrer',
+      );
       
     } catch (error) {
       console.error("Submission error:", error);
-      alert("There was an error preparing the email. Please contact us directly at abayacloth@hotmail.com.");
+      alert("There was an error preparing your inquiry. Please contact us directly at abayacloth@hotmail.com.");
     }
   };
 
@@ -325,30 +326,40 @@ Project Details: ${details}
         <div className="container contact-grid grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
           <div className="space-y-6 text-left">
             <p className="eyebrow !text-[#0c1713] opacity-90 font-black uppercase tracking-widest">Start Your Project</p>
-            <h2 className="text-4xl font-extrabold uppercase leading-tight !text-[#0c1713]">Ready to build your custom sports socks collection?</h2>
-            <p className="!text-[#0c1713] text-lg leading-relaxed font-semibold opacity-90">Send your design idea, quantity, target market and packaging needs. Our team will reply with practical suggestions and a quotation direction.</p>
+            <h2 className="text-4xl font-extrabold uppercase leading-tight !text-[#0c1713]">Get a practical MOQ and quote plan for your sock idea</h2>
+            <p className="!text-[#0c1713] text-lg leading-relaxed font-semibold opacity-90">Tell us the essentials. We will open WhatsApp with your project brief already prepared, so you can add a logo or reference image and send it in one step.</p>
             <div className="contact-points flex flex-wrap gap-4 mt-8">
-              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">Quote within 24 hours</span>
-              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">Sample support</span>
-              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">OEM production advice</span>
+              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">MOQ from 50 pairs</span>
+              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">No design file required</span>
+              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">Add images in WhatsApp</span>
             </div>
           </div>
           <form className="quote-form bg-white p-10 rounded-[34px] space-y-6 text-black shadow-2xl" onSubmit={handleSubmit}>
+            <div>
+              <h3 className="text-2xl font-black !text-[#0c1713]">Build your project brief</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">Takes about one minute. After submitting, WhatsApp opens with your details prefilled.</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Name<input name="name" required className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
-              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Email<input type="email" name="email" required className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Business Email<input type="email" name="email" required autoComplete="email" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
             </div>
             <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Product Type
-              <select name="product" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all cursor-pointer">
+              <select name="product" required defaultValue="" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all cursor-pointer">
+                <option value="" disabled>Select a product type</option>
                 <option>Grip Socks</option>
                 <option>Football Socks</option>
                 <option>Running Socks</option>
                 <option>Private Label Collection</option>
+                <option>Other Custom Sports Socks</option>
               </select>
             </label>
-            <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Expected Quantity<input name="quantity" placeholder="e.g. 500 pairs" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Expected Quantity<input name="quantity" inputMode="numeric" placeholder="e.g. 500 pairs" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Country / Market<input name="market" placeholder="e.g. South Africa" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+            </div>
             <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Project Details<textarea name="message" rows={4} placeholder="Logo, materials, packaging, target delivery date..." className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all resize-none"></textarea></label>
-            <button className="w-full bg-[#0c1713] text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl" type="submit">Request Free Quote</button>
+            <button className="w-full bg-[#0c1713] text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl" type="submit">Continue in WhatsApp</button>
+            <p className="text-center text-xs leading-relaxed text-slate-500">Prefer email? Write to <a className="font-bold text-[#0c1713] underline underline-offset-2" href="mailto:abayacloth@hotmail.com?subject=Custom%20Sports%20Socks%20Inquiry">abayacloth@hotmail.com</a>.</p>
           </form>
         </div>
       </section>
