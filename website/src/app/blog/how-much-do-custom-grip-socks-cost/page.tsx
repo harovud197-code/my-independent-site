@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     url: pageUrl,
     title: 'How Much Do Custom Grip Socks Cost? A Complete Pricing Guide',
     description: 'A practical guide to the factors that affect custom grip sock cost, MOQ and OEM project planning.',
-    images: [{ url: `${siteUrl}${assetPath}/grip-display.jpg`, alt: 'Custom grip socks with silicone anti-slip sole' }],
+    images: [{ url: `${assetPath}/grip-display.jpg`, alt: 'Custom grip socks with silicone anti-slip sole' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How Much Do Custom Grip Socks Cost? | PeakMotion',
     description: 'A practical pricing guide for custom grip sock projects.',
-    images: [`${siteUrl}${assetPath}/grip-display.jpg`],
+    images: [`${assetPath}/grip-display.jpg`],
   },
 };
 
@@ -62,7 +62,7 @@ export default function CustomGripSocksCostPage() {
         dateModified: '2026-07-28',
         author: { '@type': 'Organization', name: 'PeakMotion Socks' },
         publisher: { '@type': 'Organization', name: 'PeakMotion Socks', url: siteUrl },
-        image: `${siteUrl}${assetPath}/grip-display.jpg`,
+        image: `${assetPath}/grip-display.jpg`,
       },
       {
         '@type': 'FAQPage',
@@ -91,7 +91,7 @@ export default function CustomGripSocksCostPage() {
         </header>
 
         <div className="mx-auto max-w-4xl px-5 py-12 md:px-8 md:py-16">
-          <figure className="overflow-hidden rounded-3xl border border-slate-200 bg-[#f7f8f6]"><Image src={`${assetPath}/grip-display.jpg`} alt="Custom grip socks with silicone anti-slip sole" width={1200} height={800} priority className="aspect-[16/9] w-full object-cover" /><figcaption className="px-5 py-4 text-sm font-medium text-slate-600">Silicone coverage, logo detail and construction are among the choices that affect a custom grip sock quotation.</figcaption></figure>
+          <figure className="overflow-hidden rounded-3xl border border-slate-200 bg-[#f7f8f6]"><Image src={`${assetPath}/grip-display.jpg`} alt="Custom grip socks with silicone anti-slip sole" width={1200} height={800} priority className="h-auto w-full object-contain" /><figcaption className="px-5 py-4 text-sm font-medium text-slate-600">Silicone coverage, logo detail and construction are among the choices that affect a custom grip sock quotation.</figcaption></figure>
 
           <div className="mt-12 space-y-6 text-lg leading-relaxed text-slate-700">
             <p>Custom grip socks are used by football clubs, fitness brands, Pilates studios, yoga businesses and retailers. The final cost is shaped by the quantity, yarn selection, silicone grip design, branding method and packaging plan.</p>
@@ -120,7 +120,7 @@ export default function CustomGripSocksCostPage() {
             <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Factory process</p>
             <h2 className="mt-3 text-3xl font-black md:text-4xl">How custom grip socks are made</h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">The production route helps explain why a clear brief matters before a quotation and sample plan are confirmed.</p>
-            <div className="mt-8 grid gap-5 sm:grid-cols-2">{processSteps.map(([title, text, image]) => <figure key={title} className="overflow-hidden rounded-2xl border border-slate-200 bg-white"><Image src={`${assetPath}/${image}`} alt={`${title} for custom grip sock production`} width={900} height={600} className="aspect-[4/3] w-full object-cover" /><figcaption className="p-6"><h3 className="text-xl font-black">{title}</h3><p className="mt-3 leading-relaxed text-slate-600">{text}</p></figcaption></figure>)}</div>
+            <div className="mt-8 grid gap-5 sm:grid-cols-2">{processSteps.map(([title, text, image]) => <figure key={title} className="overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6]"><Image src={`${assetPath}/${image}`} alt={`${title} for custom grip sock production`} width={900} height={600} className="h-auto w-full object-contain" /><figcaption className="bg-white p-6"><h3 className="text-xl font-black">{title}</h3><p className="mt-3 leading-relaxed text-slate-600">{text}</p></figcaption></figure>)}</div>
           </section>
 
           <section className="mt-16 scroll-mt-24" id="examples">
