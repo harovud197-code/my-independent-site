@@ -234,8 +234,8 @@ export default function BlogPage() {
       </section>
 
       <section className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-5 py-16 md:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
-        <Link href={featured.href} className="relative block aspect-[16/10] overflow-hidden rounded-lg bg-gray-100">
-          <Image src={featured.img} alt={featured.title} fill priority sizes="(max-width: 1024px) 100vw, 55vw" className="object-cover transition-transform duration-500 hover:scale-[1.03]" />
+        <Link href={featured.href} className="relative block aspect-[77/45] overflow-hidden rounded-lg bg-[#f7f8f6]">
+          <Image src={featured.img} alt={featured.title} fill priority sizes="(max-width: 1024px) 100vw, 55vw" className="object-contain transition-transform duration-500 hover:scale-[1.03]" />
         </Link>
         <div className="space-y-5">
           <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wider">
