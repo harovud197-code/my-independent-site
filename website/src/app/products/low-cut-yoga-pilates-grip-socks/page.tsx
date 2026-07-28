@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
+import ProductPageEnhancements from '@/components/ProductPageEnhancements';
+import ProductQuoteForm from '@/components/ProductQuoteForm';
 
 const assetPath = '/assets/products/low-cut-yoga-pilates-grip-socks';
 const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Low Cut Yoga Pilates Grip Socks.');
@@ -14,6 +16,17 @@ export default function LowCutYogaPilatesGripSocksPage() {
     ['MOQ', '50 Pairs'],
     ['Packing', 'Custom Packaging'],
   ];
+  const useCases = [
+    ['Pilates and reformer studios', 'Provide hygienic, secure traction for controlled movement on reformers and studio floors.'],
+    ['Yoga and wellness brands', 'Create a branded studio essential with color-led collections, grip layouts and retail-ready packaging.'],
+    ['Barre and fitness concepts', 'Build a low-cut performance accessory for barre, dance fitness and wellness programs.'],
+  ] as Array<[string, string]>;
+  const faqs = [
+    ['What is the MOQ for low-cut Pilates grip socks?', 'Selected standard styles can start from 50 pairs. Final MOQ depends on the grip pattern, yarn, colors, logo method, size range and packaging.'],
+    ['Can I customize the silicone grip pattern?', 'Yes. We can discuss full-sole, heel-and-toe or logo-led grip coverage based on the intended studio activity and your branding needs.'],
+    ['Are these socks suitable for studio retail?', 'Yes. We can plan sizes, colorways, hangtags, labels and packaging for studio merchandise, retail buyers or distributor programs.'],
+    ['What should I prepare for a sample?', 'Share a logo file, preferred colors, size range, grip concept, packaging requirements and estimated quantity. We will recommend the most practical sample route.'],
+  ] as Array<[string, string]>;
 
   return (
     <main className="bg-white text-[#0c1713]">
@@ -41,7 +54,14 @@ export default function LowCutYogaPilatesGripSocksPage() {
 
       <section className="bg-[#f7f8f6] py-20"><div className="mx-auto max-w-[1200px] space-y-14 px-5 md:px-8"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Custom Options</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Colors, applications and factory support</h2></div>{['colors.png', 'applications.png', 'factory.png', 'certifications.png'].map((image) => <img key={image} src={`${assetPath}/${image}`} alt="Pilates grip sock product information" className="h-auto w-full rounded-2xl bg-white" />)}</div></section>
 
-      <section id="quote" className="relative overflow-hidden bg-[#07120c] px-5 py-20 md:px-8 md:py-28"><div className="absolute inset-0"><img src={`${assetPath}/cta.png`} alt="Custom Pilates grip socks" className="h-full w-full object-cover opacity-45" /><div className="absolute inset-0 bg-gradient-to-r from-[#07120c] via-[#07120c]/90 to-[#07120c]/45" /></div><div className="relative mx-auto max-w-7xl"><div className="max-w-2xl space-y-7 text-left text-white"><h2 className="text-4xl font-black uppercase leading-tight md:text-6xl">Ready to Build <br />Your Sock Brand?</h2><p className="text-xl font-medium text-gray-200 md:text-2xl">Contact us today and get a free quote within 24 hours.</p><div className="flex flex-col gap-5 pt-3 sm:flex-row"><a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl bg-[#b4ff2b] px-10 py-5 text-lg font-black uppercase text-black shadow-2xl transition-transform hover:scale-105">Get Quote Now</a><a href="https://wa.me/8617357769219" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-2xl border-2 border-white bg-white/10 px-10 py-5 text-lg font-black uppercase !text-white backdrop-blur-md transition-all hover:bg-white hover:!text-black">Chat on WhatsApp</a></div></div></div></section>
+      <ProductPageEnhancements useCases={useCases} faqs={faqs} relatedLinks={[
+        ['/yoga-pilates-grip-socks-supplier', 'Yoga & Pilates grip socks supplier', 'See studio applications, OEM support and broader customization capabilities.'],
+        ['/products/open-top-pilates-studio-socks', 'Open-top Pilates studio socks', 'Compare an alternative construction for studio and wellness collections.'],
+        ['/sports-socks-moq-guide', 'Sports socks MOQ guide', 'See the order factors that affect the right starting quantity.'],
+      ]} />
+
+      <section className="relative overflow-hidden bg-[#07120c] px-5 py-20 md:px-8 md:py-28"><div className="absolute inset-0"><img src={`${assetPath}/cta.png`} alt="Custom Pilates grip socks" className="h-full w-full object-cover opacity-35" /><div className="absolute inset-0 bg-[#07120c]/85" /></div><div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]"><div className="max-w-2xl space-y-7 text-white"><p className="text-sm font-black uppercase tracking-[0.15em] text-[#b4ff2b]">Start your studio project</p><h2 className="text-4xl font-black uppercase leading-tight md:text-6xl">Plan your grip sock collection</h2><p className="text-xl font-medium leading-relaxed text-gray-200">Share your studio use, grip concept, colors and quantity. We will recommend a practical sampling and production route.</p><a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-white px-6 py-3 font-black uppercase tracking-wide !text-white transition-colors hover:bg-white hover:!text-[#0c1713]">Chat on WhatsApp</a></div><ProductQuoteForm productName="Low Cut Yoga Pilates Grip Socks" productSlug="low_cut_yoga_pilates_grip_socks" productOptions={['Low-cut Pilates grip socks', 'Yoga studio grip socks', 'Barre or fitness grip socks', 'Private-label studio collection']} /></div></section>
     </main>
   );
 }
+
