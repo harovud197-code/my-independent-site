@@ -38,16 +38,15 @@ export default function Header() {
 
         {/* CTA BUTTON */}
         <Link 
-          href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20custom%20socks." 
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/#inquiry"
+          data-analytics-event="quote_cta_click"
+          data-analytics-placement="header"
           className="nav-cta hover:scale-105 active:scale-95 transition-all shadow-md"
         >
-          GET QUOTE
+          START A PROJECT
         </Link>
 
       </div>
     </header>
   );
 }
-
