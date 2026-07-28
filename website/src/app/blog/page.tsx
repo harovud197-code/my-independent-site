@@ -12,7 +12,7 @@ const posts = [
     title: 'How Much Do Custom Grip Socks Cost? A Complete Pricing Guide',
     href: '/blog/how-much-do-custom-grip-socks-cost',
     desc: 'Plan a custom grip sock project with practical guidance on price ranges, MOQ, materials, silicone grip design and packaging.',
-    img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog/custom-grip-socks-cost/grip-display.jpg',
+    img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog/custom-grip-socks-cost/grip-display-reference.png',
     category: 'MOQ & Pricing',
     readTime: '6 min read',
   },
@@ -236,7 +236,7 @@ export default function BlogPage() {
       <section className="bg-[#f7f8f6] px-5 py-12 md:px-8 md:py-16">
         <div className="mx-auto grid max-w-[1510px] overflow-hidden rounded-[24px] bg-white shadow-[0_14px_34px_rgba(12,23,19,0.12)] lg:grid-cols-[1.06fr_0.94fr]">
         <Link href={featured.href} className="relative block aspect-[77/45] overflow-hidden bg-[#f7f8f6] lg:aspect-auto lg:min-h-[460px]">
-          <Image src={featured.img} alt={featured.title} fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-cover transition-transform duration-500 hover:scale-[1.02]" />
+          <Image src={featured.img} alt={featured.title} fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-contain transition-transform duration-500 hover:scale-[1.02]" />
         </Link>
         <div className="flex flex-col justify-center space-y-5 px-7 py-9 md:px-12 md:py-12 lg:px-13 lg:py-14">
           <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wider">
