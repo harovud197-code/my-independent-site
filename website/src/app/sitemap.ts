@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'how-sports-socks-are-manufactured',
     'how-to-choose-running-socks',
     'how-to-start-a-custom-socks-brand',
+    'how-much-do-custom-grip-socks-cost',
     'what-are-grip-socks',
     'private-label-socks-guide',
     'private-label-running-socks-brand-guide',
@@ -27,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogUrls = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post}`,
-    lastModified: ['custom-running-socks-oem-guide', 'private-label-running-socks-brand-guide'].includes(post)
+    lastModified: ['custom-running-socks-oem-guide', 'private-label-running-socks-brand-guide', 'how-much-do-custom-grip-socks-cost'].includes(post)
       ? relatedArticleUpdatedAt
       : publishedAt,
     priority: 0.64,
@@ -117,4 +118,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogUrls,
   ];
 }
-
