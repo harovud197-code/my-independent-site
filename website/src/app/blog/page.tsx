@@ -9,6 +9,14 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 const posts = [
   {
+    title: 'How Much Do Custom Grip Socks Cost? A Complete Pricing Guide',
+    href: '/blog/how-much-do-custom-grip-socks-cost',
+    desc: 'Plan a custom grip sock project with practical guidance on price ranges, MOQ, materials, silicone grip design and packaging.',
+    img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog/custom-grip-socks-cost/grip-display.jpg',
+    category: 'MOQ & Pricing',
+    readTime: '6 min read',
+  },
+  {
     title: 'Custom Running Socks OEM Guide: From Brief to Bulk Production',
     href: '/blog/custom-running-socks-oem-guide',
     desc: 'Prepare a clearer running sock brief with practical guidance on materials, MOQ, samples, packaging and production timing.',
