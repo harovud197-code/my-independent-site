@@ -245,14 +245,19 @@ Project Details: ${details}
       <section id="case-study" className="section-pad bg-white">
         <div className="container case-card reveal bg-[#f7f5ef] p-12 rounded-[42px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className="eyebrow text-[#87a829]">Case Study</p>
-            <h2 className="text-3xl font-extrabold uppercase">Helping a sports brand test the market with a smaller first order</h2>
-            <p className="text-gray-600 leading-relaxed">A growing football brand needed premium grip socks but wanted to avoid high inventory risk. PeakMotion supported custom grip pattern, logo placement, packaging and a trial production plan before scaling repeat orders.</p>
+            <p className="eyebrow text-[#87a829]">Client Project</p>
+            <h2 className="text-3xl font-extrabold uppercase">A consistent football sock program for a South African youth club</h2>
+            <p className="text-gray-600 leading-relaxed">A South African youth football club needed knee-high football socks that kept one recognizable team identity across age groups, while avoiding sizing and color inconsistency.</p>
+            <div className="flex flex-wrap gap-3 text-sm font-bold text-[#0c1713]">
+              <span className="rounded-full bg-white px-4 py-2">South African youth football club</span>
+              <span className="rounded-full bg-white px-4 py-2">Knee-high football socks</span>
+              <span className="rounded-full bg-white px-4 py-2">Jacquard crest + size-sorted packing</span>
+            </div>
           </div>
           <div className="case-steps space-y-4">
-            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Challenge</b><span className="font-bold">Small first order + premium look</span></div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Solution</b><span className="font-bold">Flexible MOQ + fast sample</span></div>
-            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Result</b><span className="font-bold">Brand-ready product for launch</span></div>
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Challenge</b><span className="font-bold">Create a unified team look for different age groups without size or color variation.</span></div>
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Solution</b><span className="font-bold">Used knee-high construction, a jacquard team crest and size-sorted packing for easier club distribution.</span></div>
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Result</b><span className="font-bold">Completed the first project delivery and moved into discussions for additional color options.</span></div>
           </div>
         </div>
       </section>
