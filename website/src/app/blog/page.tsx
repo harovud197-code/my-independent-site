@@ -233,18 +233,20 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-5 py-16 md:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
-        <Link href={featured.href} className="relative block aspect-[77/45] overflow-hidden rounded-lg bg-[#f7f8f6]">
-          <Image src={featured.img} alt={featured.title} fill priority sizes="(max-width: 1024px) 100vw, 55vw" className="object-contain transition-transform duration-500 hover:scale-[1.03]" />
+      <section className="bg-[#f7f8f6] px-5 py-12 md:px-8 md:py-16">
+        <div className="mx-auto grid max-w-[1510px] overflow-hidden rounded-[24px] bg-white shadow-[0_14px_34px_rgba(12,23,19,0.12)] lg:grid-cols-[1.06fr_0.94fr]">
+        <Link href={featured.href} className="relative block aspect-[77/45] overflow-hidden bg-[#f7f8f6] lg:aspect-auto lg:min-h-[460px]">
+          <Image src={featured.img} alt={featured.title} fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-cover transition-transform duration-500 hover:scale-[1.02]" />
         </Link>
-        <div className="space-y-5">
+        <div className="flex flex-col justify-center space-y-5 px-7 py-9 md:px-12 md:py-12 lg:px-13 lg:py-14">
           <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wider">
             <span className="rounded-full bg-[#e9f8d2] px-3 py-2 text-[#387116]">Featured Guide</span>
             <span className="text-slate-500">{featured.readTime}</span>
           </div>
-          <h2 className="text-3xl font-black leading-tight md:text-5xl">{featured.title}</h2>
+          <h2 className="text-3xl font-black leading-[1.08] md:text-5xl xl:text-[3.55rem]">{featured.title}</h2>
           <p className="text-lg leading-relaxed text-slate-600">{featured.desc}</p>
           <Link href={featured.href} className="inline-flex items-center gap-2 border-b-2 border-[#b4ff2b] pb-1 font-black uppercase tracking-wide text-[#0c1713]">Read the guide <span aria-hidden="true">&rarr;</span></Link>
+        </div>
         </div>
       </section>
 
