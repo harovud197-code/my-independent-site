@@ -27,12 +27,12 @@ export default function FactoryEvidencePanel({ product, moq, sampleLeadTime, bul
         <div className="mt-10 grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="grid grid-cols-2 gap-3 rounded-2xl bg-white p-3 shadow-[0_16px_40px_rgba(12,23,19,0.07)]">
             <figure className="overflow-hidden rounded-xl bg-slate-100">
-              <Image src="/assets/custom-grip-socks/factory/factory-building.jpg" alt="Exterior of Haiyan Huaerte Knitting Co., Ltd. factory" width={1400} height={1050} className="aspect-[4/3] w-full object-cover" />
+              <Image src="/assets/custom-grip-socks/videos/custom-grip-socks-production-poster-card.jpg" alt="Exterior of Haiyan Huaerte Knitting Co., Ltd. factory" width={1200} height={675} className="aspect-[4/3] w-full object-cover" />
               <figcaption className="px-3 py-3 text-xs font-bold text-slate-600">Factory exterior in Haiyan, Zhejiang</figcaption>
             </figure>
             <figure className="overflow-hidden rounded-xl bg-slate-100">
-              <Image src="/assets/custom-grip-socks/factory/boarding-finishing-area.jpg" alt="Sock boarding and finishing area at the factory" width={1400} height={1050} className="aspect-[4/3] w-full object-cover" />
-              <figcaption className="px-3 py-3 text-xs font-bold text-slate-600">Boarding and finishing area</figcaption>
+              <Image src="/assets/custom-grip-socks/factory/sock-knitting-workshop-card.jpg" alt="Computerized sock knitting workshop at the factory" width={1200} height={900} className="aspect-[4/3] w-full object-cover" />
+              <figcaption className="px-3 py-3 text-xs font-bold text-slate-600">Computerized knitting workshop</figcaption>
             </figure>
           </div>
 
@@ -91,3 +91,4 @@ export default function FactoryEvidencePanel({ product, moq, sampleLeadTime, bul
     </section>
   );
 }
+
