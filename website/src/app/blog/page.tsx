@@ -17,6 +17,14 @@ const posts = [
     readTime: '6 min read',
   },
   {
+    title: 'Custom Socks MOQ Explained: Choose the Right Starting Quantity',
+    href: '/blog/custom-socks-moq-explained',
+    desc: 'Learn what affects custom socks MOQ, compare practical order routes and prepare a clearer first production brief.',
+    img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog/custom-socks-moq/custom-socks-moq-explained.png',
+    category: 'MOQ & Pricing',
+    readTime: '5 min read',
+  },
+  {
     title: 'Custom Running Socks OEM Guide: From Brief to Bulk Production',
     href: '/blog/custom-running-socks-oem-guide',
     desc: 'Prepare a clearer running sock brief with practical guidance on materials, MOQ, samples, packaging and production timing.',
