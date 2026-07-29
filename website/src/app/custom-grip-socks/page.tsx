@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import CustomGripQuoteForm from '@/components/CustomGripQuoteForm';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/custom-grip-socks`;
@@ -89,8 +90,8 @@ export default function CustomGripSocksPage() {
             <h1 className="mt-5 text-4xl font-black leading-[1.05] md:text-6xl">Custom Grip Socks Built for Your Brand</h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">Develop football, Pilates, yoga and performance grip socks with custom materials, logos, silicone patterns and retail-ready packaging from an experienced sock factory.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="#quote" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Request a Custom Quote</a>
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] px-7 py-4 font-black uppercase tracking-wide transition-colors hover:bg-[#0c1713] hover:text-white">Chat on WhatsApp</a>
+              <a href="#quote" className="inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-7 py-4 font-black uppercase tracking-wide !text-white transition-colors hover:bg-[#163020]">Request a Custom Quote</a>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] bg-white px-7 py-4 font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#e9f8d2]">Chat on WhatsApp</a>
             </div>
             <div className="mt-8 grid grid-cols-3 gap-4 border-t border-slate-200 pt-6 text-sm font-bold text-slate-700">
               <span><strong className="block text-lg text-[#0c1713]">300 pairs</strong>MOQ from</span>
@@ -150,7 +151,8 @@ export default function CustomGripSocksPage() {
 
       <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24"><div className="mx-auto max-w-4xl"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">FAQ</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Questions about custom grip socks</h2></div><div className="mt-10 space-y-4">{faqs.map(([question, answer]) => <details key={question} className="group rounded-lg border border-slate-200 bg-white"><summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-6 font-black"><span>{question}</span><span className="text-2xl text-[#679a20] transition-transform group-open:rotate-45">+</span></summary><p className="border-t border-slate-100 px-6 py-5 leading-relaxed text-slate-600">{answer}</p></details>)}</div></div></section>
 
-      <section id="quote" className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24"><div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Project</p><h2 className="mt-3 text-4xl font-black md:text-6xl">Ready to build your grip sock collection?</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Tell us your product type, estimated quantity, logo, material, grip pattern and packaging needs. We will reply with practical production advice and a quotation direction.</p></div><div className="rounded-lg bg-white p-7 text-[#0c1713] md:p-9"><h3 className="text-2xl font-black">Request a Custom Quote</h3><p className="mt-3 leading-relaxed text-slate-600">For the fastest response, send your requirements through WhatsApp. You can also email our factory team directly.</p><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="mt-7 flex w-full items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide transition-colors hover:bg-[#a3e627]">Get Quote on WhatsApp</a><a href="mailto:abayacloth@hotmail.com?subject=Custom%20Grip%20Socks%20Quote%20Request" className="mt-3 flex w-full items-center justify-center rounded-xl border border-[#0c1713] px-6 py-4 text-sm font-black uppercase tracking-wide transition-colors hover:bg-[#0c1713] hover:text-white">Email Factory Team</a></div></div></section>
+      <section className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24"><div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Project</p><h2 className="mt-3 text-4xl font-black md:text-6xl">Ready to build your grip sock collection?</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Tell us your product type, estimated quantity, logo, material, grip pattern and packaging needs. You can start a WhatsApp conversation or open a pre-filled email inquiry.</p></div><CustomGripQuoteForm /></div></section>
     </main>
   );
 }
+
