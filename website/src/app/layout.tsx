@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://peakmotionsocks.com'),
-  title: 'Custom Sports Socks Manufacturer | OEM & Private Label | PeakMotion',
-  description: 'Custom sports socks manufacturer for grip, football, running, Pilates and training brands. OEM and private label production with flexible MOQ, fast sampling and branded packaging.',
+  title: 'Custom Performance Socks Manufacturer for Sports Brands & Retailers | PeakMotion',
+  description: 'Launch football, running and grip sock collections with low MOQ, fast sampling and factory-direct OEM or private-label production.',
   alternates: {
     canonical: '/',
   },
@@ -41,15 +41,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'PeakMotion Socks',
-    title: 'Custom Sports Socks Manufacturer | OEM & Private Label | PeakMotion',
-    description: 'Custom grip socks, football socks, running socks and private label sports socks with flexible MOQ and factory-direct OEM support.',
+    title: 'Custom Performance Socks Manufacturer for Sports Brands & Retailers | PeakMotion',
+    description: 'Launch football, running and grip sock collections with low MOQ, fast sampling and factory-direct production.',
     url: 'https://peakmotionsocks.com',
     images: [{ url: '/assets/images/hero-showcase-green.png', alt: 'PeakMotion custom sports socks manufacturing' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Sports Socks Manufacturer | OEM & Private Label | PeakMotion',
-    description: 'Custom sports socks manufacturing, OEM and private label solutions for global brands.',
+    title: 'Custom Performance Socks Manufacturer for Sports Brands & Retailers | PeakMotion',
+    description: 'Buyer-focused custom sock solutions for brands, clubs, studios and distributors.',
     images: ['/assets/images/hero-showcase-green.png'],
   },
 };
