@@ -96,7 +96,7 @@ export default function FootballSocksManufacturerPage() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row"><a href="#quote" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 font-black uppercase tracking-wide !text-[#0c1713] hover:bg-[#a3e627]">Start Your Custom Order</a><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] px-6 py-4 font-black uppercase tracking-wide hover:bg-[#0c1713] hover:text-white">Chat on WhatsApp</a></div>
               <div className="mt-8 grid grid-cols-3 gap-4 border-t border-slate-200 pt-6 text-sm font-bold text-slate-600"><span><strong className="block text-lg text-[#0c1713]">From 50 pairs</strong>selected standard style</span><span><strong className="block text-lg text-[#0c1713]">5-7 days</strong>sample planning</span><span><strong className="block text-lg text-[#0c1713]">15-25 days</strong>bulk production</span></div>
             </div>
-            <Visual src="football-hero-clean.png" alt="Custom football socks in club colors for teams and academies" priority />
+            <Visual src="football-hero-balanced.png" alt="Six custom football socks in club colors for teams and academies" priority />
           </div>
         </div>
       </section>
