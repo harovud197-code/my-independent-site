@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     url: pageUrl,
     title: 'Custom Grip Socks for Pilates Studios & Yoga Brands | PeakMotion',
     description: 'Build studio-ready private label grip socks with custom colors, silicone grips, packaging and practical order options.',
-    images: [{ url: `${assetBase}/hero-custom-grip-socks.png`, alt: 'Custom grip socks for Pilates studios and yoga brands' }],
+    images: [{ url: `${assetBase}/hero-custom-grip-socks-v2.png`, alt: 'Custom grip socks for Pilates studios and yoga brands' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Custom Grip Socks for Pilates Studios & Yoga Brands',
     description: 'Private label studio grip socks with custom branding, packaging and flexible production support.',
-    images: [`${assetBase}/hero-custom-grip-socks.png`],
+    images: [`${assetBase}/hero-custom-grip-socks-v2.png`],
   },
 };
 
@@ -122,7 +122,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
             </div>
             <p className="mt-4 text-xs leading-relaxed text-slate-500">*Selected standard style. Final MOQ depends on construction, colors, sizes, logo method and packaging.</p>
           </div>
-          <Visual src="hero-custom-grip-socks.png" alt="Pastel custom grip socks and retail packaging for Pilates studios and yoga brands" priority />
+          <Visual src="hero-custom-grip-socks-v2.png" alt="Pastel custom grip socks and retail packaging for Pilates studios and yoga brands" priority />
         </div>
       </section>
 
