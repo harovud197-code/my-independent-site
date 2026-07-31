@@ -102,7 +102,7 @@ export default function PrivateLabelSportsSocksPage() {
             </div>
             <p className="mt-4 text-xs leading-relaxed text-slate-500">*Selected standard style. Your final MOQ depends on design, materials, logo method and packaging.</p>
           </div>
-          <Visual src="hero-private-label-socks.png" alt="Private label performance socks with custom packaging for a new sports sock brand" priority />
+          <Visual src="hero-private-label-socks-v2.png" alt="Private label performance socks with custom packaging for a new sports sock brand" priority />
         </div>
       </section>
 
