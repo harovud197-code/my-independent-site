@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { trackEvent } from '@/lib/analytics';
+import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
 
 export default function Home() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -272,6 +273,8 @@ export default function Home() {
         </div>
       </section>
 
+      <UKFootballCaseStudyCard placement="homepage_customer_success" />
+
       {/* Blog Section */}
       <section id="blog" className="section-pad bg-[#f7f5ef]">
         <div className="container">
@@ -392,3 +395,4 @@ export default function Home() {
 }
 
 // Deployment: v2026-07-09-final-v2
+
