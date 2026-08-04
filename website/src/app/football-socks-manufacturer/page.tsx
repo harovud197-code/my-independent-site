@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import FootballSocksQuoteForm from '@/components/FootballSocksQuoteForm';
+import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/football-socks-manufacturer`;
@@ -116,6 +117,9 @@ export default function FootballSocksManufacturerPage() {
       <section id="quote" className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Project</p><h2 className="mt-3 text-4xl font-black md:text-5xl">Tell us about your next football sock order</h2><p className="mt-5 text-lg leading-relaxed text-slate-300">Send your club logo, color references, sock type, expected quantity, size breakdown and packaging needs. We will recommend a practical sample and production route.</p><div className="mt-7 flex flex-col gap-3 sm:flex-row"><Link href="/products/mid-calf-football-grip" className="inline-flex justify-center rounded-xl border border-white/60 px-6 py-4 font-black uppercase tracking-wide !text-white hover:bg-white hover:!text-[#0c1713]">View Football Grip Socks</Link><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 font-black uppercase tracking-wide !text-[#0c1713] hover:bg-[#a3e627]">Chat on WhatsApp</a></div></div><FootballSocksQuoteForm /></div></section>
 
       <section className="mx-auto max-w-4xl px-5 py-16 md:px-8 lg:py-24"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">FAQ</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Questions about custom football socks</h2></div><div className="mt-10 space-y-4">{faqs.map((faq) => <details key={faq.question} className="group rounded-xl border border-slate-200 bg-white"><summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-6 font-black"><span>{faq.question}</span><span aria-hidden="true" className="text-2xl text-[#679a20] transition-transform group-open:rotate-45">+</span></summary><p className="border-t border-slate-100 px-6 py-5 leading-relaxed text-slate-600">{faq.answer}</p></details>)}</div></section>
+
+      <UKFootballCaseStudyCard placement="football_page_bottom" />
     </main>
   );
 }
+
