@@ -52,3 +52,5 @@ export default function Header() {
   );
 }
 
+// Production redeploy: 2026-08-04
+
