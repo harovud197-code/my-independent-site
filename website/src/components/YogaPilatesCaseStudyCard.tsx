@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const caseStudyUrl = '/case-studies/yoga-pilates-socks-development';
-const caseImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/yoga-pilates-socks-development/collection.png';
+const caseImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/yoga-pilates-socks-development/collection-v2.png';
 
 type YogaPilatesCaseStudyCardProps = {
   placement: string;

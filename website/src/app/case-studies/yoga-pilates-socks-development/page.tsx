@@ -103,7 +103,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
       </section>
 
       <section className="bg-[#fbf7f4] px-5 py-16 md:px-8 lg:py-24">
-        <div className="mx-auto max-w-7xl"><div className="mx-auto mb-10 max-w-3xl text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Collection direction</p><h2 className="mt-3 text-3xl font-black md:text-5xl">One wellness range, multiple studio-ready silhouettes.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The visual direction includes five-toe ballet styles, cross-strap designs, open-toe options and neutral-to-pastel colorways that can support studios, wellness brands and retail collections.</p></div><CaseImage src="collection.png" alt="Yoga and Pilates sock collection in five-toe, cross-strap and grip styles" /></div>
+        <div className="mx-auto max-w-7xl"><div className="mx-auto mb-10 max-w-3xl text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Collection direction</p><h2 className="mt-3 text-3xl font-black md:text-5xl">One wellness range, multiple studio-ready silhouettes.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The visual direction includes five-toe ballet styles, cross-strap designs, open-toe options and neutral-to-pastel colorways that can support studios, wellness brands and retail collections.</p></div><CaseImage src="collection-v2.png" alt="Yoga and Pilates sock collection in five-toe, cross-strap and grip styles" /></div>
       </section>
 
       <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
