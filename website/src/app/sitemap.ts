@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const moqGuideUpdatedAt = new Date('2026-07-27T00:00:00.000Z');
   const customSocksMoqArticleUpdatedAt = new Date('2026-07-29T00:00:00.000Z');
   const ukFootballCaseStudyUpdatedAt = new Date('2026-08-04T00:00:00.000Z');
+  const yogaPilatesCaseStudyUpdatedAt = new Date('2026-08-04T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -92,6 +93,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/case-studies/uk-football-brand-growth`,
       lastModified: ukFootballCaseStudyUpdatedAt,
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/case-studies/yoga-pilates-socks-development`,
+      lastModified: yogaPilatesCaseStudyUpdatedAt,
       priority: 0.82,
     },
     {

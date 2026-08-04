@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import FactoryEvidencePanel from '@/components/FactoryEvidencePanel';
 import YogaPilatesQuoteForm from '@/components/YogaPilatesQuoteForm';
+import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/yoga-pilates-grip-socks-supplier`;
@@ -226,6 +227,8 @@ export default function YogaPilatesGripSocksSupplierPage() {
           <YogaPilatesQuoteForm id="quote-form" />
         </div>
       </section>
+      <YogaPilatesCaseStudyCard placement="yoga_pilates_page_bottom" />
     </main>
   );
 }
+

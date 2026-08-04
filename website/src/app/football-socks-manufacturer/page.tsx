@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import FootballSocksQuoteForm from '@/components/FootballSocksQuoteForm';
 import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
+import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/football-socks-manufacturer`;
@@ -119,6 +120,7 @@ export default function FootballSocksManufacturerPage() {
       <section className="mx-auto max-w-4xl px-5 py-16 md:px-8 lg:py-24"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">FAQ</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Questions about custom football socks</h2></div><div className="mt-10 space-y-4">{faqs.map((faq) => <details key={faq.question} className="group rounded-xl border border-slate-200 bg-white"><summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-6 font-black"><span>{faq.question}</span><span aria-hidden="true" className="text-2xl text-[#679a20] transition-transform group-open:rotate-45">+</span></summary><p className="border-t border-slate-100 px-6 py-5 leading-relaxed text-slate-600">{faq.answer}</p></details>)}</div></section>
 
       <UKFootballCaseStudyCard placement="football_page_bottom" />
+      <YogaPilatesCaseStudyCard placement="football_page_bottom" />
     </main>
   );
 }

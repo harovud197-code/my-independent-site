@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { trackEvent } from '@/lib/analytics';
 import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
+import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
 
 export default function Home() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -278,6 +279,7 @@ export default function Home() {
       </section>
 
       <UKFootballCaseStudyCard placement="homepage_customer_success" />
+      <YogaPilatesCaseStudyCard placement="homepage_trust" />
 
       {/* Blog Section */}
       <section id="blog" className="section-pad bg-[#f7f5ef]">
