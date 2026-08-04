@@ -15,13 +15,13 @@ export const metadata: Metadata = {
     url: pageUrl,
     title: 'Yoga & Pilates Socks Development Case Study | PeakMotion',
     description: 'From brand idea and design concept to grip testing, packaging direction and a market-ready wellness sock collection.',
-    images: [{ url: `${assetBase}/hero.png`, alt: 'Yoga and Pilates grip sock collection development case study' }],
+    images: [{ url: `${assetBase}/hero-v2.png`, alt: 'Yoga and Pilates grip sock collection development case study' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Yoga & Pilates Socks Development Case Study | PeakMotion',
     description: 'A six-stage product development journey for a wellness-focused studio sock collection.',
-    images: [`${assetBase}/hero.png`],
+    images: [`${assetBase}/hero-v2.png`],
   },
 };
 
@@ -52,7 +52,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
         headline: 'Custom Yoga and Pilates Socks Development',
         description: metadata.description,
         mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
-        image: [`${assetBase}/hero.png`, `${assetBase}/collection.png`, `${assetBase}/development.png`],
+        image: [`${assetBase}/hero-v2.png`, `${assetBase}/collection-v2.png`, `${assetBase}/development.png`],
         author: { '@id': `${siteUrl}/#organization` },
         publisher: { '@id': `${siteUrl}/#organization` },
         datePublished: '2026-08-04',
@@ -91,7 +91,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
               <p className="mt-6 text-lg leading-relaxed text-slate-600">A product development journey combining elegant studio styling, functional grip, secure fit details and a cohesive wellness collection direction.</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row"><a href="#journey" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] hover:bg-[#a3e627]">View the development journey</a><Link href="/yoga-pilates-grip-socks-supplier#quote" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] px-6 py-4 text-sm font-black uppercase tracking-wide hover:bg-[#0c1713] hover:text-white">Start a studio sock project</Link></div>
             </div>
-            <CaseImage src="hero.png" alt="Yoga and Pilates grip sock collection displayed in a studio setting" priority />
+            <CaseImage src="hero-v2.png" alt="Yoga and Pilates grip sock collection displayed in a studio setting" priority />
           </div>
         </div>
       </section>
