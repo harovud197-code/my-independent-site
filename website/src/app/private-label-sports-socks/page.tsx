@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import PrivateLabelQuoteForm from '@/components/PrivateLabelQuoteForm';
+import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/private-label-sports-socks`;
@@ -243,6 +244,9 @@ export default function PrivateLabelSportsSocksPage() {
           <PrivateLabelQuoteForm />
         </div>
       </section>
+
+      <UKFootballCaseStudyCard placement="private_label_page_bottom" />
     </main>
   );
 }
+
