@@ -18,17 +18,21 @@ export default function Home() {
       const name = formData.get('name') || 'Customer';
       const email = formData.get('email') || 'N/A';
       const productType = formData.get('product') || 'N/A';
+      const companyType = formData.get('companyType') || 'N/A';
       const quantity = formData.get('quantity') || 'N/A';
       const details = formData.get('message') || 'N/A';
 
       const market = formData.get('market') || 'Not provided';
+      const needSample = formData.get('needSample') || 'Not provided';
       const lines = [
         'Hello PeakMotion Socks, I would like practical MOQ and quote advice for a custom sock project.',
         `Name: ${name}`,
         `Business email: ${email}`,
+        `Company type: ${companyType}`,
         `Product type: ${productType}`,
         `Estimated quantity: ${quantity}`,
-        `Country or target market: ${market}`,
+        `Target market: ${market}`,
+        `Need sample: ${needSample}`,
         `Project details: ${details}`,
       ];
 
@@ -355,6 +359,17 @@ export default function Home() {
               <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Name<input name="name" required className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
               <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Business Email<input type="email" name="email" required autoComplete="email" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
             </div>
+            <fieldset>
+              <legend className="mb-3 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Company Type</legend>
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+                {['Sports Brand', 'Football Club', 'Retailer', 'Distributor', 'Fitness Studio', 'Other'].map((option) => (
+                  <label key={option} className="flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-bold text-[#0c1713] transition hover:border-[#9bd328] has-[:checked]:border-[#87a829] has-[:checked]:bg-[#effbd5]">
+                    <input type="radio" name="companyType" value={option} required className="h-4 w-4 accent-[#87a829]" />
+                    <span>{option}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
             <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Product Type
               <select name="product" required defaultValue="" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all cursor-pointer">
                 <option value="" disabled>Select a product type</option>
@@ -365,9 +380,39 @@ export default function Home() {
                 <option>Other Custom Sports Socks</option>
               </select>
             </label>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Expected Quantity<input name="quantity" inputMode="numeric" placeholder="e.g. 500 pairs" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
-              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Country / Market<input name="market" placeholder="e.g. South Africa" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+            <fieldset>
+              <legend className="mb-3 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Expected Order Quantity</legend>
+              <div className="grid gap-3 md:grid-cols-3">
+                {['50-500 pairs', '500-5000 pairs', '5000+ pairs'].map((option) => (
+                  <label key={option} className="flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-bold text-[#0c1713] transition hover:border-[#9bd328] has-[:checked]:border-[#87a829] has-[:checked]:bg-[#effbd5]">
+                    <input type="radio" name="quantity" value={option} required className="h-4 w-4 accent-[#87a829]" />
+                    <span>{option}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Target Market
+                <select name="market" required defaultValue="" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all cursor-pointer">
+                  <option value="" disabled>Select target market</option>
+                  <option>USA</option>
+                  <option>UK</option>
+                  <option>Europe</option>
+                  <option>Australia</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <fieldset>
+                <legend className="mb-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Need Sample?</legend>
+                <div className="grid grid-cols-2 gap-3">
+                  {['Yes', 'No'].map((option) => (
+                    <label key={option} className="flex min-h-[58px] cursor-pointer items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-bold text-[#0c1713] transition hover:border-[#9bd328] has-[:checked]:border-[#87a829] has-[:checked]:bg-[#effbd5]">
+                      <input type="radio" name="needSample" value={option} required className="h-4 w-4 accent-[#87a829]" />
+                      <span>{option}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
             </div>
             <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Project Details<textarea name="message" rows={4} placeholder="Logo, materials, packaging, target delivery date..." className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all resize-none"></textarea></label>
             <button className="w-full bg-[#0c1713] text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl" type="submit">Continue in WhatsApp</button>
