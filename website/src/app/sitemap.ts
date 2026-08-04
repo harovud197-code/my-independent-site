@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const seoConsolidationUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
   const moqGuideUpdatedAt = new Date('2026-07-27T00:00:00.000Z');
   const customSocksMoqArticleUpdatedAt = new Date('2026-07-29T00:00:00.000Z');
+  const ukFootballCaseStudyUpdatedAt = new Date('2026-08-04T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -89,6 +90,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/case-studies/uk-football-brand-growth`,
+      lastModified: ukFootballCaseStudyUpdatedAt,
+      priority: 0.82,
+    },
+    {
       url: `${baseUrl}/yoga-pilates-grip-socks-supplier`,
       lastModified: seoConsolidationUpdatedAt,
       priority: 0.9,
@@ -122,3 +128,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogUrls,
   ];
 }
+
