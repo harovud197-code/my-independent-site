@@ -3,8 +3,6 @@
 import type { FormEvent } from 'react';
 import { trackEvent } from '@/lib/analytics';
 
-const whatsappNumber = '8617357769219';
-
 type FootballSocksQuoteFormProps = {
   id?: string;
 };
@@ -25,13 +23,9 @@ export default function FootballSocksQuoteForm({ id = 'quote' }: FootballSocksQu
       `Requirements: ${formData.get('requirements') || 'Not provided'}`,
     ];
 
-    trackEvent('quote_submission', { product: 'custom_football_socks', channel: 'whatsapp' });
-    trackEvent('generate_lead', { product: 'custom_football_socks', channel: 'whatsapp' });
-    window.open(
-      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(lines.join('\n'))}`,
-      '_blank',
-      'noopener,noreferrer',
-    );
+    trackEvent('quote_submission', { product: 'custom_football_socks', channel: 'email' });
+    trackEvent('generate_lead', { product: 'custom_football_socks', channel: 'email' });
+    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent('Custom Football Socks Quote Request')}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
   return (
@@ -73,3 +67,4 @@ export default function FootballSocksQuoteForm({ id = 'quote' }: FootballSocksQu
     </form>
   );
 }
+
