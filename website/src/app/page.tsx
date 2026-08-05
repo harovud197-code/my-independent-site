@@ -341,7 +341,7 @@ export default function Home() {
           <div className="space-y-6 text-left">
             <p className="eyebrow !text-[#0c1713] opacity-90 font-black uppercase tracking-widest">Start Your Project</p>
             <h2 className="text-4xl font-extrabold uppercase leading-tight !text-[#0c1713]">Get a practical MOQ and quote plan for your sock idea</h2>
-            <p className="!text-[#0c1713] text-lg leading-relaxed font-semibold opacity-90">Tell us the essentials. We will open WhatsApp with your project brief already prepared, so you can add a logo or reference image and send it in one step.</p>
+            <p className="!text-[#0c1713] text-lg leading-relaxed font-semibold opacity-90">Tell us the essentials. We will open Gmail with your project brief already prepared, so you can review it and send it in one step.</p>
             <div className="contact-points flex flex-wrap gap-4 mt-8">
               <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">MOQ from 50 pairs</span>
               <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">No design file required</span>
