@@ -259,14 +259,183 @@ export default function Home() {
           <div className="space-y-6">
             <p className="eyebrow text-[#87a829]">Client Project</p>
             <h2 className="text-3xl font-extrabold uppercase">A consistent football sock program for a South African youth club</h2>
-            <p className="text-gray-600 leading-relaxed">A South African youth football club needed knee-high footbal…8169 tokens truncated…003cinput required type="email" name="email" placeholder="Business email" autoComplete="email" className="min-h-13 w-full rounded-lg border border-slate-600 bg-slate-800 px-4 text-white outline-none transition placeholder:text-slate-400 focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30" />
-          <select required name="productType" defaultValue="" className="min-h-13 w-full rounded-lg border border-slate-600 bg-slate-800 px-4 text-white outline-none transition focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30"><option value="" disabled>Select product type</option><option>Football or grip socks</option><option>Running socks</option><option>Fitness, Pilates or yoga socks</option><option>Basketball or training socks</option><option>Other private label sports socks</option></select>
-          <select name="brandStage" defaultValue="" className="min-h-13 w-full rounded-lg border border-slate-600 bg-slate-800 px-4 text-white outline-none transition focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30"><option value="" disabled>Select brand stage</option><option>Launching a new brand</option><option>Existing sports brand</option><option>Club, academy or team</option><option>Retailer or distributor</option></select>
-          <input name="quantity" placeholder="Estimated quantity" inputMode="numeric" className="min-h-13 w-full rounded-lg border border-slate-600 bg-slate-800 px-4 text-white outline-none transition placeholder:text-slate-400 focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30" />
-          <textarea name="requirements" rows={3} placeholder="Logo, colors, materials, packaging, target market and launch date" className="w-full resize-y rounded-lg border border-slate-600 bg-slate-800 px-4 py-3 text-white outline-none transition placeholder:text-slate-400 focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30" />
+            <p className="text-gray-600 leading-relaxed">A South African youth football club needed knee-high football socks that kept one recognizable team identity across age groups, while avoiding sizing and color inconsistency.</p>
+            <div className="flex flex-wrap gap-3 text-sm font-bold text-[#0c1713]">
+              <span className="rounded-full bg-white px-4 py-2">South African youth football club</span>
+              <span className="rounded-full bg-white px-4 py-2">Knee-high football socks</span>
+              <span className="rounded-full bg-white px-4 py-2">Jacquard crest + size-sorted packing</span>
+            </div>
+          </div>
+          <div className="case-steps space-y-4">
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Challenge</b><span className="font-bold">Create a unified team look for different age groups without size or color variation.</span></div>
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Solution</b><span className="font-bold">Used knee-high construction, a jacquard team crest and size-sorted packing for easier club distribution.</span></div>
+            <div className="p-6 bg-white rounded-2xl border border-gray-100"><b className="block text-[#87a829] uppercase mb-1 text-xs tracking-widest">Result</b><span className="font-bold">Completed the first project delivery and moved into discussions for additional color options.</span></div>
+          </div>
         </div>
-        <button type="submit" className="mt-4 inline-flex min-h-13 w-full items-center justify-center rounded-xl bg-[#b4ff2b] px-5 py-4 font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b4ff2b]">Start My Project</button>
-      </div>
-    </form>
+      </section>
+
+      <UKFootballCaseStudyCard placement="homepage_customer_success" />
+      <YogaPilatesCaseStudyCard placement="homepage_trust" />
+
+      {/* Blog Section */}
+      <section id="blog" className="section-pad bg-[#f7f5ef]">
+        <div className="container">
+          <div className="section-head reveal text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <p className="eyebrow text-[#87a829]">Blog & Buying Guides</p>
+            <h2 className="text-4xl font-extrabold uppercase">Helpful resources for custom sock sourcing</h2>
+            <p className="text-gray-500">Use these guide topics to educate buyers, support SEO content clusters, and lead visitors toward qualified inquiries.</p>
+          </div>
+          <div className="blog-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article className="blog-card reveal bg-white p-8 rounded-[26px] shadow-sm hover:shadow-xl transition-all space-y-4 border border-gray-100">
+              <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">Guide</span>
+              <h3 className="text-xl font-bold">How to Choose the Right Grip Socks Manufacturer</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Explain MOQ, materials, grip patterns, sampling and quality checks for brand buyers.</p>
+              <Link href="/blog/custom-sports-socks-manufacturer-guide" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">Read Guides &rarr;</Link>
+            </article>
+            <article className="blog-card reveal bg-white p-8 rounded-[26px] shadow-sm hover:shadow-xl transition-all space-y-4 border border-gray-100">
+              <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">Materials</span>
+              <h3 className="text-xl font-bold">Best Materials for Running and Training Socks</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Compare cotton, nylon, polyester, Coolmax, merino and recycled yarn options.</p>
+              <Link href="/blog/best-materials-for-sports-socks" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">Explore Materials &rarr;</Link>
+            </article>
+            <article className="blog-card reveal bg-white p-8 rounded-[26px] shadow-sm hover:shadow-xl transition-all space-y-4 border border-gray-100">
+              <span className="text-xs font-black uppercase text-[#87a829] tracking-widest">OEM</span>
+              <h3 className="text-xl font-bold">Private Label Socks: Packaging, Logo and Launch Checklist</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">Show buyers exactly what they need before starting a custom sock project.</p>
+              <Link href="/blog/private-label-socks-guide" className="font-extrabold text-sm uppercase tracking-wider block pt-2 text-black hover:text-[#87a829]">View OEM Tips &rarr;</Link>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="section-pad bg-white">
+        <div className="container">
+          <div className="section-head reveal text-center max-w-2xl mx-auto mb-12">
+            <p className="eyebrow text-[#87a829]">FAQ</p>
+            <h2 className="text-4xl font-extrabold uppercase">Common questions from sports brand buyers</h2>
+          </div>
+          <div className="faq-list reveal max-w-3xl mx-auto space-y-4">
+            {[
+              { q: 'What is the MOQ for custom sports socks?', a: 'MOQ depends on sock category, logo method, yarn, size range and packaging. Trial orders can start from low quantities for selected products.' },
+              { q: 'Can you make socks with my logo and packaging?', a: 'Yes. We support woven logo, jacquard logo, grip pattern customization, label, header card, box and retail-ready packaging.' },
+              { q: 'How long does sampling take?', a: 'After artwork and specifications are confirmed, sample development can usually move quickly. Exact timing depends on complexity.' },
+              { q: 'Do you ship worldwide?', a: 'Yes. Orders can be arranged by express, air freight, sea freight or your appointed forwarder.' },
+              { q: 'Can you help if I only have an idea?', a: 'Yes. Send your target product, market, reference images, logo and expected quantity. We can help turn it into a production-ready brief.' },
+            ].map((item, idx) => (
+              <details key={idx} className="group border border-gray-100 rounded-2xl bg-[#f7f5ef] p-2 transition-all">
+                <summary className="p-6 cursor-pointer font-extrabold text-lg select-none list-none flex justify-between items-center group-open:text-[#87a829]">
+                  {item.q}
+                  <span className="text-xl group-open:rotate-180 transition-transform">&darr;</span>
+                </summary>
+                <p className="px-6 pb-6 text-gray-600 leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="inquiry" className="section-pad final-cta bg-[#c5ff3d] !text-[#0c1713]">
+        <div className="container contact-grid grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
+          <div className="space-y-6 text-left">
+            <p className="eyebrow !text-[#0c1713] opacity-90 font-black uppercase tracking-widest">Start Your Project</p>
+            <h2 className="text-4xl font-extrabold uppercase leading-tight !text-[#0c1713]">Get a practical MOQ and quote plan for your sock idea</h2>
+            <p className="!text-[#0c1713] text-lg leading-relaxed font-semibold opacity-90">Tell us the essentials. We will open WhatsApp with your project brief already prepared, so you can add a logo or reference image and send it in one step.</p>
+            <div className="contact-points flex flex-wrap gap-4 mt-8">
+              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">MOQ from 50 pairs</span>
+              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">No design file required</span>
+              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">Attach images in email</span>
+            </div>
+          </div>
+          <form className="quote-form bg-white p-10 rounded-[34px] space-y-6 text-black shadow-2xl" onSubmit={handleSubmit}>
+            <div>
+              <h3 className="text-2xl font-black !text-[#0c1713]">Build your project brief</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">Takes about one minute. After submitting, your email app opens with the inquiry details prefilled.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Name<input name="name" required className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Business Email<input type="email" name="email" required autoComplete="email" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all" /></label>
+            </div>
+            <fieldset>
+              <legend className="mb-3 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Company Type</legend>
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+                {['Sports Brand', 'Football Club', 'Retailer', 'Distributor', 'Fitness Studio', 'Other'].map((option) => (
+                  <label key={option} className="flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-bold text-[#0c1713] transition hover:border-[#9bd328] has-[:checked]:border-[#87a829] has-[:checked]:bg-[#effbd5]">
+                    <input type="radio" name="companyType" value={option} required className="h-4 w-4 accent-[#87a829]" />
+                    <span>{option}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Product Type
+              <select name="product" required defaultValue="" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all cursor-pointer">
+                <option value="" disabled>Select a product type</option>
+                <option>Grip Socks</option>
+                <option>Football Socks</option>
+                <option>Running Socks</option>
+                <option>Private Label Collection</option>
+                <option>Other Custom Sports Socks</option>
+              </select>
+            </label>
+            <fieldset>
+              <legend className="mb-3 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Expected Order Quantity</legend>
+              <div className="grid gap-3 md:grid-cols-3">
+                {['50-500 pairs', '500-5000 pairs', '5000+ pairs'].map((option) => (
+                  <label key={option} className="flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-bold text-[#0c1713] transition hover:border-[#9bd328] has-[:checked]:border-[#87a829] has-[:checked]:bg-[#effbd5]">
+                    <input type="radio" name="quantity" value={option} required className="h-4 w-4 accent-[#87a829]" />
+                    <span>{option}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Target Market
+                <select name="market" required defaultValue="" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all cursor-pointer">
+                  <option value="" disabled>Select target market</option>
+                  <option>USA</option>
+                  <option>UK</option>
+                  <option>Europe</option>
+                  <option>Australia</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <fieldset>
+                <legend className="mb-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Need Sample?</legend>
+                <div className="grid grid-cols-2 gap-3">
+                  {['Yes', 'No'].map((option) => (
+                    <label key={option} className="flex min-h-[58px] cursor-pointer items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-bold text-[#0c1713] transition hover:border-[#9bd328] has-[:checked]:border-[#87a829] has-[:checked]:bg-[#effbd5]">
+                      <input type="radio" name="needSample" value={option} required className="h-4 w-4 accent-[#87a829]" />
+                      <span>{option}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+            <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Project Details<textarea name="message" rows={4} placeholder="Logo, materials, packaging, target delivery date..." className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all resize-none"></textarea></label>
+            <button className="w-full bg-[#0c1713] text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl" type="submit">Send Email Inquiry</button>
+            <p className="text-center text-xs leading-relaxed text-slate-500">Prefer email? Write to <a className="font-bold text-[#0c1713] underline underline-offset-2" href="mailto:kayzhejiang@gmail.com?subject=Custom%20Sports%20Socks%20Inquiry">kayzhejiang@gmail.com</a>.</p>
+          </form>
+        </div>
+      </section>
+
+      {/* WhatsApp Floating Button */}
+      <a 
+        href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20would%20like%20a%20free%20quote."
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label="Get a free quote on WhatsApp"
+        className="fixed bottom-5 right-5 z-[1000] inline-flex min-h-14 items-center gap-3 rounded-2xl border border-[#b4ff2b]/70 bg-[#0c1713] px-5 py-3 text-sm font-black uppercase tracking-wide !text-white shadow-[0_12px_28px_rgba(12,23,19,0.28)] transition-all hover:-translate-y-1 hover:bg-[#163020] hover:shadow-[0_16px_32px_rgba(12,23,19,0.35)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b4ff2b] sm:bottom-7 sm:right-7"
+      >
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#b4ff2b] text-xs font-black text-[#0c1713]">WA</span>
+        <span>Get a Free Quote</span>
+        <span className="hidden">
+        Chat
+        </span>
+      </a>
+    </main>
   );
 }
+
+// Deployment: v2026-07-09-final-v2
+
