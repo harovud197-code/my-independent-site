@@ -161,46 +161,6 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">MOQ / Sampling / Production</p>
-            <h2 className="mt-3 text-3xl font-black md:text-5xl">Manufacturing Details</h2>
-            <p className="mt-5 text-lg leading-relaxed text-slate-600">A practical production framework for developing and testing a custom yoga or Pilates grip sock collection.</p>
-          </div>
-
-          <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-[#eaded8] shadow-[0_18px_45px_rgba(64,35,39,0.06)]">
-            <div className="overflow-x-auto">
-              <table className="w-full min-w-[620px] border-collapse text-left">
-                <thead className="bg-[#0c1713] text-white">
-                  <tr>
-                    <th scope="col" className="w-[34%] px-6 py-4 text-sm font-black uppercase tracking-[0.12em]">Item</th>
-                    <th scope="col" className="px-6 py-4 text-sm font-black uppercase tracking-[0.12em]">Details</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {manufacturingDetails.map(([item, details], index) => (
-                    <tr key={item} className={index % 2 === 0 ? 'bg-white' : 'bg-[#fbf7f4]'}>
-                      <th scope="row" className="border-t border-[#eaded8] px-6 py-4 font-black text-[#0c1713]">{item}</th>
-                      <td className="border-t border-[#eaded8] px-6 py-4 font-semibold text-slate-600">{details}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div className="mx-auto mt-10 grid max-w-4xl gap-6 rounded-2xl bg-[#fbf7f4] p-7 md:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
-            <div>
-              <h3 className="text-2xl font-black md:text-3xl">Start With A Small Batch Test</h3>
-              <p className="mt-4 leading-relaxed text-slate-600">Not every brand needs thousands of pairs at the beginning.</p>
-              <p className="mt-2 leading-relaxed text-slate-600">PeakMotion helps emerging wellness brands validate products with flexible MOQ before scaling production.</p>
-            </div>
-            <Link href="/contact" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-center text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Request Custom Yoga Socks Quote</Link>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-[#fbf7f4] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
@@ -256,6 +216,46 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
                 <ul className="mt-3 space-y-2">{card.items.map((item) => <li key={item} className="flex items-start gap-3 text-sm font-semibold text-slate-300"><span aria-hidden="true" className="mt-0.5 text-[#b4ff2b]">&#10003;</span><span>{item}</span></li>)}</ul>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">MOQ / Sampling / Production</p>
+            <h2 className="mt-3 text-3xl font-black md:text-5xl">Manufacturing Details</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">A practical production framework for developing and testing a custom yoga or Pilates grip sock collection.</p>
+          </div>
+
+          <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-[#eaded8] shadow-[0_18px_45px_rgba(64,35,39,0.06)]">
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[620px] border-collapse text-left">
+                <thead className="bg-[#0c1713] text-white">
+                  <tr>
+                    <th scope="col" className="w-[34%] px-6 py-4 text-sm font-black uppercase tracking-[0.12em]">Item</th>
+                    <th scope="col" className="px-6 py-4 text-sm font-black uppercase tracking-[0.12em]">Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {manufacturingDetails.map(([item, details], index) => (
+                    <tr key={item} className={index % 2 === 0 ? 'bg-white' : 'bg-[#fbf7f4]'}>
+                      <th scope="row" className="border-t border-[#eaded8] px-6 py-4 font-black text-[#0c1713]">{item}</th>
+                      <td className="border-t border-[#eaded8] px-6 py-4 font-semibold text-slate-600">{details}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="mx-auto mt-10 grid max-w-4xl gap-6 rounded-2xl bg-[#fbf7f4] p-7 md:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <h3 className="text-2xl font-black md:text-3xl">Start With A Small Batch Test</h3>
+              <p className="mt-4 leading-relaxed text-slate-600">Not every brand needs thousands of pairs at the beginning.</p>
+              <p className="mt-2 leading-relaxed text-slate-600">PeakMotion helps emerging wellness brands validate products with flexible MOQ before scaling production.</p>
+            </div>
+            <Link href="/contact" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-center text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Request Custom Yoga Socks Quote</Link>
           </div>
         </div>
       </section>
