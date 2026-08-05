@@ -25,7 +25,7 @@ export default function CustomGripQuoteForm() {
 
     trackEvent('quote_submission', { product: 'custom_grip_socks', channel: 'email' });
     trackEvent('generate_lead', { product: 'custom_grip_socks', channel: 'email' });
-    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent('Custom Grip Socks Quote Request')}&body=${encodeURIComponent(lines.join('\n'))}`;
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=kayzhejiang%40gmail.com&su=${encodeURIComponent('Custom Grip Socks Quote Request')}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
   return (
