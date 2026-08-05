@@ -430,7 +430,12 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
       </section>
 
       <section className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24">
-        <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-8 md:flex-row md:items-center"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Plan your own collection</p><h2 className="mt-3 max-w-3xl text-4xl font-black leading-tight md:text-5xl">Turn your studio sock idea into a clear product brief.</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Share your intended customer, style, colors, grip direction, quantity and packaging needs. We will recommend a practical route for specification review and sampling.</p></div><div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto"><Link href="/yoga-pilates-grip-socks-supplier#quote" className="inline-flex justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] hover:bg-[#a3e627]">Start a Yoga or Pilates project</Link><Link href="/private-label-sports-socks#quote" className="inline-flex justify-center rounded-xl border border-white/40 px-6 py-4 text-sm font-black uppercase tracking-wide text-white hover:bg-white hover:text-[#0c1713]">Discuss private label support</Link></div></div>
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Collection</p>
+          <h2 className="mx-auto mt-3 max-w-4xl text-4xl font-black leading-tight md:text-5xl">Ready To Create Your Own Yoga Sock Collection?</h2>
+          <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">Whether you are launching a yoga brand, expanding a studio product line, or testing a new fitness product, PeakMotion can help turn your idea into a market-ready collection.</p>
+          <Link href="/contact" className="mt-8 inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Start Your Custom Socks Project</Link>
+        </div>
       </section>
     </main>
   );
