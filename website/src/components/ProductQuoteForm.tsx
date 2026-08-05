@@ -3,8 +3,6 @@
 import type { FormEvent } from 'react';
 import { trackEvent } from '@/lib/analytics';
 
-const whatsappNumber = '8617357769219';
-
 type ProductQuoteFormProps = {
   productName: string;
   productSlug: string;
@@ -26,9 +24,9 @@ export default function ProductQuoteForm({ productName, productSlug, productOpti
       `Project details: ${formData.get('requirements') || 'Not provided'}`,
     ];
 
-    trackEvent('quote_submission', { product: productSlug, channel: 'whatsapp' });
-    trackEvent('generate_lead', { product: productSlug, channel: 'whatsapp' });
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener,noreferrer');
+    trackEvent('quote_submission', { product: productSlug, channel: 'email' });
+    trackEvent('generate_lead', { product: productSlug, channel: 'email' });
+    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent(`${productName} Quote Request`)}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
   return (
@@ -53,4 +51,3 @@ export default function ProductQuoteForm({ productName, productSlug, productOpti
     </form>
   );
 }
-
