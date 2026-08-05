@@ -94,6 +94,51 @@ const manufacturingDetails = [
   ['Packaging', 'Custom Retail Packaging'],
 ] as const;
 
+const productDevelopmentProcess = [
+  {
+    step: 'Step 1',
+    title: 'Brand Concept',
+    description: 'Understanding customer positioning and target market.',
+    items: [],
+  },
+  {
+    step: 'Step 2',
+    title: 'Product Design',
+    description: 'Selecting:',
+    items: ['Sock style', 'Toe structure', 'Colors', 'Materials'],
+  },
+  {
+    step: 'Step 3',
+    title: 'Sample Development',
+    description: 'Creating prototypes and testing:',
+    items: ['Fit', 'Comfort', 'Elasticity'],
+  },
+  {
+    step: 'Step 4',
+    title: 'Function Optimization',
+    description: 'Improving:',
+    items: ['Grip performance', 'Support', 'Durability'],
+  },
+  {
+    step: 'Step 5',
+    title: 'Packaging Development',
+    description: 'Creating:',
+    items: ['Labels', 'Packaging', 'Retail presentation'],
+  },
+  {
+    step: 'Step 6',
+    title: 'Production',
+    description: 'Quality-controlled manufacturing process.',
+    items: [],
+  },
+  {
+    step: 'Step 7',
+    title: 'Market Launch',
+    description: 'Delivering a ready-to-sell yoga sock collection.',
+    items: [],
+  },
+] as const;
+
 export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
   const structuredData = {
     '@context': 'https://schema.org',
@@ -257,6 +302,34 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
             </div>
             <Link href="/contact" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-center text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Request Custom Yoga Socks Quote</Link>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f3ece8] px-5 py-16 md:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Development Process</p>
+            <h2 className="mt-3 text-3xl font-black md:text-5xl">Product Development Process</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">Seven practical stages move the collection from brand positioning and product design to controlled production and market launch.</p>
+          </div>
+
+          <ol className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {productDevelopmentProcess.map((process, index) => (
+              <li key={process.step} className={`relative rounded-2xl border border-[#eaded8] bg-white p-7 shadow-[0_16px_38px_rgba(64,35,39,0.06)] ${index === productDevelopmentProcess.length - 1 ? 'lg:col-start-2' : ''}`}>
+                <div className="flex items-center gap-4">
+                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0c1713] text-sm font-black text-[#b4ff2b]">{String(index + 1).padStart(2, '0')}</span>
+                  <p className="text-xs font-black uppercase tracking-[0.18em] text-[#a16470]">{process.step}</p>
+                </div>
+                <h3 className="mt-5 text-2xl font-black leading-tight">{process.title}</h3>
+                <p className="mt-4 leading-relaxed text-slate-600">{process.description}</p>
+                {process.items.length > 0 && (
+                  <ul className="mt-4 space-y-2">
+                    {process.items.map((item) => <li key={item} className="flex items-start gap-3 text-sm font-semibold text-slate-600"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#a16470]" /><span>{item}</span></li>)}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
