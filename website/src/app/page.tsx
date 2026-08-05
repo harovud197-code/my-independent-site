@@ -40,7 +40,7 @@ export default function Home() {
       trackEvent('quote_submission', { product: String(productType), channel: 'email' });
       trackEvent('generate_lead', { product: String(productType), channel: 'email' });
       
-      window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent(`Custom Sports Socks Inquiry from ${name}`)}&body=${encodeURIComponent(lines.join('\n'))}`;
+      window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=kayzhejiang%40gmail.com&su=${encodeURIComponent(`Custom Sports Socks Inquiry from ${name}`)}&body=${encodeURIComponent(lines.join('\n'))}`;
       
     } catch (error) {
       console.error("Submission error:", error);
