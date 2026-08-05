@@ -48,7 +48,7 @@ export default function Home() {
       
     } catch (error) {
       console.error("Submission error:", error);
-      alert("There was an error preparing your inquiry. Please contact us directly at abayacloth@hotmail.com.");
+      alert("There was an error preparing your inquiry. Please contact us directly at kayzhejiang@gmail.com.");
     }
   };
 
@@ -418,7 +418,7 @@ export default function Home() {
             </div>
             <label className="flex flex-col gap-2 font-bold text-sm uppercase tracking-wide !text-[#0c1713]">Project Details<textarea name="message" rows={4} placeholder="Logo, materials, packaging, target delivery date..." className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all resize-none"></textarea></label>
             <button className="w-full bg-[#0c1713] text-white py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl" type="submit">Continue in WhatsApp</button>
-            <p className="text-center text-xs leading-relaxed text-slate-500">Prefer email? Write to <a className="font-bold text-[#0c1713] underline underline-offset-2" href="mailto:abayacloth@hotmail.com?subject=Custom%20Sports%20Socks%20Inquiry">abayacloth@hotmail.com</a>.</p>
+            <p className="text-center text-xs leading-relaxed text-slate-500">Prefer email? Write to <a className="font-bold text-[#0c1713] underline underline-offset-2" href="mailto:kayzhejiang@gmail.com?subject=Custom%20Sports%20Socks%20Inquiry">kayzhejiang@gmail.com</a>.</p>
           </form>
         </div>
       </section>
