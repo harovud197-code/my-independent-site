@@ -23,7 +23,7 @@ Quantity: ${data.quantity}
 Requirements: ${data.message}
     `;
 
-    window.location.href = `mailto:abayacloth@hotmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   const applications = [
