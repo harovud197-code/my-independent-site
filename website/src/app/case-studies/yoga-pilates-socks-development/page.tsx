@@ -139,6 +139,34 @@ const productDevelopmentProcess = [
   },
 ] as const;
 
+const faqItems = [
+  {
+    question: 'Can you manufacture custom yoga socks with our own design?',
+    paragraphs: ['Yes.', 'PeakMotion supports custom yoga socks including:'],
+    items: ['Five toe socks', 'Half toe socks', 'Grip socks', 'Custom colors', 'Private label branding'],
+  },
+  {
+    question: 'What is the MOQ for custom yoga socks?',
+    paragraphs: ['Our flexible production supports small batch testing.', 'For many custom projects, brands can start from around 50 pairs depending on design requirements.'],
+    items: [],
+  },
+  {
+    question: 'How long does custom yoga sock sampling take?',
+    paragraphs: ['Usually 7-15 days depending on:'],
+    items: ['Design complexity', 'Material selection', 'Custom requirements'],
+  },
+  {
+    question: 'Can you provide private label packaging?',
+    paragraphs: ['Yes.', 'We support:'],
+    items: ['Custom labels', 'Packaging boxes', 'Retail-ready presentation'],
+  },
+  {
+    question: 'Do you work with yoga studios and wellness brands?',
+    paragraphs: ['Yes.', 'We support yoga studios, Pilates brands, fitness companies and wellness retailers worldwide.'],
+    items: [],
+  },
+] as const;
+
 export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
   const structuredData = {
     '@context': 'https://schema.org',
@@ -170,6 +198,18 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
           { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
           { '@type': 'ListItem', position: 2, name: 'Yoga & Pilates Socks Development', item: pageUrl },
         ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${pageUrl}#faq`,
+        mainEntity: faqItems.map((faq) => ({
+          '@type': 'Question',
+          name: faq.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: [...faq.paragraphs, ...faq.items].join(' '),
+          },
+        })),
       },
     ],
   };
@@ -353,6 +393,37 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
 
       <section id="journey" className="bg-white px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl"><div className="mx-auto mb-10 max-w-3xl text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Six-stage development journey</p><h2 className="mt-3 text-3xl font-black md:text-5xl">From concept to a market-ready collection direction.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Each stage narrows the decisions required before production: target customer, product concept, construction, sample review, packaging and launch preparation.</p></div><CaseImage src="development.png" alt="Six-stage yoga sock development journey from brand idea to market-ready collection" /><div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{developmentSteps.map(([number, title, text]) => <article key={number} className="rounded-xl border border-[#eaded8] bg-[#fbf7f4] p-6"><span className="text-sm font-black tracking-[0.16em] text-[#a16470]">{number}</span><h3 className="mt-4 text-xl font-black">{title}</h3><p className="mt-3 text-sm leading-relaxed text-slate-600">{text}</p></article>)}</div></div>
+      </section>
+
+      <section className="bg-[#fbf7f4] px-5 py-16 md:px-8 lg:py-24">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Buyer Questions</p>
+            <h2 className="mt-3 text-3xl font-black md:text-5xl">Frequently Asked Questions</h2>
+          </div>
+
+          <div className="mt-10 space-y-4">
+            {faqItems.map((faq, index) => (
+              <details key={faq.question} className="group rounded-2xl border border-[#eaded8] bg-white p-6 shadow-[0_14px_34px_rgba(64,35,39,0.05)] open:shadow-[0_18px_42px_rgba(64,35,39,0.08)]">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-5 text-left">
+                  <span className="flex items-start gap-4">
+                    <span className="mt-0.5 text-sm font-black text-[#a16470]">Q{index + 1}</span>
+                    <span className="text-lg font-black leading-snug md:text-xl">{faq.question}</span>
+                  </span>
+                  <span aria-hidden="true" className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#f3ece8] text-xl font-black text-[#0c1713] transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <div className="ml-9 mt-5 border-t border-[#eaded8] pt-5 text-slate-600 md:ml-12">
+                  {faq.paragraphs.map((paragraph) => <p key={paragraph} className="mt-2 first:mt-0 leading-relaxed">{paragraph}</p>)}
+                  {faq.items.length > 0 && (
+                    <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+                      {faq.items.map((item) => <li key={item} className="flex items-start gap-3 text-sm font-semibold"><span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#a16470]" /><span>{item}</span></li>)}
+                    </ul>
+                  )}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24">
