@@ -3,8 +3,6 @@
 import type { FormEvent } from 'react';
 import { trackEvent } from '@/lib/analytics';
 
-const whatsappNumber = '8617357769219';
-
 type PrivateLabelQuoteFormProps = { id?: string };
 
 export default function PrivateLabelQuoteForm({ id = 'quote' }: PrivateLabelQuoteFormProps) {
@@ -21,9 +19,9 @@ export default function PrivateLabelQuoteForm({ id = 'quote' }: PrivateLabelQuot
       `Project details: ${formData.get('requirements') || 'Not provided'}`,
     ];
 
-    trackEvent('quote_submission', { product: 'private_label_sports_socks', channel: 'whatsapp' });
-    trackEvent('generate_lead', { product: 'private_label_sports_socks', channel: 'whatsapp' });
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener,noreferrer');
+    trackEvent('quote_submission', { product: 'private_label_sports_socks', channel: 'email' });
+    trackEvent('generate_lead', { product: 'private_label_sports_socks', channel: 'email' });
+    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent('Private Label Sports Socks Project Inquiry')}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
   return (
@@ -46,3 +44,4 @@ export default function PrivateLabelQuoteForm({ id = 'quote' }: PrivateLabelQuot
     </form>
   );
 }
+
