@@ -283,6 +283,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
               <p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Project Solution</p>
               <h2 className="mt-3 text-3xl font-black md:text-5xl">Our Solution: From Product Idea To Market-Ready Collection</h2>
               <p className="mt-5 text-lg leading-relaxed text-slate-300">PeakMotion supported the entire development process from initial concept to production.</p>
+              <p className="mt-4 text-sm leading-relaxed text-slate-300">See how our <Link href="/private-label-sports-socks" className="font-black text-[#b4ff2b] underline decoration-[#b4ff2b]/60 underline-offset-4 hover:text-white">private label yoga socks manufacturer</Link> support covers product branding, packaging and scalable production.</p>
             </div>
             <div className="rounded-2xl border border-white/15 bg-white/5 p-6 md:p-8">
               <p className="font-black text-white">Our team provided:</p>
@@ -311,6 +312,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
             <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">MOQ / Sampling / Production</p>
             <h2 className="mt-3 text-3xl font-black md:text-5xl">Manufacturing Details</h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">A practical production framework for developing and testing a custom yoga or Pilates grip sock collection.</p>
+            <p className="mt-4 text-sm leading-relaxed text-slate-600">Review more capabilities from our <Link href="/yoga-pilates-grip-socks-supplier" className="font-black text-[#7d4853] underline decoration-[#a16470]/50 underline-offset-4 hover:text-[#0c1713]">custom yoga grip socks manufacturer</Link>.</p>
           </div>
 
           <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-2xl border border-[#eaded8] shadow-[0_18px_45px_rgba(64,35,39,0.06)]">
@@ -423,6 +425,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
               </details>
             ))}
           </div>
+          <div className="mt-8 text-center text-sm leading-relaxed text-slate-600">Continue exploring our <Link href="/football-socks-manufacturer" className="font-black text-[#7d4853] underline decoration-[#a16470]/50 underline-offset-4 hover:text-[#0c1713]">custom sports socks production</Link> capabilities.</div>
         </div>
       </section>
 
