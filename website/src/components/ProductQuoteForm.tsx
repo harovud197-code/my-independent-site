@@ -26,7 +26,7 @@ export default function ProductQuoteForm({ productName, productSlug, productOpti
 
     trackEvent('quote_submission', { product: productSlug, channel: 'email' });
     trackEvent('generate_lead', { product: productSlug, channel: 'email' });
-    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent(`${productName} Quote Request`)}&body=${encodeURIComponent(lines.join('\n'))}`;
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=kayzhejiang%40gmail.com&su=${encodeURIComponent(`${productName} Quote Request`)}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
   return (
