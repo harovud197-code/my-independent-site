@@ -22,7 +22,7 @@ export default function YogaPilatesQuoteForm({ id = 'quote' }: YogaPilatesQuoteF
 
     trackEvent('quote_submission', { product: 'yoga_pilates_grip_socks', channel: 'email' });
     trackEvent('generate_lead', { product: 'yoga_pilates_grip_socks', channel: 'email' });
-    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent('Custom Yoga Pilates Grip Socks Quote Request')}&body=${encodeURIComponent(lines.join('\n'))}`;
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=kayzhejiang%40gmail.com&su=${encodeURIComponent('Custom Yoga Pilates Grip Socks Quote Request')}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
   return (
