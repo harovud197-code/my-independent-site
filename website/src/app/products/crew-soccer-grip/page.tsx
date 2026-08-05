@@ -23,7 +23,7 @@ Quantity: ${data.quantity}
 Requirements: ${data.message}
     `;
 
-    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=kayzhejiang%40gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   const applications = [
