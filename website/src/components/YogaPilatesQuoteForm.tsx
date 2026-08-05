@@ -3,8 +3,6 @@
 import type { FormEvent } from 'react';
 import { trackEvent } from '@/lib/analytics';
 
-const whatsappNumber = '8617357769219';
-
 type YogaPilatesQuoteFormProps = {
   id?: string;
 };
@@ -22,9 +20,9 @@ export default function YogaPilatesQuoteForm({ id = 'quote' }: YogaPilatesQuoteF
       `Project details: ${formData.get('requirements') || 'Not provided'}`,
     ];
 
-    trackEvent('quote_submission', { product: 'yoga_pilates_grip_socks', channel: 'whatsapp' });
-    trackEvent('generate_lead', { product: 'yoga_pilates_grip_socks', channel: 'whatsapp' });
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener,noreferrer');
+    trackEvent('quote_submission', { product: 'yoga_pilates_grip_socks', channel: 'email' });
+    trackEvent('generate_lead', { product: 'yoga_pilates_grip_socks', channel: 'email' });
+    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent('Custom Yoga Pilates Grip Socks Quote Request')}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
   return (
@@ -53,3 +51,4 @@ export default function YogaPilatesQuoteForm({ id = 'quote' }: YogaPilatesQuoteF
     </form>
   );
 }
+
