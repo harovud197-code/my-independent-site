@@ -162,7 +162,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
             <div className="rounded-2xl border border-[#eaded8] bg-white p-6 md:p-8">
               <p className="font-black text-[#0c1713]">The goal was to develop products that combined:</p>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-                {['Unique design identity', 'Comfortable fit', 'Anti-slip performance', 'Private label branding', 'Flexible production support'].map((item) => <li key={item} className="flex items-start gap-3 text-sm font-bold text-slate-700"><span aria-hidden="true" className="mt-0.5 text-[#a16470]">鉁?/span><span>{item}</span></li>)}
+                {['Unique design identity', 'Comfortable fit', 'Anti-slip performance', 'Private label branding', 'Flexible production support'].map((item) => <li key={item} className="flex items-start gap-3 text-sm font-bold text-slate-700"><span aria-hidden="true" className="mt-0.5 text-[#a16470]">&#10003;</span><span>{item}</span></li>)}
               </ul>
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
             <div className="rounded-2xl border border-white/15 bg-white/5 p-6 md:p-8">
               <p className="font-black text-white">Our team provided:</p>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-                {['Custom sock development', 'Technical recommendations', 'Sampling adjustments', 'Private label support', 'Production management'].map((item) => <li key={item} className="flex items-start gap-3 text-sm font-bold text-slate-200"><span aria-hidden="true" className="mt-0.5 text-[#b4ff2b]">鉁?/span><span>{item}</span></li>)}
+                {['Custom sock development', 'Technical recommendations', 'Sampling adjustments', 'Private label support', 'Production management'].map((item) => <li key={item} className="flex items-start gap-3 text-sm font-bold text-slate-200"><span aria-hidden="true" className="mt-0.5 text-[#b4ff2b]">&#10003;</span><span>{item}</span></li>)}
               </ul>
             </div>
           </div>
@@ -203,7 +203,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#b4ff2b] text-sm font-black text-[#0c1713]">{String(index + 1).padStart(2, '0')}</span>
                 <h3 className="mt-5 text-2xl font-black leading-tight">{card.title}</h3>
                 <p className="mt-4 font-bold text-slate-200">{card.lead}</p>
-                <ul className="mt-3 space-y-2">{card.items.map((item) => <li key={item} className="flex items-start gap-3 text-sm font-semibold text-slate-300"><span aria-hidden="true" className="mt-0.5 text-[#b4ff2b]">鉁?/span><span>{item}</span></li>)}</ul>
+                <ul className="mt-3 space-y-2">{card.items.map((item) => <li key={item} className="flex items-start gap-3 text-sm font-semibold text-slate-300"><span aria-hidden="true" className="mt-0.5 text-[#b4ff2b]">&#10003;</span><span>{item}</span></li>)}</ul>
               </article>
             ))}
           </div>
@@ -223,7 +223,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
 
       <section className="bg-[#fbf7f4] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.88fr_1.12fr]">
-          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Use scenario</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Designed around Pilates, yoga and wellness movement.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The product direction is suitable for reformer Pilates, studio yoga, barre-inspired movement, member packs and wellness retail鈥攕ubject to final specification and sample approval.</p><div className="mt-7 flex flex-wrap gap-3 text-sm font-black"><Link href="/products/low-cut-yoga-pilates-grip-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Low-cut grip socks</Link><Link href="/products/open-top-pilates-studio-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Open-top studio socks</Link></div></div>
+          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Use scenario</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Designed around Pilates, yoga and wellness movement.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The product direction is suitable for reformer Pilates, studio yoga, barre-inspired movement, member packs and wellness retail—subject to final specification and sample approval.</p><div className="mt-7 flex flex-wrap gap-3 text-sm font-black"><Link href="/products/low-cut-yoga-pilates-grip-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Low-cut grip socks</Link><Link href="/products/open-top-pilates-studio-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Open-top studio socks</Link></div></div>
           <CaseImage src="lifestyle.png" alt="Pilates studio use scenario for custom grip socks" />
         </div>
       </section>
