@@ -21,7 +21,7 @@ export default function PrivateLabelQuoteForm({ id = 'quote' }: PrivateLabelQuot
 
     trackEvent('quote_submission', { product: 'private_label_sports_socks', channel: 'email' });
     trackEvent('generate_lead', { product: 'private_label_sports_socks', channel: 'email' });
-    window.location.href = `mailto:kayzhejiang@gmail.com?subject=${encodeURIComponent('Private Label Sports Socks Project Inquiry')}&body=${encodeURIComponent(lines.join('\n'))}`;
+    window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=kayzhejiang%40gmail.com&su=${encodeURIComponent('Private Label Sports Socks Project Inquiry')}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
 
   return (
