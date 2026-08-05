@@ -167,6 +167,37 @@ const faqItems = [
   },
 ] as const;
 
+const qualityControlPhotos = [
+  {
+    src: 'yarn-preparation.png',
+    title: 'Yarn Preparation',
+    alt: 'Yarn preparation and winding equipment inside the PeakMotion sock factory',
+    description: 'Yarn winding and preparation before knitting begins.',
+    portrait: false,
+  },
+  {
+    src: 'knitting-floor.png',
+    title: 'Computerized Knitting',
+    alt: 'Computerized sock knitting machines on the PeakMotion production floor',
+    description: 'Sock knitting lines supporting controlled construction and repeatable production.',
+    portrait: false,
+  },
+  {
+    src: 'finishing-quality-checks.png',
+    title: 'Finishing & Inspection',
+    alt: 'Factory team completing sock finishing labeling and visual quality checks',
+    description: 'Final finishing, labeling and visual checks before packing.',
+    portrait: false,
+  },
+  {
+    src: 'packed-orders.png',
+    title: 'Packed Order Evidence',
+    alt: 'Labeled cartons grouped in the factory dispatch area',
+    description: 'Cartons grouped and labeled for order verification and dispatch preparation.',
+    portrait: true,
+  },
+] as const;
+
 export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
   const structuredData = {
     '@context': 'https://schema.org',
@@ -177,7 +208,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
         headline: 'Custom Yoga and Pilates Socks Development',
         description: metadata.description,
         mainEntityOfPage: { '@id': `${pageUrl}#webpage` },
-        image: [`${assetBase}/hero-v2.png`, `${assetBase}/collection-v2.png`, `${assetBase}/development.png`],
+        image: [`${assetBase}/hero-v2.png`, `${assetBase}/collection-v2.png`, `${assetBase}/development.png`, `${assetBase}/knitting-floor.png`, `${assetBase}/finishing-quality-checks.png`],
         author: { '@id': `${siteUrl}/#organization` },
         publisher: { '@id': `${siteUrl}/#organization` },
         datePublished: '2026-08-04',
@@ -372,6 +403,36 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Real Factory Evidence</p>
+            <h2 className="mt-3 text-3xl font-black md:text-5xl">Manufacturing &amp; Quality Control</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">Real production photos show the route from yarn preparation and computerized knitting to finishing checks, packed order verification and dispatch preparation.</p>
+          </div>
+
+          <div className="mt-12 grid items-start gap-5 lg:grid-cols-2">
+            {qualityControlPhotos.map((photo) => (
+              <figure key={photo.src} className="overflow-hidden rounded-2xl border border-[#eaded8] bg-[#fbf7f4] shadow-[0_18px_45px_rgba(64,35,39,0.07)]">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#eee8e3]">
+                  <Image
+                    src={`${assetBase}/${photo.src}`}
+                    alt={photo.alt}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className={photo.portrait ? 'object-contain' : 'object-cover'}
+                  />
+                </div>
+                <figcaption className="p-6">
+                  <h3 className="text-xl font-black">{photo.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{photo.description}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
       </section>
 
