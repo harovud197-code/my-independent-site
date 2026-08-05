@@ -73,7 +73,7 @@ const organizationJsonLd = {
   image: {
     '@id': 'https://peakmotionsocks.com/#logo',
   },
-  email: 'abayacloth@hotmail.com',
+  email: 'kayzhejiang@gmail.com',
   telephone: '+86-573-8657-1288',
   address: {
     '@type': 'PostalAddress',
@@ -86,7 +86,7 @@ const organizationJsonLd = {
     '@type': 'ContactPoint',
     contactType: 'sales',
     telephone: '+86-573-8657-1288',
-    email: 'abayacloth@hotmail.com',
+    email: 'kayzhejiang@gmail.com',
     availableLanguage: ['English', 'Chinese'],
   },
   knowsAbout: ['Custom sports socks', 'Grip socks', 'Football socks', 'Running socks', 'OEM sock manufacturing', 'Private label socks'],
