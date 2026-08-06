@@ -36,7 +36,7 @@ function CaseImage({ src, alt, priority = false, className = '' }: { src: string
 
 function EvidenceImage({ src, alt, portrait = false }: { src: string; alt: string; portrait?: boolean }) {
   return (
-    <figure className="overflow-hidden rounded-2xl border border-[#eaded8] bg-white shadow-[0_18px_45px_rgba(64,35,39,0.07)]">
+    <figure className="w-full self-start overflow-hidden rounded-2xl border border-[#eaded8] bg-white shadow-[0_18px_45px_rgba(64,35,39,0.07)]">
       <div className={`relative overflow-hidden bg-[#f6f0ec] ${portrait ? 'aspect-[4/5]' : 'aspect-[4/3]'}`}>
         <Image src={`${evidenceBase}/${src}`} alt={alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw" className="object-contain p-2" />
       </div>
