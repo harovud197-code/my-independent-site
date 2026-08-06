@@ -1,6 +1,3 @@
-Exit code: 0
-Wall time: 0.7 seconds
-Output:
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
