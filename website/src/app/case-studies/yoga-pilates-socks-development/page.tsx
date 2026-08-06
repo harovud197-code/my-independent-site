@@ -1,3 +1,6 @@
+Exit code: 0
+Wall time: 0.7 seconds
+Output:
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -5,6 +8,7 @@ import Link from 'next/link';
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/case-studies/yoga-pilates-socks-development`;
 const assetBase = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/yoga-pilates-socks-development';
+const evidenceBase = assetBase;
 
 export const metadata: Metadata = {
   title: 'Yoga & Pilates Socks Development Case Study | PeakMotion',
@@ -32,6 +36,55 @@ function CaseImage({ src, alt, priority = false, className = '' }: { src: string
     </figure>
   );
 }
+
+function EvidenceImage({ src, alt, portrait = false }: { src: string; alt: string; portrait?: boolean }) {
+  return (
+    <figure className="overflow-hidden rounded-2xl border border-[#eaded8] bg-white shadow-[0_18px_45px_rgba(64,35,39,0.07)]">
+      <div className={`relative overflow-hidden bg-[#f6f0ec] ${portrait ? 'aspect-[4/5]' : 'aspect-[4/3]'}`}>
+        <Image src={`${evidenceBase}/${src}`} alt={alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw" className={portrait ? 'object-contain p-3' : 'object-cover'} />
+      </div>
+    </figure>
+  );
+}
+
+const projectEvidence = [
+  {
+    eyebrow: 'Product Development',
+    title: 'From customer reference to a clearer branded direction.',
+    description: 'The development work translated the starting reference into a defined Nova Step product identity, with the logo, stripe layout and color direction reviewed before sampling.',
+    images: [
+      ['customer-reference.jpg', 'Customer reference grip sock used as the initial product direction', true],
+      ['original-design.png', 'Original custom sock design showing the first logo and grip direction', false],
+      ['revised-design.png', 'Revised black custom sock design with refined logo and stripe placement', false],
+    ],
+  },
+  {
+    eyebrow: 'Sampling & Testing',
+    title: 'Colorways and sample details reviewed before scaling.',
+    description: 'Physical samples made it possible to compare brand color options, confirm logo placement and review the grip layout on real socks rather than only on artwork.',
+    images: [
+      ['navy-colorway.png', 'Navy Nova Step sock colorway sample with front and back branding', false],
+      ['neutral-colorway.png', 'Neutral Nova Step sock colorway sample with front and back branding', false],
+      ['testing-sample.png', 'White Nova Step grip sock testing sample showing logo and silicone grip zones', true],
+    ],
+  },
+  {
+    eyebrow: 'Custom Sock Structures',
+    title: 'Fit, knit structure and grip coverage validated in sample form.',
+    description: 'The blue size sample gave the team a real product to review for scale, rib construction, logo position and the targeted silicone grip pattern across the sole.',
+    images: [
+      ['size-sample.png', 'Blue custom grip sock size sample showing knit structure and sole grip placement', true],
+    ],
+  },
+  {
+    eyebrow: 'Private Label Packaging',
+    title: 'A finished presentation ready for the customer brand.',
+    description: 'The final sock was packed in a clear retail pouch with a clean Nova Step branded band, bringing the product and private label presentation together.',
+    images: [
+      ['private-label-packaging.png', 'Nova Step custom sock packed in a clear private label retail pouch', true],
+    ],
+  },
+] as const;
 
 const developmentSteps = [
   ['01', 'Brand idea', 'Define the target studio customer, wellness position and product opportunity.'],
@@ -409,6 +462,31 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
       <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Real Project Evidence</p>
+            <h2 className="mt-3 text-3xl font-black md:text-5xl">From Product Direction To Private Label Presentation</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">These real project photos show key decisions across the product development route: reference review, design refinement, color and sample testing, sock construction, grip placement and final packaging.</p>
+          </div>
+
+          <div className="mt-12 space-y-16 lg:space-y-24">
+            {projectEvidence.map((module, index) => (
+              <article key={module.eyebrow} className={`grid gap-8 lg:items-center ${index % 2 === 0 ? 'lg:grid-cols-[0.82fr_1.18fr]' : 'lg:grid-cols-[1.18fr_0.82fr]'}`}>
+                <div className={index % 2 === 0 ? '' : 'lg:order-2'}>
+                  <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">{module.eyebrow}</p>
+                  <h3 className="mt-3 text-3xl font-black leading-tight md:text-4xl">{module.title}</h3>
+                  <p className="mt-5 text-lg leading-relaxed text-slate-600">{module.description}</p>
+                </div>
+                <div className={`grid gap-4 ${module.images.length === 1 ? 'grid-cols-1' : 'sm:grid-cols-2 xl:grid-cols-3'}`}>
+                  {module.images.map(([src, alt, portrait]) => <EvidenceImage key={src} src={src} alt={alt} portrait={portrait} />)}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Real Factory Evidence</p>
             <h2 className="mt-3 text-3xl font-black md:text-5xl">Manufacturing &amp; Quality Control</h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">Real production photos show the route from yarn preparation and computerized knitting to finishing checks, packed order verification and dispatch preparation.</p>
@@ -449,7 +527,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
 
       <section className="bg-[#fbf7f4] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.88fr_1.12fr]">
-          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Use scenario</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Designed around Pilates, yoga and wellness movement.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The product direction is suitable for reformer Pilates, studio yoga, barre-inspired movement, member packs and wellness retail—subject to final specification and sample approval.</p><div className="mt-7 flex flex-wrap gap-3 text-sm font-black"><Link href="/products/low-cut-yoga-pilates-grip-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Low-cut grip socks</Link><Link href="/products/open-top-pilates-studio-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Open-top studio socks</Link></div></div>
+          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Use scenario</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Designed around Pilates, yoga and wellness movement.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The product direction is suitable for reformer Pilates, studio yoga, barre-inspired movement, member packs and wellness retail鈥攕ubject to final specification and sample approval.</p><div className="mt-7 flex flex-wrap gap-3 text-sm font-black"><Link href="/products/low-cut-yoga-pilates-grip-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Low-cut grip socks</Link><Link href="/products/open-top-pilates-studio-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Open-top studio socks</Link></div></div>
           <CaseImage src="lifestyle.png" alt="Pilates studio use scenario for custom grip socks" />
         </div>
       </section>
