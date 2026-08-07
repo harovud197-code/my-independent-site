@@ -250,9 +250,22 @@ export default function PrivateLabelSocksBrandLaunchCaseStudyPage() {
 
       <section className="px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-10 lg:grid-cols-[0.78fr_1.22fr]">
+          <div className="grid items-center gap-12 lg:grid-cols-[0.72fr_1.28fr]">
             <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Branding & Packaging</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Building more than socks.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The retail presentation connected the sock, logo and customer-facing packaging into one consistent private label product.</p><ul className="mt-6 space-y-3 text-sm font-bold text-slate-700">{['Logo socks', 'Custom sock card', 'Clear retail bag', 'Pack-ready presentation'].map((item) => <li key={item}><span className="mr-2 text-[#679a20]">✓</span>{item}</li>)}</ul></div>
-            <div className="grid gap-5 sm:grid-cols-2"><EvidenceImage src="sock-card-artwork.jpg" alt="Private label sock card artwork with composition and retail information" ratio="portrait" fit="contain" /><EvidenceImage src="retail-packaging.png" alt="Finished custom socks in a clear retail bag with branded sock card" ratio="landscape" fit="contain" /></div>
+            <div className="grid items-start gap-5 sm:grid-cols-[0.78fr_1.22fr]">
+              <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-[#f6f7f4] shadow-[0_20px_55px_rgba(12,23,19,0.08)]">
+                <div className="p-4 sm:p-5">
+                  <Image src={`${assetBase}/sock-card-artwork.jpg`} alt="Private label sock card artwork with composition and retail information" width={920} height={1708} sizes="(max-width: 640px) 100vw, 260px" className="h-auto w-full rounded-xl" />
+                </div>
+                <figcaption className="border-t border-slate-200 bg-white px-5 py-4"><span className="block text-xs font-black uppercase tracking-[0.14em] text-[#679a20]">Packaging Artwork</span><span className="mt-1 block text-sm font-bold text-slate-700">Custom sock card prepared around the customer brand.</span></figcaption>
+              </figure>
+              <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-[#f6f7f4] shadow-[0_20px_55px_rgba(12,23,19,0.08)]">
+                <div className="p-4 sm:p-5">
+                  <Image src={`${assetBase}/finished-logo-socks-detail.png`} alt="Finished private label socks packed in a clear retail bag with the customer sock card" width={1127} height={1396} sizes="(max-width: 640px) 100vw, 420px" className="h-auto w-full rounded-xl" />
+                </div>
+                <figcaption className="border-t border-slate-200 bg-white px-5 py-4"><span className="block text-xs font-black uppercase tracking-[0.14em] text-[#679a20]">Retail-Ready Product</span><span className="mt-1 block text-sm font-bold text-slate-700">Approved socks, clear retail bag and branded presentation.</span></figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
