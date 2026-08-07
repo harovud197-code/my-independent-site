@@ -49,9 +49,9 @@ const processSteps = [
 
 const manufacturingDetails = [
   ['Product', 'Custom Socks Collection'],
-  ['MOQ', 'From 50 pairs 鈥?selected standard style'],
-  ['Sampling', '7鈥?5 days'],
-  ['Production', '20鈥?0 days'],
+  ['MOQ', 'From 50 pairs — selected standard style'],
+  ['Sampling', '7–15 days'],
+  ['Production', '20–30 days'],
   ['Logo', 'Jacquard / Print / Embroidery'],
   ['Material', 'Cotton / Coolmax / Nylon / Bamboo'],
   ['Packaging', 'Custom retail packaging'],
@@ -195,7 +195,7 @@ export default function PrivateLabelSocksBrandLaunchCaseStudyPage() {
             <h2 className="mt-3 text-3xl font-black md:text-5xl">A new brand needed more than a sock supplier.</h2>
             <p className="mt-5 text-lg leading-relaxed text-slate-600">The customer was an emerging lifestyle brand preparing to launch its own socks collection without an established supply chain or internal product-development team.</p>
             <ul className="mt-6 grid gap-3 text-sm font-bold text-slate-700 sm:grid-cols-2">
-              {['No existing sock supply chain', 'Needed product development support', 'Wanted a small-batch market test', 'Required branded retail packaging'].map((item) => <li key={item} className="rounded-xl bg-[#f4fbe8] p-4"><span className="mr-2 text-[#679a20]">鉁?/span>{item}</li>)}
+              {['No existing sock supply chain', 'Needed product development support', 'Wanted a small-batch market test', 'Required branded retail packaging'].map((item) => <li key={item} className="rounded-xl bg-[#f4fbe8] p-4"><span className="mr-2 text-[#679a20]">✓</span>{item}</li>)}
             </ul>
           </div>
           <EvidenceImage src="brand-logo-options.png" alt="Customer brand logo options supplied for private label sock development" ratio="square" fit="contain" />
@@ -241,7 +241,7 @@ export default function PrivateLabelSocksBrandLaunchCaseStudyPage() {
 
       <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
-          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Private Label Manufacturing Details</p><h2 className="mt-3 text-3xl font-black md:text-5xl">A practical framework for testing and scaling.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The production route can be adjusted around the product, brand stage and intended sales channel.</p><Link href="/private-label-sports-socks" className="mt-7 inline-flex text-sm font-black text-[#467410] underline decoration-[#b4ff2b] decoration-2 underline-offset-4">Explore private label sports socks manufacturing 鈫?/Link></div>
+          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Private Label Manufacturing Details</p><h2 className="mt-3 text-3xl font-black md:text-5xl">A practical framework for testing and scaling.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The production route can be adjusted around the product, brand stage and intended sales channel.</p><Link href="/private-label-sports-socks" className="mt-7 inline-flex text-sm font-black text-[#467410] underline decoration-[#b4ff2b] decoration-2 underline-offset-4">Explore private label sports socks manufacturing →</Link></div>
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_18px_45px_rgba(12,23,19,0.06)]">
             <table className="w-full text-left text-sm"><thead className="bg-[#0c1713] text-white"><tr><th className="px-5 py-4 font-black">Item</th><th className="px-5 py-4 font-black">Details</th></tr></thead><tbody>{manufacturingDetails.map(([item, details]) => <tr key={item} className="border-t border-slate-200 first:border-0"><th scope="row" className="px-5 py-4 font-black">{item}</th><td className="px-5 py-4 text-slate-600">{details}</td></tr>)}</tbody></table>
           </div>
@@ -251,7 +251,7 @@ export default function PrivateLabelSocksBrandLaunchCaseStudyPage() {
       <section className="px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-10 lg:grid-cols-[0.78fr_1.22fr]">
-            <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Branding & Packaging</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Building more than socks.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The retail presentation connected the sock, logo and customer-facing packaging into one consistent private label product.</p><ul className="mt-6 space-y-3 text-sm font-bold text-slate-700">{['Logo socks', 'Custom sock card', 'Clear retail bag', 'Pack-ready presentation'].map((item) => <li key={item}><span className="mr-2 text-[#679a20]">鉁?/span>{item}</li>)}</ul></div>
+            <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Branding & Packaging</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Building more than socks.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The retail presentation connected the sock, logo and customer-facing packaging into one consistent private label product.</p><ul className="mt-6 space-y-3 text-sm font-bold text-slate-700">{['Logo socks', 'Custom sock card', 'Clear retail bag', 'Pack-ready presentation'].map((item) => <li key={item}><span className="mr-2 text-[#679a20]">✓</span>{item}</li>)}</ul></div>
             <div className="grid gap-5 sm:grid-cols-2"><EvidenceImage src="sock-card-artwork.jpg" alt="Private label sock card artwork with composition and retail information" ratio="portrait" fit="contain" /><EvidenceImage src="retail-packaging.png" alt="Finished custom socks in a clear retail bag with branded sock card" ratio="landscape" fit="contain" /></div>
           </div>
         </div>
@@ -268,7 +268,7 @@ export default function PrivateLabelSocksBrandLaunchCaseStudyPage() {
       <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-10 lg:grid-cols-2">
-            <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Project Results</p><h2 className="mt-3 text-3xl font-black md:text-5xl">A retail-ready private label collection prepared for launch.</h2><ul className="mt-7 space-y-4 text-lg font-bold text-slate-700">{['Complete private label collection developed', 'Retail-ready packaging completed', 'Flexible MOQ supported market testing', 'Production route prepared for future scaling'].map((item) => <li key={item} className="flex gap-3"><span className="text-[#679a20]">鉁?/span><span>{item}</span></li>)}</ul><blockquote className="mt-8 rounded-2xl border-l-4 border-[#679a20] bg-white p-6 text-xl font-bold italic shadow-sm">&ldquo;PeakMotion helped us turn our idea into a professional sock collection.&rdquo;<footer className="mt-3 text-sm not-italic text-slate-500">Founder / Brand Owner</footer></blockquote></div>
+            <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Project Results</p><h2 className="mt-3 text-3xl font-black md:text-5xl">A retail-ready private label collection prepared for launch.</h2><ul className="mt-7 space-y-4 text-lg font-bold text-slate-700">{['Complete private label collection developed', 'Retail-ready packaging completed', 'Flexible MOQ supported market testing', 'Production route prepared for future scaling'].map((item) => <li key={item} className="flex gap-3"><span className="text-[#679a20]">✓</span><span>{item}</span></li>)}</ul><blockquote className="mt-8 rounded-2xl border-l-4 border-[#679a20] bg-white p-6 text-xl font-bold italic shadow-sm">&ldquo;PeakMotion helped us turn our idea into a professional sock collection.&rdquo;<footer className="mt-3 text-sm not-italic text-slate-500">Founder / Brand Owner</footer></blockquote></div>
             <div className="grid gap-5 sm:grid-cols-2"><EvidenceImage src="packed-order.png" alt="Completed private label socks packed with branded retail cards" ratio="portrait" fit="cover" /><EvidenceImage src="shipping-cartons.jpg" alt="Finished private label socks packed into shipping cartons for dispatch" ratio="portrait" fit="cover" /></div>
           </div>
         </div>
