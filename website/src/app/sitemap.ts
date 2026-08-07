@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const customSocksMoqArticleUpdatedAt = new Date('2026-07-29T00:00:00.000Z');
   const ukFootballCaseStudyUpdatedAt = new Date('2026-08-04T00:00:00.000Z');
   const yogaPilatesCaseStudyUpdatedAt = new Date('2026-08-04T00:00:00.000Z');
+  const privateLabelCaseStudyUpdatedAt = new Date('2026-08-07T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -98,6 +99,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/case-studies/yoga-pilates-socks-development`,
       lastModified: yogaPilatesCaseStudyUpdatedAt,
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/case-studies/private-label-socks-brand-launch`,
+      lastModified: privateLabelCaseStudyUpdatedAt,
       priority: 0.82,
     },
     {
