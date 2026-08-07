@@ -40,6 +40,7 @@ export default function Header() {
             <div className="absolute left-1/2 top-full z-50 mt-3 w-72 -translate-x-1/2 rounded-xl border border-slate-200 bg-white p-2 shadow-[0_16px_40px_rgba(12,23,19,0.16)]">
               <Link href="/case-studies/uk-football-brand-growth" className="block rounded-lg px-4 py-3 text-sm font-bold text-slate-700 transition-colors hover:bg-[#f4fbe8] hover:text-[#234812]">UK Football Brand Growth</Link>
               <Link href="/case-studies/yoga-pilates-socks-development" className="block rounded-lg px-4 py-3 text-sm font-bold text-slate-700 transition-colors hover:bg-[#f4fbe8] hover:text-[#234812]">Yoga &amp; Pilates Socks Development</Link>
+              <Link href="/case-studies/private-label-socks-brand-launch" className="block rounded-lg px-4 py-3 text-sm font-bold text-slate-700 transition-colors hover:bg-[#f4fbe8] hover:text-[#234812]">Private Label Socks Brand Launch</Link>
             </div>
           </details>
           <Link href="/sports-socks-moq-guide" className="whitespace-nowrap">MOQ Guide</Link>
