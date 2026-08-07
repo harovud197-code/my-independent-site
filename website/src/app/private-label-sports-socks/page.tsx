@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PrivateLabelQuoteForm from '@/components/PrivateLabelQuoteForm';
 import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
-import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
+import PrivateLabelBrandLaunchCaseStudyCard from '@/components/PrivateLabelBrandLaunchCaseStudyCard';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/private-label-sports-socks`;
@@ -247,7 +247,7 @@ export default function PrivateLabelSportsSocksPage() {
       </section>
 
       <UKFootballCaseStudyCard placement="private_label_page_bottom" />
-      <YogaPilatesCaseStudyCard placement="private_label_page_bottom" />
+      <PrivateLabelBrandLaunchCaseStudyCard placement="private_label_page_bottom" />
     </main>
   );
 }
