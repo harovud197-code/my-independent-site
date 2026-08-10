@@ -242,7 +242,7 @@ export default function SocksManufacturingPage() {
           <SectionHeading eyebrow="Product capability" title="Manufacturing routes for sports, grip and private label socks." body="Choose the category closest to your market. Each route connects to a focused buyer page with product, MOQ and customization guidance." />
           <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
             <Link href="/football-socks-manufacturer" className="group overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6] shadow-[0_16px_42px_rgba(12,23,19,0.08)]">
-              <Image src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks-manufacturer/football-hero-balanced.png" alt="Custom football and sports socks manufacturing" width={1448} height={1086} className="h-auto w-full" />
+              <Image src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks-landing/football-hero-balanced.png" alt="Custom football and sports socks manufacturing" width={1448} height={1086} className="h-auto w-full" />
               <div className="p-6"><p className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Sports socks</p><h3 className="mt-2 text-2xl font-black">Football, running &amp; training socks</h3><p className="mt-3 text-slate-600">Explore our <span className="font-bold text-[#315d18]">custom football socks manufacturer</span> route.</p></div>
             </Link>
             <Link href="/yoga-pilates-grip-socks-supplier" className="group overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6] shadow-[0_16px_42px_rgba(12,23,19,0.08)]">
