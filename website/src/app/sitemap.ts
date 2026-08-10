@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const ukFootballCaseStudyUpdatedAt = new Date('2026-08-04T00:00:00.000Z');
   const yogaPilatesCaseStudyUpdatedAt = new Date('2026-08-04T00:00:00.000Z');
   const privateLabelCaseStudyUpdatedAt = new Date('2026-08-07T00:00:00.000Z');
+  const socksManufacturingUpdatedAt = new Date('2026-08-10T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -70,6 +71,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/products`,
       lastModified: seoConsolidationUpdatedAt,
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/socks-manufacturing`,
+      lastModified: socksManufacturingUpdatedAt,
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/sports-socks-moq-guide`,
@@ -140,4 +146,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...blogUrls,
   ];
 }
-
