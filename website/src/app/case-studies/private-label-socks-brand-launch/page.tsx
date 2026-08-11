@@ -292,9 +292,8 @@ export default function PrivateLabelSocksBrandLaunchCaseStudyPage() {
       </section>
 
       <section className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24">
-        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 md:flex-row md:items-center"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Own Socks Brand</p><h2 className="mt-3 max-w-3xl text-4xl font-black leading-tight md:text-5xl">Ready to turn your idea into a retail-ready sock collection?</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Share your target market, sock style, logo, expected quantity and packaging needs. We will recommend a practical sampling and production route.</p></div><Link href="/private-label-sports-socks#quote" className="inline-flex w-full shrink-0 justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] hover:bg-[#a3e627] sm:w-auto">Start your private label project</Link></div>
+        <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 md:flex-row md:items-center"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Own Socks Brand</p><h2 className="mt-3 max-w-3xl text-4xl font-black leading-tight md:text-5xl">Ready to turn your idea into a retail-ready sock collection?</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Share your target market, sock style, logo, expected quantity and packaging needs. We will recommend a practical sampling and production route.</p><Link href="/socks-manufacturing" className="mt-5 inline-flex font-black text-[#b4ff2b] underline underline-offset-4">Explore the manufacturing capability behind this project</Link></div><Link href="/private-label-sports-socks#quote" className="inline-flex w-full shrink-0 justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] hover:bg-[#a3e627] sm:w-auto">Start your private label project</Link></div>
       </section>
     </main>
   );
 }
-

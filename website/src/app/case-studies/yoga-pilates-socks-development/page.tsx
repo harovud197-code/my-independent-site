@@ -524,7 +524,7 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
 
       <section className="bg-[#fbf7f4] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.88fr_1.12fr]">
-          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Use scenario</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Designed around Pilates, yoga and wellness movement.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The product direction is suitable for reformer Pilates, studio yoga, barre-inspired movement, member packs and wellness retail鈥攕ubject to final specification and sample approval.</p><div className="mt-7 flex flex-wrap gap-3 text-sm font-black"><Link href="/products/low-cut-yoga-pilates-grip-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Low-cut grip socks</Link><Link href="/products/open-top-pilates-studio-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Open-top studio socks</Link></div></div>
+          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#a16470]">Use scenario</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Designed around Pilates, yoga and wellness movement.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The product direction is suitable for reformer Pilates, studio yoga, barre-inspired movement, member packs and wellness retail—subject to final specification and sample approval.</p><div className="mt-7 flex flex-wrap gap-3 text-sm font-black"><Link href="/products/low-cut-yoga-pilates-grip-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Low-cut grip socks</Link><Link href="/products/open-top-pilates-studio-socks" className="rounded-full border border-[#d9c8c1] bg-white px-4 py-2 hover:border-[#a16470]">Open-top studio socks</Link></div></div>
           <CaseImage src="lifestyle.png" alt="Pilates studio use scenario for custom grip socks" />
         </div>
       </section>
@@ -570,10 +570,10 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
           <p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Collection</p>
           <h2 className="mx-auto mt-3 max-w-4xl text-4xl font-black leading-tight md:text-5xl">Ready To Create Your Own Yoga Sock Collection?</h2>
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">Whether you are launching a yoga brand, expanding a studio product line, or testing a new fitness product, PeakMotion can help turn your idea into a market-ready collection.</p>
+          <div className="mt-6"><Link href="/socks-manufacturing" className="font-black text-[#b4ff2b] underline underline-offset-4">Explore the manufacturing capability behind this project</Link></div>
           <Link href="/contact" className="mt-8 inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Start Your Custom Socks Project</Link>
         </div>
       </section>
     </main>
   );
 }
-

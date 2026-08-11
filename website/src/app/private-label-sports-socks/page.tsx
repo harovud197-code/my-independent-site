@@ -117,6 +117,13 @@ export default function PrivateLabelSportsSocksPage() {
         </div>
       </section>
 
+      <section className="bg-[#0c1713] px-5 py-8 text-white md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-5 md:flex-row md:items-center">
+          <div><p className="text-xs font-black uppercase tracking-[0.16em] text-[#b4ff2b]">Factory capability behind your brand</p><h2 className="mt-2 text-2xl font-black">Review the complete route from development to packed order.</h2><p className="mt-2 text-slate-300">See the machines, production stages, quality checkpoints and packaging support behind a private label launch.</p></div>
+          <Link href="/socks-manufacturing" className="inline-flex shrink-0 items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide !text-[#0c1713] hover:bg-[#a3e627]">Explore manufacturing capability</Link>
+        </div>
+      </section>
+
       <section id="moq" className="bg-white px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <Visual src="test-market-50-pairs.png" alt="A four-step plan to test a new sports sock brand with a 50-pair selected-standard-style order" />
@@ -251,4 +258,3 @@ export default function PrivateLabelSportsSocksPage() {
     </main>
   );
 }
-

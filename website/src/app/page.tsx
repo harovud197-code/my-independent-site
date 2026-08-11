@@ -225,6 +225,9 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div className="mt-10 text-center reveal">
+            <Link href="/socks-manufacturing" className="inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-7 py-4 text-sm font-black uppercase tracking-wide !text-white transition-colors hover:bg-[#1b3529]">Explore our full manufacturing capability</Link>
+          </div>
         </div>
       </section>
 
@@ -349,6 +352,7 @@ export default function Home() {
               <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">No design file required</span>
               <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">Attach images in email</span>
             </div>
+            <Link href="/socks-manufacturing" className="inline-flex font-black !text-[#0c1713] underline decoration-2 underline-offset-4">Need process details? Review our socks manufacturing capability →</Link>
           </div>
           <form className="quote-form bg-white p-10 rounded-[34px] space-y-6 text-black shadow-2xl" onSubmit={handleSubmit}>
             <div>
@@ -440,4 +444,3 @@ export default function Home() {
 }
 
 // Deployment: v2026-07-09-final-v2
-

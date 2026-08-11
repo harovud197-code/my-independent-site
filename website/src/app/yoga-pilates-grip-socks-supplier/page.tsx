@@ -223,7 +223,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
 
       <section id="quote" className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start your project</p><h2 className="mt-3 text-4xl font-black leading-tight md:text-6xl">Build a grip sock line for your studio or wellness brand.</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Tell us your business type, target market, quantity, preferred sock style, logo and packaging needs. We will recommend a practical MOQ and sampling route.</p><div className="mt-8 flex flex-wrap gap-4"><Link href="/private-label-sports-socks" className="font-black text-[#b4ff2b] underline underline-offset-4">Review private-label support</Link><Link href="/sports-socks-moq-guide" className="font-black text-[#b4ff2b] underline underline-offset-4">Read the MOQ guide</Link></div></div>
+          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start your project</p><h2 className="mt-3 text-4xl font-black leading-tight md:text-6xl">Build a grip sock line for your studio or wellness brand.</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Tell us your business type, target market, quantity, preferred sock style, logo and packaging needs. We will recommend a practical MOQ and sampling route.</p><div className="mt-8 flex flex-wrap gap-4"><Link href="/socks-manufacturing" className="font-black text-[#b4ff2b] underline underline-offset-4">Review our manufacturing capability</Link><Link href="/private-label-sports-socks" className="font-black text-[#b4ff2b] underline underline-offset-4">Review private-label support</Link><Link href="/sports-socks-moq-guide" className="font-black text-[#b4ff2b] underline underline-offset-4">Read the MOQ guide</Link></div></div>
           <YogaPilatesQuoteForm id="quote-form" />
         </div>
       </section>
@@ -231,4 +231,3 @@ export default function YogaPilatesGripSocksSupplierPage() {
     </main>
   );
 }
-

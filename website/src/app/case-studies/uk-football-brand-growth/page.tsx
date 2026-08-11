@@ -99,7 +99,7 @@ export default function UKFootballBrandCaseStudyPage() {
 
       <section className="border-y border-slate-200 bg-white px-5 py-10 md:px-8">
         <dl className="mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3">{facts.map(([label, value, detail]) => <div key={label} className="rounded-xl border border-slate-200 bg-[#fbfcfa] p-6"><dt className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">{label}</dt><dd className="mt-2 text-2xl font-black">{value}</dd><p className="mt-2 text-sm leading-relaxed text-slate-600">{detail}</p></div>)}</dl>
-        <p className="mx-auto mt-5 max-w-7xl text-xs leading-relaxed text-slate-500">The 25-50 pair quantity is historical and specific to this customer development case. It does not replace PeakMotion's current MOQ policy for new projects.</p>
+        <p className="mx-auto mt-5 max-w-7xl text-xs leading-relaxed text-slate-500">The 25-50 pair quantity is historical and specific to this customer development case. It does not replace PeakMotion&apos;s current MOQ policy for new projects.</p>
       </section>
 
       <section id="journey" className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
@@ -115,9 +115,8 @@ export default function UKFootballBrandCaseStudyPage() {
       </section>
 
       <section id="start-project" className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24">
-        <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-8 md:flex-row md:items-center"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Build your own repeat-ready program</p><h2 className="mt-3 max-w-3xl text-4xl font-black leading-tight md:text-5xl">Start with the right product brief, then scale from approved demand.</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Share your sock type, logo, target market, quantity and packaging needs. We will recommend a practical sampling and production route.</p></div><div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto"><Link href="/football-socks-manufacturer#quote" className="inline-flex justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] hover:bg-[#a3e627]">Start a football sock project</Link><Link href="/private-label-sports-socks#quote" className="inline-flex justify-center rounded-xl border border-white/40 px-6 py-4 text-sm font-black uppercase tracking-wide text-white hover:bg-white hover:text-[#0c1713]">Discuss private label production</Link></div></div>
+        <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-8 md:flex-row md:items-center"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Build your own repeat-ready program</p><h2 className="mt-3 max-w-3xl text-4xl font-black leading-tight md:text-5xl">Start with the right product brief, then scale from approved demand.</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Share your sock type, logo, target market, quantity and packaging needs. We will recommend a practical sampling and production route.</p><Link href="/socks-manufacturing" className="mt-5 inline-flex font-black text-[#b4ff2b] underline underline-offset-4">Explore the manufacturing capability behind this project</Link></div><div className="flex w-full shrink-0 flex-col gap-3 sm:w-auto"><Link href="/football-socks-manufacturer#quote" className="inline-flex justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] hover:bg-[#a3e627]">Start a football sock project</Link><Link href="/private-label-sports-socks#quote" className="inline-flex justify-center rounded-xl border border-white/40 px-6 py-4 text-sm font-black uppercase tracking-wide text-white hover:bg-white hover:text-[#0c1713]">Discuss private label production</Link></div></div>
       </section>
     </main>
   );
 }
-

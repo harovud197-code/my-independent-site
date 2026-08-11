@@ -241,6 +241,10 @@ export default function SocksManufacturingPage() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="Product capability" title="Manufacturing routes for sports, grip and private label socks." body="Choose the category closest to your market. Each route connects to a focused buyer page with product, MOQ and customization guidance." />
           <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <Link href="/private-label-sports-socks" className="group overflow-hidden rounded-2xl border-2 border-[#9acb52] bg-[#f4fbe8] shadow-[0_18px_50px_rgba(66,111,30,0.16)] lg:col-span-3 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+              <Image src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/private-label-sports-socks/hero-private-label-socks-v2.png" alt="Private label socks with custom branding and retail packaging" width={1600} height={900} className="h-auto w-full" />
+              <div className="p-7 lg:p-10"><p className="text-xs font-black uppercase tracking-[0.16em] text-[#56851c]">Priority route · Private label socks</p><h3 className="mt-3 text-3xl font-black md:text-4xl">Turn manufacturing capability into a retail-ready sock brand</h3><p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">Connect product development, logo application, sampling, production and packaging with our highest-value <span className="font-bold text-[#315d18]">private label socks manufacturer</span> route.</p><span className="mt-6 inline-flex font-black text-[#315d18] underline decoration-[#9acb52] decoration-2 underline-offset-4">Explore private label production →</span></div>
+            </Link>
             <Link href="/football-socks-manufacturer" className="group overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6] shadow-[0_16px_42px_rgba(12,23,19,0.08)]">
               <Image src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/football-socks-landing/football-hero-balanced.png" alt="Custom football and sports socks manufacturing" width={1448} height={1086} className="h-auto w-full" />
               <div className="p-6"><p className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Sports socks</p><h3 className="mt-2 text-2xl font-black">Football, running &amp; training socks</h3><p className="mt-3 text-slate-600">Explore our <span className="font-bold text-[#315d18]">custom football socks manufacturer</span> route.</p></div>
@@ -249,10 +253,29 @@ export default function SocksManufacturingPage() {
               <Image src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/yoga-pilates-grip-socks-v2/hero-custom-grip-socks-v2.png" alt="Custom yoga Pilates and barre grip socks manufacturing" width={1600} height={900} className="h-auto w-full" />
               <div className="p-6"><p className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Grip socks</p><h3 className="mt-2 text-2xl font-black">Yoga, Pilates &amp; barre socks</h3><p className="mt-3 text-slate-600">Review our <span className="font-bold text-[#315d18]">custom grip socks manufacturer</span> options.</p></div>
             </Link>
-            <Link href="/private-label-sports-socks" className="group overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6] shadow-[0_16px_42px_rgba(12,23,19,0.08)]">
-              <Image src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/private-label-sports-socks/hero-private-label-socks-v2.png" alt="Private label socks with custom branding and retail packaging" width={1600} height={900} className="h-auto w-full" />
-              <div className="p-6"><p className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Private label socks</p><h3 className="mt-2 text-2xl font-black">Branding, packaging &amp; retail products</h3><p className="mt-3 text-slate-600">Plan with a <span className="font-bold text-[#315d18]">private label socks manufacturer</span>.</p></div>
+            <Link href="/products/soccer-sports-socks" className="group flex min-h-full flex-col justify-center rounded-2xl border border-slate-200 bg-[#0c1713] p-7 text-white shadow-[0_16px_42px_rgba(12,23,19,0.12)]">
+              <p className="text-xs font-black uppercase tracking-[0.16em] text-[#b4ff2b]">Product specification</p><h3 className="mt-3 text-2xl font-black">Compare a focused sports sock product</h3><p className="mt-4 leading-relaxed text-slate-300">Review construction, customization and ordering details before sending a manufacturing brief.</p><span className="mt-6 font-black text-[#b4ff2b]">View soccer sports socks →</span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading eyebrow="Manufacturing in real projects" title="See how capability becomes a buyer outcome." body="These case studies connect product development, sampling, quality control and packaging to real launch and growth scenarios." />
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {[
+              ['UK Football Brand Growth', 'From test orders to a repeat-ready football sock program.', '/case-studies/uk-football-brand-growth'],
+              ['Yoga & Pilates Sock Development', 'From product idea to a market-ready studio sock collection.', '/case-studies/yoga-pilates-socks-development'],
+              ['Private Label Socks Brand Launch', 'From brand brief to retail-ready socks and packaging.', '/case-studies/private-label-socks-brand-launch'],
+            ].map(([title, text, href], index) => (
+              <Link key={href} href={href} className="group rounded-2xl border border-slate-200 bg-white p-7 shadow-[0_14px_36px_rgba(12,23,19,0.06)] transition-transform hover:-translate-y-1">
+                <span className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Case study 0{index + 1}</span>
+                <h3 className="mt-4 text-2xl font-black">{title}</h3>
+                <p className="mt-3 leading-relaxed text-slate-600">{text}</p>
+                <span className="mt-6 inline-flex font-black text-[#315d18] underline decoration-[#b4ff2b] decoration-2 underline-offset-4">Read the case study →</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -314,7 +337,10 @@ export default function SocksManufacturingPage() {
           <p className="text-sm font-black uppercase tracking-[0.18em] text-[#56851c]">Start with a clear manufacturing brief</p>
           <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">Ready to develop your custom socks?</h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-700">Tell us your sock category, country or target market, expected quantity, logo direction and packaging needs. We will recommend a practical development route.</p>
-          <Link href="/contact" className="mt-8 inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-8 py-4 text-sm font-black uppercase tracking-wide !text-white transition-colors hover:bg-[#1b3529] hover:!text-white">Request a manufacturing plan</Link>
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <Link href="/contact" className="inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-8 py-4 text-sm font-black uppercase tracking-wide !text-white transition-colors hover:bg-[#1b3529] hover:!text-white">Request a manufacturing plan</Link>
+            <Link href="/#factory" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] px-8 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-white">About our factory process</Link>
+          </div>
         </div>
       </section>
     </main>
