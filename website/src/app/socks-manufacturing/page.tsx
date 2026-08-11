@@ -63,13 +63,14 @@ const productionSteps = [
   ['06', 'Packing', 'Pairs are labeled, packed and prepared for export cartons.'],
 ] as const;
 
-function FactoryImage({ src, alt, width, height, caption, priority = false }: {
+function FactoryImage({ src, alt, width, height, caption, priority = false, crop = false }: {
   src: string;
   alt: string;
   width: number;
   height: number;
   caption?: string;
   priority?: boolean;
+  crop?: boolean;
 }) {
   return (
     <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_18px_48px_rgba(12,23,19,0.09)]">
@@ -79,7 +80,7 @@ function FactoryImage({ src, alt, width, height, caption, priority = false }: {
         width={width}
         height={height}
         priority={priority}
-        className="h-auto w-full"
+        className={crop ? 'aspect-video w-full object-cover object-center' : 'h-auto w-full'}
         sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 720px"
       />
       {caption ? <figcaption className="border-t border-slate-100 px-5 py-4 text-sm font-bold text-slate-700">{caption}</figcaption> : null}
@@ -288,9 +289,9 @@ export default function SocksManufacturingPage() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="Quality control" title="Three checkpoints before an order leaves the factory." body="Quality control follows the approved product specification, with evidence at material, production and finished-order stages." />
           <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
-            <article><FactoryImage src="yarn-and-material-warehouse.jpg" alt="Materials prepared for inspection before sock production" width={1820} height={1024} /><div className="px-1 pt-5"><span className="text-xs font-black text-[#679a20]">01</span><h3 className="mt-2 text-xl font-black">Material Inspection</h3><p className="mt-2 text-slate-600">Check the selected yarn route and order preparation against the specification.</p></div></article>
-            <article><FactoryImage src="private-label-packing-line.png" alt="Factory team inspecting and packing finished sock orders" width={1672} height={941} /><div className="px-1 pt-5"><span className="text-xs font-black text-[#679a20]">02</span><h3 className="mt-2 text-xl font-black">Production Inspection</h3><p className="mt-2 text-slate-600">Review workmanship, size, color, logos and finishing during the order.</p></div></article>
-            <article><FactoryImage src="final-packing-inspection.png" alt="Final sock packing inspection before export shipment" width={1448} height={1086} /><div className="px-1 pt-5"><span className="text-xs font-black text-[#679a20]">03</span><h3 className="mt-2 text-xl font-black">Final Inspection</h3><p className="mt-2 text-slate-600">Verify finished pairs, labeling, packing quantities and carton preparation.</p></div></article>
+            <article className="flex h-full flex-col"><FactoryImage src="yarn-and-material-warehouse.jpg" alt="Materials prepared for inspection before sock production" width={1820} height={1024} crop /><div className="flex-1 px-1 pt-5"><span className="text-xs font-black text-[#679a20]">01</span><h3 className="mt-2 text-xl font-black">Material Inspection</h3><p className="mt-2 text-slate-600">Check the selected yarn route and order preparation against the specification.</p></div></article>
+            <article className="flex h-full flex-col"><FactoryImage src="private-label-packing-line.png" alt="Factory team inspecting and packing finished sock orders" width={1672} height={941} crop /><div className="flex-1 px-1 pt-5"><span className="text-xs font-black text-[#679a20]">02</span><h3 className="mt-2 text-xl font-black">Production Inspection</h3><p className="mt-2 text-slate-600">Review workmanship, size, color, logos and finishing during the order.</p></div></article>
+            <article className="flex h-full flex-col"><FactoryImage src="final-packing-inspection.png" alt="Final sock packing inspection before export shipment" width={1448} height={1086} crop /><div className="flex-1 px-1 pt-5"><span className="text-xs font-black text-[#679a20]">03</span><h3 className="mt-2 text-xl font-black">Final Inspection</h3><p className="mt-2 text-slate-600">Verify finished pairs, labeling, packing quantities and carton preparation.</p></div></article>
           </div>
         </div>
       </section>
