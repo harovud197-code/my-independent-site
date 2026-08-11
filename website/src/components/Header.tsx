@@ -13,7 +13,7 @@ export default function Header() {
         </Link>
 
         {/* NAV */}
-        <nav className="hidden md:flex main-nav !normal-case">
+        <nav className="hidden md:flex main-nav !gap-5 !text-sm !normal-case xl:!gap-6 xl:!text-[15px]">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
           <Link href="/industries">Industries</Link>
@@ -32,7 +32,6 @@ export default function Header() {
               <Link href="/yoga-pilates-grip-socks-supplier" className="block rounded-lg px-4 py-3 text-sm font-bold text-slate-700 transition-colors hover:bg-[#f4fbe8] hover:text-[#234812]">Yoga &amp; Pilates Grip Socks</Link>
             </div>
           </details>
-          <Link href="/#custom-socks">OEM</Link>
           <Link href="/blog">Blog</Link>
           <details className="group relative">
             <summary className="flex cursor-pointer list-none items-center gap-1 whitespace-nowrap opacity-[.86] transition-opacity hover:opacity-100">
