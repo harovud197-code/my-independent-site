@@ -7,13 +7,6 @@ type NavItem = {
   label: string;
 };
 
-const productLinks: NavItem[] = [
-  { href: '/football-socks-manufacturer', label: 'Football Socks' },
-  { href: '/yoga-pilates-grip-socks-supplier', label: 'Yoga Grip Socks' },
-  { href: '/products', label: 'Sports Socks' },
-  { href: '/#custom-socks', label: 'Custom Socks' },
-];
-
 const solutionLinks: NavItem[] = [
   { href: '/industries', label: 'Industries We Serve' },
   { href: '/private-label-sports-socks', label: 'Private Label Socks' },
@@ -81,7 +74,7 @@ export default function Header() {
 
         <nav aria-label="Primary navigation" className="main-nav hidden !gap-4 !text-sm !normal-case md:flex xl:!gap-5 xl:!text-[15px]">
           <Link href="/">Home</Link>
-          <NavDropdown label="Products" items={productLinks} />
+          <Link href="/products">Products</Link>
           <NavDropdown label="Solutions" items={solutionLinks} />
           <NavDropdown label="Manufacturing" items={manufacturingLinks} />
           <NavDropdown label="Case Studies" items={caseStudyLinks} widthClass="w-80" />
