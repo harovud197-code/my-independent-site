@@ -16,6 +16,7 @@ export default function Header() {
         <nav className="hidden md:flex main-nav !normal-case">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
+          <Link href="/industries">Industries</Link>
           <details className="group relative">
             <summary className="flex cursor-pointer list-none items-center gap-1 whitespace-nowrap opacity-[.86] transition-opacity hover:opacity-100">
               Manufacturing

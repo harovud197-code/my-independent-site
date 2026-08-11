@@ -36,6 +36,8 @@ export default function Footer() {
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
             <Link href="/" className="hover:text-[#c5ff3d] transition-colors">HOME</Link>
             <Link href="/products" className="hover:text-[#c5ff3d] transition-colors">SPORTS SOCKS</Link>
+            <Link href="/industries" className="hover:text-[#c5ff3d] transition-colors">INDUSTRIES</Link>
+            <Link href="/socks-manufacturing" className="hover:text-[#c5ff3d] transition-colors">MANUFACTURING</Link>
             <Link href="/football-socks-manufacturer" className="hover:text-[#c5ff3d] transition-colors">FOOTBALL SOCKS</Link>
             <Link href="/blog" className="hover:text-[#c5ff3d] transition-colors">BLOG</Link>
             <a href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20custom%20socks." target="_blank" rel="noopener noreferrer" data-analytics-event="whatsapp_click" data-analytics-placement="footer" className="hover:text-[#c5ff3d] transition-colors text-xs uppercase tracking-widest bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">GET QUOTE</a>

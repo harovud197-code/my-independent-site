@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const yogaPilatesCaseStudyUpdatedAt = new Date('2026-08-04T00:00:00.000Z');
   const privateLabelCaseStudyUpdatedAt = new Date('2026-08-07T00:00:00.000Z');
   const socksManufacturingUpdatedAt = new Date('2026-08-10T00:00:00.000Z');
+  const industriesUpdatedAt = new Date('2026-08-11T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -75,6 +76,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/socks-manufacturing`,
       lastModified: socksManufacturingUpdatedAt,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/industries`,
+      lastModified: industriesUpdatedAt,
       priority: 0.95,
     },
     {
