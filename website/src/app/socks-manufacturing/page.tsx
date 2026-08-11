@@ -256,8 +256,9 @@ export default function SocksManufacturingPage() {
               <Image src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/yoga-pilates-grip-socks-v2/hero-custom-grip-socks-v2.png" alt="Custom yoga Pilates and barre grip socks manufacturing" width={1600} height={900} className="h-auto w-full" />
               <div className="p-6"><p className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Grip socks</p><h3 className="mt-2 text-2xl font-black">Yoga, Pilates &amp; barre socks</h3><p className="mt-3 text-slate-600">Review our <span className="font-bold text-[#315d18]">custom grip socks manufacturer</span> options.</p></div>
             </Link>
-            <Link href="/products/soccer-sports-socks" className="group flex min-h-full flex-col justify-center rounded-2xl border border-slate-200 bg-[#0c1713] p-7 text-white shadow-[0_16px_42px_rgba(12,23,19,0.12)]">
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-[#b4ff2b]">Product specification</p><h3 className="mt-3 text-2xl font-black">Compare a focused sports sock product</h3><p className="mt-4 leading-relaxed text-slate-300">Review construction, customization and ordering details before sending a manufacturing brief.</p><span className="mt-6 font-black text-[#b4ff2b]">View soccer sports socks →</span>
+            <Link href="/products/soccer-sports-socks" className="group overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6] shadow-[0_16px_42px_rgba(12,23,19,0.08)]">
+              <Image src="/assets/products/soccer-sports-socks/hero.jpg" alt="Custom soccer sports socks product specification" width={1536} height={1024} className="aspect-video w-full object-cover" />
+              <div className="p-6"><p className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Product specification</p><h3 className="mt-2 text-2xl font-black">Soccer sports socks</h3><p className="mt-3 text-slate-600">Review construction, customization and ordering details before sending a manufacturing brief.</p><span className="mt-5 inline-flex font-black text-[#315d18] underline decoration-[#b4ff2b] decoration-2 underline-offset-4">View product details →</span></div>
             </Link>
           </div>
         </div>
