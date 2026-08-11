@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/case-studies/private-label-socks-brand-launch`;
@@ -187,6 +188,8 @@ export default function PrivateLabelSocksBrandLaunchCaseStudyPage() {
           <p className="mt-3 text-xs leading-relaxed text-slate-500">*Selected standard styles. Final MOQ depends on construction, yarn, colors, logo method, sizes and packaging.</p>
         </div>
       </section>
+
+      <ManufacturingRelatedLinks currentPath="/case-studies/private-label-socks-brand-launch" />
 
       <section className="px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.8fr_1.2fr]">

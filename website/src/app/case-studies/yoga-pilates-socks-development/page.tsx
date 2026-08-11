@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/case-studies/yoga-pilates-socks-development`;
@@ -313,6 +314,8 @@ export default function YogaPilatesSocksDevelopmentCaseStudyPage() {
           </div>
         </div>
       </section>
+
+      <ManufacturingRelatedLinks currentPath="/case-studies/yoga-pilates-socks-development" />
 
       <section className="border-y border-[#eaded8] bg-white px-5 py-16 md:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">

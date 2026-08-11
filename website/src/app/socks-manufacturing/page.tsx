@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/socks-manufacturing`;
@@ -160,6 +161,8 @@ export default function SocksManufacturingPage() {
           <FactoryImage src="computerized-sock-production-floor.jpg" alt="Computerized sock knitting machines across the PeakMotion production floor" width={1271} height={715} priority caption="Computerized sock production floor in Haiyan, Zhejiang" />
         </div>
       </section>
+
+      <ManufacturingRelatedLinks currentPath="/socks-manufacturing" />
 
       <section className="border-y border-slate-200 bg-white px-5 py-16 md:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">

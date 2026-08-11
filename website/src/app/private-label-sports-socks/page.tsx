@@ -4,6 +4,7 @@ import Link from 'next/link';
 import PrivateLabelQuoteForm from '@/components/PrivateLabelQuoteForm';
 import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
 import PrivateLabelBrandLaunchCaseStudyCard from '@/components/PrivateLabelBrandLaunchCaseStudyCard';
+import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/private-label-sports-socks`;
@@ -107,6 +108,8 @@ export default function PrivateLabelSportsSocksPage() {
           <Visual src="hero-private-label-socks-v2.png" alt="Private label performance socks with custom packaging for a new sports sock brand" priority />
         </div>
       </section>
+
+      <ManufacturingRelatedLinks currentPath="/private-label-sports-socks" />
 
       <section className="border-y border-slate-200 bg-white px-5 py-7 md:px-8">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-5 text-center sm:grid-cols-4">

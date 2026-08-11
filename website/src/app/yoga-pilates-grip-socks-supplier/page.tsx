@@ -4,6 +4,7 @@ import Link from 'next/link';
 import FactoryEvidencePanel from '@/components/FactoryEvidencePanel';
 import YogaPilatesQuoteForm from '@/components/YogaPilatesQuoteForm';
 import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
+import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/yoga-pilates-grip-socks-supplier`;
@@ -126,6 +127,8 @@ export default function YogaPilatesGripSocksSupplierPage() {
           <Visual src="hero-custom-grip-socks-v2.png" alt="Pastel custom grip socks and retail packaging for Pilates studios and yoga brands" priority />
         </div>
       </section>
+
+      <ManufacturingRelatedLinks currentPath="/yoga-pilates-grip-socks-supplier" />
 
       <section aria-label="Customer types" className="border-y border-white/10 bg-[#0c1713] px-5 py-6 text-white md:px-8">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-3"><p className="text-xs font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Built for</p>{['Pilates studios', 'Yoga studios', 'Boutique fitness', 'Wellness brands', 'Retailers'].map((item) => <span key={item} className="text-sm font-bold text-slate-300">{item}</span>)}</div>

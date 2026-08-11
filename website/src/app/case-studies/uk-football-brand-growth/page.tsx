@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/case-studies/uk-football-brand-growth`;
@@ -96,6 +97,8 @@ export default function UKFootballBrandCaseStudyPage() {
           </div>
         </div>
       </section>
+
+      <ManufacturingRelatedLinks currentPath="/case-studies/uk-football-brand-growth" />
 
       <section className="border-y border-slate-200 bg-white px-5 py-10 md:px-8">
         <dl className="mx-auto grid max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3">{facts.map(([label, value, detail]) => <div key={label} className="rounded-xl border border-slate-200 bg-[#fbfcfa] p-6"><dt className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">{label}</dt><dd className="mt-2 text-2xl font-black">{value}</dd><p className="mt-2 text-sm leading-relaxed text-slate-600">{detail}</p></div>)}</dl>

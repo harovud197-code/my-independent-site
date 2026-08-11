@@ -4,6 +4,7 @@ import Link from 'next/link';
 import FootballSocksQuoteForm from '@/components/FootballSocksQuoteForm';
 import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
 import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
+import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/football-socks-manufacturer`;
@@ -102,6 +103,8 @@ export default function FootballSocksManufacturerPage() {
           </div>
         </div>
       </section>
+
+      <ManufacturingRelatedLinks currentPath="/football-socks-manufacturer" />
 
       <section className="border-y border-slate-200 bg-white px-5 py-7 md:px-8"><div className="mx-auto grid max-w-7xl grid-cols-2 gap-y-6 text-center sm:grid-cols-4">{[['Club identity', 'crest and colors'], ['Team sizing', 'kids to adult'], ['Order planning', 'sample to bulk'], ['Packaging', 'club or retail ready']].map(([value, label]) => <div key={value} className="border-slate-200 px-4 sm:border-r last:border-0"><strong className="block text-xl font-black md:text-2xl">{value}</strong><span className="mt-1 block text-xs font-bold uppercase tracking-wider text-slate-500">{label}</span></div>)}</div></section>
 
