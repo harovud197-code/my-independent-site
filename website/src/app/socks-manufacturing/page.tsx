@@ -307,8 +307,8 @@ export default function SocksManufacturingPage() {
           <div className="space-y-5">
             <FactoryImage src="private-label-packing-line.png" alt="Private label socks being paired and packed" width={1672} height={941} caption="Pairing, labeling and retail packing" />
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-              <FactoryImage src="final-packing-inspection.png" alt="Finished sock order checked before carton packing" width={1448} height={1086} caption="Final packing check" />
-              <FactoryImage src="export-carton-packing.jpg" alt="Export carton sealed for custom sock shipment" width={1820} height={1024} caption="Export carton preparation" />
+              <FactoryImage src="final-packing-inspection.png" alt="Finished sock order checked before carton packing" width={1448} height={1086} caption="Final packing check" crop />
+              <FactoryImage src="export-carton-packing.jpg" alt="Export carton sealed for custom sock shipment" width={1820} height={1024} caption="Export carton preparation" crop />
             </div>
           </div>
         </div>
