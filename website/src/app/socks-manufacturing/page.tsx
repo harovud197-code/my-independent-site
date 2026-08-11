@@ -180,7 +180,7 @@ export default function SocksManufacturingPage() {
         </div>
       </section>
 
-      <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
+      <section id="materials" className="scroll-mt-24 bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 items-end gap-8 lg:grid-cols-[0.78fr_1.22fr]">
             <SectionHeading eyebrow="Material selection" title="Start with the yarn, feel and performance target." body="Cotton, Coolmax, nylon, spandex and bamboo-fiber routes are discussed against the intended use, fit, durability, budget and market positioning." />
@@ -198,7 +198,7 @@ export default function SocksManufacturingPage() {
         </div>
       </section>
 
-      <section id="process" className="bg-white px-5 py-16 md:px-8 lg:py-24">
+      <section id="custom-development" className="scroll-mt-24 bg-white px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="Product development" title="Turn references into an approved production specification." body="The development stage reduces ambiguity before bulk production. Sampling usually takes 7-15 days, depending on design complexity and the required construction." />
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-5">
@@ -217,7 +217,7 @@ export default function SocksManufacturingPage() {
         </div>
       </section>
 
-      <section className="bg-[#0c1713] px-5 py-16 md:px-8 lg:py-24">
+      <section id="production-process" className="scroll-mt-24 bg-[#0c1713] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <SectionHeading light eyebrow="Production process" title="A visible production route buyers can understand." body="Each approved sock moves through controlled stages from knitting and finishing to inspection and packing." />
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -285,7 +285,7 @@ export default function SocksManufacturingPage() {
         </div>
       </section>
 
-      <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
+      <section id="quality-control" className="scroll-mt-24 bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <SectionHeading eyebrow="Quality control" title="Three checkpoints before an order leaves the factory." body="Quality control follows the approved product specification, with evidence at material, production and finished-order stages." />
           <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
@@ -296,7 +296,7 @@ export default function SocksManufacturingPage() {
         </div>
       </section>
 
-      <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
+      <section id="packaging" className="scroll-mt-24 bg-white px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <SectionHeading eyebrow="Packaging & shipping" title="Prepare the collection for retail and delivery." body="Packaging is discussed early enough to coordinate product dimensions, branding, labeling and export-carton requirements." />
