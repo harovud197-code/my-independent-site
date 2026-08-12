@@ -5,7 +5,8 @@ import MoqFramework from '@/components/MoqFramework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/blog/how-to-choose-private-label-socks-manufacturer`;
-const heroImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/custom-sock-render.png';
+const heroImage = `${siteUrl}/assets/blog/private-label-manufacturer-grip-socks.webp`;
+const heroImagePath = '/assets/blog/private-label-manufacturer-grip-socks.webp';
 
 const factors = [
   {
@@ -256,7 +257,7 @@ export default function HowToChoosePrivateLabelSocksManufacturerPage() {
             <div className="mt-7 flex flex-wrap items-center gap-3 text-sm font-semibold text-slate-500"><span>12 min read</span><span aria-hidden="true">|</span><span>Published August 12, 2026</span></div>
           </div>
           <figure className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_18px_60px_rgba(12,23,19,0.09)]">
-            <Image src={heroImage} alt="Private label socks with custom logos and brand development artwork" width={1600} height={900} priority sizes="(max-width: 1024px) 100vw, 54vw" className="aspect-[16/10] h-auto w-full object-contain" />
+            <Image src={heroImagePath} alt="Black, blue and white private label grip socks with custom knitted logos and sole patterns" width={1448} height={1086} priority sizes="(max-width: 1024px) 100vw, 54vw" className="h-auto w-full object-contain" />
           </figure>
         </div>
       </section>

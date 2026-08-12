@@ -12,7 +12,7 @@ const posts = [
     title: 'How to Choose a Private Label Socks Manufacturer: 8 Factors to Compare',
     href: '/blog/how-to-choose-private-label-socks-manufacturer',
     desc: 'Compare MOQ, sampling, materials, customization, quality control, packaging, communication and scalability before choosing an OEM sock partner.',
-    img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/custom-sock-render.png',
+    img: '/assets/blog/private-label-manufacturer-grip-socks.webp',
     imageClassName: 'object-contain',
     category: 'Private Label',
     readTime: '12 min read',
