@@ -298,6 +298,48 @@ export default function HowToChoosePrivateLabelSocksManufacturerPage() {
             </section>
           ))}
         </div>
+
+        <section className="mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl bg-[#0c1713] p-6 text-white md:p-10 lg:p-12" aria-labelledby="scalability-proof-title">
+          <div className="max-w-3xl">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Scalability in practice</p>
+            <h2 id="scalability-proof-title" className="mt-3 text-3xl font-black leading-tight md:text-5xl">From a controlled trial order to repeat bulk production.</h2>
+            <p className="mt-5 text-xl font-bold text-slate-200">Start small. Scale when demand is proven.</p>
+          </div>
+          <div className="mt-9 grid gap-5 md:grid-cols-2">
+            <figure className="overflow-hidden rounded-2xl border border-white/15 bg-white text-[#0c1713]">
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f1ed]">
+                <Image
+                  src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/final-packing-check.png"
+                  alt="Factory worker checking and packing a smaller private label sock order into one carton"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              <figcaption className="p-6">
+                <span className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Initial Trial Order</span>
+                <h3 className="mt-2 text-2xl font-black">Validate the product with a focused first run.</h3>
+                <p className="mt-3 leading-relaxed text-slate-600">Use the first order to confirm the product, presentation and market response before committing to a larger inventory position.</p>
+              </figcaption>
+            </figure>
+            <figure className="overflow-hidden rounded-2xl border border-white/15 bg-white text-[#0c1713]">
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f1ed]">
+                <Image
+                  src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/shipping-cartons.jpg"
+                  alt="Multiple finished private label sock cartons prepared for repeat bulk shipment"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-center"
+                />
+              </div>
+              <figcaption className="p-6">
+                <span className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Repeat Bulk Production</span>
+                <h3 className="mt-2 text-2xl font-black">Increase volume after demand is proven.</h3>
+                <p className="mt-3 leading-relaxed text-slate-600">Move into repeat production with the approved construction, branding and packing specification already established.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
       </article>
 
       <MoqFramework />
