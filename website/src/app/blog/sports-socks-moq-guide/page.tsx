@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Metadata } from 'next';
 
@@ -18,9 +19,11 @@ export default function SportsSocksMoqGuide() {
 
   const comparisonTable = [
 
-    { type: 'Private Label Socks', moq: '50-100 pairs', best: 'Startups & small brands' },
+    { type: 'Selected Standard Styles', moq: 'From 50 pairs', best: 'Simple first-order route' },
 
-    { type: 'OEM Socks', moq: '200-1000+ pairs', best: 'Established brands' },
+    { type: 'Custom Logo / Studio Grip', moq: 'Typically from 100 pairs', best: 'Branded programs' },
+
+    { type: 'Fully Bespoke Routes', moq: 'Higher MOQ', best: 'Specification-led projects' },
 
   ];
 
@@ -186,11 +189,11 @@ export default function SportsSocksMoqGuide() {
 
               {[
 
-                'Private Label Socks: 50-100 pairs',
+                'Selected standard styles: from 50 pairs',
 
-                'OEM Socks: 200-1000+ pairs',
+                'Custom logo / studio grip programs: typically from 100 pairs',
 
-                'Custom Packaging Orders: 300+ pairs'
+                'Fully bespoke construction / packaging: higher MOQ depending on specification'
 
               ].map((item, index) => (
 
@@ -372,7 +375,7 @@ export default function SportsSocksMoqGuide() {
 
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
 
-              Start small. Test 2? designs with 50-100 pairs each before scaling production.
+              Start with one focused route. Selected standard styles can begin from 50 pairs; custom logo programs typically begin from 100 pairs before scaling production.
 
             </p>
 
@@ -402,7 +405,7 @@ export default function SportsSocksMoqGuide() {
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
 
-              <a 
+              <Link 
 
                 href="https://wa.me/8617357769219" 
 
@@ -416,9 +419,9 @@ export default function SportsSocksMoqGuide() {
 
                 WhatsApp Us
 
-              </a>
+              </Link>
 
-              <a 
+              <Link 
 
                 href="/#contact" 
 
@@ -428,7 +431,7 @@ export default function SportsSocksMoqGuide() {
 
                 Contact Our Team
 
-              </a>
+              </Link>
 
             </div>
 
@@ -522,13 +525,13 @@ export default function SportsSocksMoqGuide() {
 
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
 
-              <a href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</a>
+              <Link href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</Link>
 
-              <a href="/products" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
+              <Link href="/products" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</Link>
 
-              <a href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</a>
+              <Link href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</Link>
 
-              <a href="/#contact" className="hover:text-[#b4ff2b] transition-colors">GET QUOTE</a>
+              <Link href="/#contact" className="hover:text-[#b4ff2b] transition-colors">GET QUOTE</Link>
 
             </div>
 

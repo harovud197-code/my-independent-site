@@ -11,7 +11,7 @@ const specifications = [
   ['Design', 'Custom pattern or embroidery'],
   ['Comfort', 'Breathable soft knit'],
   ['Logo', 'Jacquard / embroidery / print'],
-  ['MOQ', '50 pairs'],
+  ['MOQ', 'Typically from 100 pairs'],
   ['Packing', 'Custom packaging available'],
 ];
 

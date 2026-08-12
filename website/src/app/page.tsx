@@ -7,6 +7,7 @@ import { trackEvent } from '@/lib/analytics';
 import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
 import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
 import PrivateLabelBrandLaunchCaseStudyCard from '@/components/PrivateLabelBrandLaunchCaseStudyCard';
+import MoqFramework from '@/components/MoqFramework';
 
 export default function Home() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -91,7 +92,7 @@ export default function Home() {
             </div>
             <div className="trust-row" aria-label="Key manufacturing advantages">
               <Link href="/sports-socks-moq-guide" aria-label="Read the Sports Socks MOQ Guide">
-                <span><b>MOQ from</b>50 pairs</span>
+                <span><b>Selected standard styles</b>From 50 pairs</span>
               </Link>
               <span><b>7-Day</b>Sample</span>
               <span><b>Factory Since</b>2005</span>
@@ -121,6 +122,8 @@ export default function Home() {
           <p className="text-gray-500 mt-4">Serving <b className="text-[#87a829]">40+</b> countries with premium quality and reliable service.</p>
         </div>
       </section>
+
+      <MoqFramework />
 
       {/* Metrics Section */}
       <section id="about" className="metrics py-16">
@@ -348,7 +351,7 @@ export default function Home() {
             <h2 className="text-4xl font-extrabold uppercase leading-tight !text-[#0c1713]">Get a practical MOQ and quote plan for your sock idea</h2>
             <p className="!text-[#0c1713] text-lg leading-relaxed font-semibold opacity-90">Tell us the essentials. We will open Gmail with your project brief already prepared, so you can review it and send it in one step.</p>
             <div className="contact-points flex flex-wrap gap-4 mt-8">
-              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">MOQ from 50 pairs</span>
+              <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">50 pairs — selected standard styles</span>
               <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">No design file required</span>
               <span className="px-4 py-2 bg-black/10 rounded-lg text-xs font-bold uppercase tracking-widest border !border-[#0c1713]/20 !text-[#0c1713]">Attach images in email</span>
             </div>

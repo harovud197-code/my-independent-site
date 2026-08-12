@@ -28,7 +28,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Grip Socks',
     specification: 'Crew grip sock with silicone sole',
     material: 'Cotton / nylon / spandex blend',
-    moq: '50 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -42,7 +42,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Football Grip Socks',
     specification: 'Mid-calf football grip sock',
     material: '80% cotton / 15% nylon / 5% spandex',
-    moq: '50 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -56,7 +56,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Running Socks',
     specification: 'Knee-high compression running sock',
     material: 'Polyester / nylon / spandex blend',
-    moq: '50 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -70,7 +70,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Private Label Socks',
     specification: 'Custom logo crew sock',
     material: 'Cotton / polyester / nylon / spandex',
-    moq: '50 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -84,7 +84,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Pilates Grip Socks',
     specification: 'Low-cut studio grip sock',
     material: 'Cotton / polyester / nylon / spandex',
-    moq: '50 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -98,7 +98,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Basketball Socks',
     specification: 'Crew basketball grip sock',
     material: 'Polyester / cotton / spandex blend',
-    moq: '50 pairs per design and color',
+    moq: 'Typically from 100 pairs per design and color',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -112,7 +112,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Pilates Studio Socks',
     specification: 'Open-top studio grip sock',
     material: 'Cotton / polyester / nylon / spandex',
-    moq: '50 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -126,7 +126,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Casual Crew Socks',
     specification: 'Classic casual crew sock',
     material: 'Combed cotton / polyester / spandex',
-    moq: '100 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -140,7 +140,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Soccer Socks',
     specification: 'Performance soccer crew sock',
     material: 'Cotton / polyester / nylon / spandex',
-    moq: '50 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -154,7 +154,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
     category: 'Jacquard Socks',
     specification: 'Jacquard casual crew sock',
     material: 'Combed cotton / polyester / spandex',
-    moq: '50 pairs',
+    moq: 'Typically from 100 pairs',
     sampleTime: 'About 7 days',
     leadTime: '25-30 days after approval',
     sizeRange: 'Kids to XL',
@@ -183,7 +183,7 @@ export function createProductMetadata(product: ProductSeoConfig): Metadata {
   };
 }
 
-export function ProductStructuredData({ product }: { product: ProductSeoConfig }) {
+export function ProductBreadcrumbStructuredData({ product }: { product: ProductSeoConfig }) {
   const url = `${siteUrl}/products/${product.slug}`;
   const data = {
     '@context': 'https://schema.org',
@@ -230,4 +230,3 @@ export function ProductQuickFacts({ product }: { product: ProductSeoConfig }) {
     </dl>
   );
 }
-

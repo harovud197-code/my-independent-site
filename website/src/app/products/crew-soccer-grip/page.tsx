@@ -90,7 +90,7 @@ Requirements: ${data.message}
                 ['Sock height', 'Crew length, with custom cuff height available'],
                 ['Grip area', 'Silicone placement on the sole for controlled traction'],
                 ['Branding', 'Jacquard logo, embroidery, print or woven label'],
-                ['MOQ', 'From 50 pairs per selected design'],
+                ['MOQ', 'Typically from 100 pairs for custom logo / grip programs'],
                 ['Sample timing', 'About 7 days after artwork confirmation'],
               ].map(([term, detail]) => <div key={term} className="grid grid-cols-[130px_1fr] gap-4 border-b border-slate-200 px-5 py-4 last:border-b-0"><dt className="font-bold">{term}</dt><dd className="text-slate-600">{detail}</dd></div>)}
             </dl>
@@ -152,7 +152,7 @@ Requirements: ${data.message}
         <div className="mt-10 divide-y divide-slate-200 rounded-2xl border border-slate-200">
           {[
             ['Can the grip pattern be customized?', 'Yes. We can discuss silicone placement, pattern coverage and color based on your sport and shoe use.'],
-            ['What is the minimum order quantity?', 'Selected crew grip designs can start from 50 pairs. Final MOQ depends on yarn, logo method, colors and packaging.'],
+            ['What is the minimum order quantity?', 'Custom logo and grip programs typically start from 100 pairs. Selected standard styles can start from 50 pairs; bespoke specifications require a higher MOQ.'],
             ['Can you make a team or club logo?', 'Yes. Jacquard, embroidery, print and woven-label options are available after artwork review.'],
             ['What packaging can I choose?', 'Options include polybags, paper bands, header cards, backer cards and custom retail boxes.'],
           ].map(([question, answer]) => <details key={question} className="group px-6 py-5"><summary className="cursor-pointer list-none font-bold marker:content-none">{question}</summary><p className="mt-3 leading-relaxed text-slate-600">{answer}</p></details>)}

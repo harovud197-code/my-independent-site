@@ -14,7 +14,7 @@ export default function SoccerSportsSocksPage() {
     ['Cushioning', 'Zoned Impact Protection'],
     ['Support', 'Dynamic Arch Support'],
     ['Logo', 'Jacquard / Embroidery / Print'],
-    ['MOQ', '50 Pairs'],
+    ['MOQ', 'Typically From 100 Pairs'],
     ['Packing', 'Custom Packaging'],
   ];
   const useCases = [
@@ -23,10 +23,10 @@ export default function SoccerSportsSocksPage() {
     ['Football brands and retailers', 'Develop a repeatable performance-sock line with branded labels, packaging and seasonal colorways.'],
   ] as Array<[string, string]>;
   const faqs = [
-    ['What is the MOQ for custom soccer sports socks?', 'Selected standard styles can start from 50 pairs. Final MOQ depends on logo method, colors, size range, yarn selection and packaging.'],
+    ['What is the MOQ for custom soccer sports socks?', 'Custom logo programs typically start from 100 pairs. Selected standard styles can start from 50 pairs; bespoke specifications require a higher MOQ.'],
     ['Can you make youth and adult sizes in one project?', 'Yes. Share the size breakdown before sampling. We can plan a size run and size-specific packing for club, academy or retail orders.'],
     ['Which logo methods work on soccer socks?', 'Jacquard knitting is the most durable option for stripes, names and simple crests. Embroidery and print may suit selected placements or packaging requirements.'],
-    ['How long do samples and bulk production take?', 'Samples typically take about 7 days after artwork approval. Bulk production is commonly 25鈥?0 days after the final sample and order details are approved.'],
+    ['How long do samples and bulk production take?', 'Samples typically take about 7 days after artwork approval. Bulk production is commonly 25–30 days after the final sample and order details are approved.'],
   ] as Array<[string, string]>;
 
   return (
@@ -52,4 +52,3 @@ export default function SoccerSportsSocksPage() {
     </main>
   );
 }
-

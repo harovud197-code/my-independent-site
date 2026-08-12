@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function HowSportsSocksAreManufactured() {
     },
     {
       question: 'What is the MOQ for custom sports socks?',
-      answer: 'Many manufacturers support low MOQ orders starting from 50 pairs.',
+      answer: 'At PeakMotion, selected standard styles can start from 50 pairs. Custom logo programs typically start from 100 pairs, while bespoke construction or packaging requires a higher MOQ.',
     }
   ];
 
@@ -315,7 +316,7 @@ export default function HowSportsSocksAreManufactured() {
               Custom retail packaging and private labeling options
             </p>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Sports socks are packed using custom labels, hang tags, retail boxes, or private label packaging according to customer requirements. Professional packaging not only protects the product but also enhances the brand's presentation in the retail market.
+              Sports socks are packed using custom labels, hang tags, retail boxes, or private label packaging according to customer requirements. Professional packaging not only protects the product but also enhances the brand&apos;s presentation in the retail market.
             </p>
           </section>
 
@@ -368,20 +369,20 @@ export default function HowSportsSocksAreManufactured() {
             </ul>
 
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-              <a 
+              <Link 
                 href="https://wa.me/8617357769219" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-[#b4ff2b] text-black font-extrabold text-lg uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center shadow-[0_10px_25px_rgba(180,255,43,0.25)]"
               >
                 WhatsApp Us
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/#contact" 
                 className="bg-black text-white font-extrabold text-lg uppercase hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center"
               >
                 Contact Our Team
-              </a>
+              </Link>
             </div>
           </section>
         </article>

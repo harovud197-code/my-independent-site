@@ -5,6 +5,8 @@ import PrivateLabelQuoteForm from '@/components/PrivateLabelQuoteForm';
 import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
 import PrivateLabelBrandLaunchCaseStudyCard from '@/components/PrivateLabelBrandLaunchCaseStudyCard';
 import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
+import MoqFramework from '@/components/MoqFramework';
+import { MOQ_COPY } from '@/lib/moq-framework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/private-label-sports-socks`;
@@ -36,7 +38,7 @@ const productLinks = [
 ] as const;
 
 const faqs = [
-  ['What is the MOQ for private label sports socks?', 'Selected standard styles can start from 50 pairs. A logo-led standard program is often 100 to 300 pairs, while bespoke construction or custom packaging usually needs a higher quantity.'],
+  ['What is the MOQ for private label sports socks?', MOQ_COPY.frameworkSummary],
   ['Can you help me if I only have a brand idea?', 'Yes. Send your target customer, reference products, logo if available, preferred colors and launch goal. We will help you turn that into a practical sock brief.'],
   ['Can I approve a sample before production?', 'Yes. Sampling is used to confirm the key design, color, fit, logo method and construction details before bulk production is arranged.'],
   ['What can I customize?', 'You can discuss sock height, yarn colors, jacquard logo details, cushioning, grip, labels, hang tags, bags, boxes and retail-ready packaging.'],
@@ -108,6 +110,8 @@ export default function PrivateLabelSportsSocksPage() {
           <Visual src="hero-private-label-socks-v2.png" alt="Private label performance socks with custom packaging for a new sports sock brand" priority />
         </div>
       </section>
+
+      <MoqFramework />
 
       <ManufacturingRelatedLinks currentPath="/private-label-sports-socks" />
 

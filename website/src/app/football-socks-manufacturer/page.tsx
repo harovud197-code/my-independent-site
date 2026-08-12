@@ -5,6 +5,7 @@ import FootballSocksQuoteForm from '@/components/FootballSocksQuoteForm';
 import UKFootballCaseStudyCard from '@/components/UKFootballCaseStudyCard';
 import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
 import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
+import MoqFramework from '@/components/MoqFramework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/football-socks-manufacturer`;
@@ -103,6 +104,8 @@ export default function FootballSocksManufacturerPage() {
           </div>
         </div>
       </section>
+
+      <MoqFramework />
 
       <ManufacturingRelatedLinks currentPath="/football-socks-manufacturer" />
 

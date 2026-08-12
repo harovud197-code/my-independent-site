@@ -55,9 +55,9 @@ export default function FootballSocksQuoteForm({ id = 'quote' }: FootballSocksQu
         </select>
         <select required name="moqRoute" defaultValue="" className="min-h-13 w-full rounded-lg border border-slate-600 bg-slate-800 px-4 text-white outline-none transition focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30">
           <option value="" disabled>Select MOQ route</option>
-          <option>From 50 pairs - selected standard style</option>
-          <option>100 to 300 pairs - logo-led standard program</option>
-          <option>500+ pairs - bespoke construction or packaging</option>
+          <option>From 50 pairs - selected standard styles</option>
+          <option>From 100 pairs - custom logo program</option>
+          <option>Higher MOQ - bespoke construction or packaging</option>
           <option>Not sure - please recommend the right MOQ</option>
         </select>
         <input required type="number" min="1" name="quantity" placeholder="Estimated quantity (pairs)" className="min-h-13 w-full rounded-lg border border-slate-600 bg-slate-800 px-4 text-white outline-none transition focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30" />
@@ -67,4 +67,3 @@ export default function FootballSocksQuoteForm({ id = 'quote' }: FootballSocksQu
     </form>
   );
 }
-

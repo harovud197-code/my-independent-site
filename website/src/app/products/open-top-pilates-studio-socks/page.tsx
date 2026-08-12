@@ -12,7 +12,7 @@ export default function OpenTopPilatesStudioSocksPage() {
     ['Grip', 'Non-toxic Silicone Grips'],
     ['Upper', 'Breathable Open Top Design'],
     ['Logo', 'Print / Jacquard / Embroidery'],
-    ['MOQ', '50 Pairs'],
+    ['MOQ', 'Typically From 100 Pairs'],
     ['Packing', 'Custom Packaging'],
   ];
 

@@ -14,7 +14,7 @@ export default function LowCutYogaPilatesGripSocksPage() {
     ['Type', 'Pilates Grip Socks'],
     ['Grip', 'Silicone Non-slip Dots'],
     ['Logo', 'Print / Jacquard / Embroidery'],
-    ['MOQ', '50 Pairs'],
+    ['MOQ', 'Typically From 100 Pairs'],
     ['Packing', 'Custom Packaging'],
   ];
   const useCases = [
@@ -23,7 +23,7 @@ export default function LowCutYogaPilatesGripSocksPage() {
     ['Barre and fitness concepts', 'Build a low-cut performance accessory for barre, dance fitness and wellness programs.'],
   ] as Array<[string, string]>;
   const faqs = [
-    ['What is the MOQ for low-cut Pilates grip socks?', 'Selected standard styles can start from 50 pairs. Final MOQ depends on the grip pattern, yarn, colors, logo method, size range and packaging.'],
+    ['What is the MOQ for low-cut Pilates grip socks?', 'Custom logo and studio grip programs typically start from 100 pairs. Selected standard styles can start from 50 pairs; bespoke specifications require a higher MOQ.'],
     ['Can I customize the silicone grip pattern?', 'Yes. We can discuss full-sole, heel-and-toe or logo-led grip coverage based on the intended studio activity and your branding needs.'],
     ['Are these socks suitable for studio retail?', 'Yes. We can plan sizes, colorways, hangtags, labels and packaging for studio merchandise, retail buyers or distributor programs.'],
     ['What should I prepare for a sample?', 'Share a logo file, preferred colors, size range, grip concept, packaging requirements and estimated quantity. We will recommend the most practical sample route.'],
@@ -65,4 +65,3 @@ export default function LowCutYogaPilatesGripSocksPage() {
     </main>
   );
 }
-

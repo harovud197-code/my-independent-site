@@ -23,7 +23,7 @@ export default function HowToStartCustomSocksBrand() {
     },
     {
       question: 'What is the usual MOQ for custom socks?',
-      answer: 'Most professional sock manufacturers support low MOQ. Normally, the minimum order quantity for private label socks starts from 50 pairs.'
+      answer: 'At PeakMotion, selected standard styles can start from 50 pairs. Custom logo programs typically start from 100 pairs, while bespoke construction or packaging requires a higher MOQ.'
     },
     {
       question: 'Is a custom socks business profitable?',
@@ -374,20 +374,20 @@ export default function HowToStartCustomSocksBrand() {
               </li>
             </ul>
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-              <a 
+              <Link 
                 href="https://wa.me/8617357769219" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-[#b4ff2b] text-black font-extrabold text-lg uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center shadow-[0_10px_25px_rgba(180,255,43,0.25)]"
               >
                 WhatsApp Us
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/#contact" 
                 className="bg-white text-black font-extrabold text-lg uppercase hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center"
               >
-                Contact Our Team
-              </a>
+                Contact Our Team
+              </Link>
             </div>
           </section>
         </article>

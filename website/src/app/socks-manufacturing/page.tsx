@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
+import MoqFramework from '@/components/MoqFramework';
+import { MOQ_COPY } from '@/lib/moq-framework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/socks-manufacturing`;
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  ['What is your MOQ for custom socks?', 'Selected standard styles can start from 50 pairs. The final MOQ depends on sock construction, yarn colors, logo method, size split and packaging requirements.'],
+  ['What is your MOQ for custom socks?', MOQ_COPY.frameworkSummary],
   ['How long does custom sock production take?', 'Sampling normally takes about 7 to 15 days. Bulk production timing is confirmed after the sample and final specification are approved, because quantity and construction affect the schedule.'],
   ['Can you make private label socks?', 'Yes. PeakMotion supports custom logos, knit colors, labels, hang tags, poly bags, boxes and other retail-ready presentation for private label sock programs.'],
   ['Do you manufacture sports socks?', 'Yes. Our product routes include football socks, running and training socks, yoga and Pilates grip socks, plus other custom performance sock styles.'],
@@ -149,7 +151,7 @@ export default function SocksManufacturingPage() {
             <p className="mt-6 text-lg leading-relaxed text-slate-600">Develop a market-ready sock program with one manufacturing partner for product planning, sampling, production, quality control and retail packaging.</p>
             <div className="mt-7 grid grid-cols-2 gap-3 text-sm font-black text-slate-700">
               <span className="rounded-xl border border-slate-200 bg-white px-4 py-3">Private label production</span>
-              <span className="rounded-xl border border-slate-200 bg-white px-4 py-3">From 50 pairs*</span>
+              <span className="rounded-xl border border-slate-200 bg-white px-4 py-3">50 pairs — selected standard styles</span>
               <span className="rounded-xl border border-slate-200 bg-white px-4 py-3">7-15 day sampling</span>
               <span className="rounded-xl border border-slate-200 bg-white px-4 py-3">Retail packaging</span>
             </div>
@@ -157,11 +159,13 @@ export default function SocksManufacturingPage() {
               <Link href="/contact" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Discuss your sock project</Link>
               <a href="#process" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] px-6 py-4 text-sm font-black uppercase tracking-wide transition-colors hover:bg-[#0c1713] hover:text-white">See the process</a>
             </div>
-            <p className="mt-4 text-xs leading-relaxed text-slate-500">*Selected standard style. Final MOQ depends on construction, colors, logo method, sizes and packaging.</p>
+            <p className="mt-4 text-xs leading-relaxed text-slate-500">Custom logo and studio grip programs typically start from 100 pairs. Fully bespoke specifications require a higher MOQ.</p>
           </div>
           <FactoryImage src="computerized-sock-production-floor.jpg" alt="Computerized sock knitting machines across the PeakMotion production floor" width={1271} height={715} priority caption="Computerized sock production floor in Haiyan, Zhejiang" />
         </div>
       </section>
+
+      <MoqFramework />
 
       <ManufacturingRelatedLinks currentPath="/socks-manufacturing" />
 

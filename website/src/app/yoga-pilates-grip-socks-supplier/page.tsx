@@ -5,6 +5,8 @@ import FactoryEvidencePanel from '@/components/FactoryEvidencePanel';
 import YogaPilatesQuoteForm from '@/components/YogaPilatesQuoteForm';
 import YogaPilatesCaseStudyCard from '@/components/YogaPilatesCaseStudyCard';
 import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
+import MoqFramework from '@/components/MoqFramework';
+import { MOQ_COPY } from '@/lib/moq-framework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/yoga-pilates-grip-socks-supplier`;
@@ -55,7 +57,7 @@ const buyerScenarios = [
 const faqs = [
   ['What are custom yoga and Pilates grip socks?', 'They are non-slip studio socks developed around your preferred construction, colors, logo, silicone grip direction, size range and packaging.'],
   ['Can I add my studio logo?', 'Yes. Depending on the sock design, branding may be applied through knitted details, silicone grip artwork, labels, hang tags or packaging.'],
-  ['What is the MOQ for custom grip socks?', 'Selected standard styles can start from 50 pairs. Logo-led standard programs are often 100 to 300 pairs, while bespoke construction, multiple sizes or custom packaging can require a higher quantity.'],
+  ['What is the MOQ for custom grip socks?', MOQ_COPY.yogaCurrent],
   ['Can I review a sample before production?', 'Yes. Sampling is used to review fit, color, grip coverage, branding and construction before bulk production is confirmed.'],
   ['Can you provide retail packaging?', 'Yes. Available directions include simple studio packs, belly bands, hang tags, boxes, retail hanging packs and barcode-ready labels.'],
   ['What information should I send for a quote?', 'Share your business type, country or target market, preferred sock style, logo or color direction, quantity and packaging needs.'],
@@ -113,7 +115,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
             <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">Custom grip socks for Pilates studios and yoga brands.</h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">Create non-slip studio socks for classes, member packs and retail. We help buyers plan the sock style, grip pattern, logo, colors, sample and packaging around a practical order route.</p>
             <div className="mt-7 grid grid-cols-2 gap-3 text-sm font-black text-slate-700 sm:grid-cols-4">
-              <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">From 50 pairs*</span>
+              <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">Typically from 100 pairs*</span>
               <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">Custom grip</span>
               <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">Private label</span>
               <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">Retail packaging</span>
@@ -122,11 +124,13 @@ export default function YogaPilatesGripSocksSupplierPage() {
               <a href="#quote" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Create your studio socks</a>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" data-analytics-event="whatsapp_click" data-analytics-placement="yoga_pilates_hero" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] px-6 py-4 text-sm font-black uppercase tracking-wide transition-colors hover:bg-[#0c1713] hover:text-white">Chat on WhatsApp</a>
             </div>
-            <p className="mt-4 text-xs leading-relaxed text-slate-500">*Selected standard style. Final MOQ depends on construction, colors, sizes, logo method and packaging.</p>
+            <p className="mt-4 text-xs leading-relaxed text-slate-500">*Custom logo / studio grip programs. Selected standard styles can start from 50 pairs; fully bespoke specifications require a higher MOQ.</p>
           </div>
           <Visual src="hero-custom-grip-socks-v2.png" alt="Pastel custom grip socks and retail packaging for Pilates studios and yoga brands" priority />
         </div>
       </section>
+
+      <MoqFramework />
 
       <ManufacturingRelatedLinks currentPath="/yoga-pilates-grip-socks-supplier" />
 
@@ -203,7 +207,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-10 max-w-3xl text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Flexible order options</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Choose the route that fits your launch stage.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Use samples to review the product, a selected standard style to test the market, or a larger program when you need more sizes, colors or packaging options.</p></div>
           <Visual src="flexible-order-options.png" alt="Sample, small studio, growing studio and retail-scale order options for custom grip socks" />
-          <div className="mt-6 rounded-xl border border-[#b9d895] bg-[#f4fbe8] p-5 text-sm leading-relaxed text-slate-700"><strong className="text-[#234812]">MOQ note:</strong> From 50 pairs applies to selected standard styles. Logo-led standard programs are often 100 to 300 pairs; custom construction, size assortments or packaging may require a higher quantity.</div>
+          <div className="mt-6 rounded-xl border border-[#b9d895] bg-[#f4fbe8] p-5 text-sm leading-relaxed text-slate-700"><strong className="text-[#234812]">MOQ note:</strong> Custom logo and studio grip programs typically start from 100 pairs. Selected standard styles can start from 50 pairs; custom construction, size assortments or packaging may require a higher quantity.</div>
         </div>
       </section>
 
@@ -215,7 +219,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
         </div>
       </section>
 
-      <FactoryEvidencePanel product="yoga and Pilates grip socks" moq="From 50 pairs*" sampleLeadTime="Confirmed after review" bulkLeadTime="After sample approval" />
+      <FactoryEvidencePanel product="yoga and Pilates grip socks" moq="Typically from 100 pairs*" sampleLeadTime="Confirmed after review" bulkLeadTime="After sample approval" />
 
       <section id="faq" className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 lg:grid-cols-[0.75fr_1.25fr]">

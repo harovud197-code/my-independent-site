@@ -19,7 +19,7 @@ export default function PrivateLabelSocksGuide() {
     },
     {
       question: 'What is the MOQ for custom socks manufacturer?',
-      answer: 'Most manufacturers support 50-100 pairs for private label orders. For full OEM customization, the MOQ is usually higher, ranging from 200 to 1000+ pairs depending on complexity.',
+      answer: 'At PeakMotion, selected standard styles can start from 50 pairs. Custom logo programs typically start from 100 pairs, while fully bespoke construction or packaging requires a higher MOQ depending on the specification.',
     },
     {
       question: 'Is OEM socks supplier better than wholesale?',
@@ -33,8 +33,9 @@ export default function PrivateLabelSocksGuide() {
   ];
 
   const pricingTable = [
-    { type: 'Private Label Socks', moq: '50-100 pairs', notes: 'Low barrier entry' },
-    { type: 'OEM Socks', moq: '200-1000+ pairs', notes: 'Full customization' },
+    { type: 'Selected Standard Styles', moq: 'From 50 pairs', notes: 'Simple, available construction' },
+    { type: 'Custom Logo Programs', moq: 'Typically from 100 pairs', notes: 'Branding or studio grip program' },
+    { type: 'Fully Bespoke Routes', moq: 'Higher MOQ', notes: 'Depends on specification' },
   ];
 
   return (
@@ -130,7 +131,7 @@ export default function PrivateLabelSocksGuide() {
           <section id="comparison" className="mb-12 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mt-12 mb-4">Private Label vs OEM Socks</h2>
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
-              Choosing between private label and OEM depends on your brand's stage and customization needs.
+              Choosing between private label and OEM depends on your brand&apos;s stage and customization needs.
             </p>
             <div className="overflow-x-auto my-8 border border-gray-200 rounded-xl shadow-sm">
               <table className="w-full text-left border-collapse">
@@ -295,12 +296,12 @@ export default function PrivateLabelSocksGuide() {
               PeakMotion is a professional custom socks manufacturer offering OEM & private label solutions worldwide.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-              <a 
+              <Link 
                 href="/#contact" 
                 className="bg-black text-white font-extrabold text-lg uppercase hover:bg-slate-800 hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center shadow-lg"
               >
                 Get Custom Quote
-              </a>
+              </Link>
             </div>
           </section>
         </article>
@@ -347,10 +348,10 @@ export default function PrivateLabelSocksGuide() {
           <div className="space-y-4">
             <h4 className="text-white text-lg font-bold">Quick Links</h4>
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
-              <a href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</a>
-              <a href="/products" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</a>
-              <a href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</a>
-              <a href="/#contact" className="hover:text-[#b4ff2b] transition-colors">GET QUOTE</a>
+              <Link href="/" className="hover:text-[#b4ff2b] transition-colors">HOME</Link>
+              <Link href="/products" className="hover:text-[#b4ff2b] transition-colors">SPORTS SOCKS</Link>
+              <Link href="/blog" className="hover:text-[#b4ff2b] transition-colors">BLOG</Link>
+              <Link href="/#contact" className="hover:text-[#b4ff2b] transition-colors">GET QUOTE</Link>
             </div>
           </div>
         </div>

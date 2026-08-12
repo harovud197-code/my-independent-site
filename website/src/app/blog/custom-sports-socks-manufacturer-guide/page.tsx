@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import Image from 'next/image';
+import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export default function CustomSportsSocksManufacturerGuide() {
   const faqs = [
     {
       question: 'What is the MOQ for custom sports socks?',
-      answer: 'Most projects start from 50 pairs depending on design complexity.'
+      answer: 'Selected standard styles can start from 50 pairs. Custom logo programs typically start from 100 pairs, while bespoke specifications require a higher MOQ.'
     },
     {
       question: 'Can I use my own logo?',
@@ -413,7 +414,7 @@ export default function CustomSportsSocksManufacturerGuide() {
             </p>
             <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 text-left max-w-2xl mx-auto my-6 bg-slate-800/40 p-6 rounded-2xl border border-slate-700/50">
               <li className="flex items-center gap-2 text-sm text-slate-200">
-                <span className="text-[#b4ff2b] font-extrabold">?</span> MOQ From 50 Pairs
+                <span className="text-[#b4ff2b] font-extrabold">?</span> 50 Pairs — Selected Standard Styles
               </li>
               <li className="flex items-center gap-2 text-sm text-slate-200">
                 <span className="text-[#b4ff2b] font-extrabold">?</span> Custom Logo & Pkg
@@ -426,12 +427,12 @@ export default function CustomSportsSocksManufacturerGuide() {
               </li>
             </ul>
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-              <a 
+              <Link 
                 href="/#contact" 
                 className="bg-[#b4ff2b] text-black font-extrabold text-lg uppercase hover:bg-[#a3e627] hover:scale-105 active:scale-95 transition-all duration-300 px-8 py-4 rounded-full inline-flex items-center justify-center shadow-[0_10px_25px_rgba(180,255,43,0.25)]"
               >
                 Request a Free Quote
-              </a>
+              </Link>
             </div>
           </section>
         </article>

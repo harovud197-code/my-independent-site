@@ -13,21 +13,21 @@ const moqRoutes = [
     description: 'A practical route when you select an available standard style and keep the brief straightforward.',
   },
   {
-    route: 'Logo-led standard program',
-    quantity: 'Often 100 to 300 pairs',
-    description: 'A useful starting range for a standard construction with a logo, chosen colors or a focused size mix.',
+    route: 'Custom logo / studio grip program',
+    quantity: 'Typically from 100 pairs',
+    description: 'The normal planning point for a standard construction with custom branding or studio grip artwork.',
   },
   {
     route: 'Bespoke construction or packaging',
-    quantity: 'Typically 500+ pairs',
-    description: 'More development, custom yarns, complex knitting or retail packaging usually require a higher quantity.',
+    quantity: 'Higher MOQ',
+    description: 'The final quantity depends on construction, yarns, sizes, colorways, grip layout and packaging.',
   },
 ] as const;
 
 const faqs = [
   {
     question: 'What is the MOQ for custom socks?',
-    answer: 'MOQ depends on the sock construction and how much is being customized. Selected standard styles can start from 50 pairs. A logo-led standard program is often 100 to 300 pairs, while bespoke construction or custom packaging typically starts at 500 pairs or more.',
+    answer: 'Selected standard styles can start from 50 pairs. Custom logo and studio grip programs typically start from 100 pairs. Fully bespoke construction or packaging requires a higher MOQ depending on the specification.',
   },
   {
     question: 'Can I order custom socks in several sizes?',

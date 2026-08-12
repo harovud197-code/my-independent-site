@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import MoqFramework from '@/components/MoqFramework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/industries`;
@@ -183,6 +184,8 @@ export default function IndustriesPage() {
           </div>
         </div>
       </section>
+
+      <MoqFramework />
 
       <section id="industries" className="px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">

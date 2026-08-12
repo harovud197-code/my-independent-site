@@ -3,6 +3,7 @@ import Link from 'next/link';
 import CustomRunningQuoteForm from '@/components/CustomRunningQuoteForm';
 import BuyerConfidencePanel from '@/components/BuyerConfidencePanel';
 import FactoryEvidencePanel from '@/components/FactoryEvidencePanel';
+import MoqFramework from '@/components/MoqFramework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/custom-running-socks-manufacturer`;
@@ -11,7 +12,7 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 export const metadata: Metadata = {
   title: 'Custom Running Socks Manufacturer | OEM & Private Label | PeakMotion',
-  description: 'Custom running socks manufacturer for brands, teams, events and retailers. OEM running socks from 50 pairs with samples, logo, material and packaging support.',
+  description: 'Custom running socks manufacturer for brands, teams, events and retailers. Selected standard styles from 50 pairs, with custom logo programs typically from 100 pairs.',
   alternates: { canonical: pageUrl },
   openGraph: {
     type: 'website',
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Custom Running Socks Manufacturer | PeakMotion',
-    description: 'OEM and private-label custom running socks from 50 pairs.',
+    description: 'Selected standard running sock styles from 50 pairs; custom logo programs typically from 100 pairs.',
     images: [`${assetPath}/hero.png`],
   },
 };
@@ -47,7 +48,7 @@ const process = [
 ] as const;
 
 const faqs = [
-  ['What is your MOQ for custom running socks?', 'Our minimum order quantity is 50 pairs per design. Final MOQ depends on yarn, colors, size range and packaging.'],
+  ['What is your MOQ for custom running socks?', 'Selected standard styles can start from 50 pairs. Custom logo programs typically start from 100 pairs, while bespoke construction or packaging requires a higher MOQ.'],
   ['Can you manufacture socks from my own design?', 'Yes. Share your design and specifications, and our team will review feasibility before sampling.'],
   ['Can you match Pantone colors?', 'Color matching can be discussed using your Pantone references, artwork and selected yarn or dyeing method.'],
   ['Do you offer private-label packaging?', 'Yes. Options include paper bands, header cards, barcode labels, backer cards and custom boxes.'],
@@ -79,7 +80,7 @@ export default function CustomRunningSocksManufacturerPage() {
             <h1 className="mt-5 text-4xl font-black leading-tight md:text-6xl">Custom Running Socks Manufacturer for Brands, Teams and Retailers</h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-200">PeakMotion designs and manufactures custom running socks for sportswear brands, running clubs, marathon organizers, retailers and private-label sellers. From the first sample to bulk shipment, we support a clear, dependable production process.</p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row"><a href="#quote" data-analytics-event="quote_cta_click" data-analytics-placement="running_hero" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Request a Quote</a><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" data-analytics-event="whatsapp_click" data-analytics-placement="running_hero" className="inline-flex items-center justify-center rounded-xl border border-white/70 px-7 py-4 font-black uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-[#0c1713]">Discuss Your Design on WhatsApp</a></div>
-            <div className="mt-9 grid max-w-2xl grid-cols-1 gap-3 text-sm font-bold sm:grid-cols-3"><span className="rounded-lg border border-white/15 bg-black/15 p-4">MOQ from 50 pairs</span><span className="rounded-lg border border-white/15 bg-black/15 p-4">Samples before bulk production</span><span className="rounded-lg border border-white/15 bg-black/15 p-4">60,000 pairs monthly capacity</span></div>
+            <div className="mt-9 grid max-w-2xl grid-cols-1 gap-3 text-sm font-bold sm:grid-cols-3"><span className="rounded-lg border border-white/15 bg-black/15 p-4">50 pairs — selected standard styles</span><span className="rounded-lg border border-white/15 bg-black/15 p-4">Samples before bulk production</span><span className="rounded-lg border border-white/15 bg-black/15 p-4">60,000 pairs monthly capacity</span></div>
           </div>
           <CustomRunningQuoteForm />
         </div>
@@ -99,9 +100,11 @@ export default function CustomRunningSocksManufacturerPage() {
 
       <section className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 py-16 md:px-8 lg:grid-cols-2 lg:py-20"><div><p className="text-sm font-black uppercase tracking-[0.16em] text-[#679a20]">Quality Control</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Checks designed around your approved specification</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Inspection checkpoints may include yarn confirmation, color and artwork review, size and construction verification, sample approval, in-process checks, visual inspection, packaging verification and pre-shipment inspection.</p><div className="mt-7 grid gap-3 sm:grid-cols-2">{['Yarn and material confirmation', 'Color and artwork review', 'In-process production checks', 'Visual and packaging inspection'].map((item) => <div key={item} className="rounded-lg border border-slate-200 bg-[#f7f8f6] p-4 font-bold text-slate-700">{item}</div>)}</div><img src={`${assetPath}/certifications-landing.webp`} loading="lazy" decoding="async" alt="PeakMotion quality and certification information" className="mt-6 w-full rounded-lg bg-[#f7f8f6]" /></div><img src={`${assetPath}/factory-landing.webp`} loading="lazy" decoding="async" alt="PeakMotion running socks factory and quality control" className="w-full rounded-lg bg-[#f7f8f6]" /></section>
 
-      <section className="border-y border-slate-100 bg-[#07120c] px-5 py-16 text-white md:px-8 lg:py-20"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.16em] text-[#b4ff2b]">MOQ, Timing and Shipping</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Commercial details before you start</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">MOQ starts from 50 pairs per design. Sample development is usually 5-10 business days. Standard bulk production is usually 15-30 days after sample approval; complex or large orders may take 30-45 days.</p><p className="mt-4 max-w-2xl leading-relaxed text-slate-300">International express, air freight, sea freight, rail to selected European destinations, door-to-door delivery where available and nominated forwarders can be discussed for your shipment. A 50% deposit is generally required before production, with the balance payable before shipment; final terms depend on the project.</p></div><div className="grid gap-4 sm:grid-cols-2">{[['MOQ', '50 pairs per design'], ['Samples', '5-10 business days'], ['Bulk production', '15-30 days'], ['Complex orders', '30-45 days'], ['Shipping', 'Express, air, sea or nominated forwarder'], ['Packaging', 'Bulk, retail or private label']].map(([label, value]) => <div key={label} className="rounded-xl border border-white/15 bg-white/5 p-5"><span className="block text-xs font-black uppercase tracking-wide text-[#b4ff2b]">{label}</span><strong className="mt-2 block leading-snug">{value}</strong></div>)}</div></div></section>
+      <section className="border-y border-slate-100 bg-[#07120c] px-5 py-16 text-white md:px-8 lg:py-20"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.16em] text-[#b4ff2b]">MOQ, Timing and Shipping</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Commercial details before you start</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Selected standard styles can start from 50 pairs. Custom logo running programs typically start from 100 pairs, while bespoke construction or packaging requires a higher MOQ. Sample development is usually 5-10 business days.</p><p className="mt-4 max-w-2xl leading-relaxed text-slate-300">International express, air freight, sea freight, rail to selected European destinations, door-to-door delivery where available and nominated forwarders can be discussed for your shipment. A 50% deposit is generally required before production, with the balance payable before shipment; final terms depend on the project.</p></div><div className="grid gap-4 sm:grid-cols-2">{[['Standard-style MOQ', 'From 50 pairs'], ['Custom-logo MOQ', 'Typically from 100 pairs'], ['Samples', '5-10 business days'], ['Bulk production', '15-30 days'], ['Shipping', 'Express, air, sea or nominated forwarder'], ['Packaging', 'Higher MOQ may apply']].map(([label, value]) => <div key={label} className="rounded-xl border border-white/15 bg-white/5 p-5"><span className="block text-xs font-black uppercase tracking-wide text-[#b4ff2b]">{label}</span><strong className="mt-2 block leading-snug">{value}</strong></div>)}</div></div></section>
 
-      <FactoryEvidencePanel product="custom running socks" moq="50 pairs per design" sampleLeadTime="5-10 business days" bulkLeadTime="15-30 business days" />
+      <MoqFramework />
+
+      <FactoryEvidencePanel product="custom running socks" moq="Typically from 100 pairs*" sampleLeadTime="5-10 business days" bulkLeadTime="15-30 business days" />
 
       <BuyerConfidencePanel product="running socks" />
 

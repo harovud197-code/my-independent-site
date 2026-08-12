@@ -82,7 +82,7 @@ export default function MidCalfFootballGripPage() {
               ['Length', 'Crew'],
               ['Grip', 'Silicone Anti-slip Pattern'],
               ['Logo', 'Jacquard / Embroidery / Print'],
-              ['MOQ', '50 Pairs'],
+              ['MOQ', 'Typically From 100 Pairs'],
               ['Packing', 'Custom Packaging'],
             ].map(([term, detail]) => (
               <div key={term} className="grid grid-cols-[110px_1fr] gap-4 border-b border-slate-200 px-5 py-4 last:border-b-0">
@@ -119,7 +119,7 @@ export default function MidCalfFootballGripPage() {
         <div className="mt-10 divide-y divide-slate-200 rounded-2xl border border-slate-200">
           {[
             ['Can I customize the socks with my logo?', 'Yes. Custom logo, colors and packaging are supported.'],
-            ['What is the MOQ?', 'Production can start from 50 pairs.'],
+            ['What is the MOQ?', 'Custom logo and grip programs typically start from 100 pairs. Selected standard styles can start from 50 pairs; bespoke specifications require a higher MOQ.'],
             ['How long does sample production take?', 'Sample production usually takes about 7 days.'],
             ['Can you match our football team colors?', 'Yes. Share your color reference, logo artwork and preferred sock layout for a practical sampling recommendation.'],
             ['Which packaging is available?', 'Team bulk packs, paper bands, header cards, barcode labels and private-label boxes can be discussed with your quotation.'],

@@ -11,7 +11,7 @@ export default function LuxuryCombedCottonCasualSocksPage() {
     ['Feel', 'Premium Soft Handfeel'],
     ['Reinforcement', 'Heel and Toe Support'],
     ['Logo', 'Jacquard / Embroidery / Print'],
-    ['MOQ', '100 Pairs'],
+    ['MOQ', 'Typically From 100 Pairs'],
     ['Packing', 'Custom Packaging'],
   ];
 

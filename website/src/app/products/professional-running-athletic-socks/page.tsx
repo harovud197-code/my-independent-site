@@ -25,7 +25,7 @@ export default function ProfessionalRunningAthleticSocksPage() {
 
       <section className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-5 py-20 md:px-8 lg:grid-cols-2">
         <div><p className="mb-3 text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Product Details</p><h2 className="text-3xl font-black md:text-4xl">Specifications</h2><dl className="mt-8 overflow-hidden rounded-2xl border border-slate-200">
-          {[['Material', 'Polyester / Nylon / Spandex Blend'], ['Length', 'Knee High Compression'], ['Support', 'Graduated Compression'], ['Logo', 'Jacquard / Print / Embroidery'], ['MOQ', '50 Pairs'], ['Packing', 'Custom Packaging']].map(([term, detail]) => <div key={term} className="grid grid-cols-[110px_1fr] gap-4 border-b border-slate-200 px-5 py-4 last:border-b-0"><dt className="font-bold">{term}</dt><dd className="text-slate-600">{detail}</dd></div>)}
+          {[['Material', 'Polyester / Nylon / Spandex Blend'], ['Length', 'Knee High Compression'], ['Support', 'Graduated Compression'], ['Logo', 'Jacquard / Print / Embroidery'], ['MOQ', 'Typically From 100 Pairs'], ['Packing', 'Custom Packaging']].map(([term, detail]) => <div key={term} className="grid grid-cols-[110px_1fr] gap-4 border-b border-slate-200 px-5 py-4 last:border-b-0"><dt className="font-bold">{term}</dt><dd className="text-slate-600">{detail}</dd></div>)}
         </dl></div>
         <div><p className="mb-3 text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">For Your Brand</p><h2 className="text-3xl font-black md:text-4xl">OEM &amp; Customization</h2><img src={`${assetPath}/oem.png`} alt="OEM customization options" className="mt-8 h-auto w-full rounded-2xl" /><Link href="/custom-running-socks-manufacturer" className="mt-6 inline-flex font-black text-[#387116] underline underline-offset-4">Need an OEM or private-label running sock collection? Explore our custom running socks manufacturer service &rarr;</Link></div>
       </section>
@@ -70,7 +70,7 @@ export default function ProfessionalRunningAthleticSocksPage() {
         <div className="mt-10 divide-y divide-slate-200 rounded-2xl border border-slate-200">
           {[
             ['Can I choose the compression and cushioning level?', 'Yes. Tell us the target use, wearer profile and price point so we can recommend a practical construction.'],
-            ['What is the MOQ for custom running socks?', 'Selected designs can start from 50 pairs. The final MOQ depends on yarn, colors, size range and packaging.'],
+            ['What is the MOQ for custom running socks?', 'Custom logo programs typically start from 100 pairs. Selected standard styles can start from 50 pairs; bespoke specifications require a higher MOQ.'],
             ['Can the socks include our logo and color system?', 'Yes. Knitted logo, color blocking, stripe layouts, jacquard details and retail labels can be customized.'],
             ['How is the order packed?', 'We can pack by size and color for teams, or add retail-ready header cards, barcode labels, paper bands or custom boxes.'],
           ].map(([question, answer]) => <details key={question} className="group px-6 py-5"><summary className="cursor-pointer list-none font-bold marker:content-none">{question}</summary><p className="mt-3 leading-relaxed text-slate-600">{answer}</p></details>)}

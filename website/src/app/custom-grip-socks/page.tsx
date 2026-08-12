@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import CustomGripQuoteForm from '@/components/CustomGripQuoteForm';
+import MoqFramework from '@/components/MoqFramework';
+import { MOQ_COPY } from '@/lib/moq-framework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/custom-grip-socks`;
@@ -49,7 +51,7 @@ const process = [
 ] as const;
 
 const faqs = [
-  ['What is the MOQ for custom grip socks?', 'Selected designs can start from 300 pairs. Fully customized orders commonly start from 500 pairs per design or color, depending on yarn, logo and grip requirements.'],
+  ['What is the MOQ for custom grip socks?', MOQ_COPY.yogaCurrent],
   ['Can you make custom silicone grip patterns?', 'Yes. We can develop silicone coverage, dot layouts and logo-based grip patterns to suit football, Pilates, yoga, barre and training applications.'],
   ['How long does custom grip sock sampling take?', 'A typical custom sample takes around 7 to 10 business days after artwork and specifications are confirmed.'],
   ['Can you provide private label packaging?', 'Yes. We support retail-ready packaging including belly bands, hang tags, header cards, printed boxes, barcode labels and FBA-related labeling.'],
@@ -94,7 +96,7 @@ export default function CustomGripSocksPage() {
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] bg-white px-7 py-4 font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#e9f8d2]">Chat on WhatsApp</a>
             </div>
             <div className="mt-8 grid grid-cols-3 gap-4 border-t border-slate-200 pt-6 text-sm font-bold text-slate-700">
-              <span><strong className="block text-lg text-[#0c1713]">300 pairs</strong>MOQ from</span>
+              <span><strong className="block text-lg text-[#0c1713]">100 pairs*</strong>Typical MOQ</span>
               <span><strong className="block text-lg text-[#0c1713]">7-10 days</strong>sample lead time</span>
               <span><strong className="block text-lg text-[#0c1713]">Factory direct</strong>OEM support</span>
             </div>
@@ -140,6 +142,8 @@ export default function CustomGripSocksPage() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Product and Factory Video</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Watch our factory and production capability</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Take a quick look inside our factory, then send your design requirements for a practical product recommendation and quotation direction.</p><div className="mt-7 space-y-3 text-sm font-bold text-slate-700"><p className="rounded-lg border border-slate-200 bg-white p-4">Computerized sock knitting and production-floor workflow</p><p className="rounded-lg border border-slate-200 bg-white p-4">In-process checks for construction, silicone grip and finishing</p><p className="rounded-lg border border-slate-200 bg-white p-4">OEM support from product sampling through packing and shipment</p></div></div><div className="overflow-hidden rounded-lg bg-[#0c1713] shadow-[0_24px_55px_rgba(12,23,19,0.2)]"><video controls playsInline preload="metadata" poster={`${assetPath}/videos/custom-grip-socks-production-poster-card.jpg`} className="aspect-video w-full bg-black object-cover"><source src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/videos/factory-tour-2026-07-29.mp4" type="video/mp4" />Your browser does not support HTML video.</video><div className="border-t border-white/10 px-6 py-5 text-sm font-bold text-white">PeakMotion factory tour - press play to watch the production facility.</div></div></div>
       </section>
 
+      <MoqFramework />
+
       <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
         <div className="max-w-2xl"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Buyer Feedback</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Proof from international custom-sock buyers</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Selected marketplace feedback from completed orders. Screenshots are shown to keep the original buyer evidence visible.</p></div>
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">{[
@@ -155,4 +159,3 @@ export default function CustomGripSocksPage() {
     </main>
   );
 }
-

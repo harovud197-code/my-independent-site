@@ -10,7 +10,7 @@ export default function CustomLogoEmbroiderySocksPage() {
     ['Length', 'Crew Socks'],
     ['Logo', 'Jacquard / Embroidery / Print'],
     ['Color', 'Custom Colors Available'],
-    ['MOQ', '50 Pairs'],
+    ['MOQ', 'Typically From 100 Pairs'],
     ['Packing', 'Custom Packaging'],
   ];
 

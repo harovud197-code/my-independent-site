@@ -80,7 +80,7 @@ export default function SportsSocksMoqGuidePage() {
           </div>
           <aside className="rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm md:p-9">
             <p className="text-sm font-black uppercase tracking-[0.16em] text-[#b4e45d]">Quick answer</p>
-            <p className="mt-4 text-3xl font-black leading-tight md:text-4xl">MOQ from 50 pairs</p>
+            <p className="mt-4 text-3xl font-black leading-tight md:text-4xl">Selected standard styles: from 50 pairs</p>
             <p className="mt-4 leading-relaxed text-slate-300">
               This starting point applies to selected standard styles. Custom yarns, multiple colorways, specialist grip patterns and retail packaging can require a different MOQ.
             </p>
@@ -135,13 +135,13 @@ export default function SportsSocksMoqGuidePage() {
                   <td className="px-6 py-5">Focused changes to an available style and a lean launch plan.</td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-5 font-black text-[#0c1713]">Semi-custom program</td>
-                  <td className="px-6 py-5 font-bold">Confirmed after your brief</td>
-                  <td className="px-6 py-5">Brand colors, logo application and selected packaging choices.</td>
+                  <td className="px-6 py-5 font-black text-[#0c1713]">Custom logo / studio grip program</td>
+                  <td className="px-6 py-5 font-bold">Typically from 100 pairs</td>
+                  <td className="px-6 py-5">Brand colors, logo application and studio grip artwork.</td>
                 </tr>
                 <tr>
                   <td className="px-6 py-5 font-black text-[#0c1713]">Fully custom OEM development</td>
-                  <td className="px-6 py-5 font-bold">Confirmed per design and colorway</td>
+                  <td className="px-6 py-5 font-bold">Higher MOQ depending on specification</td>
                   <td className="px-6 py-5">New construction, specialist yarns, complex grip areas or retail-ready programs.</td>
                 </tr>
               </tbody>

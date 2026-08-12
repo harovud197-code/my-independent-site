@@ -15,7 +15,7 @@ export default function PerformanceBasketballSocksPage() {
     ['Grip', 'Silicone Anti-Slip Dots'],
     ['Logo', 'Knitted / Jacquard / Custom'],
     ['Colors', 'Custom Colors Available'],
-    ['MOQ', '50 Pairs / Design / Color'],
+    ['MOQ', 'Typically From 100 Pairs / Design / Color'],
     ['Packing', 'Custom Packaging'],
   ];
   const useCases = [
@@ -24,7 +24,7 @@ export default function PerformanceBasketballSocksPage() {
     ['Training and sports brands', 'Build a branded performance range for court training, gym programs and sports retail collections.'],
   ] as Array<[string, string]>;
   const faqs = [
-    ['What is the MOQ for custom basketball socks?', 'Selected standard styles can start from 50 pairs per design and color. Final MOQ depends on logo artwork, yarn, size range, grip option and packaging.'],
+    ['What is the MOQ for custom basketball socks?', 'Custom logo programs typically start from 100 pairs per design and color. Selected standard styles can start from 50 pairs; bespoke specifications require a higher MOQ.'],
     ['Can we add grip dots to basketball socks?', 'Yes. Silicone grip dots can be planned for selected training and court-use requirements. Tell us how the sock will be used so we can recommend the right coverage.'],
     ['Can you produce club colors and knitted logos?', 'Yes. Share Pantone references or artwork and we can review the practical jacquard layout, color count and placement before sampling.'],
     ['What information helps you quote accurately?', 'Please send the product style, logo, colors, size range, estimated quantity, packaging and target delivery. We will then recommend the right production route.'],
@@ -59,4 +59,3 @@ export default function PerformanceBasketballSocksPage() {
     </main>
   );
 }
-

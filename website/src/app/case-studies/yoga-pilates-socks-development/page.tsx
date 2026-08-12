@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import ManufacturingRelatedLinks from '@/components/ManufacturingRelatedLinks';
+import { MOQ_COPY } from '@/lib/moq-framework';
 
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/case-studies/yoga-pilates-socks-development`;
@@ -138,7 +139,7 @@ const solutionCards = [
 const manufacturingDetails = [
   ['Product Type', 'Custom Yoga Pilates Grip Socks'],
   ['Styles', 'Five Toe Socks / Half Toe Socks'],
-  ['MOQ', 'Starting from 50 pairs'],
+  ['MOQ', MOQ_COPY.yogaHistorical],
   ['Sampling Time', '7-15 Days'],
   ['Production Time', '20-30 Days'],
   ['Logo Options', 'Jacquard / Printing / Custom Label'],
@@ -198,7 +199,7 @@ const faqItems = [
   },
   {
     question: 'What is the MOQ for custom yoga socks?',
-    paragraphs: ['Our flexible production supports small batch testing.', 'For many custom projects, brands can start from around 50 pairs depending on design requirements.'],
+    paragraphs: ['This case used a historical / project-specific trial quantity or selected standard route.', MOQ_COPY.yogaCurrent],
     items: [],
   },
   {
