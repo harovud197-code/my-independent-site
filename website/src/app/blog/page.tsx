@@ -9,6 +9,15 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 const posts = [
   {
+    title: 'How to Choose a Private Label Socks Manufacturer: 8 Factors to Compare',
+    href: '/blog/how-to-choose-private-label-socks-manufacturer',
+    desc: 'Compare MOQ, sampling, materials, customization, quality control, packaging, communication and scalability before choosing an OEM sock partner.',
+    img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/custom-sock-render.png',
+    imageClassName: 'object-contain',
+    category: 'Private Label',
+    readTime: '12 min read',
+  },
+  {
     title: 'How Much Do Custom Grip Socks Cost? A Complete Pricing Guide',
     href: '/blog/how-much-do-custom-grip-socks-cost',
     desc: 'Plan a custom grip sock project with practical guidance on price ranges, MOQ, materials, silicone grip design and packaging.',

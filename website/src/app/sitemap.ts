@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://peakmotionsocks.com';
   const publishedAt = new Date('2026-07-17T00:00:00.000Z');
-  const blogIndexUpdatedAt = new Date('2026-07-29T00:00:00.000Z');
+  const blogIndexUpdatedAt = new Date('2026-08-12T00:00:00.000Z');
   const productStructuredDataUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
   const jacquardPageUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
   const relatedArticleUpdatedAt = new Date('2026-07-21T00:00:00.000Z');
@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const privateLabelCaseStudyUpdatedAt = new Date('2026-08-07T00:00:00.000Z');
   const socksManufacturingUpdatedAt = new Date('2026-08-10T00:00:00.000Z');
   const industriesUpdatedAt = new Date('2026-08-11T00:00:00.000Z');
+  const privateLabelManufacturerGuideUpdatedAt = new Date('2026-08-12T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'football-socks-vs-grip-socks',
     'how-sports-socks-are-manufactured',
     'how-to-choose-running-socks',
+    'how-to-choose-private-label-socks-manufacturer',
     'how-to-start-a-custom-socks-brand',
     'how-much-do-custom-grip-socks-cost',
     'what-are-grip-socks',
@@ -35,7 +37,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogUrls = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post}`,
-    lastModified: post === 'custom-socks-moq-explained'
+    lastModified: post === 'how-to-choose-private-label-socks-manufacturer'
+      ? privateLabelManufacturerGuideUpdatedAt
+      : post === 'custom-socks-moq-explained'
       ? customSocksMoqArticleUpdatedAt
       : ['custom-running-socks-oem-guide', 'private-label-running-socks-brand-guide', 'how-much-do-custom-grip-socks-cost'].includes(post)
       ? relatedArticleUpdatedAt
@@ -117,6 +121,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/case-studies/private-label-socks-brand-launch`,
       lastModified: privateLabelCaseStudyUpdatedAt,
       priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/case-studies`,
+      lastModified: privateLabelManufacturerGuideUpdatedAt,
+      priority: 0.84,
     },
     {
       url: `${baseUrl}/yoga-pilates-grip-socks-supplier`,
