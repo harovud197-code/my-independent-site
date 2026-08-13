@@ -9,6 +9,15 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 const posts = [
   {
+    title: 'How Much Does It Cost to Manufacture Custom Socks?',
+    href: '/blog/custom-socks-manufacturing-cost',
+    desc: 'Understand how MOQ, yarn, logos, grip, packaging, samples and freight shape the real cost of a custom sock project.',
+    img: '/assets/blog/private-label-manufacturer-grip-socks.webp',
+    imageClassName: 'object-contain',
+    category: 'MOQ & Pricing',
+    readTime: '10 min read',
+  },
+  {
     title: 'How to Choose a Private Label Socks Manufacturer: 8 Factors to Compare',
     href: '/blog/how-to-choose-private-label-socks-manufacturer',
     desc: 'Compare MOQ, sampling, materials, customization, quality control, packaging, communication and scalability before choosing an OEM sock partner.',
