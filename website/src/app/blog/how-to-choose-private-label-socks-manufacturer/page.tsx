@@ -7,6 +7,65 @@ const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/blog/how-to-choose-private-label-socks-manufacturer`;
 const heroImage = `${siteUrl}/assets/blog/private-label-manufacturer-grip-socks.webp`;
 const heroImagePath = '/assets/blog/private-label-manufacturer-grip-socks.webp';
+const guideImageBase = '/assets/blog/private-label-manufacturer-guide';
+
+const sectionImages = {
+  sampling: [
+    {
+      src: 'sampling-yarn-colors.webp',
+      alt: 'Private label sock sample styles arranged with yarn color swatches for sampling review',
+      label: 'Sample and color review',
+    },
+  ],
+  materials: [
+    {
+      src: 'materials-color-options.webp',
+      alt: 'Custom colorful socks displayed with yarn color swatches for material and color selection',
+      label: 'Yarn and color options',
+    },
+    {
+      src: 'materials-grip-yarn-options.webp',
+      alt: 'Grip socks displayed with green yarn swatches for material selection',
+      label: 'Grip, yarn and performance options',
+    },
+  ],
+  customization: [
+    {
+      src: 'customization-logo-collection.webp',
+      alt: 'Private label sock collection showing logo placement, grip soles and multiple custom styles',
+      label: 'Logo and construction options',
+    },
+    {
+      src: 'customization-color-collection.webp',
+      alt: 'Custom sock collection showing illustrated, knitted and bright color design options',
+      label: 'Color and artwork options',
+    },
+    {
+      src: 'customization-style-options.webp',
+      alt: 'Different custom white sock styles with knitted logos and full-color patterns',
+      label: 'Height and style options',
+    },
+  ],
+  'quality-control': [
+    {
+      src: 'quality-control-product-review.webp',
+      alt: 'Factory team reviewing a private label sock sample beside product and packaging components',
+      label: 'Product review before packing',
+    },
+  ],
+  packaging: [
+    {
+      src: 'packaging-bagging-process.webp',
+      alt: 'Private label sock being placed into a clear retail bag with branded card',
+      label: 'Retail bagging process',
+    },
+    {
+      src: 'packaging-finished-presentation.webp',
+      alt: 'Finished private label socks with a branded belly band and packaging materials',
+      label: 'Finished retail presentation',
+    },
+  ],
+} as const;
 
 const factors = [
   {
@@ -296,6 +355,18 @@ export default function HowToChoosePrivateLabelSocksManufacturerPage() {
                   <div className="mt-6 rounded-xl border-l-4 border-[#679a20] bg-white p-5"><p className="text-xs font-black uppercase tracking-[0.14em] text-[#679a20]">Buyer note</p><p className="mt-2 font-semibold leading-relaxed text-slate-700">{factor.redFlag}</p></div>
                 </div>
               </div>
+              {sectionImages[factor.id as keyof typeof sectionImages] && (
+                <div className={`mt-7 grid gap-4 ${sectionImages[factor.id as keyof typeof sectionImages].length === 1 ? 'max-w-2xl' : 'sm:grid-cols-2'} ${sectionImages[factor.id as keyof typeof sectionImages].length === 3 ? 'lg:grid-cols-3' : ''}`}>
+                  {sectionImages[factor.id as keyof typeof sectionImages].map((image) => (
+                    <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_10px_30px_rgba(12,23,19,0.06)]">
+                      <div className="relative aspect-[3/2] overflow-hidden bg-[#f7f8f6]">
+                        <Image src={`${guideImageBase}/${image.src}`} alt={image.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover object-center" />
+                      </div>
+                      <figcaption className="px-5 py-4 text-sm font-bold text-slate-700">{image.label}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              )}
             </section>
           ))}
         </div>
