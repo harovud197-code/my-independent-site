@@ -7,6 +7,43 @@ const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/blog/custom-socks-manufacturing-cost`;
 const heroImagePath = '/assets/blog/private-label-manufacturer-grip-socks.webp';
 const heroImage = `${siteUrl}${heroImagePath}`;
+const articleImageBase = '/assets/blog/custom-socks-manufacturing-cost';
+
+const yarnImages = [
+  {
+    src: 'custom-socks-yarn-material-options-1.jpg',
+    alt: 'Colorful yarn cones prepared for custom socks material and color selection',
+    caption: 'Yarn color and material options for custom sock development',
+  },
+  {
+    src: 'custom-socks-yarn-material-options-2.jpg',
+    alt: 'Different sizes and colors of yarn cones used for custom sock production planning',
+    caption: 'Stock yarn directions can simplify a first production program',
+  },
+] as const;
+
+const packagingImages = [
+  {
+    src: 'private-label-socks-packaging-cost-options-1.jpg',
+    alt: 'Private label socks shown with bags, paper bands and retail box packaging options',
+    caption: 'Bags, paper bands and retail box options',
+  },
+  {
+    src: 'private-label-socks-packaging-cost-options-2.jpg',
+    alt: 'Custom socks displayed with hang tags, sleeves, clear bags and kraft packaging',
+    caption: 'Hang tags, sleeves and retail-ready presentation',
+  },
+  {
+    src: 'private-label-socks-packaging-cost-options-3.jpg',
+    alt: 'Custom socks packed in clear bags with different branded label formats',
+    caption: 'Clear bags combined with branded labels',
+  },
+  {
+    src: 'private-label-socks-packaging-cost-options-4.jpg',
+    alt: 'Private label socks displayed with custom paper bands and printed packaging inserts',
+    caption: 'Custom bands, inserts and branded packaging',
+  },
+] as const;
 
 const costFactors = [
   ['MOQ and quantity', 'Smaller production runs usually have a higher unit cost because programming, preparation, inspection and setup are spread across fewer pairs.'],
@@ -127,6 +164,26 @@ export default function CustomSocksManufacturingCostPage() {
           </div>
         </section>
 
+        <section className="mx-auto mt-16 max-w-6xl" aria-labelledby="yarn-cost-title">
+          <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
+            <div>
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Yarn cost</p>
+              <h2 id="yarn-cost-title" className="mt-3 text-3xl font-black leading-tight md:text-5xl">Yarn selection changes both price and performance.</h2>
+            </div>
+            <p className="text-lg leading-relaxed text-slate-600">Cotton, nylon, polyester, performance yarns, elastane and specialty fibers have different costs and functional benefits. The final price also depends on yarn quality, count, color availability and whether custom dyeing is required.</p>
+          </div>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {yarnImages.map((image) => (
+              <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_10px_30px_rgba(12,23,19,0.06)]">
+                <div className="relative aspect-[3/2] overflow-hidden bg-[#f7f8f6]">
+                  <Image src={`${articleImageBase}/${image.src}`} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover object-center" />
+                </div>
+                <figcaption className="px-5 py-4 text-sm font-bold text-slate-700">{image.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+
         <section className="mx-auto mt-16 max-w-6xl overflow-hidden rounded-3xl bg-[#0c1713] p-6 text-white md:p-10 lg:p-12">
           <div className="grid gap-10 lg:grid-cols-[0.76fr_1.24fr] lg:items-center">
             <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Branding and grip details</p><h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">Logo and grip choices change the production route.</h2><p className="mt-5 leading-relaxed text-slate-300">A simple knitted logo and a detailed multi-color graphic should not be expected to cost the same. The same applies to a standard dot grip versus a custom full-sole pattern. Confirm artwork, placement, color count, coverage and durability needs before comparing prices.</p></div>
@@ -134,6 +191,24 @@ export default function CustomSocksManufacturingCostPage() {
               <figure className="overflow-hidden rounded-2xl bg-white text-[#0c1713]"><div className="relative aspect-[4/3] bg-[#f7f8f6]"><Image src="/assets/blog/private-label-manufacturer-guide/customization-logo-collection.webp" alt="Private label sock samples showing custom logo placement and grip sole options" fill sizes="(max-width: 640px) 100vw, 30vw" className="object-cover" /></div><figcaption className="p-5"><h3 className="font-black">Logo method</h3><p className="mt-2 text-sm leading-relaxed text-slate-600">Jacquard, printing, embroidery, labels and silicone branding have different technical requirements.</p></figcaption></figure>
               <figure className="overflow-hidden rounded-2xl bg-white text-[#0c1713]"><div className="relative aspect-[4/3] bg-[#f7f8f6]"><Image src={heroImagePath} alt="Custom grip socks with different sole grip patterns" fill sizes="(max-width: 640px) 100vw, 30vw" className="object-contain" /></div><figcaption className="p-5"><h3 className="font-black">Grip design</h3><p className="mt-2 text-sm leading-relaxed text-slate-600">Material, coverage, pattern complexity and application method affect both function and cost.</p></figcaption></figure>
             </div>
+          </div>
+        </section>
+
+        <section className="mx-auto mt-16 max-w-6xl" aria-labelledby="packaging-cost-title">
+          <div className="max-w-4xl">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Packaging cost</p>
+            <h2 id="packaging-cost-title" className="mt-3 text-3xl font-black leading-tight md:text-5xl">Packaging is part of the final private label socks cost.</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">Polybags, paper bands, hang tags, stickers, boxes and barcode labels create different cost and MOQ requirements. A sock factory may support a smaller production run while a custom packaging supplier requires a separate minimum quantity.</p>
+          </div>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {packagingImages.map((image) => (
+              <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_10px_30px_rgba(12,23,19,0.06)]">
+                <div className="relative aspect-[3/2] overflow-hidden bg-[#f7f8f6]">
+                  <Image src={`${articleImageBase}/${image.src}`} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover object-center" />
+                </div>
+                <figcaption className="px-5 py-4 text-sm font-bold text-slate-700">{image.caption}</figcaption>
+              </figure>
+            ))}
           </div>
         </section>
 
