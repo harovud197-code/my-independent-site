@@ -6,7 +6,8 @@ import MoqFramework from '@/components/MoqFramework';
 const siteUrl = 'https://peakmotionsocks.com';
 const pagePath = '/blog/how-to-choose-pilates-grip-socks-supplier';
 const pageUrl = `${siteUrl}${pagePath}`;
-const heroImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/yoga-pilates-grip-socks-v2/hero-custom-grip-socks-v2.png';
+const heroImagePath = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/pilates-studio-grip-socks-lifestyle.jpg';
+const heroImageUrl = `${siteUrl}${heroImagePath}`;
 const packagingImage = '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1.jpg';
 const qcImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/final-packing-check.png';
 const shippingImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/shipping-cartons.jpg';
@@ -22,13 +23,13 @@ export const metadata: Metadata = {
     siteName: 'PeakMotion Socks',
     type: 'article',
     publishedTime: '2026-08-17T00:00:00.000Z',
-    images: [{ url: heroImage, width: 1600, height: 900, alt: 'Custom Pilates grip socks and private label packaging' }],
+    images: [{ url: heroImageUrl, width: 1200, height: 1200, alt: 'Pilates grip socks worn in a studio setting' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Choose a Pilates Grip Socks Supplier',
     description: 'Compare product, branding, MOQ, QC and repeat-order capability before choosing a supplier.',
-    images: [heroImage],
+    images: [heroImageUrl],
   },
 };
 
@@ -72,7 +73,7 @@ export default function PilatesGripSocksSupplierGuidePage() {
         '@id': `${pageUrl}#article`,
         headline: 'How to Choose a Pilates Grip Socks Supplier',
         description: metadata.description,
-        image: heroImage,
+        image: heroImageUrl,
         datePublished: '2026-08-17',
         dateModified: '2026-08-17',
         author: { '@type': 'Organization', name: 'PeakMotion Socks', url: siteUrl },
@@ -108,7 +109,7 @@ export default function PilatesGripSocksSupplierGuidePage() {
             <div className="mt-6 flex flex-wrap gap-4 text-sm font-bold text-slate-500"><span>14 min read</span><span aria-hidden="true">•</span><span>Published August 17, 2026</span></div>
           </div>
           <figure className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_20px_55px_rgba(12,23,19,0.09)]">
-            <Image src={heroImage} alt="Custom Pilates grip socks with coordinated private label packaging" fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-cover" />
+            <Image src={heroImagePath} alt="Pilates studio customer wearing open-top grip socks" fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-cover object-[center_68%]" />
           </figure>
         </div>
       </section>
