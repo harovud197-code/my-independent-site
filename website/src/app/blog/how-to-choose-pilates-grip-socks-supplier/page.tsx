@@ -129,6 +129,17 @@ export default function PilatesGripSocksSupplierGuidePage() {
             <GuideSection number="02" title="Compare Grip Coverage">
               <p>The pattern should be placed where the foot contacts the floor. Options include forefoot, heel, full-sole, targeted pressure-zone, logo-led and geometric layouts.</p>
               <p>More grip is not automatically better. Coverage also affects flexibility, comfort, appearance, weight and cost. Ask for real sole photos so you can review position, density, heel coverage, forefoot coverage and spacing.</p>
+              <figure className="mt-7 overflow-hidden rounded-2xl border border-slate-200 bg-[#fbfaf7] shadow-[0_16px_40px_rgba(12,23,19,0.08)]">
+                <Image
+                  src="/assets/blog/how-to-choose-pilates-grip-socks-supplier/pilates-grip-socks-sole-patterns.png"
+                  alt="Pilates grip sock sole pattern and coverage comparison for half-toe, five-toe and full-toe styles"
+                  width={1536}
+                  height={1024}
+                  sizes="(max-width: 1024px) 100vw, 720px"
+                  className="h-auto w-full"
+                />
+                <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">Grip coverage comparison across half-toe, five-toe and full-toe studio sock structures, including forefoot and heel placement.</figcaption>
+              </figure>
             </GuideSection>
 
             <GuideSection number="03" title="Match the Fabric to the Studio Environment">
