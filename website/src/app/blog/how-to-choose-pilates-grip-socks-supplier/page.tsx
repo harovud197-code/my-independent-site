@@ -145,6 +145,17 @@ export default function PilatesGripSocksSupplierGuidePage() {
             <GuideSection number="03" title="Match the Fabric to the Studio Environment">
               <p>Fabric influences breathability, moisture management, softness, elasticity and durability. Cotton-rich blends can give a familiar studio feel, while nylon or polyester-rich performance blends may improve quick drying and durability.</p>
               <CheckList items={['Cuff elasticity and recovery', 'Arch fit and heel hold', 'Toe structure', 'Breathable or mesh zones', 'Durability after repeated use']} />
+              <figure className="mt-7 overflow-hidden rounded-2xl border border-slate-200 bg-[#fbfaf7] shadow-[0_16px_40px_rgba(12,23,19,0.08)]">
+                <Image
+                  src="/assets/blog/how-to-choose-pilates-grip-socks-supplier/pilates-grip-socks-fabric-details.png"
+                  alt="Close-up Pilates grip sock fabric, toe construction, elastic binding and silicone sole details"
+                  width={1776}
+                  height={887}
+                  sizes="(max-width: 1024px) 100vw, 720px"
+                  className="h-auto w-full"
+                />
+                <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">Close-up comparison of knit texture, five-toe construction, secure elastic binding and silicone grip application.</figcaption>
+              </figure>
             </GuideSection>
 
             <GuideSection number="04" title="Evaluate the Sock Structure">
