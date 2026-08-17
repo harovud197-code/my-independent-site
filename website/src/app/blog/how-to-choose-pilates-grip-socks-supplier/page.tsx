@@ -150,6 +150,17 @@ export default function PilatesGripSocksSupplierGuidePage() {
                 ].map(([title, text]) => <div key={title} className="rounded-xl bg-[#f7f8f6] p-5"><h3 className="font-black text-[#0c1713]">{title}</h3><p className="mt-2 text-base">{text}</p></div>)}
               </div>
               <p>The right choice depends on customer preference, studio positioning, climate, target retail price and brand style. Some studios test more than one structure before scaling.</p>
+              <figure className="mt-7 overflow-hidden rounded-2xl border border-slate-200 bg-[#fbfaf7] shadow-[0_16px_40px_rgba(12,23,19,0.08)]">
+                <Image
+                  src="/assets/blog/how-to-choose-pilates-grip-socks-supplier/pilates-grip-socks-structure-options.png"
+                  alt="Half-toe, five-toe and full-toe Pilates grip sock structure comparison"
+                  width={1456}
+                  height={1086}
+                  sizes="(max-width: 1024px) 100vw, 720px"
+                  className="h-auto w-full"
+                />
+                <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">Visual comparison of half-toe, five-toe and full-toe structures for Pilates and studio grip sock programs.</figcaption>
+              </figure>
             </GuideSection>
 
             <GuideSection number="06" title="Check Studio Logo Customization">
