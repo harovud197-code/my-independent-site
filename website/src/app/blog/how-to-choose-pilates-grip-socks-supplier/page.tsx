@@ -109,7 +109,7 @@ export default function PilatesGripSocksSupplierGuidePage() {
             <div className="mt-6 flex flex-wrap gap-4 text-sm font-bold text-slate-500"><span>14 min read</span><span aria-hidden="true">•</span><span>Published August 17, 2026</span></div>
           </div>
           <figure className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_20px_55px_rgba(12,23,19,0.09)]">
-            <Image src={heroImagePath} alt="Pilates studio customer wearing open-top grip socks" fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-cover object-[center_68%]" />
+            <Image src={heroImagePath} alt="Pilates studio customer wearing open-top grip socks" fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-cover object-bottom" />
           </figure>
         </div>
       </section>
