@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://peakmotionsocks.com';
   const publishedAt = new Date('2026-07-17T00:00:00.000Z');
-  const blogIndexUpdatedAt = new Date('2026-08-13T00:00:00.000Z');
+  const blogIndexUpdatedAt = new Date('2026-08-17T00:00:00.000Z');
   const productStructuredDataUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
   const jacquardPageUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
   const relatedArticleUpdatedAt = new Date('2026-07-21T00:00:00.000Z');
@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const industriesUpdatedAt = new Date('2026-08-11T00:00:00.000Z');
   const privateLabelManufacturerGuideUpdatedAt = new Date('2026-08-12T00:00:00.000Z');
   const customSocksManufacturingCostUpdatedAt = new Date('2026-08-13T00:00:00.000Z');
+  const pilatesGripSupplierGuideUpdatedAt = new Date('2026-08-17T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -29,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'how-sports-socks-are-manufactured',
     'how-to-choose-running-socks',
     'how-to-choose-private-label-socks-manufacturer',
+    'how-to-choose-pilates-grip-socks-supplier',
     'how-to-start-a-custom-socks-brand',
     'how-much-do-custom-grip-socks-cost',
     'what-are-grip-socks',
@@ -41,6 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}/blog/${post}`,
     lastModified: post === 'custom-socks-manufacturing-cost'
       ? customSocksManufacturingCostUpdatedAt
+      : post === 'how-to-choose-pilates-grip-socks-supplier'
+      ? pilatesGripSupplierGuideUpdatedAt
       : post === 'how-to-choose-private-label-socks-manufacturer'
       ? privateLabelManufacturerGuideUpdatedAt
       : post === 'custom-socks-moq-explained'

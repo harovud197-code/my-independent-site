@@ -18,6 +18,15 @@ const posts = [
     readTime: '10 min read',
   },
   {
+    title: 'How to Choose a Pilates Grip Socks Supplier',
+    href: '/blog/how-to-choose-pilates-grip-socks-supplier',
+    desc: 'Compare grip material, sole coverage, fabric, toe construction, branding, MOQ, packaging, QC and repeat-order capability.',
+    img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/yoga-pilates-grip-socks-v2/hero-custom-grip-socks-v2.png',
+    imageClassName: 'object-cover',
+    category: 'Pilates & Wellness',
+    readTime: '14 min read',
+  },
+  {
     title: 'How to Choose a Private Label Socks Manufacturer: 8 Factors to Compare',
     href: '/blog/how-to-choose-private-label-socks-manufacturer',
     desc: 'Compare MOQ, sampling, materials, customization, quality control, packaging, communication and scalability before choosing an OEM sock partner.',
