@@ -101,7 +101,7 @@ export default function Home() {
           </div>
           <div className="hero-showcase hero-showcase-image reveal" aria-label="Custom sports socks product showcase">
             <Image 
-              src="/assets/images/hero-showcase-green-v2.png" 
+              src="/assets/images/hero-showcase-green-v3.png" 
               alt="PeakMotion custom sports socks product showcase" 
               width={1324} 
               height={1188} 
