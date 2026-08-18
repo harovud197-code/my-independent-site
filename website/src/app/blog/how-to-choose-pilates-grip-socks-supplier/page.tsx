@@ -8,9 +8,45 @@ const pagePath = '/blog/how-to-choose-pilates-grip-socks-supplier';
 const pageUrl = `${siteUrl}${pagePath}`;
 const heroImagePath = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/pilates-studio-grip-socks-lifestyle.jpg';
 const heroImageUrl = `${siteUrl}${heroImagePath}`;
-const packagingImage = '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1.jpg';
 const qcImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/final-packing-check.png';
 const shippingImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/shipping-cartons.jpg';
+const galleryBase = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/supplier-selection-gallery';
+
+const yarnMaterialImages = [
+  {
+    src: `${galleryBase}/custom-socks-yarn-material-options-1.jpg`,
+    alt: 'Colorful yarn cones used for custom Pilates grip sock material and color development',
+    caption: 'Review yarn type, color range and material performance before confirming the studio sock specification.',
+  },
+  {
+    src: `${galleryBase}/custom-socks-yarn-material-options-2.jpg`,
+    alt: 'Custom sock yarn material options in multiple colors and cone sizes',
+    caption: 'Compare available yarn colors early so sampling and repeat orders follow a consistent approved direction.',
+  },
+] as const;
+
+const packagingCostImages = [
+  {
+    src: `${galleryBase}/private-label-socks-packaging-cost-options-1.png`,
+    alt: 'Private label sock packaging options including bands, clear bags, black bags and kraft packs',
+    caption: 'Mixed retail formats: paper bands, clear bags, branded pouches and kraft packs.',
+  },
+  {
+    src: `${galleryBase}/private-label-socks-packaging-cost-options-2.png`,
+    alt: 'Sock packaging comparison with backing cards, polybags, hang tags, pouches and kraft boxes',
+    caption: 'Compare structure, display method and branding space for the intended studio sales channel.',
+  },
+  {
+    src: `${galleryBase}/private-label-socks-packaging-cost-options-3.png`,
+    alt: 'Studio and private label socks packed in clear retail bags with custom bands and hang cards',
+    caption: 'Clear retail bags can keep the product visible while labels communicate size and brand details.',
+  },
+  {
+    src: `${galleryBase}/private-label-socks-packaging-cost-options-4.png`,
+    alt: 'Custom sock paper bands, hang cards and folding retail sleeves for private label packaging',
+    caption: 'Paper bands, hang cards and folding sleeves offer different cost, information and presentation routes.',
+  },
+] as const;
 
 export const metadata: Metadata = {
   title: 'How to Choose a Pilates Grip Socks Supplier | Buying Guide for Studios & Brands',
@@ -23,6 +59,7 @@ export const metadata: Metadata = {
     siteName: 'PeakMotion Socks',
     type: 'article',
     publishedTime: '2026-08-17T00:00:00.000Z',
+    modifiedTime: '2026-08-18T00:00:00.000Z',
     images: [{ url: heroImageUrl, width: 1200, height: 1200, alt: 'Pilates grip socks worn in a studio setting' }],
   },
   twitter: {
@@ -157,6 +194,16 @@ export default function PilatesGripSocksSupplierGuidePage() {
                 />
                 <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">Close-up comparison of knit texture, five-toe construction, secure elastic binding and silicone grip application.</figcaption>
               </figure>
+              <div className="mt-7 grid gap-5 md:grid-cols-2">
+                {yarnMaterialImages.map((image) => (
+                  <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_30px_rgba(12,23,19,0.07)]">
+                    <div className="relative aspect-[3/2] bg-[#fbfaf7]">
+                      <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 360px" className="object-contain" />
+                    </div>
+                    <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">{image.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
             </GuideSection>
 
             <GuideSection number="04" title="Evaluate the Sock Structure">
@@ -201,10 +248,17 @@ export default function PilatesGripSocksSupplierGuidePage() {
             <GuideSection number="08" title="Plan Packaging for Studio Retail">
               <p>If socks will be sold at reception, online or in a retail area, packaging is part of the product. Options include paper bands, hang tags, branded cards, polybags, custom boxes, barcode labels and size stickers.</p>
               <p>A simple branded band may suit a studio launch, while private label brands may need printed boxes, inserts, barcodes, retail labels and a fuller brand story. Confirm the packaging MOQ separately because it may differ from the sock MOQ.</p>
-              <figure className="mt-7 overflow-hidden rounded-2xl border border-slate-200 bg-white">
-                <div className="relative aspect-[16/9] bg-[#f5f4f1]"><Image src={packagingImage} alt="Private label sock packaging options including bands, bags, cards and boxes" fill sizes="(max-width: 1024px) 100vw, 720px" className="object-cover" /></div>
-                <figcaption className="p-5 text-sm text-slate-600"><strong className="text-[#0c1713]">Packaging evidence:</strong> compare the format, branding space, size labeling and retail channel before approving the final pack.</figcaption>
-              </figure>
+              <div className="mt-7 grid gap-5 md:grid-cols-2">
+                {packagingCostImages.map((image) => (
+                  <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_30px_rgba(12,23,19,0.07)]">
+                    <div className="relative aspect-[3/2] bg-[#fbfaf7]">
+                      <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 360px" className="object-contain" />
+                    </div>
+                    <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">{image.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+              <p className="rounded-xl border border-[#c9e4a8] bg-[#f4fbe8] p-5 text-base"><strong className="text-[#234812]">Packaging evidence:</strong> compare the format, branding space, size labeling, unit cost and retail channel before approving the final pack.</p>
             </GuideSection>
 
             <GuideSection number="09" title="Confirm Repeat-Order Capability">

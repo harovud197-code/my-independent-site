@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const industriesUpdatedAt = new Date('2026-08-11T00:00:00.000Z');
   const privateLabelManufacturerGuideUpdatedAt = new Date('2026-08-12T00:00:00.000Z');
   const customSocksManufacturingCostUpdatedAt = new Date('2026-08-13T00:00:00.000Z');
-  const pilatesGripSupplierGuideUpdatedAt = new Date('2026-08-17T00:00:00.000Z');
+  const pilatesGripSupplierGuideUpdatedAt = new Date('2026-08-18T00:00:00.000Z');
   const pilatesStudioBuyingGuideUpdatedAt = new Date('2026-08-18T00:00:00.000Z');
 
   const blogPosts = [
