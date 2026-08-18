@@ -101,10 +101,11 @@ export default function Home() {
           </div>
           <div className="hero-showcase hero-showcase-image reveal" aria-label="Custom sports socks product showcase">
             <Image 
-              src="/assets/images/hero-showcase-green.png" 
-              alt="PeakMotion custom sports socks product showcase" 
-              width={660} 
-              height={500} 
+              src="/assets/images/homepage-hero-peakmotion-grip-sock.png" 
+              alt="White PeakMotion grip sock with black sole grip blocks" 
+              width={1086} 
+              height={1448} 
+              sizes="(max-width: 980px) 100vw, 46vw"
               priority
               className="drop-shadow-2xl rounded-[34px]"
             />
