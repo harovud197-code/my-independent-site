@@ -9,6 +9,15 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 const posts = [
   {
+    title: 'Custom Grip Socks for Pilates Studios: Complete Buying Guide',
+    href: '/blog/custom-grip-socks-pilates-studios-buying-guide',
+    desc: 'Plan custom grip socks for studio retail, welcome packs, member merchandise, branding, margin and repeat orders.',
+    img: '/assets/blog/custom-grip-socks-pilates-studios-buying-guide/custom-pilates-grip-socks-studio.png',
+    imageClassName: 'object-cover object-center',
+    category: 'Pilates & Wellness',
+    readTime: '18 min read',
+  },
+  {
     title: 'How Much Does It Cost to Manufacture Custom Socks?',
     href: '/blog/custom-socks-manufacturing-cost',
     desc: 'Understand how MOQ, yarn, logos, grip, packaging, samples and freight shape the real cost of a custom sock project.',
