@@ -10,6 +10,118 @@ const pageUrl = `${siteUrl}${pagePath}`;
 const heroImagePath = '/assets/blog/custom-grip-socks-pilates-studios-buying-guide/custom-pilates-grip-socks-studio.png';
 const heroImageUrl = `${siteUrl}${heroImagePath}`;
 const packagingImage = '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1.jpg';
+const supplierGalleryBase = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/labeled-gallery';
+const brandingGalleryBase = '/assets/blog/custom-grip-socks-pilates-studios-buying-guide/section-gallery';
+
+type GalleryImage = { src: string; alt: string; caption: string };
+
+const retailImages: readonly GalleryImage[] = [
+  {
+    src: `${supplierGalleryBase}/custom-pilates-socks-studio-logo-2.png`,
+    alt: 'Pair of pink custom Pilates grip socks with embroidered studio logos',
+    caption: 'A complete branded pair gives front-desk customers a clear view of logo, knit and grip details.',
+  },
+  {
+    src: `${supplierGalleryBase}/custom-pilates-socks-studio-logo-5.png`,
+    alt: 'Close-up embroidered studio logo on a pink Pilates grip sock',
+    caption: 'A clean embroidered cuff logo can support a premium studio merchandise position.',
+  },
+] as const;
+
+const welcomePackImages: readonly GalleryImage[] = [
+  {
+    src: `${supplierGalleryBase}/custom-pilates-socks-studio-logo-1.png`,
+    alt: 'Pink branded Pilates grip sock packed in a clear retail bag',
+    caption: 'Simple clear packaging keeps a welcome-pack product protected while the studio branding stays visible.',
+  },
+] as const;
+
+const merchandiseImages: readonly GalleryImage[] = [
+  {
+    src: `${supplierGalleryBase}/custom-pilates-socks-studio-logo-3.png`,
+    alt: 'Custom studio name integrated into a Pilates sock silicone grip pattern',
+    caption: 'Sole branding can turn a functional grip pattern into a recognizable merchandise detail.',
+  },
+  {
+    src: `${supplierGalleryBase}/custom-pilates-socks-studio-logo-4.png`,
+    alt: 'Custom silicone initials within the grip area of a pink Pilates sock',
+    caption: 'Small silicone initials create subtle product identity without dominating the design.',
+  },
+  {
+    src: `${supplierGalleryBase}/custom-pilates-socks-studio-logo-6.png`,
+    alt: 'Pink Pilates sock with embroidered cuff logo and contrast stripes',
+    caption: 'Coordinated logo, stripe and knit details make the sock feel like part of the studio collection.',
+  },
+] as const;
+
+const brandingImages: readonly GalleryImage[] = [
+  {
+    src: `${brandingGalleryBase}/branded-pilates-studio-grip-socks-4.png`,
+    alt: 'Black branded five-toe Pilates socks showing the upper and custom logo grip sole',
+    caption: 'Front and sole views show how knitted cuff branding and silicone sole branding work together.',
+  },
+  {
+    src: `${brandingGalleryBase}/branded-pilates-studio-grip-socks-1.png`,
+    alt: 'Pair of black five-toe Pilates socks with custom white silicone logo grips',
+    caption: 'A studio name can become part of the full-sole grip layout.',
+  },
+  {
+    src: `${brandingGalleryBase}/branded-pilates-studio-grip-socks-2.png`,
+    alt: 'Close-up black Pilates sock knit and support zones',
+    caption: 'Logo decisions should be reviewed together with knit zones and foot support structure.',
+  },
+  {
+    src: `${brandingGalleryBase}/branded-pilates-studio-grip-socks-3.png`,
+    alt: 'Branded black five-toe Pilates socks with custom paper band packaging',
+    caption: 'A branded paper band carries the studio identity into retail presentation.',
+  },
+  {
+    src: `${brandingGalleryBase}/branded-pilates-studio-grip-socks-5.png`,
+    alt: 'Close-up knitted studio name on the cuff of a black Pilates sock',
+    caption: 'Knitted cuff branding remains visible while the sock is worn.',
+  },
+] as const;
+
+const gripPatternImages: readonly GalleryImage[] = [
+  {
+    src: `${supplierGalleryBase}/pilates-grip-socks-sole-patterns-1.png`,
+    alt: 'Multiple full-sole silicone grip layouts on Pilates socks',
+    caption: 'Compare full-sole grip density across full-toe and five-toe constructions.',
+  },
+  {
+    src: `${supplierGalleryBase}/pilates-grip-socks-sole-patterns-2.png`,
+    alt: 'Hexagonal and round silicone grip pattern comparison',
+    caption: 'Grip shape and spacing influence both traction and visual identity.',
+  },
+  {
+    src: `${supplierGalleryBase}/pilates-grip-socks-sole-patterns-3.png`,
+    alt: 'Heart and circular Pilates sock grip patterns with custom branding',
+    caption: 'Decorative motifs can combine grip coverage with a studio-led design direction.',
+  },
+  {
+    src: `${supplierGalleryBase}/pilates-grip-socks-sole-patterns-4.png`,
+    alt: 'Four Pilates sock sole designs with dot, heart and logo-led grips',
+    caption: 'Review color, motif, logo placement and grip density before sampling.',
+  },
+] as const;
+
+const fabricDetailImages: readonly GalleryImage[] = [
+  {
+    src: `${supplierGalleryBase}/pilates-grip-socks-fabric-details-1.jpg`,
+    alt: 'Cream sock yarn cone beside a knitted Pilates sock sample',
+    caption: 'The selected yarn should match the required softness, weight and studio positioning.',
+  },
+  {
+    src: `${supplierGalleryBase}/pilates-grip-socks-fabric-details-2.jpg`,
+    alt: 'Pilates grip socks showing rib knit, silicone dots and cushioned inside fabric',
+    caption: 'Review rib structure, sole grip and interior cushioning as one construction.',
+  },
+  {
+    src: `${supplierGalleryBase}/pilates-grip-socks-fabric-details-3.jpg`,
+    alt: 'Close-up collage of Pilates sock jacquard, heel, grip and terry details',
+    caption: 'Close-up checks reveal logo knitting, heel construction, grip application and terry cushioning.',
+  },
+] as const;
 
 export const metadata: Metadata = {
   title: 'Custom Grip Socks for Pilates Studios: Complete Buying Guide',
@@ -22,6 +134,7 @@ export const metadata: Metadata = {
     siteName: 'PeakMotion Socks',
     type: 'article',
     publishedTime: '2026-08-18T00:00:00.000Z',
+    modifiedTime: '2026-08-19T00:00:00.000Z',
     images: [{ url: heroImageUrl, width: 1287, height: 1222, alt: 'Pink custom Pilates grip socks worn in a studio' }],
   },
   twitter: {
@@ -65,6 +178,24 @@ function MiniCard({ title, children }: { title: string; children: ReactNode }) {
   return <div className="rounded-xl border border-slate-200 bg-[#f7f8f6] p-5"><h3 className="font-black text-[#0c1713]">{title}</h3><div className="mt-2 text-base leading-relaxed text-slate-600">{children}</div></div>;
 }
 
+function ImageGallery({ images, columns = 2 }: { images: readonly GalleryImage[]; columns?: 1 | 2 | 3 }) {
+  const gridColumns = columns === 1 ? 'grid-cols-1' : columns === 3 ? 'md:grid-cols-2 xl:grid-cols-3' : 'md:grid-cols-2';
+  const imageSizes = columns === 1 ? '(max-width: 1024px) 100vw, 720px' : columns === 3 ? '(max-width: 768px) 100vw, 240px' : '(max-width: 768px) 100vw, 360px';
+
+  return (
+    <div className={`mt-6 grid gap-5 ${gridColumns}`}>
+      {images.map((image) => (
+        <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_30px_rgba(12,23,19,0.07)]">
+          <div className="relative aspect-[4/3] bg-[#fbfaf7]">
+            <Image src={image.src} alt={image.alt} fill sizes={imageSizes} className="object-contain" />
+          </div>
+          <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">{image.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
+  );
+}
+
 export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
   const structuredData = {
     '@context': 'https://schema.org',
@@ -76,7 +207,7 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
         description: metadata.description,
         image: heroImageUrl,
         datePublished: '2026-08-18',
-        dateModified: '2026-08-18',
+        dateModified: '2026-08-19',
         author: { '@type': 'Organization', name: 'PeakMotion Socks', url: siteUrl },
         publisher: { '@type': 'Organization', name: 'PeakMotion Socks', url: siteUrl },
         mainEntityOfPage: pageUrl,
@@ -105,7 +236,7 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
   ] as const;
 
   return (
-    <main className="bg-white text-[#0c1713]">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-19-pilates-studio-buying-gallery-v1">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="bg-[#fbfaf7] px-5 py-14 md:px-8 lg:py-20">
@@ -147,16 +278,19 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
                 <MiniCard title="Entry-Level Retail"><BulletList columns={1} items={['One or two colors', 'Standard grip', 'Basic branding', 'Simple packaging']} /></MiniCard>
                 <MiniCard title="Premium Studio Merchandise"><BulletList columns={1} items={['Custom colors', 'Custom grip patterns', 'Stronger packaging', 'Coordinated brand presentation']} /></MiniCard>
               </div>
+              <ImageGallery images={retailImages} />
             </GuideSection>
 
             <GuideSection number="02" id="welcome-packs" title="Welcome Packs: Create a Better First-Member Experience">
               <p>A new-member pack can combine branded grip socks with studio information, a class schedule, a discount card and a small branded accessory. The socks are practical, immediately usable, compact and visible during classes.</p>
               <p>Keep the first welcome-pack product simple: one studio color, one logo placement, one standard grip design, limited sizes and straightforward branded packaging. This controls cost while creating a professional introduction.</p>
+              <ImageGallery images={welcomePackImages} columns={1} />
             </GuideSection>
 
             <GuideSection number="03" id="member-merchandise" title="Member Merchandise: Build More Than a Logo Product">
               <p>The strongest Pilates studio socks feel like part of the studio brand, not generic socks with a logo added later. Coordinate studio colors, typography, logo placement, grip pattern, sock structure and packaging.</p>
               <p>A minimalist studio may prefer neutrals, subtle logos and geometric grip. A more energetic fitness brand may use brighter colors, stronger contrast and more expressive grip patterns.</p>
+              <ImageGallery images={merchandiseImages} columns={3} />
             </GuideSection>
 
             <GuideSection number="04" id="branding" title="Branding: Decide Where the Studio Logo Should Go">
@@ -167,6 +301,10 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
                 <MiniCard title="Sole branding">The studio name or mark can become part of the grip pattern.</MiniCard>
               </div>
               <p>Packaging can carry the logo, studio colors, website, social media, care instructions and product information even when the sock branding is deliberately subtle.</p>
+              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Branded Pilates Studio Grip Socks</h3>
+              <p className="mt-2 text-base text-slate-600">These product details show how cuff branding, sole branding and retail packaging can be coordinated within one studio program.</p>
+              <ImageGallery images={brandingImages.slice(0, 1)} columns={1} />
+              <ImageGallery images={brandingImages.slice(1)} />
             </GuideSection>
 
             <GuideSection number="05" id="grip-coverage" title="Choose the Right Grip Coverage">
@@ -176,6 +314,9 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
                 <Image src="/assets/blog/how-to-choose-pilates-grip-socks-supplier/pilates-grip-socks-sole-patterns.png" alt="Pilates grip sock sole coverage comparison" width={1536} height={1024} sizes="(max-width: 1024px) 100vw, 720px" className="h-auto w-full" />
                 <figcaption className="border-t border-slate-200 px-5 py-4 text-sm text-slate-600">Compare forefoot, heel and full-sole coverage before approving the grip pattern.</figcaption>
               </figure>
+              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Real Grip Pattern Options</h3>
+              <p className="mt-2 text-base text-slate-600">Compare grip density, spacing, motifs and logo-led layouts before selecting the sample direction.</p>
+              <ImageGallery images={gripPatternImages} />
             </GuideSection>
 
             <GuideSection number="06" id="sock-structure" title="Select the Sock Structure for Your Customer">
@@ -197,6 +338,9 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
               <figure className="mt-7 overflow-hidden rounded-2xl border border-slate-200 bg-[#fbfaf7] shadow-[0_16px_40px_rgba(12,23,19,0.08)]">
                 <Image src="/assets/blog/how-to-choose-pilates-grip-socks-supplier/pilates-grip-socks-fabric-details.png" alt="Pilates grip sock knit, binding and silicone details" width={1776} height={887} sizes="(max-width: 1024px) 100vw, 720px" className="h-auto w-full" />
               </figure>
+              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Fabric and Construction Details</h3>
+              <p className="mt-2 text-base text-slate-600">Use close-up evidence to compare yarn, knit texture, cushioning, heel construction and finishing.</p>
+              <ImageGallery images={fabricDetailImages} columns={3} />
             </GuideSection>
 
             <GuideSection number="08" id="sizes" title="Plan Sizes Carefully">
