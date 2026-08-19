@@ -7,7 +7,7 @@ import MoqFramework from '@/components/MoqFramework';
 const siteUrl = 'https://peakmotionsocks.com';
 const pagePath = '/blog/custom-grip-socks-pilates-studios-buying-guide';
 const pageUrl = `${siteUrl}${pagePath}`;
-const heroImagePath = '/assets/blog/custom-grip-socks-pilates-studios-buying-guide/custom-pilates-grip-socks-studio.png';
+const heroImagePath = '/assets/blog/custom-grip-socks-pilates-studios-buying-guide/pilates-studio-green-grip-socks.jpg';
 const heroImageUrl = `${siteUrl}${heroImagePath}`;
 const packagingImage = '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1.jpg';
 const supplierGalleryBase = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/labeled-gallery';
@@ -135,7 +135,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-08-18T00:00:00.000Z',
     modifiedTime: '2026-08-19T00:00:00.000Z',
-    images: [{ url: heroImageUrl, width: 1287, height: 1222, alt: 'Pink custom Pilates grip socks worn in a studio' }],
+    images: [{ url: heroImageUrl, width: 800, height: 500, alt: 'Green cross-strap Pilates grip socks worn in a studio' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -236,7 +236,7 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
   ] as const;
 
   return (
-    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-19-pilates-studio-buying-gallery-v1">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-19-pilates-studio-buying-hero-v2">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="bg-[#fbfaf7] px-5 py-14 md:px-8 lg:py-20">
@@ -249,7 +249,7 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
             <div className="mt-6 flex flex-wrap gap-4 text-sm font-bold text-slate-500"><span>18 min read</span><span aria-hidden="true">•</span><span>Published August 18, 2026</span></div>
           </div>
           <figure className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_20px_55px_rgba(12,23,19,0.09)]">
-            <Image src={heroImagePath} alt="Pink custom Pilates grip socks worn during studio movement" fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-cover object-center" />
+            <Image src={heroImagePath} alt="Green cross-strap Pilates grip socks worn during studio movement" fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-cover object-center" />
           </figure>
         </div>
       </section>
