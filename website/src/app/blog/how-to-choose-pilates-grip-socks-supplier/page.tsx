@@ -10,41 +10,80 @@ const heroImagePath = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/pi
 const heroImageUrl = `${siteUrl}${heroImagePath}`;
 const qcImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/final-packing-check.png';
 const shippingImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/shipping-cartons.jpg';
-const galleryBase = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/supplier-selection-gallery';
+const labeledGalleryBase = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/labeled-gallery';
+const packagingImage = '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1.jpg';
 
-const yarnMaterialImages = [
+const solePatternImages = [
   {
-    src: `${galleryBase}/custom-socks-yarn-material-options-1.jpg`,
-    alt: 'Colorful yarn cones used for custom Pilates grip sock material and color development',
-    caption: 'Review yarn type, color range and material performance before confirming the studio sock specification.',
+    src: `${labeledGalleryBase}/pilates-grip-socks-sole-patterns-1.png`,
+    alt: 'Multiple full-sole silicone grip layouts on full-toe and five-toe Pilates socks',
+    caption: 'Compare full-sole grip density and layout across full-toe and five-toe structures.',
   },
   {
-    src: `${galleryBase}/custom-socks-yarn-material-options-2.jpg`,
-    alt: 'Custom sock yarn material options in multiple colors and cone sizes',
-    caption: 'Compare available yarn colors early so sampling and repeat orders follow a consistent approved direction.',
+    src: `${labeledGalleryBase}/pilates-grip-socks-sole-patterns-2.png`,
+    alt: 'Hexagonal and round silicone grip pattern comparison on Pilates socks',
+    caption: 'Hexagonal and round silicone grips create different visual and traction directions.',
+  },
+  {
+    src: `${labeledGalleryBase}/pilates-grip-socks-sole-patterns-3.png`,
+    alt: 'Heart and circular Pilates sock grip patterns with custom silicone branding',
+    caption: 'Decorative heart and circular grips can combine traction with brand expression.',
+  },
+  {
+    src: `${labeledGalleryBase}/pilates-grip-socks-sole-patterns-4.png`,
+    alt: 'Four Pilates sock sole designs with dot, heart and logo-led grip layouts',
+    caption: 'Color, dot spacing, motifs and silicone logo placement can be reviewed together.',
   },
 ] as const;
 
-const packagingCostImages = [
+const fabricDetailImages = [
   {
-    src: `${galleryBase}/private-label-socks-packaging-cost-options-1.png`,
-    alt: 'Private label sock packaging options including bands, clear bags, black bags and kraft packs',
-    caption: 'Mixed retail formats: paper bands, clear bags, branded pouches and kraft packs.',
+    src: `${labeledGalleryBase}/pilates-grip-socks-fabric-details-1.jpg`,
+    alt: 'Cream sock yarn cone beside a knitted Pilates sock sample',
+    caption: 'Match the yarn and finished knit to the intended softness, weight and studio use.',
   },
   {
-    src: `${galleryBase}/private-label-socks-packaging-cost-options-2.png`,
-    alt: 'Sock packaging comparison with backing cards, polybags, hang tags, pouches and kraft boxes',
-    caption: 'Compare structure, display method and branding space for the intended studio sales channel.',
+    src: `${labeledGalleryBase}/pilates-grip-socks-fabric-details-2.jpg`,
+    alt: 'Cream Pilates grip socks showing rib knit, silicone dots and cushioned inside fabric',
+    caption: 'Review rib structure, sole grip placement and the cushioned inner surface as one construction.',
   },
   {
-    src: `${galleryBase}/private-label-socks-packaging-cost-options-3.png`,
-    alt: 'Studio and private label socks packed in clear retail bags with custom bands and hang cards',
-    caption: 'Clear retail bags can keep the product visible while labels communicate size and brand details.',
+    src: `${labeledGalleryBase}/pilates-grip-socks-fabric-details-3.jpg`,
+    alt: 'Close-up collage of Pilates sock jacquard, heel, grip and terry cushioning details',
+    caption: 'Close-up checks reveal logo knitting, heel construction, silicone grip and terry cushioning.',
+  },
+] as const;
+
+const studioLogoImages = [
+  {
+    src: `${labeledGalleryBase}/custom-pilates-socks-studio-logo-1.png`,
+    alt: 'Pink custom Pilates grip sock with embroidered studio logo in a clear retail bag',
+    caption: 'A branded studio sock prepared in a simple clear retail bag.',
   },
   {
-    src: `${galleryBase}/private-label-socks-packaging-cost-options-4.png`,
-    alt: 'Custom sock paper bands, hang cards and folding retail sleeves for private label packaging',
-    caption: 'Paper bands, hang cards and folding sleeves offer different cost, information and presentation routes.',
+    src: `${labeledGalleryBase}/custom-pilates-socks-studio-logo-2.png`,
+    alt: 'Pair of pink custom Pilates socks with embroidered cuff logos and silicone grips',
+    caption: 'Cuff branding, knit structure and sole grip can be developed as one product.',
+  },
+  {
+    src: `${labeledGalleryBase}/custom-pilates-socks-studio-logo-3.png`,
+    alt: 'Custom silicone studio logo integrated into the grip pattern of a pink Pilates sock',
+    caption: 'A silicone studio name can be integrated directly into the sole grip layout.',
+  },
+  {
+    src: `${labeledGalleryBase}/custom-pilates-socks-studio-logo-4.png`,
+    alt: 'Close-up of custom silicone initials and grip dots on a pink Pilates sock',
+    caption: 'Small silicone initials create a subtle branded detail within the traction area.',
+  },
+  {
+    src: `${labeledGalleryBase}/custom-pilates-socks-studio-logo-5.png`,
+    alt: 'Embroidered circular studio logo on the cuff of a pink Pilates grip sock',
+    caption: 'Embroidery gives the cuff a clear studio identity without changing the sole pattern.',
+  },
+  {
+    src: `${labeledGalleryBase}/custom-pilates-socks-studio-logo-6.png`,
+    alt: 'Front view of a pink Pilates sock with embroidered studio logo and contrast stripes',
+    caption: 'Logo, stripes and knit texture can be coordinated into a consistent studio design.',
   },
 ] as const;
 
@@ -101,6 +140,23 @@ function GuideSection({ number, title, children }: { number: string; title: stri
   );
 }
 
+function ImageGallery({ images, columns = 'two' }: { images: readonly { src: string; alt: string; caption: string }[]; columns?: 'two' | 'three' }) {
+  const gridColumns = columns === 'three' ? 'md:grid-cols-2 xl:grid-cols-3' : 'md:grid-cols-2';
+
+  return (
+    <div className={`mt-5 grid gap-5 ${gridColumns}`}>
+      {images.map((image) => (
+        <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_30px_rgba(12,23,19,0.07)]">
+          <div className="relative aspect-[4/3] bg-[#fbfaf7]">
+            <Image src={image.src} alt={image.alt} fill sizes={columns === 'three' ? '(max-width: 768px) 100vw, 240px' : '(max-width: 768px) 100vw, 360px'} className="object-contain" />
+          </div>
+          <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">{image.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
+  );
+}
+
 export default function PilatesGripSocksSupplierGuidePage() {
   const structuredData = {
     '@context': 'https://schema.org',
@@ -133,7 +189,7 @@ export default function PilatesGripSocksSupplierGuidePage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-19-supplier-gallery">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-19-pilates-labeled-gallery-v2">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="bg-[#fbfaf7] px-5 py-14 md:px-8 lg:py-20">
@@ -178,6 +234,9 @@ export default function PilatesGripSocksSupplierGuidePage() {
                 />
                 <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">Grip coverage comparison across half-toe, five-toe and full-toe studio sock structures, including forefoot and heel placement.</figcaption>
               </figure>
+              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Pilates Grip Sock Sole Patterns</h3>
+              <p className="mt-2 text-base text-slate-600">Compare real grip density, spacing, motifs and logo-led layouts before selecting the sample direction.</p>
+              <ImageGallery images={solePatternImages} />
             </GuideSection>
 
             <GuideSection number="03" title="Match the Fabric to the Studio Environment">
@@ -194,18 +253,9 @@ export default function PilatesGripSocksSupplierGuidePage() {
                 />
                 <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">Close-up comparison of knit texture, five-toe construction, secure elastic binding and silicone grip application.</figcaption>
               </figure>
-              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Yarn &amp; Material Options</h3>
-              <p className="mt-2 text-base text-slate-600">Compare available yarn colors and material routes before confirming the sample specification.</p>
-              <div className="mt-5 grid gap-5 md:grid-cols-2">
-                {yarnMaterialImages.map((image) => (
-                  <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_30px_rgba(12,23,19,0.07)]">
-                    <div className="relative aspect-[3/2] bg-[#fbfaf7]">
-                      <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 360px" className="object-contain" />
-                    </div>
-                    <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">{image.caption}</figcaption>
-                  </figure>
-                ))}
-              </div>
+              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Pilates Grip Sock Fabric Details</h3>
+              <p className="mt-2 text-base text-slate-600">Use close-up evidence to compare yarn, knit texture, cushioning, heel construction and finishing.</p>
+              <ImageGallery images={fabricDetailImages} />
             </GuideSection>
 
             <GuideSection number="04" title="Evaluate the Sock Structure">
@@ -239,6 +289,9 @@ export default function PilatesGripSocksSupplierGuidePage() {
               <p>Branded grip socks can become studio merchandise, member welcome products, class accessories, event products and promotional gifts.</p>
               <CheckList items={['Jacquard knitting', 'Printed branding', 'Embroidery', 'Silicone logo grip', 'Branded labels and packaging']} />
               <p>Logo placement can include the cuff, top of foot, heel, side, sole grip or packaging. The method should support stretch, comfort, grip and fit rather than interfere with them.</p>
+              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Custom Pilates Socks Studio Logo Options</h3>
+              <p className="mt-2 text-base text-slate-600">Compare cuff embroidery, silicone sole branding and simple retail presentation using real product details.</p>
+              <ImageGallery images={studioLogoImages} columns="three" />
             </GuideSection>
 
             <GuideSection number="07" title="Understand MOQ Before You Order">
@@ -250,19 +303,12 @@ export default function PilatesGripSocksSupplierGuidePage() {
             <GuideSection number="08" title="Plan Packaging for Studio Retail">
               <p>If socks will be sold at reception, online or in a retail area, packaging is part of the product. Options include paper bands, hang tags, branded cards, polybags, custom boxes, barcode labels and size stickers.</p>
               <p>A simple branded band may suit a studio launch, while private label brands may need printed boxes, inserts, barcodes, retail labels and a fuller brand story. Confirm the packaging MOQ separately because it may differ from the sock MOQ.</p>
-              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Private Label Packaging Options</h3>
-              <p className="mt-2 text-base text-slate-600">Review packaging structure, branding space and retail presentation before approving the final order.</p>
-              <div className="mt-5 grid gap-5 md:grid-cols-2">
-                {packagingCostImages.map((image) => (
-                  <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_30px_rgba(12,23,19,0.07)]">
-                    <div className="relative aspect-[3/2] bg-[#fbfaf7]">
-                      <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 360px" className="object-contain" />
-                    </div>
-                    <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">{image.caption}</figcaption>
-                  </figure>
-                ))}
-              </div>
-              <p className="rounded-xl border border-[#c9e4a8] bg-[#f4fbe8] p-5 text-base"><strong className="text-[#234812]">Packaging evidence:</strong> compare the format, branding space, size labeling, unit cost and retail channel before approving the final pack.</p>
+              <figure className="mt-7 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                <div className="relative aspect-[16/9] bg-[#f5f4f1]">
+                  <Image src={packagingImage} alt="Private label sock packaging options including bands, bags, cards and boxes" fill sizes="(max-width: 1024px) 100vw, 720px" className="object-cover" />
+                </div>
+                <figcaption className="p-5 text-sm text-slate-600"><strong className="text-[#0c1713]">Packaging evidence:</strong> compare the format, branding space, size labeling and retail channel before approving the final pack.</figcaption>
+              </figure>
             </GuideSection>
 
             <GuideSection number="09" title="Confirm Repeat-Order Capability">
