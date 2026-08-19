@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: 'PeakMotion Socks',
     type: 'article',
     publishedTime: '2026-08-17T00:00:00.000Z',
-    modifiedTime: '2026-08-18T00:00:00.000Z',
+    modifiedTime: '2026-08-19T00:00:00.000Z',
     images: [{ url: heroImageUrl, width: 1200, height: 1200, alt: 'Pilates grip socks worn in a studio setting' }],
   },
   twitter: {
@@ -133,7 +133,7 @@ export default function PilatesGripSocksSupplierGuidePage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-19-supplier-gallery">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="bg-[#fbfaf7] px-5 py-14 md:px-8 lg:py-20">
@@ -194,7 +194,9 @@ export default function PilatesGripSocksSupplierGuidePage() {
                 />
                 <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">Close-up comparison of knit texture, five-toe construction, secure elastic binding and silicone grip application.</figcaption>
               </figure>
-              <div className="mt-7 grid gap-5 md:grid-cols-2">
+              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Yarn &amp; Material Options</h3>
+              <p className="mt-2 text-base text-slate-600">Compare available yarn colors and material routes before confirming the sample specification.</p>
+              <div className="mt-5 grid gap-5 md:grid-cols-2">
                 {yarnMaterialImages.map((image) => (
                   <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_30px_rgba(12,23,19,0.07)]">
                     <div className="relative aspect-[3/2] bg-[#fbfaf7]">
@@ -248,7 +250,9 @@ export default function PilatesGripSocksSupplierGuidePage() {
             <GuideSection number="08" title="Plan Packaging for Studio Retail">
               <p>If socks will be sold at reception, online or in a retail area, packaging is part of the product. Options include paper bands, hang tags, branded cards, polybags, custom boxes, barcode labels and size stickers.</p>
               <p>A simple branded band may suit a studio launch, while private label brands may need printed boxes, inserts, barcodes, retail labels and a fuller brand story. Confirm the packaging MOQ separately because it may differ from the sock MOQ.</p>
-              <div className="mt-7 grid gap-5 md:grid-cols-2">
+              <h3 className="mt-8 text-xl font-black text-[#0c1713]">Private Label Packaging Options</h3>
+              <p className="mt-2 text-base text-slate-600">Review packaging structure, branding space and retail presentation before approving the final order.</p>
+              <div className="mt-5 grid gap-5 md:grid-cols-2">
                 {packagingCostImages.map((image) => (
                   <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_30px_rgba(12,23,19,0.07)]">
                     <div className="relative aspect-[3/2] bg-[#fbfaf7]">
