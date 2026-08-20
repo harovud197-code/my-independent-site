@@ -46,7 +46,7 @@ const faqs = [
   ['Why is repeat seasonal ordering important?', 'Football teams regularly need replacements, new player sizes and next-season production. A supplier that keeps accurate specifications can make repeat orders easier and more consistent.'],
 ] as const;
 
-type GalleryImage = { src: string; alt: string; caption: string; position?: string };
+type GalleryImage = { src: string; alt: string; caption: string; position?: string; fit?: 'cover' | 'contain' };
 
 const imageGroups: Record<string, { eyebrow: string; images: GalleryImage[] }> = {
   "2. Check How the Manufacturer Handles Your Club Logo": {
@@ -79,21 +79,25 @@ const imageGroups: Record<string, { eyebrow: string; images: GalleryImage[] }> =
         src: `${assetBase}/football-socks-sampling-development-reference-sample.jpg`,
         alt: 'Customer football sock reference sample used for product development',
         caption: 'Reference sample: the starting point for logo, color, structure and fit communication.',
+        fit: 'contain',
       },
       {
         src: `${assetBase}/football-socks-sampling-development-sample-1.jpg`,
         alt: 'First football sock development sample',
         caption: 'First sample: review proportions, sock height, colors and branding before revision.',
+        fit: 'contain',
       },
       {
         src: `${assetBase}/football-socks-sampling-development-revised-sample.jpg`,
         alt: 'Revised football sock sample after development feedback',
         caption: 'Revised sample: adjustments are checked against the buyer’s feedback.',
+        fit: 'contain',
       },
       {
         src: `${assetBase}/football-socks-sampling-development-approved-sample.jpg`,
         alt: 'Approved custom football sock sample ready for bulk production',
         caption: 'Approved sample: the confirmed reference for bulk production and quality control.',
+        fit: 'contain',
       },
     ],
   },
@@ -153,8 +157,8 @@ function ImageGallery({ eyebrow, images }: { eyebrow: string; images: GalleryIma
       <div className={`grid gap-5 ${images.length === 1 ? '' : 'md:grid-cols-2'}`}>
         {images.map((image) => (
           <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_12px_28px_rgba(12,23,19,0.07)]">
-            <div className="relative aspect-[3/2] bg-[#f8f8f6]">
-              <Image src={image.src} alt={image.alt} fill sizes={images.length === 1 ? '(max-width: 1024px) 100vw, 760px' : '(max-width: 768px) 100vw, 380px'} className={`object-cover ${image.position ?? 'object-center'}`} />
+            <div className={`relative bg-[#f8f8f6] ${image.fit === 'contain' ? 'aspect-[4/3]' : 'aspect-[3/2]'}`}>
+              <Image src={image.src} alt={image.alt} fill sizes={images.length === 1 ? '(max-width: 1024px) 100vw, 760px' : '(max-width: 768px) 100vw, 380px'} className={image.fit === 'contain' ? 'object-contain p-2 md:p-3' : `object-cover ${image.position ?? 'object-center'}`} />
             </div>
             <figcaption className="border-t border-slate-200 px-5 py-4 text-sm leading-relaxed text-slate-600">{image.caption}</figcaption>
           </figure>
@@ -287,7 +291,7 @@ export default function FootballSocksManufacturerGuidePage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-20-football-socks-manufacturer-guide-v1">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-20-football-socks-manufacturer-guide-sampling-fit-v2">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="bg-[#fbfaf7] px-5 py-14 md:px-8 lg:py-20">
