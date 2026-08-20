@@ -131,6 +131,35 @@ const imageGroups: Record<string, { eyebrow: string; images: GalleryImage[] }> =
       },
     ],
   },
+  '16. Packaging Depends on Who Will Receive the Socks': {
+    eyebrow: 'Packaging options for club, retail & brand orders',
+    images: [
+      {
+        src: '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1.jpg',
+        alt: 'Football sock packaging options with bags, paper bands and retail boxes',
+        caption: 'Bags, paper bands and retail boxes can be selected according to the sales channel.',
+        fit: 'contain',
+      },
+      {
+        src: '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-2.jpg',
+        alt: 'Custom sock packaging with hang tags, sleeves and clear retail bags',
+        caption: 'Hang tags, sleeves and clear bags support club merchandise and retail presentation.',
+        fit: 'contain',
+      },
+      {
+        src: '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-3.jpg',
+        alt: 'Custom football socks packed in clear bags with branded labels',
+        caption: 'Clear bags with branded labels offer a practical size and product identification route.',
+        fit: 'contain',
+      },
+      {
+        src: '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-4.jpg',
+        alt: 'Private label sock packaging with custom paper bands and printed inserts',
+        caption: 'Custom bands and printed inserts create a stronger private label presentation.',
+        fit: 'contain',
+      },
+    ],
+  },
 };
 
 function renderInline(text: string): ReactNode[] {
@@ -291,7 +320,7 @@ export default function FootballSocksManufacturerGuidePage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-20-football-socks-manufacturer-guide-sampling-fit-v2">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-20-football-socks-manufacturer-guide-packaging-v3">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="bg-[#fbfaf7] px-5 py-14 md:px-8 lg:py-20">
