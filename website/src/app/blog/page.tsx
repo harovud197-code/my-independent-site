@@ -9,6 +9,15 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 const posts = [
   {
+    title: 'How to Choose a Football Socks Manufacturer',
+    href: '/blog/how-to-choose-football-socks-manufacturer',
+    desc: 'Compare club logo capability, team colors, compression, sock length, sizing, MOQ, quality control and seasonal reorder support.',
+    img: '/assets/blog/how-to-choose-football-socks-manufacturer/custom-football-socks-club-logo-team-colors.jpg',
+    imageClassName: 'object-cover object-center',
+    category: 'Football & Teamwear',
+    readTime: '18 min read',
+  },
+  {
     title: 'Custom Grip Socks for Pilates Studios: Complete Buying Guide',
     href: '/blog/custom-grip-socks-pilates-studios-buying-guide',
     desc: 'Plan custom grip socks for studio retail, welcome packs, member merchandise, branding, margin and repeat orders.',
@@ -255,7 +264,7 @@ export default function BlogPage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-19-blog-pilates-card-hero-v2">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-20-blog-football-manufacturer-guide-v1">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }}
