@@ -9,6 +9,15 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 const posts = [
   {
+    title: 'Private Label Socks Packaging Guide',
+    href: '/blog/private-label-socks-packaging-guide',
+    desc: 'Compare paper bands, hang tags, bags, boxes, labels, barcodes, MOQ, cost and freight before approving retail sock packaging.',
+    img: '/assets/blog/private-label-manufacturer-guide/packaging-finished-presentation.webp',
+    imageClassName: 'object-cover object-center',
+    category: 'Packaging & Private Label',
+    readTime: '20 min read',
+  },
+  {
     title: 'How to Choose a Football Socks Manufacturer',
     href: '/blog/how-to-choose-football-socks-manufacturer',
     desc: 'Compare club logo capability, team colors, compression, sock length, sizing, MOQ, quality control and seasonal reorder support.',
@@ -264,7 +273,7 @@ export default function BlogPage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-20-blog-football-manufacturer-guide-v1">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-21-blog-private-label-packaging-guide-v1">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }}
