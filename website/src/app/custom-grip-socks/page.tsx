@@ -11,20 +11,20 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 const assetPath = '/assets/custom-grip-socks';
 
 export const metadata: Metadata = {
-  title: 'Custom Grip Socks Manufacturer | OEM & Private Label | PeakMotion',
-  description: 'Custom grip socks manufacturer for football, Pilates, yoga and performance brands. OEM and private label support for logos, silicone grip patterns, materials and retail packaging.',
+  title: 'Custom Grip Socks Manufacturer | Private Label & Wholesale | PeakMotion',
+  description: 'Custom grip socks manufacturer for brands, studios, retailers and distributors. Source private label and wholesale grip socks with custom logos, silicone patterns and retail packaging.',
   alternates: { canonical: pageUrl },
   openGraph: {
     type: 'website',
     url: pageUrl,
-    title: 'Custom Grip Socks Manufacturer | PeakMotion',
-    description: 'Launch custom grip socks with flexible MOQ, sampling, private label branding and factory-direct OEM support.',
+    title: 'Custom Grip Socks Manufacturer | Private Label & Wholesale | PeakMotion',
+    description: 'Source custom, private label and wholesale grip socks with flexible quantities, sampling, retail packaging and factory-direct production support.',
     images: [{ url: `${assetPath}/videos/custom-grip-socks-production-poster.jpg`, alt: 'PeakMotion custom grip socks factory' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Grip Socks Manufacturer | PeakMotion',
-    description: 'OEM and private label custom grip socks for sports, studio and wellness brands.',
+    title: 'Custom Grip Socks Manufacturer | Private Label & Wholesale | PeakMotion',
+    description: 'Custom logo, private label and wholesale grip socks for brands, studios, retailers and distributors.',
     images: [`${assetPath}/videos/custom-grip-socks-production-poster.jpg`],
   },
 };
@@ -50,11 +50,33 @@ const process = [
   ['04', 'Production and QC', 'Control knitting, silicone application, pairing, packaging and final inspection before shipment.'],
 ] as const;
 
+const wholesaleTiers = [
+  {
+    quantity: '100 pairs',
+    title: 'Start Your Custom Program',
+    description: 'A practical starting point for studios, emerging brands and buyers testing a new grip sock design.',
+    features: ['Custom logo and brand colors', 'Custom silicone grip patterns', 'Selected materials and constructions', 'Branded packaging options', 'Sample development before bulk production'],
+  },
+  {
+    quantity: '500 pairs',
+    title: 'Scale Your Wholesale Order',
+    description: 'For established studios, retailers and growing brands that need stronger unit economics and more packaging flexibility.',
+    features: ['Volume-based pricing', 'Multiple colors or size planning', 'Private label options', 'Retail packaging and barcode support', 'Consistent specifications for reorders'],
+  },
+  {
+    quantity: '1,000+ pairs',
+    title: 'Bulk & Repeat Production',
+    description: 'Built for distributors, multi-location studios and retail programs requiring reliable ongoing supply.',
+    features: ['Factory-direct bulk pricing', 'Repeat-order production planning', 'Consistent material, color and grip specifications', 'Wholesale or retail packaging', 'Seasonal and recurring production support'],
+  },
+] as const;
+
 const faqs = [
   ['What is the MOQ for custom grip socks?', MOQ_COPY.yogaCurrent],
   ['Can you make custom silicone grip patterns?', 'Yes. We can develop silicone coverage, dot layouts and logo-based grip patterns to suit football, Pilates, yoga, barre and training applications.'],
   ['How long does custom grip sock sampling take?', 'A typical custom sample takes around 7 to 10 business days after artwork and specifications are confirmed.'],
   ['Can you provide private label packaging?', 'Yes. We support retail-ready packaging including belly bands, hang tags, header cards, printed boxes, barcode labels and FBA-related labeling.'],
+  ['Do you support wholesale and repeat bulk grip sock orders?', 'Yes. We support first custom programs, larger wholesale orders and repeat bulk production. Pricing and production planning are confirmed from quantity, construction, materials, grip complexity, color and size breakdown, branding and packaging specifications.'],
 ] as const;
 
 export default function CustomGripSocksPage() {
@@ -65,9 +87,9 @@ export default function CustomGripSocksPage() {
         '@type': 'WebPage',
         '@id': `${pageUrl}#webpage`,
         url: pageUrl,
-        name: 'Custom Grip Socks Manufacturer | PeakMotion',
+        name: 'Custom Grip Socks Manufacturer | Private Label & Wholesale | PeakMotion',
         description: metadata.description,
-        about: ['Custom grip socks', 'OEM grip socks', 'Private label grip socks'],
+        about: ['Custom grip socks', 'Grip socks manufacturer', 'Private label grip socks', 'Wholesale grip socks', 'Bulk grip socks'],
         isPartOf: { '@id': `${siteUrl}/#website` },
       },
       {
@@ -82,15 +104,15 @@ export default function CustomGripSocksPage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-24-custom-grip-socks-wholesale-v2">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="overflow-hidden bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
           <div className="max-w-2xl">
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">OEM and Private Label Manufacturer</p>
-            <h1 className="mt-5 text-4xl font-black leading-[1.05] md:text-6xl">Custom Grip Socks Built for Your Brand</h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">Develop football, Pilates, yoga and performance grip socks with custom materials, logos, silicone patterns and retail-ready packaging from an experienced sock factory.</p>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Custom, Private Label & Wholesale</p>
+            <h1 className="mt-5 text-4xl font-black leading-[1.05] md:text-6xl">Custom Grip Socks Manufacturer for Brands & Wholesale Buyers</h1>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">Source custom grip socks directly from an experienced manufacturer for studio, retail, team and distribution programs. We support custom logos, silicone grip patterns, private label packaging, flexible order planning and repeat bulk production.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a href="#quote" className="inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-7 py-4 font-black uppercase tracking-wide !text-white transition-colors hover:bg-[#163020]">Request a Custom Quote</a>
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] bg-white px-7 py-4 font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#e9f8d2]">Chat on WhatsApp</a>
@@ -142,6 +164,56 @@ export default function CustomGripSocksPage() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Product and Factory Video</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Watch our factory and production capability</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Take a quick look inside our factory, then send your design requirements for a practical product recommendation and quotation direction.</p><div className="mt-7 space-y-3 text-sm font-bold text-slate-700"><p className="rounded-lg border border-slate-200 bg-white p-4">Computerized sock knitting and production-floor workflow</p><p className="rounded-lg border border-slate-200 bg-white p-4">In-process checks for construction, silicone grip and finishing</p><p className="rounded-lg border border-slate-200 bg-white p-4">OEM support from product sampling through packing and shipment</p></div></div><div className="overflow-hidden rounded-lg bg-[#0c1713] shadow-[0_24px_55px_rgba(12,23,19,0.2)]"><video controls playsInline preload="metadata" poster={`${assetPath}/videos/custom-grip-socks-production-poster-card.jpg`} className="aspect-video w-full bg-black object-cover"><source src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/videos/factory-tour-2026-07-29.mp4" type="video/mp4" />Your browser does not support HTML video.</video><div className="border-t border-white/10 px-6 py-5 text-sm font-bold text-white">PeakMotion factory tour - press play to watch the production facility.</div></div></div>
       </section>
 
+      <section id="wholesale-grip-socks" className="bg-[#eef6e6] px-5 py-16 md:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Wholesale & Bulk Programs</p>
+            <h2 className="mt-3 text-3xl font-black md:text-5xl">Wholesale & Bulk Grip Socks for Brands and Distributors</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">Source wholesale grip socks directly from an experienced manufacturer for retail, studio, team and distribution programs. We support flexible order quantities, custom branding, retail-ready packaging and repeat production for buyers scaling from a first order to ongoing bulk supply.</p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-5 lg:grid-cols-3">
+            {wholesaleTiers.map((tier, index) => (
+              <article key={tier.quantity} className="flex h-full flex-col rounded-xl border border-[#cfe2bd] bg-white p-7 shadow-[0_18px_45px_rgba(12,23,19,0.06)]">
+                <div className="flex items-center justify-between gap-4">
+                  <span className="rounded-full bg-[#0c1713] px-4 py-2 text-sm font-black text-white">{tier.quantity}</span>
+                  <span className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Route 0{index + 1}</span>
+                </div>
+                <h3 className="mt-6 text-2xl font-black">{tier.title}</h3>
+                <p className="mt-3 leading-relaxed text-slate-600">{tier.description}</p>
+                <ul className="mt-6 space-y-3 text-sm font-bold text-slate-700">
+                  {tier.features.map(feature => <li key={feature} className="flex gap-3"><span aria-hidden="true" className="text-[#679a20]">✓</span><span>{feature}</span></li>)}
+                </ul>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 gap-5 lg:grid-cols-2">
+            <article className="rounded-xl bg-[#0c1713] p-8 text-white">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Specification-Based Quote</p>
+              <h3 className="mt-4 text-2xl font-black">Volume Pricing Built Around Your Specification</h3>
+              <p className="mt-4 leading-relaxed text-slate-300">Wholesale grip sock pricing depends on order volume, sock construction, yarn and materials, logo method, silicone grip complexity, size and color breakdown, and packaging requirements.</p>
+              <p className="mt-4 leading-relaxed text-slate-300">Higher-volume and repeat orders can be planned around more efficient production runs, helping wholesale buyers build a more predictable landed-cost structure.</p>
+            </article>
+            <article className="rounded-xl border border-[#cfe2bd] bg-white p-8">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-[#679a20]">Market-Ready Product</p>
+              <h3 className="mt-4 text-2xl font-black">Custom Logo, Private Label & Wholesale Packaging</h3>
+              <p className="mt-4 leading-relaxed text-slate-600">Build a product that is ready for your market with custom logo grip socks, silicone grip artwork, Pantone color matching, woven or printed branding, hang tags, belly bands, retail boxes and barcode labels.</p>
+              <div className="mt-6 flex flex-wrap gap-3 text-sm font-black">
+                <Link href="/private-label-sports-socks" className="rounded-full bg-[#e9f8d2] px-4 py-2 text-[#387116]">Private label solutions</Link>
+                <Link href="/blog/private-label-socks-packaging-guide" className="rounded-full bg-[#f3f5f3] px-4 py-2 text-[#0c1713]">Packaging guide</Link>
+                <Link href="/socks-manufacturing" className="rounded-full bg-[#f3f5f3] px-4 py-2 text-[#0c1713]">Manufacturing process</Link>
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-8 flex flex-col items-start justify-between gap-6 rounded-xl border border-[#cfe2bd] bg-white p-7 md:flex-row md:items-center">
+            <div><h3 className="text-2xl font-black">Need wholesale or bulk grip socks?</h3><p className="mt-2 max-w-3xl leading-relaxed text-slate-600">Send us your target quantity, design, logo and packaging requirements for a factory-direct quotation.</p></div>
+            <a href="#quote" className="inline-flex shrink-0 items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#9fe81b]">Request a Wholesale Quote</a>
+          </div>
+        </div>
+      </section>
+
       <MoqFramework />
 
       <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
@@ -155,7 +227,7 @@ export default function CustomGripSocksPage() {
 
       <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24"><div className="mx-auto max-w-4xl"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">FAQ</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Questions about custom grip socks</h2></div><div className="mt-10 space-y-4">{faqs.map(([question, answer]) => <details key={question} className="group rounded-lg border border-slate-200 bg-white"><summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-6 font-black"><span>{question}</span><span className="text-2xl text-[#679a20] transition-transform group-open:rotate-45">+</span></summary><p className="border-t border-slate-100 px-6 py-5 leading-relaxed text-slate-600">{answer}</p></details>)}</div></div></section>
 
-      <section className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24"><div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Project</p><h2 className="mt-3 text-4xl font-black md:text-6xl">Ready to build your grip sock collection?</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Tell us your product type, estimated quantity, logo, material, grip pattern and packaging needs. You can start a WhatsApp conversation or open a pre-filled email inquiry.</p></div><CustomGripQuoteForm /></div></section>
+      <section id="quote" className="scroll-mt-24 bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24"><div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Start Your Project</p><h2 className="mt-3 text-4xl font-black md:text-6xl">Ready to build your grip sock collection?</h2><p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">Tell us your product type, estimated quantity, logo, material, grip pattern and packaging needs. You can start a WhatsApp conversation or open a pre-filled email inquiry.</p></div><CustomGripQuoteForm /></div></section>
     </main>
   );
 }
