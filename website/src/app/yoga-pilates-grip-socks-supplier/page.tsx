@@ -14,20 +14,20 @@ const assetBase = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/yoga-pila
 const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20would%20like%20to%20develop%20custom%20yoga%20or%20Pilates%20grip%20socks.';
 
 export const metadata: Metadata = {
-  title: 'Custom Grip Socks Manufacturer | Pilates & Yoga Socks Supplier',
-  description: 'Custom yoga and Pilates grip socks for studios, wellness brands and retailers. Private label support with grip design, logo, sampling, packaging and flexible MOQ routes.',
+  title: 'Pilates Grip Socks Manufacturer & Yoga Socks Supplier | PeakMotion',
+  description: 'Pilates grip socks manufacturer and yoga socks supplier for studios, wellness brands and retailers. Custom logo, private label and wholesale programs with flexible MOQ routes.',
   alternates: { canonical: pageUrl },
   openGraph: {
     type: 'website',
     url: pageUrl,
-    title: 'Custom Grip Socks for Pilates Studios & Yoga Brands | PeakMotion',
-    description: 'Build studio-ready private label grip socks with custom colors, silicone grips, packaging and practical order options.',
-    images: [{ url: `${assetBase}/hero-custom-grip-socks-v2.png`, alt: 'Custom grip socks for Pilates studios and yoga brands' }],
+    title: 'Pilates Grip Socks Manufacturer & Yoga Socks Supplier | PeakMotion',
+    description: 'Develop custom Pilates and yoga grip socks with private label branding, wholesale planning, sampling and retail packaging support.',
+    images: [{ url: `${assetBase}/hero-custom-grip-socks-v2.png`, alt: 'Custom Pilates and yoga grip socks for studios and brands' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Grip Socks for Pilates Studios & Yoga Brands',
-    description: 'Private label studio grip socks with custom branding, packaging and flexible production support.',
+    title: 'Pilates Grip Socks Manufacturer & Yoga Socks Supplier | PeakMotion',
+    description: 'Custom Pilates and yoga grip socks with private label, wholesale and retail packaging support.',
     images: [`${assetBase}/hero-custom-grip-socks-v2.png`],
   },
 };
@@ -79,7 +79,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
         '@type': 'WebPage',
         '@id': `${pageUrl}#webpage`,
         url: pageUrl,
-        name: 'Custom Grip Socks Manufacturer for Pilates and Yoga Brands',
+        name: 'Pilates Grip Socks Manufacturer & Yoga Socks Supplier | PeakMotion',
         description: metadata.description,
         isPartOf: { '@id': `${siteUrl}/#website` },
         breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
@@ -104,16 +104,16 @@ export default function YogaPilatesGripSocksSupplierPage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]">
+    <main data-content-version="2026-08-24-pilates-yoga-seo-v1" className="bg-white text-[#0c1713]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="overflow-hidden bg-[#fbfaf7] px-5 py-14 md:px-8 lg:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:gap-14">
           <div className="max-w-xl">
             <nav aria-label="Breadcrumb" className="text-sm font-bold text-slate-500"><Link href="/" className="transition-colors hover:text-[#679a20]">Home</Link><span aria-hidden="true" className="mx-2">/</span><span>Yoga & Pilates Grip Socks</span></nav>
-            <p className="mt-7 text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Custom grip socks for studio brands</p>
-            <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">Custom grip socks for Pilates studios and yoga brands.</h1>
-            <p className="mt-6 text-lg leading-relaxed text-slate-600">Create non-slip studio socks for classes, member packs and retail. We help buyers plan the sock style, grip pattern, logo, colors, sample and packaging around a practical order route.</p>
+            <p className="mt-7 text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Pilates grip socks manufacturer for studio brands</p>
+            <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">Custom Pilates &amp; Yoga Grip Socks for Studios &amp; Brands</h1>
+            <p className="mt-6 text-lg leading-relaxed text-slate-600">Develop custom Pilates grip socks and yoga socks for studios, wellness brands and retailers. We support private label Pilates socks, custom branding, wholesale order planning, sampling and retail packaging.</p>
             <div className="mt-7 grid grid-cols-2 gap-3 text-sm font-black text-slate-700 sm:grid-cols-4">
               <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">Typically from 100 pairs*</span>
               <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">Custom grip</span>
