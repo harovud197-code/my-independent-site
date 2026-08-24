@@ -3,18 +3,26 @@ import { MOQ_FRAMEWORK } from '@/lib/moq-framework';
 
 type MoqFrameworkProps = {
   className?: string;
+  eyebrow?: string;
+  title?: string;
+  description?: string;
 };
 
-export default function MoqFramework({ className = '' }: MoqFrameworkProps) {
+export default function MoqFramework({
+  className = '',
+  eyebrow = 'PeakMotion MOQ Framework',
+  title = 'Choose the MOQ route that matches the specification.',
+  description = 'MOQ is tied to the production route, not one universal number. We confirm the final quantity after reviewing the style, artwork, sizes and packaging.',
+}: MoqFrameworkProps) {
   const routes = Object.values(MOQ_FRAMEWORK);
 
   return (
     <section className={`border-y border-slate-200 bg-[#f7f8f6] px-5 py-14 md:px-8 lg:py-18 ${className}`} aria-labelledby="moq-framework-title">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">
-          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">PeakMotion MOQ Framework</p>
-          <h2 id="moq-framework-title" className="mt-3 text-3xl font-black leading-tight md:text-4xl">Choose the MOQ route that matches the specification.</h2>
-          <p className="mt-4 leading-relaxed text-slate-600">MOQ is tied to the production route, not one universal number. We confirm the final quantity after reviewing the style, artwork, sizes and packaging.</p>
+          <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">{eyebrow}</p>
+          <h2 id="moq-framework-title" className="mt-3 text-3xl font-black leading-tight md:text-4xl">{title}</h2>
+          <p className="mt-4 leading-relaxed text-slate-600">{description}</p>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {routes.map((route) => (

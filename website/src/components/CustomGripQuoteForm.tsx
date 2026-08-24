@@ -3,7 +3,15 @@
 import type { FormEvent } from 'react';
 import { trackEvent } from '@/lib/analytics';
 
-export default function CustomGripQuoteForm() {
+type CustomGripQuoteFormProps = {
+  title?: string;
+  description?: string;
+};
+
+export default function CustomGripQuoteForm({
+  title = 'Send Your Custom Grip Socks Requirements',
+  description = 'Submit the form to open a pre-filled email inquiry for our sales team.',
+}: CustomGripQuoteFormProps) {
   function createInquiry(form: HTMLFormElement) {
     const formData = new FormData(form);
     const lines = [
@@ -29,12 +37,12 @@ export default function CustomGripQuoteForm() {
   }
 
   return (
-    <form id="quote" onSubmit={submitQuote} className="relative overflow-hidden rounded-lg bg-[#0c1713] p-7 text-white shadow-[0_28px_65px_rgba(12,23,19,0.22)] md:p-9">
+    <form id="custom-grip-quote-form" onSubmit={submitQuote} className="relative overflow-hidden rounded-lg bg-[#0c1713] p-7 text-white shadow-[0_28px_65px_rgba(12,23,19,0.22)] md:p-9">
       <div className="absolute -right-14 -top-16 h-48 w-48 rounded-full bg-[#b4ff2b]/10 blur-2xl" />
       <div className="relative">
         <p className="text-xs font-black uppercase tracking-[0.16em] text-[#b4ff2b]">Send an inquiry</p>
-        <h2 className="mt-3 text-3xl font-black tracking-tight">Tell Us What You Need</h2>
-        <p className="mt-3 leading-relaxed text-slate-300">Submit the form to open a pre-filled email inquiry for our sales team.</p>
+        <h3 className="mt-3 text-3xl font-black tracking-tight">{title}</h3>
+        <p className="mt-3 leading-relaxed text-slate-300">{description}</p>
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
           <input required name="name" placeholder="Your name" autoComplete="name" className="min-h-13 w-full rounded-lg border border-slate-600 bg-slate-800 px-4 text-white outline-none transition placeholder:text-slate-400 focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30" />
           <input required type="email" name="email" placeholder="Business email" autoComplete="email" className="min-h-13 w-full rounded-lg border border-slate-600 bg-slate-800 px-4 text-white outline-none transition placeholder:text-slate-400 focus:border-[#b4ff2b] focus:ring-2 focus:ring-[#b4ff2b]/30" />
