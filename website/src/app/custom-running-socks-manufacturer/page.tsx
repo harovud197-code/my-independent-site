@@ -35,7 +35,7 @@ const productTypes = [
   ['Cushioned running socks', 'Extra heel and forefoot padding for impact management and daily mileage.'],
   ['Compression-style socks', 'Support-focused construction for activity, recovery and endurance use.'],
   ['Marathon and event socks', 'Custom colors, sponsor logos and participant merchandise for races.'],
-  ['Private-label collections', 'A coordinated product range with logos, size sets and retail packaging.'],
+  ['Private Label Running Socks for Sportswear Brands', 'A coordinated product range with logos, size sets and retail packaging.'],
 ] as const;
 
 const process = [
@@ -62,13 +62,13 @@ export default function CustomRunningSocksManufacturerPage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'WebPage', '@id': `${pageUrl}#webpage`, url: pageUrl, name: 'Custom Running Socks Manufacturer | PeakMotion', description: metadata.description, isPartOf: { '@id': `${siteUrl}/#website` } },
+      { '@type': 'WebPage', '@id': `${pageUrl}#webpage`, url: pageUrl, name: 'Custom Running Socks Manufacturer | PeakMotion', description: metadata.description, about: ['Custom running socks', 'Custom marathon socks', 'Custom running club socks', 'Private label running socks'], isPartOf: { '@id': `${siteUrl}/#website` } },
       { '@type': 'FAQPage', mainEntity: faqs.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) },
     ],
   };
 
   return (
-    <main className="bg-white text-[#0c1713]">
+    <main data-content-version="2026-08-25-running-marathon-clubs-v1" className="bg-white text-[#0c1713]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="relative isolate overflow-hidden bg-[#07120c] px-5 py-16 text-white md:px-8 md:py-24">
@@ -91,6 +91,26 @@ export default function CustomRunningSocksManufacturerPage() {
       <section className="border-y border-slate-100 bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-20"><div className="mx-auto max-w-7xl"><div className="max-w-3xl"><p className="text-sm font-black uppercase tracking-[0.16em] text-[#679a20]">Customization Options</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Build the construction around the runner and the brand</h2><p className="mt-4 text-lg leading-relaxed text-slate-600">Select the product height, yarn, cushioning, ventilation, support, logo, size range and retail presentation that match your target customer and price point.</p></div><div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{['No-show, ankle, quarter-crew or crew height', 'Yarn selection and moisture-management blends', 'Cushioning, ventilation and arch-support zones', 'Compression feel, seamless toe and reinforced heel', 'Color matching, knitted logos and graphics', 'Custom labels, multipacks and retail packaging'].map((item) => <div key={item} className="rounded-xl border border-slate-200 bg-white p-5 font-bold text-slate-700">{item}</div>)}</div></div></section>
 
       <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-20"><div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr]"><div><p className="text-sm font-black uppercase tracking-[0.16em] text-[#679a20]">Product Types</p><h2 className="mt-3 text-3xl font-black md:text-4xl">A running sock range for training, events and retail</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Build one focused performance style or a multi-height collection. We can discuss the material and construction combinations that suit your intended climate, activity and customer.</p><img src={`${assetPath}/hero-landing-light.webp`} loading="lazy" decoding="async" alt="Custom running sock color and construction options" className="mt-8 aspect-[3/2] w-full rounded-lg border border-slate-100 bg-[#f7f8f6] object-contain" /></div><div className="grid gap-4 sm:grid-cols-2">{productTypes.map(([title, text]) => <article key={title} className="rounded-xl border border-slate-200 p-6"><h3 className="text-lg font-black">{title}</h3><p className="mt-3 text-sm leading-relaxed text-slate-600">{text}</p></article>)}</div></div></section>
+
+      <section className="border-y border-slate-100 bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-4xl">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#679a20]">Running Communities and Events</p>
+            <h2 className="mt-3 text-3xl font-black md:text-4xl">Custom Running Socks for Clubs, Marathons and Race Events</h2>
+            <p className="mt-4 text-lg leading-relaxed text-slate-600">Plan the product around who will wear it, how it will be distributed and when it must arrive. Event and club programs can share the same manufacturing foundation while using different branding, packing and reorder routes.</p>
+          </div>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <article className="rounded-2xl border border-slate-200 bg-white p-7 md:p-8">
+              <h3 className="text-2xl font-black">Custom Marathon Socks for Races and Events</h3>
+              <p className="mt-4 leading-relaxed text-slate-600">Marathon organizers, race directors and event agencies can use custom marathon socks as participant merchandise that stays useful after race day. We can translate sponsor logos, event colors and distance marks into a practical knitted design, then plan size assortments for participant packs, expo sales or finisher gifts. Custom running socks for marathons can be packed with a paper band, event card or retail-ready label, depending on the presentation and budget. For bulk production, confirm artwork, quantities, packing method and delivery address early so material booking and sample approval stay aligned with fixed event deadlines. If the race has several distances or sponsor tiers, colorways and packaging can be coordinated as one controlled marathon event socks program rather than separate unconnected products. Selected standard routes may support a lower starting quantity, while bespoke constructions or packaging require a higher MOQ.</p>
+            </article>
+            <article className="rounded-2xl border border-slate-200 bg-white p-7 md:p-8">
+              <h3 className="text-2xl font-black">Custom Socks for Running Clubs</h3>
+              <p className="mt-4 leading-relaxed text-slate-600">Running clubs can build custom socks for running clubs around their logo, team colors and the way members actually train and race. We can plan no-show, ankle, quarter-crew or crew styles for weekly training, race day kits, membership packs and club merchandise. Custom running club socks may include knitted logos, sponsor branding, size sets and simple packaging for direct distribution, while retail packs can support fundraising or online sales. A selected standard construction can provide a practical small-MOQ test route before the club commits to more colors or a larger repeat order. For established programs, we can keep the approved specification, artwork and packaging direction organized to make repeat orders more consistent. Share the member profile, climate, preferred cushioning, quantity and delivery date so the running club socks program is built around real use rather than a generic promotional product.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <section className="border-y border-slate-100 bg-white px-5 py-16 md:px-8 lg:py-20"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2"><div><p className="text-sm font-black uppercase tracking-[0.16em] text-[#679a20]">Materials and Performance</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Choose the right yarn for the way the sock will be used</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Common options include polyester, nylon, cotton blends, merino wool blends, elastane, moisture-management yarns and recycled yarns where available. The best combination depends on climate, intensity, cushioning requirements, durability, target price and brand positioning.</p><div className="mt-7 flex flex-col gap-4 sm:flex-row"><Link href="/products/professional-running-athletic-socks" className="inline-flex font-black text-[#387116] underline underline-offset-4">View our running athletic sock product details &rarr;</Link><Link href="/blog/how-to-choose-running-socks" className="inline-flex font-black text-[#387116] underline underline-offset-4">Read the running sock buying guide &rarr;</Link></div></div><img src={`${assetPath}/features-landing.webp`} loading="lazy" decoding="async" alt="Running sock material and performance features" className="w-full rounded-lg bg-[#f7f8f6]" /></div></section>
 
