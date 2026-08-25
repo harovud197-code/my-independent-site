@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import CustomRunningQuoteForm from '@/components/CustomRunningQuoteForm';
 import BuyerConfidencePanel from '@/components/BuyerConfidencePanel';
@@ -68,7 +69,7 @@ export default function CustomRunningSocksManufacturerPage() {
   };
 
   return (
-    <main data-content-version="2026-08-25-running-marathon-clubs-v1" className="bg-white text-[#0c1713]">
+    <main data-content-version="2026-08-25-running-marathon-image-v2" className="bg-white text-[#0c1713]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="relative isolate overflow-hidden bg-[#07120c] px-5 py-16 text-white md:px-8 md:py-24">
@@ -103,6 +104,22 @@ export default function CustomRunningSocksManufacturerPage() {
             <article className="rounded-2xl border border-slate-200 bg-white p-7 md:p-8">
               <h3 className="text-2xl font-black">Custom Marathon Socks for Races and Events</h3>
               <p className="mt-4 leading-relaxed text-slate-600">Marathon organizers, race directors and event agencies can use custom marathon socks as participant merchandise that stays useful after race day. We can translate sponsor logos, event colors and distance marks into a practical knitted design, then plan size assortments for participant packs, expo sales or finisher gifts. Custom running socks for marathons can be packed with a paper band, event card or retail-ready label, depending on the presentation and budget. For bulk production, confirm artwork, quantities, packing method and delivery address early so material booking and sample approval stay aligned with fixed event deadlines. If the race has several distances or sponsor tiers, colorways and packaging can be coordinated as one controlled marathon event socks program rather than separate unconnected products. Selected standard routes may support a lower starting quantity, while bespoke constructions or packaging require a higher MOQ.</p>
+              <Image
+                src="/assets/running-socks/marathon-event-custom-running-socks.png"
+                alt="Four custom marathon event socks in coordinated race colorways"
+                width={1500}
+                height={1125}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="mt-6 h-auto w-full rounded-xl border border-slate-100 bg-[#f7f8f6]"
+              />
+              <a
+                href="#quote"
+                data-analytics-event="quote_cta_click"
+                data-analytics-placement="running_marathon_section"
+                className="mt-6 inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-3.5 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]"
+              >
+                Request a Quote
+              </a>
             </article>
             <article className="rounded-2xl border border-slate-200 bg-white p-7 md:p-8">
               <h3 className="text-2xl font-black">Custom Socks for Running Clubs</h3>
