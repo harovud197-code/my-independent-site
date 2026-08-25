@@ -69,7 +69,7 @@ export default function CustomRunningSocksManufacturerPage() {
   };
 
   return (
-    <main data-content-version="2026-08-25-running-marathon-image-v2" className="bg-white text-[#0c1713]">
+    <main data-content-version="2026-08-25-running-club-image-v3" className="bg-white text-[#0c1713]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="relative isolate overflow-hidden bg-[#07120c] px-5 py-16 text-white md:px-8 md:py-24">
@@ -107,8 +107,8 @@ export default function CustomRunningSocksManufacturerPage() {
               <Image
                 src="/assets/running-socks/marathon-event-custom-running-socks.png"
                 alt="Four custom marathon event socks in coordinated race colorways"
-                width={1500}
-                height={1125}
+                width={1448}
+                height={1086}
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="mt-6 h-auto w-full rounded-xl border border-slate-100 bg-[#f7f8f6]"
               />
@@ -124,6 +124,22 @@ export default function CustomRunningSocksManufacturerPage() {
             <article className="rounded-2xl border border-slate-200 bg-white p-7 md:p-8">
               <h3 className="text-2xl font-black">Custom Socks for Running Clubs</h3>
               <p className="mt-4 leading-relaxed text-slate-600">Running clubs can build custom socks for running clubs around their logo, team colors and the way members actually train and race. We can plan no-show, ankle, quarter-crew or crew styles for weekly training, race day kits, membership packs and club merchandise. Custom running club socks may include knitted logos, sponsor branding, size sets and simple packaging for direct distribution, while retail packs can support fundraising or online sales. A selected standard construction can provide a practical small-MOQ test route before the club commits to more colors or a larger repeat order. For established programs, we can keep the approved specification, artwork and packaging direction organized to make repeat orders more consistent. Share the member profile, climate, preferred cushioning, quantity and delivery date so the running club socks program is built around real use rather than a generic promotional product.</p>
+              <Image
+                src="/assets/running-socks/running-club-custom-socks.png"
+                alt="Four custom running club socks in white, orange, navy and black team colorways"
+                width={1495}
+                height={1052}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="mt-6 h-auto w-full rounded-xl border border-slate-100 bg-[#f7f8f6]"
+              />
+              <a
+                href="#quote"
+                data-analytics-event="quote_cta_click"
+                data-analytics-placement="running_club_section"
+                className="mt-6 inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-6 py-3.5 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]"
+              >
+                Request a Quote
+              </a>
             </article>
           </div>
         </div>
