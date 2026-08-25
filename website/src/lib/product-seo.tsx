@@ -49,9 +49,9 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   },
   'professional-running-athletic-socks': {
     slug: 'professional-running-athletic-socks',
-    name: 'Professional Running Athletic Socks',
-    seoTitle: 'Custom Running Athletic Socks Manufacturer | PeakMotion',
-    description: 'Breathable performance running socks with support zones, durable construction and OEM private label customization.',
+    name: 'Professional Compression Running Socks',
+    seoTitle: 'Professional Compression Running Socks | Custom OEM Product',
+    description: 'Knee-high compression running socks with breathable support zones, durable construction and custom OEM product options.',
     image: '/assets/products/professional-running-athletic-socks/hero.png',
     category: 'Running Socks',
     specification: 'Knee-high compression running sock',

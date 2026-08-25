@@ -2,20 +2,20 @@ import Link from 'next/link';
 import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
 const assetPath = '/assets/products/professional-running-athletic-socks';
-const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Professional Running Athletic Socks.');
+const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Professional Compression Running Socks.');
 const product = productSeo['professional-running-athletic-socks'];
 
 export default function ProfessionalRunningAthleticSocksPage() {
   return (
-    <main className="bg-white text-[#0c1713]">
+    <main data-content-version="2026-08-25-running-product-seo-v1" className="bg-white text-[#0c1713]">
       <section className="mx-auto grid max-w-[1440px] grid-cols-1 items-center gap-10 px-5 py-12 md:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-20">
         <div className="rounded-[28px] bg-[#f7f8f6] p-5 md:p-10">
           <img src={`${assetPath}/hero.png`} alt="Professional compression running socks" className="h-auto w-full object-contain" />
         </div>
         <div className="max-w-xl space-y-6">
           <span className="inline-flex rounded-full bg-[#e9f8d2] px-4 py-2 text-xs font-black tracking-[0.16em] text-[#387116]">BEST SELLER</span>
-          <h1 className="text-4xl font-black leading-tight md:text-6xl">Professional Running Athletic Socks</h1>
-          <p className="text-lg leading-relaxed text-slate-600">High-performance compression socks designed for running and training with breathable zones, durable construction and custom OEM branding.</p>
+          <h1 className="text-4xl font-black leading-tight md:text-6xl">Professional Compression Running Socks</h1>
+          <p className="text-lg leading-relaxed text-slate-600">Knee-high compression running socks designed for training and endurance use, with breathable zones, durable construction and custom OEM product options.</p>
           <ProductQuickFacts product={product} />
           <a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg">Chat on WhatsApp</a>
         </div>
