@@ -91,9 +91,9 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   },
   'performance-basketball-socks': {
     slug: 'performance-basketball-socks',
-    name: 'Performance Basketball Socks',
-    seoTitle: 'Custom Basketball Socks Manufacturer | PeakMotion',
-    description: 'Performance basketball socks with secure ankle support, cushioning and custom OEM branding for teams and sports labels.',
+    name: 'Performance Basketball Grip Socks',
+    seoTitle: 'Performance Basketball Grip Socks | Custom Team Sock',
+    description: 'Performance basketball grip socks with secure ankle support, cushioning, anti-slip traction and custom team sock options.',
     image: '/assets/products/performance-basketball-socks-web/hero.jpg',
     category: 'Basketball Socks',
     specification: 'Crew basketball grip sock',

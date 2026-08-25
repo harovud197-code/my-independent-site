@@ -4,7 +4,7 @@ import ProductQuoteForm from '@/components/ProductQuoteForm';
 import Image from 'next/image';
 
 const assetPath = '/assets/products/performance-basketball-socks-web';
-const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Performance Basketball Socks.');
+const message = encodeURIComponent('Hello PeakMotion Socks, I am interested in your Performance Basketball Grip Socks.');
 const product = productSeo['performance-basketball-socks'];
 
 export default function PerformanceBasketballSocksPage() {
@@ -36,8 +36,8 @@ export default function PerformanceBasketballSocksPage() {
         <div className="rounded-[28px] bg-[#f7f8f6] p-5 md:p-10"><Image src={`${assetPath}/hero.jpg`} alt="Professional basketball grip sports socks" width={1448} height={1086} priority sizes="(max-width: 1024px) 100vw, 52vw" className="h-auto w-full object-contain" /></div>
         <div className="max-w-xl space-y-6">
           <span className="inline-flex rounded-full bg-[#e9f8d2] px-4 py-2 text-xs font-black tracking-[0.16em] text-[#387116]">BEST SELLER</span>
-          <h1 className="text-4xl font-black leading-tight md:text-6xl">Performance Basketball Socks</h1>
-          <p className="text-lg leading-relaxed text-slate-600">High-performance basketball grip socks with breathable knit construction, anti-slip grip dots, cushioned support and complete OEM customization for your brand.</p>
+          <h1 className="text-4xl font-black leading-tight md:text-6xl">Performance Basketball Grip Socks</h1>
+          <p className="text-lg leading-relaxed text-slate-600">Court-ready basketball grip socks with breathable knit construction, anti-slip grip dots, cushioned support and custom team sock options.</p>
           <ProductQuickFacts product={product} />
           <a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl bg-[#39a91f] px-7 py-4 font-black uppercase tracking-wide !text-white transition-all hover:-translate-y-0.5 hover:bg-[#2f8b19] hover:shadow-lg">Chat on WhatsApp</a>
         </div>
@@ -55,7 +55,7 @@ export default function PerformanceBasketballSocksPage() {
         ['/sports-socks-moq-guide', 'Sports socks MOQ guide', 'Understand why design, colors and packing affect the starting quantity.'],
       ]} />
 
-      <section className="relative overflow-hidden bg-[#07120c] px-5 py-20 md:px-8 md:py-28"><div className="absolute inset-0"><Image src={`${assetPath}/cta.jpg`} alt="Custom basketball socks" fill sizes="100vw" className="object-cover opacity-35" /><div className="absolute inset-0 bg-[#07120c]/85" /></div><div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]"><div className="max-w-2xl space-y-7 text-white"><p className="text-sm font-black uppercase tracking-[0.15em] text-[#b4ff2b]">Start your order</p><h2 className="text-4xl font-black uppercase leading-tight md:text-6xl">Build a court-ready sock range</h2><p className="text-xl font-medium leading-relaxed text-gray-200">Share your logo, colorway, support needs and quantity. We will recommend a practical custom route.</p><a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-white px-6 py-3 font-black uppercase tracking-wide !text-white transition-colors hover:bg-white hover:!text-[#0c1713]">Chat on WhatsApp</a></div><ProductQuoteForm productName="Performance Basketball Socks" productSlug="performance_basketball_socks" productOptions={['Crew basketball team socks', 'Basketball grip training socks', 'Youth academy size program', 'Private-label basketball collection']} /></div></section>
+      <section className="relative overflow-hidden bg-[#07120c] px-5 py-20 md:px-8 md:py-28"><div className="absolute inset-0"><Image src={`${assetPath}/cta.jpg`} alt="Custom basketball socks" fill sizes="100vw" className="object-cover opacity-35" /><div className="absolute inset-0 bg-[#07120c]/85" /></div><div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]"><div className="max-w-2xl space-y-7 text-white"><p className="text-sm font-black uppercase tracking-[0.15em] text-[#b4ff2b]">Start your order</p><h2 className="text-4xl font-black uppercase leading-tight md:text-6xl">Build a court-ready sock range</h2><p className="text-xl font-medium leading-relaxed text-gray-200">Share your logo, colorway, support needs and quantity. We will recommend a practical custom route.</p><a href={`https://wa.me/8617357769219?text=${message}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-xl border border-white px-6 py-3 font-black uppercase tracking-wide !text-white transition-colors hover:bg-white hover:!text-[#0c1713]">Chat on WhatsApp</a></div><ProductQuoteForm productName="Performance Basketball Grip Socks" productSlug="performance_basketball_socks" productOptions={['Crew basketball team socks', 'Basketball grip training socks', 'Youth academy size program', 'Private-label basketball collection']} /></div></section>
     </main>
   );
 }
