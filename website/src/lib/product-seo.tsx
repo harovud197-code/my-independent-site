@@ -134,8 +134,8 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   'soccer-sports-socks': {
     slug: 'soccer-sports-socks',
     name: 'Soccer Sports Socks',
-    seoTitle: 'Custom Soccer Socks Manufacturer | PeakMotion',
-    description: 'Professional soccer socks with zoned cushioning, dynamic arch support and custom team or private label options.',
+    seoTitle: 'Performance Soccer Sports Socks | Product Specifications | PeakMotion',
+    description: 'Review materials, sizing, cushioning, customization and MOQ for PeakMotion performance soccer sports socks and teamwear programs.',
     image: '/assets/products/soccer-sports-socks/hero.jpg',
     category: 'Soccer Socks',
     specification: 'Performance soccer crew sock',
