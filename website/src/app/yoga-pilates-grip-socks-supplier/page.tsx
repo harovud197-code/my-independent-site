@@ -15,19 +15,19 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 export const metadata: Metadata = {
   title: 'Pilates Grip Socks Manufacturer & Yoga Socks Supplier | PeakMotion',
-  description: 'Pilates grip socks manufacturer and yoga socks supplier for studios, wellness brands and retailers. Custom logo, private label and wholesale programs with flexible MOQ routes.',
+  description: 'Pilates grip socks manufacturer and yoga socks supplier for studios and brands, including custom barre socks, private label and wholesale programs.',
   alternates: { canonical: pageUrl },
   openGraph: {
     type: 'website',
     url: pageUrl,
     title: 'Pilates Grip Socks Manufacturer & Yoga Socks Supplier | PeakMotion',
-    description: 'Develop custom Pilates and yoga grip socks with private label branding, wholesale planning, sampling and retail packaging support.',
+    description: 'Develop custom Pilates, yoga and barre grip socks with private label branding, wholesale planning, sampling and retail packaging support.',
     images: [{ url: `${assetBase}/hero-custom-grip-socks-v2.png`, alt: 'Custom Pilates and yoga grip socks for studios and brands' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pilates Grip Socks Manufacturer & Yoga Socks Supplier | PeakMotion',
-    description: 'Custom Pilates and yoga grip socks with private label, wholesale and retail packaging support.',
+    description: 'Custom Pilates, yoga and barre grip socks with private label, wholesale and retail packaging support.',
     images: [`${assetBase}/hero-custom-grip-socks-v2.png`],
   },
 };
@@ -51,6 +51,7 @@ const customizationOptions = [
 const buyerScenarios = [
   ['Boutique Pilates studio', 'A focused studio collection for classes, member packs and front-desk retail.'],
   ['Yoga or wellness brand', 'A private label accessory designed to complement an existing apparel or movement range.'],
+  ['Barre studio or fitness chain', 'Custom barre grip socks for classes, member merchandise, welcome packs and repeat studio orders.'],
   ['Retailer or distributor', 'A coordinated product and packaging route for ecommerce, boutiques or regional supply.'],
 ] as const;
 
@@ -60,6 +61,7 @@ const faqs = [
   ['What is the MOQ for custom grip socks?', MOQ_COPY.yogaCurrent],
   ['Can I review a sample before production?', 'Yes. Sampling is used to review fit, color, grip coverage, branding and construction before bulk production is confirmed.'],
   ['Can you provide retail packaging?', 'Yes. Available directions include simple studio packs, belly bands, hang tags, boxes, retail hanging packs and barcode-ready labels.'],
+  ['Do you manufacture custom barre socks for studios and wholesale buyers?', 'Yes. We develop barre grip socks with custom colors, logos, grip patterns, size assortments and retail packaging. Barre socks wholesale programs are planned around the selected construction, quantity and sales channel.'],
   ['What information should I send for a quote?', 'Share your business type, country or target market, preferred sock style, logo or color direction, quantity and packaging needs.'],
 ] as const;
 
@@ -81,6 +83,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
         url: pageUrl,
         name: 'Pilates Grip Socks Manufacturer & Yoga Socks Supplier | PeakMotion',
         description: metadata.description,
+        about: ['Pilates grip socks manufacturer', 'Custom Pilates grip socks', 'Custom yoga grip socks', 'Custom barre socks', 'Barre grip socks', 'Barre socks wholesale'],
         isPartOf: { '@id': `${siteUrl}/#website` },
         breadcrumb: { '@id': `${pageUrl}#breadcrumb` },
       },
@@ -104,7 +107,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
   };
 
   return (
-    <main data-content-version="2026-08-24-pilates-yoga-seo-v1" className="bg-white text-[#0c1713]">
+    <main data-content-version="2026-08-26-pilates-yoga-barre-seo-v2" className="bg-white text-[#0c1713]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="overflow-hidden bg-[#fbfaf7] px-5 py-14 md:px-8 lg:py-20">
@@ -135,7 +138,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
       <ManufacturingRelatedLinks currentPath="/yoga-pilates-grip-socks-supplier" />
 
       <section aria-label="Customer types" className="border-y border-white/10 bg-[#0c1713] px-5 py-6 text-white md:px-8">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-3"><p className="text-xs font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Built for</p>{['Pilates studios', 'Yoga studios', 'Boutique fitness', 'Wellness brands', 'Retailers'].map((item) => <span key={item} className="text-sm font-bold text-slate-300">{item}</span>)}</div>
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-8 gap-y-3"><p className="text-xs font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Built for</p>{['Pilates studios', 'Yoga studios', 'Barre studios', 'Boutique fitness', 'Wellness brands', 'Retailers'].map((item) => <span key={item} className="text-sm font-bold text-slate-300">{item}</span>)}</div>
       </section>
 
       <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
@@ -159,6 +162,21 @@ export default function YogaPilatesGripSocksSupplierPage() {
             </ul>
             <a href="#quote" className="mt-8 inline-flex rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Plan my studio sock project</a>
           </div>
+        </div>
+      </section>
+
+      <section id="barre-socks" className="bg-white px-5 py-16 md:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="max-w-3xl">
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Barre socks for studio buyers</p>
+            <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">Custom Barre Grip Socks for Studios and Wholesale Programs</h2>
+            <p className="mt-5 text-lg leading-relaxed text-slate-600">Develop barre grip socks around the way your members train and the way your business sells. We can review low-cut, strap and full-coverage silhouettes, then coordinate grip placement, studio colors, logo applications, sizes and packaging. This gives barre studios, wellness retailers and fitness chains a practical route from an initial branded product to repeat wholesale orders.</p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            <article className="rounded-2xl border border-slate-200 bg-[#fbfaf7] p-7"><h3 className="text-2xl font-black">Custom Barre Socks for Studio Retail</h3><p className="mt-4 leading-relaxed text-slate-600">Create custom barre socks for class use, member welcome packs and front-desk merchandise. Branding can be coordinated across the sock, silicone grip, label and retail presentation.</p></article>
+            <article className="rounded-2xl border border-slate-200 bg-[#fbfaf7] p-7"><h3 className="text-2xl font-black">Barre Socks Wholesale Planning</h3><p className="mt-4 leading-relaxed text-slate-600">For multi-location studios, distributors and growing brands, barre socks wholesale programs can include repeatable core colors, practical size assortments, barcode-ready packaging and reorder planning.</p></article>
+          </div>
+          <a href="#quote" className="mt-8 inline-flex rounded-xl bg-[#b4ff2b] px-6 py-4 text-sm font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Request a barre socks quote</a>
         </div>
       </section>
 
@@ -214,7 +232,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
       <section className="bg-white px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Common buyer scenarios</p><h2 className="mt-3 text-3xl font-black md:text-5xl">A route for studios, brands and retail buyers.</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The right project begins with the intended customer and sales channel, not a generic one-size-fits-all sock.</p></div>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">{buyerScenarios.map(([title, text], index) => <article key={title} className="rounded-2xl border border-slate-200 bg-[#fbfaf7] p-7"><span className="text-sm font-black text-[#679a20]">0{index + 1}</span><h3 className="mt-6 text-2xl font-black">{title}</h3><p className="mt-4 leading-relaxed text-slate-600">{text}</p></article>)}</div>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">{buyerScenarios.map(([title, text], index) => <article key={title} className="rounded-2xl border border-slate-200 bg-[#fbfaf7] p-7"><span className="text-sm font-black text-[#679a20]">0{index + 1}</span><h3 className="mt-6 text-2xl font-black">{title}</h3><p className="mt-4 leading-relaxed text-slate-600">{text}</p></article>)}</div>
           <div className="mt-8 flex flex-wrap justify-center gap-5 text-sm font-black"><Link href="/products/low-cut-yoga-pilates-grip-socks" className="text-[#387116] underline decoration-[#b4ff2b] decoration-2 underline-offset-4">View low-cut grip socks</Link><Link href="/products/open-top-pilates-studio-socks" className="text-[#387116] underline decoration-[#b4ff2b] decoration-2 underline-offset-4">View open-top studio socks</Link><Link href="/custom-grip-socks" className="text-[#387116] underline decoration-[#b4ff2b] decoration-2 underline-offset-4">Explore all custom grip socks</Link></div>
         </div>
       </section>
