@@ -124,7 +124,7 @@ export default function IndustriesPage() {
         url: pageUrl,
         name: 'Custom Socks Solutions For Brands, Teams & Wellness Businesses',
         description: metadata.description,
-        about: ['Custom socks manufacturer', 'Private label socks', 'OEM socks supplier', 'Sports team socks', 'Yoga grip socks'],
+        about: ['Custom sock solutions', 'Sports team socks', 'Yoga grip socks', 'Private label sock programs'],
         isPartOf: { '@id': `${siteUrl}/#website` },
       },
       {
@@ -172,7 +172,7 @@ export default function IndustriesPage() {
                 <a href="#industries" className="inline-flex items-center justify-center rounded-xl border border-[#0c1713] px-7 py-4 text-sm font-black uppercase tracking-wide hover:bg-[#0c1713] hover:text-white">Explore Our Solutions</a>
               </div>
               <div className="mt-7 flex flex-wrap gap-2 text-xs font-black uppercase tracking-wide text-slate-600">
-                {['Custom socks manufacturer', 'Private label socks', 'OEM socks', 'Global socks supplier'].map((item) => <span key={item} className="rounded-full border border-slate-200 bg-white px-4 py-2">{item}</span>)}
+                {['Sports team solutions', 'Wellness sock programs', 'Private label collections', 'Global production support'].map((item) => <span key={item} className="rounded-full border border-slate-200 bg-white px-4 py-2">{item}</span>)}
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3">

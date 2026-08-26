@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://peakmotionsocks.com'),
-  title: 'Custom Performance Socks Manufacturer for Sports Brands & Retailers | PeakMotion',
-  description: 'Launch football, running and grip sock collections with low MOQ, fast sampling and factory-direct OEM or private-label production.',
+  title: 'Custom Sports Socks Manufacturer | PeakMotion',
+  description: 'PeakMotion is a custom sports socks manufacturer for brands, teams and retailers, with custom sock development, flexible MOQ, fast sampling and factory-direct production.',
   alternates: {
     canonical: '/',
   },
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'PeakMotion Socks',
-    title: 'Custom Performance Socks Manufacturer for Sports Brands & Retailers | PeakMotion',
-    description: 'Launch football, running and grip sock collections with low MOQ, fast sampling and factory-direct production.',
+    title: 'Custom Sports Socks Manufacturer | PeakMotion',
+    description: 'Develop football, running and grip sock collections with a custom sports socks manufacturer focused on brands, teams and retailers.',
     url: 'https://peakmotionsocks.com',
     images: [{ url: '/assets/images/hero-showcase-green.png', alt: 'PeakMotion custom sports socks manufacturing' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Performance Socks Manufacturer for Sports Brands & Retailers | PeakMotion',
+    title: 'Custom Sports Socks Manufacturer | PeakMotion',
     description: 'Buyer-focused custom sock solutions for brands, clubs, studios and distributors.',
     images: ['/assets/images/hero-showcase-green.png'],
   },

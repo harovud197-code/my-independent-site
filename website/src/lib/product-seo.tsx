@@ -22,7 +22,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   'crew-soccer-grip': {
     slug: 'crew-soccer-grip',
     name: 'Crew Soccer Grip Sports Socks',
-    seoTitle: 'Crew Soccer Grip Socks Manufacturer | PeakMotion',
+    seoTitle: 'Crew Soccer Grip Sports Socks | Custom OEM Style',
     description: 'Custom crew soccer grip socks with silicone anti-slip soles, breathable construction and OEM branding for teams and sports brands.',
     image: '/assets/images/training/hero.png',
     category: 'Grip Socks',
@@ -36,7 +36,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   'mid-calf-football-grip': {
     slug: 'mid-calf-football-grip',
     name: 'Professional Color Soccer Grip Sports Socks',
-    seoTitle: 'Soccer Grip Socks Manufacturer | PeakMotion',
+    seoTitle: 'Mid-Calf Soccer Grip Socks | Custom Team Style',
     description: 'Professional soccer grip socks with silicone anti-slip technology, breathable construction and custom OEM solutions.',
     image: '/assets/products/mid-calf-football-grip/hero.png',
     category: 'Football Grip Socks',
@@ -64,7 +64,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   'custom-logo-embroidery-socks': {
     slug: 'custom-logo-embroidery-socks',
     name: 'Custom Logo Embroidery Socks',
-    seoTitle: 'Custom Logo Embroidery Socks Manufacturer | PeakMotion',
+    seoTitle: 'Custom Logo Embroidery Socks | Private Label Product',
     description: 'Custom logo embroidery socks with private label colors, sizing and retail packaging for growing brands.',
     image: '/assets/products/custom-logo-embroidery-socks/hero.png',
     category: 'Private Label Socks',
@@ -106,7 +106,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   'open-top-pilates-studio-socks': {
     slug: 'open-top-pilates-studio-socks',
     name: 'Open Top Pilates Studio Socks',
-    seoTitle: 'Open Top Pilates Socks Manufacturer | PeakMotion',
+    seoTitle: 'Open Top Pilates Studio Socks | Custom Grip Style',
     description: 'Breathable open-top Pilates socks with non-toxic silicone grips and OEM customization for studio and wellness brands.',
     image: '/assets/products/open-top-pilates-studio-socks-web/hero.jpg',
     category: 'Pilates Studio Socks',
@@ -120,7 +120,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   'luxury-combed-cotton-casual-socks': {
     slug: 'luxury-combed-cotton-casual-socks',
     name: 'Luxury Combed Cotton Casual Socks',
-    seoTitle: 'Luxury Combed Cotton Socks Manufacturer | PeakMotion',
+    seoTitle: 'Luxury Combed Cotton Casual Socks | Private Label Product',
     description: 'Premium combed cotton casual socks with reinforced heel and toe, soft handfeel and private label customization.',
     image: '/assets/products/luxury-combed-cotton-casual-socks/hero.jpg',
     category: 'Casual Crew Socks',
@@ -148,7 +148,7 @@ export const productSeo: Record<string, ProductSeoConfig> = {
   'jacquard-custom-socks': {
     slug: 'jacquard-custom-socks',
     name: 'Jacquard Custom Socks',
-    seoTitle: 'Custom Jacquard Socks Manufacturer | PeakMotion',
+    seoTitle: 'Jacquard Custom Socks | OEM Knitted Logo Style',
     description: 'Custom jacquard crew socks with detailed knitted artwork, flexible colors and OEM support for private label collections.',
     image: '/assets/products/jacquard-custom-socks/hero.jpg',
     category: 'Jacquard Socks',

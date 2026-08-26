@@ -12,19 +12,19 @@ const assetPath = '/assets/products/professional-running-athletic-socks';
 const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20custom%20running%20socks%20for%20my%20brand%20or%20event.';
 
 export const metadata: Metadata = {
-  title: 'Custom Running Socks Manufacturer | OEM & Private Label | PeakMotion',
+  title: 'Running Socks Manufacturer | Custom OEM & Private Label | PeakMotion',
   description: 'Custom running socks manufacturer for brands, teams, events and retailers. Selected standard styles from 50 pairs, with custom logo programs typically from 100 pairs.',
   alternates: { canonical: pageUrl },
   openGraph: {
     type: 'website',
     url: pageUrl,
-    title: 'Custom Running Socks Manufacturer | PeakMotion',
+    title: 'Running Socks Manufacturer | Custom OEM & Private Label | PeakMotion',
     description: 'OEM and private-label custom running socks for brands, clubs, events and wholesale buyers.',
     images: [{ url: `${assetPath}/hero.png`, alt: 'Custom running socks for brands and teams' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Running Socks Manufacturer | PeakMotion',
+    title: 'Running Socks Manufacturer | Custom OEM & Private Label | PeakMotion',
     description: 'Selected standard running sock styles from 50 pairs; custom logo programs typically from 100 pairs.',
     images: [`${assetPath}/hero.png`],
   },
@@ -63,7 +63,7 @@ export default function CustomRunningSocksManufacturerPage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'WebPage', '@id': `${pageUrl}#webpage`, url: pageUrl, name: 'Custom Running Socks Manufacturer | PeakMotion', description: metadata.description, about: ['Custom running socks', 'Custom marathon socks', 'Custom running club socks', 'Private label running socks'], isPartOf: { '@id': `${siteUrl}/#website` } },
+      { '@type': 'WebPage', '@id': `${pageUrl}#webpage`, url: pageUrl, name: 'Running Socks Manufacturer | Custom OEM & Private Label | PeakMotion', description: metadata.description, about: ['Running socks manufacturer', 'Custom marathon socks', 'Custom running club socks', 'Private label running socks'], isPartOf: { '@id': `${siteUrl}/#website` } },
       { '@type': 'FAQPage', mainEntity: faqs.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) },
     ],
   };
@@ -78,7 +78,7 @@ export default function CustomRunningSocksManufacturerPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_0.82fr] lg:items-center">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">OEM and Private Label Manufacturer</p>
-            <h1 className="mt-5 text-4xl font-black leading-tight md:text-6xl">Custom Running Socks Manufacturer for Brands, Teams and Retailers</h1>
+            <h1 className="mt-5 text-4xl font-black leading-tight md:text-6xl">Running Socks Manufacturer for Brands, Teams and Retailers</h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-200">PeakMotion designs and manufactures custom running socks for sportswear brands, running clubs, marathon organizers, retailers and private-label sellers. From the first sample to bulk shipment, we support a clear, dependable production process.</p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row"><a href="#quote" data-analytics-event="quote_cta_click" data-analytics-placement="running_hero" className="inline-flex items-center justify-center rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide text-[#0c1713] transition-colors hover:bg-[#a3e627]">Request a Quote</a><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" data-analytics-event="whatsapp_click" data-analytics-placement="running_hero" className="inline-flex items-center justify-center rounded-xl border border-white/70 px-7 py-4 font-black uppercase tracking-wide text-white transition-colors hover:bg-white hover:text-[#0c1713]">Discuss Your Design on WhatsApp</a></div>
             <div className="mt-9 grid max-w-2xl grid-cols-1 gap-3 text-sm font-bold sm:grid-cols-3"><span className="rounded-lg border border-white/15 bg-black/15 p-4">50 pairs — selected standard styles</span><span className="rounded-lg border border-white/15 bg-black/15 p-4">Samples before bulk production</span><span className="rounded-lg border border-white/15 bg-black/15 p-4">60,000 pairs monthly capacity</span></div>

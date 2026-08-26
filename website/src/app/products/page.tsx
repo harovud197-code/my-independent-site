@@ -155,7 +155,7 @@ export default function ProductsPage() {
           <div className="max-w-[1440px] mx-auto">
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight uppercase">
               CUSTOM <span className="text-[#b4ff2b]">SPORTS SOCKS</span><br />
-              PRODUCT CATALOG
+              &amp; OEM SOCK STYLES
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
               Compare grip, football, running, Pilates, basketball and private-label sock styles, then choose the construction that best fits your brand, team or retail collection.

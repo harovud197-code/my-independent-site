@@ -73,8 +73,8 @@ export default function Home() {
         <div className="container hero-grid">
           <div className="hero-copy reveal">
             <p className="eyebrow">Buyer-focused custom sock solutions</p>
-            <h1 className="text-slate-900">Custom Performance Socks <span className="block">for Sports Brands &amp; Retailers</span></h1>
-            <p className="hero-lead">Launch your own football, running and grip sock collection with low MOQ, fast sampling and factory-direct production.</p>
+            <h1 className="text-slate-900">Custom Sports Socks Manufacturer <span className="block">for Brands &amp; Retailers</span></h1>
+            <p className="hero-lead">Work with a custom socks manufacturer that helps you launch football, running and grip sock collections with flexible MOQ, fast sampling and factory-direct production.</p>
             <div className="hero-actions">
               <a className="btn btn-primary" href="https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20custom%20socks." target="_blank" rel="noopener noreferrer">
                 Get Free Quote <em className="not-italic ml-4">&rarr;</em>

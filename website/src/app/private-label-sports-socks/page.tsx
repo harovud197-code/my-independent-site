@@ -14,18 +14,18 @@ const assetBase = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/private-l
 const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks%2C%20I%20would%20like%20to%20develop%20private%20label%20sports%20socks.';
 
 export const metadata: Metadata = {
-  title: 'Private Label Sports Socks Manufacturer | Start Your Sock Brand | PeakMotion',
+  title: 'Private Label Socks Manufacturer | Start Your Sock Brand | PeakMotion',
   description: 'Launch a custom sports sock collection with private label branding, selected standard styles from 50 pairs, sample planning and retail-ready packaging support.',
   alternates: { canonical: pageUrl },
   openGraph: {
     type: 'website',
     url: pageUrl,
-    title: 'Private Label Sports Socks Manufacturer | PeakMotion',
+    title: 'Private Label Socks Manufacturer | PeakMotion',
     description: 'Private label sports socks for startups, ecommerce brands and retailers. Start with a practical low-MOQ route, then scale with confidence.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Private Label Sports Socks Manufacturer | PeakMotion',
+    title: 'Private Label Socks Manufacturer | PeakMotion',
     description: 'Launch custom sports socks with branding, sampling and packaging support.',
   },
 };
@@ -62,7 +62,7 @@ export default function PrivateLabelSportsSocksPage() {
         '@type': 'WebPage',
         '@id': `${pageUrl}#webpage`,
         url: pageUrl,
-        name: 'Private Label Sports Socks Manufacturer | PeakMotion',
+        name: 'Private Label Socks Manufacturer | PeakMotion',
         description: metadata.description,
         about: ['Private label sports socks', 'Custom sports socks', 'OEM sock manufacturing'],
         isPartOf: { '@id': `${siteUrl}/#website` },
@@ -92,8 +92,8 @@ export default function PrivateLabelSportsSocksPage() {
       <section className="overflow-hidden bg-[#f7f8f6] px-5 py-14 md:px-8 lg:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:gap-14">
           <div className="max-w-xl">
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Private label sports socks manufacturer</p>
-            <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">Start your own sock brand with a practical first order.</h1>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Brand development and retail-ready production</p>
+            <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">Private Label Socks Manufacturer for Growing Brands</h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">Launch a branded running, football, training or grip sock collection with low-risk order routes, clear sample planning and factory-direct production support.</p>
             <div className="mt-7 grid grid-cols-2 gap-3 text-sm font-black text-slate-700 sm:grid-cols-4">
               <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">From 50 pairs*</span>

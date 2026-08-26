@@ -115,7 +115,7 @@ export default function YogaPilatesGripSocksSupplierPage() {
           <div className="max-w-xl">
             <nav aria-label="Breadcrumb" className="text-sm font-bold text-slate-500"><Link href="/" className="transition-colors hover:text-[#679a20]">Home</Link><span aria-hidden="true" className="mx-2">/</span><span>Yoga & Pilates Grip Socks</span></nav>
             <p className="mt-7 text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Pilates grip socks manufacturer for studio brands</p>
-            <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">Custom Pilates &amp; Yoga Grip Socks for Studios &amp; Brands</h1>
+            <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">Pilates Grip Socks Manufacturer for Studios &amp; Brands</h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">Develop custom Pilates grip socks and yoga socks for studios, wellness brands and retailers. We support private label Pilates socks, custom branding, wholesale order planning, sampling and retail packaging.</p>
             <div className="mt-7 grid grid-cols-2 gap-3 text-sm font-black text-slate-700 sm:grid-cols-4">
               <span className="rounded-lg border border-slate-200 bg-white px-3 py-3">Typically from 100 pairs*</span>

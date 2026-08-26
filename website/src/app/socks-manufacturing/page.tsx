@@ -10,13 +10,13 @@ const pageUrl = `${siteUrl}/socks-manufacturing`;
 const assetBase = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/socks-manufacturing';
 
 export const metadata: Metadata = {
-  title: 'Custom Socks Manufacturing Process | OEM & Private Label Socks Factory',
-  description: 'See how PeakMotion develops custom socks from material selection and sampling to computerized knitting, quality control, private label packaging and shipment.',
+  title: 'OEM Socks Manufacturer | Production & Quality Control | PeakMotion',
+  description: 'See how an OEM socks manufacturer develops products from material selection and sampling to computerized knitting, quality control, packaging and shipment.',
   alternates: { canonical: pageUrl },
   openGraph: {
     type: 'website',
     url: pageUrl,
-    title: 'Custom Socks Manufacturing From Concept To Production | PeakMotion',
+    title: 'OEM Socks Manufacturer | From Concept To Production | PeakMotion',
     description: 'A buyer-focused view of custom sock development, sampling, production, quality control and private label packaging.',
     images: [{
       url: `${assetBase}/computerized-sock-production-floor.jpg`,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Socks Manufacturing From Concept To Production',
+    title: 'OEM Socks Manufacturer | Production Process',
     description: 'From product brief and sample development to production, inspection and retail-ready packing.',
     images: [`${assetBase}/computerized-sock-production-floor.jpg`],
   },
@@ -108,10 +108,10 @@ export default function SocksManufacturingPage() {
         '@type': 'WebPage',
         '@id': `${pageUrl}#webpage`,
         url: pageUrl,
-        name: 'Custom Socks Manufacturing Process',
+        name: 'OEM Socks Manufacturer | Production Process',
         description: metadata.description,
         isPartOf: { '@id': `${siteUrl}/#website` },
-        about: ['Custom socks manufacturing', 'OEM socks factory', 'Private label socks production'],
+        about: ['OEM socks manufacturer', 'Sock production process', 'Sock quality control', 'Sock packaging'],
         primaryImageOfPage: { '@id': `${pageUrl}#primaryimage` },
       },
       {
@@ -146,8 +146,8 @@ export default function SocksManufacturingPage() {
       <section className="overflow-hidden bg-[#f7f8f6] px-5 py-14 md:px-8 lg:py-20">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[0.86fr_1.14fr] lg:gap-14">
           <div className="max-w-xl">
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">OEM &amp; private label sock manufacturing</p>
-            <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">Custom socks manufacturing from concept to production.</h1>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Production process and quality control</p>
+            <h1 className="mt-4 text-4xl font-black leading-[1.04] md:text-6xl">OEM Socks Manufacturer From Concept to Production</h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-600">Develop a market-ready sock program with one manufacturing partner for product planning, sampling, production, quality control and retail packaging.</p>
             <div className="mt-7 grid grid-cols-2 gap-3 text-sm font-black text-slate-700">
               <span className="rounded-xl border border-slate-200 bg-white px-4 py-3">Private label production</span>

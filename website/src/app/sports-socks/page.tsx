@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Custom Sports Socks Manufacturer | Grip, Football, Running & More | PeakMotion',
-  description: 'Professional custom sports socks manufacturer offering grip socks, football socks, running socks, basketball socks, cycling socks, and Pilates socks. OEM & private label with low MOQ.',
+  title: 'Sports Sock Types & OEM Style Guide | PeakMotion',
+  description: 'Compare grip, football, running, basketball, cycling and Pilates sock types, then explore the dedicated solution for your team, brand or retail program.',
 };
 
 const manufacturerGuides = [
@@ -102,7 +102,7 @@ export default function SportsSocks() {
         <section className="relative overflow-hidden w-full">
           <Image 
             src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/sports-socks-hero-v3.jpg?v=1" 
-            alt="Custom Sports Socks Manufacturer" 
+            alt="Custom sports sock types and OEM styles" 
             width={1920}
             height={1080}
             priority
@@ -112,7 +112,7 @@ export default function SportsSocks() {
           <div className="absolute inset-0 flex items-center px-5 lg:px-15 text-white">
             <div className="max-w-[800px] space-y-6 relative z-10">
               <h1 className="text-5xl lg:text-[72px] leading-[1.1] font-extrabold uppercase">
-                Custom <span className="text-[#b4ff2b]">Sports Socks</span> Manufacturer
+                Sports Sock <span className="text-[#b4ff2b]">Types &amp; OEM Styles</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-[600px]">
                 PeakMotion delivers high-performance sports socks with professional OEM & private label services. Elevate your brand with custom designs, premium materials, and flexible production.
@@ -375,7 +375,7 @@ export default function SportsSocks() {
           <div className="space-y-4">
             <h3 className="text-white text-xl font-bold">Haiyan Huaerte Knitting Co., Ltd.</h3>
             <p className="text-sm leading-relaxed">
-              Custom Sports Socks Manufacturer | OEM & Private Label Supplier. Delivering high-performance solutions for global sports brands.
+              Explore sports sock constructions, performance features and brand-ready style options for teams, retailers and growing labels.
             </p>
           </div>
           

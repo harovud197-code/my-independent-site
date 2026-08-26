@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="space-y-4">
           <h3 className="text-white text-xl font-bold">Haiyan Huaerte Knitting Co., Ltd.</h3>
           <p className="text-sm leading-relaxed">
-            Custom Sports Socks Manufacturer | OEM & Private Label Supplier. Delivering high-performance solutions for global sports brands.
+            Buyer-focused sock development, sampling, production and packaging support for global sports brands, teams and retailers.
           </p>
           <div className="mt-4"><CookieSettingsButton /></div>
         </div>
