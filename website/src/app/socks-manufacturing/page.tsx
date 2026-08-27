@@ -266,6 +266,16 @@ export default function SocksManufacturingPage() {
               <div className="p-6"><p className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Product specification</p><h3 className="mt-2 text-2xl font-black">Soccer sports socks</h3><p className="mt-3 text-slate-600">Review construction, customization and ordering details before sending a manufacturing brief.</p><span className="mt-5 inline-flex font-black text-[#315d18] underline decoration-[#b4ff2b] decoration-2 underline-offset-4">View product details →</span></div>
             </Link>
           </div>
+          <div className="mt-6 rounded-2xl border border-[#cfe5ac] bg-[#f4fbe8] px-6 py-5 text-slate-700 md:px-8">
+            <p className="text-sm font-black uppercase tracking-[0.16em] text-[#56851c]">Grip manufacturing applications</p>
+            <p className="mt-3 text-lg leading-relaxed">
+              We manufacture custom grip socks for Pilates studios, football performance,{' '}
+              <Link href="/trampoline-park-socks" className="font-black text-[#315d18] underline decoration-[#9acb52] decoration-2 underline-offset-4">
+                trampoline park grip socks
+              </Link>{' '}
+              and indoor entertainment venues.
+            </p>
+          </div>
         </div>
       </section>
 
