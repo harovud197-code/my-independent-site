@@ -88,6 +88,16 @@ export default function ProductsPage() {
       moq: 'From 50 pairs — selected standard styles',
       desc: "Premium jacquard knit socks featuring complex patterns and vibrant colors. Durable, breathable, and perfect for brand merchandising or unique gift sets.",
       img: "https://sc04.alicdn.com/kf/H8e9f793275a54dceae8e1e3822289034Q.jpg"
+    },
+    {
+      id: 11,
+      title: 'Trampoline Park Grip Socks',
+      category: 'grip',
+      moq: 'Typically from 100 pairs — custom logo programs',
+      desc: 'Durable anti-slip grip socks for trampoline parks, indoor playgrounds and family entertainment centers.',
+      img: '/assets/images/homepage-hero-peakmotion-grip-sock.png',
+      tags: ['Custom Logo', 'Kids & Adult Sizes', 'Color Coding', 'Bulk Supply', 'Repeat Orders'],
+      cta: 'View Trampoline Park Socks',
     }
   ];
 
@@ -114,6 +124,7 @@ export default function ProductsPage() {
     8: '/products/luxury-combed-cotton-casual-socks',
     9: '/products/soccer-sports-socks',
     10: '/products/jacquard-custom-socks',
+    11: '/trampoline-park-socks',
   };
 
   const structuredData = {
@@ -214,6 +225,15 @@ export default function ProductsPage() {
                   <div className="mb-4">
                     <h4 className="text-lg font-bold text-gray-900 leading-snug mb-2">{product.title}</h4>
                     <p className="text-gray-500 text-sm leading-relaxed line-clamp-2">{product.desc}</p>
+                    {product.tags && (
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {product.tags.map((tag) => (
+                          <span key={tag} className="rounded-full border border-[#d9e7c5] bg-[#f3fae8] px-3 py-1.5 text-xs font-extrabold text-[#3f7418]">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <div className="mt-auto space-y-4">
                     <div className="text-sm font-extrabold text-gray-800 uppercase tracking-wide">
@@ -223,7 +243,7 @@ export default function ProductsPage() {
                       href={productDetailUrls[product.id]}
                       className="block w-full bg-[#b4ff2b] text-black text-center py-4 rounded-xl font-black text-sm uppercase tracking-widest hover:bg-[#a3e627] transition-all"
                     >
-                      View Details
+                      {product.cta || 'View Details'}
                     </Link>
                     <a
                       href={`https://wa.me/8617357769219?text=${encodeURIComponent(`Hello PeakMotion Socks, I would like a quote for ${product.title}.`)}`}
