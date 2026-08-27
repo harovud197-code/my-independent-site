@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pilatesStudioBuyingGuideUpdatedAt = new Date('2026-08-18T00:00:00.000Z');
   const footballSocksManufacturerGuideUpdatedAt = new Date('2026-08-20T00:00:00.000Z');
   const privateLabelPackagingGuideUpdatedAt = new Date('2026-08-21T00:00:00.000Z');
+  const trampolineParkSocksUpdatedAt = new Date('2026-08-27T00:00:00.000Z');
 
   const blogPosts = [
     'best-materials-for-sports-socks',
@@ -160,6 +161,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/custom-running-socks-manufacturer`,
       lastModified: publishedAt,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/trampoline-park-socks`,
+      lastModified: trampolineParkSocksUpdatedAt,
       priority: 0.9,
     },
     {

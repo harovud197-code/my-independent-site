@@ -144,15 +144,16 @@ export default function Home() {
             <h2 className="text-4xl font-extrabold uppercase">Custom socks for every sports brand category</h2>
             <p className="text-gray-500 text-lg">Build a focused product line with materials, structure, logo, color and packaging matched to your target market.</p>
           </div>
-          <div className="cards product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="cards product-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {[
-              { title: 'Grip Socks', desc: 'Anti-slip socks for football, pilates, yoga, trampoline parks and performance training.', class: 'grip', img: '/assets/images/grip-socks-product.png', imageScale: 'scale-110' },
-              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', class: 'football-plain', img: 'https://sc04.alicdn.com/kf/Hf9a2b2cfbdc94b0886728ed3c2ae68441.jpg', imageScale: 'scale-105' },
-              { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', class: 'running', img: 'https://sc04.alicdn.com/kf/Hd7505abb99c34e6c9f377397517101abL.jpg', imageScale: 'scale-115' },
-              { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/private-label-custom-socks-2026.png', imageScale: 'scale-110' },
+              { title: 'Grip Socks', desc: 'Anti-slip socks for football, pilates, yoga, trampoline parks and performance training.', class: 'grip', img: '/assets/images/grip-socks-product.png', imageScale: 'scale-110', href: '/custom-grip-socks', smallLinks: [['Pilates & Yoga Grip Socks', '/yoga-pilates-grip-socks-supplier'], ['Trampoline Park Grip Socks', '/trampoline-park-socks']] },
+              { title: 'Football Socks', desc: 'Team socks, crew socks and match-day designs with compression zones and reinforced structure.', class: 'football-plain', img: 'https://sc04.alicdn.com/kf/Hf9a2b2cfbdc94b0886728ed3c2ae68441.jpg', imageScale: 'scale-105', href: '/products/mid-calf-football-grip' },
+              { title: 'Running Socks', desc: 'Moisture-wicking, breathable running socks for marathon, trail and daily training brands.', class: 'running', img: 'https://sc04.alicdn.com/kf/Hd7505abb99c34e6c9f377397517101abL.jpg', imageScale: 'scale-115', href: '/products/professional-running-athletic-socks' },
+              { title: 'Private Label', desc: 'Logo socks, retail packaging, barcode support and launch-ready collections for your brand.', class: 'private', img: 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/private-label-custom-socks-2026.png', imageScale: 'scale-110', href: '/products/custom-logo-embroidery-socks' },
+              { title: 'Trampoline Park Socks', desc: 'Durable anti-slip socks for trampoline parks, indoor playgrounds and entertainment centers with custom logos, kids/adult sizes and repeat bulk supply.', class: 'grip', img: '/assets/images/homepage-hero-peakmotion-grip-sock.png', imageScale: 'scale-100', href: '/trampoline-park-socks', buttonLabel: 'Explore Trampoline Socks' },
             ].map((card, i) => (
-              <article key={i} className="product-card reveal p-8 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all flex flex-col">
-                <div className={`${card.class === 'football-plain' ? 'bg-white' : `card-image-design ${card.class}`} h-64 md:h-72 rounded-2xl mb-8 relative overflow-hidden`}>
+              <article key={i} className="product-card reveal p-6 bg-white border border-gray-100 rounded-[26px] shadow-sm hover:shadow-xl transition-all flex flex-col">
+                <div className={`${card.class === 'football-plain' ? 'bg-white' : `card-image-design ${card.class}`} h-56 md:h-64 rounded-2xl mb-7 relative overflow-hidden`}>
                   <Image 
                     src={card.img} 
                     alt={card.title} 
@@ -163,11 +164,20 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{card.title}</h3>
                 <p className="text-gray-500 mb-6">{card.desc}</p>
+                {card.smallLinks && (
+                  <div className="mb-5 space-y-2 border-t border-gray-100 pt-4">
+                    {card.smallLinks.map(([label, href]) => (
+                      <Link key={href} href={href} className="flex items-center justify-between gap-3 text-sm font-extrabold text-[#3f7418] hover:text-[#0c1713]">
+                        <span>{label}</span><span aria-hidden="true">&rarr;</span>
+                      </Link>
+                    ))}
+                  </div>
+                )}
                 <Link
-                  href={card.title === 'Grip Socks' ? '/custom-grip-socks' : card.title === 'Football Socks' ? '/products/mid-calf-football-grip' : card.title === 'Running Socks' ? '/products/professional-running-athletic-socks' : card.title === 'Private Label' ? '/products/custom-logo-embroidery-socks' : '/products'}
+                  href={card.href}
                   className="mt-auto inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#c5ff3d] px-4 py-3 text-center text-sm font-extrabold uppercase tracking-wider text-black transition-all hover:-translate-y-0.5 hover:bg-[#a8e600] hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0c1713]"
                 >
-                  Customize {card.title} <span aria-hidden="true">&rarr;</span>
+                  {card.buttonLabel || `Customize ${card.title}`} <span aria-hidden="true">&rarr;</span>
                 </Link>
               </article>
             ))}
@@ -382,6 +392,7 @@ export default function Home() {
               <select name="product" required defaultValue="" className="bg-gray-50 border border-gray-100 p-4 rounded-xl outline-none focus:border-[#c5ff3d] transition-all cursor-pointer">
                 <option value="" disabled>Select a product type</option>
                 <option>Grip Socks</option>
+                <option>Trampoline Park Socks</option>
                 <option>Football Socks</option>
                 <option>Running Socks</option>
                 <option>Private Label Collection</option>
