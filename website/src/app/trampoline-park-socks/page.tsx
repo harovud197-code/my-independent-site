@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     url: pageUrl,
     title: 'Trampoline Grip Socks Manufacturer | Wholesale & Custom | PeakMotion',
     description: 'Custom trampoline park socks with logo, size-coded colors, silicone grip, wholesale production and repeat-order support.',
-    images: [{ url: '/assets/images/homepage-hero-peakmotion-grip-sock.png', alt: 'Custom trampoline park grip sock by PeakMotion' }],
+    images: [{ url: '/assets/trampoline-park-socks/trampoline-grip-socks-manufacturer.jpg', alt: 'Custom trampoline park grip socks in multiple colors and grip patterns' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Trampoline Grip Socks Manufacturer | PeakMotion',
     description: 'Custom trampoline park grip socks for parks, indoor playgrounds, FECs and distributors.',
-    images: ['/assets/images/homepage-hero-peakmotion-grip-sock.png'],
+    images: ['/assets/trampoline-park-socks/trampoline-grip-socks-manufacturer.jpg'],
   },
 };
 
@@ -90,6 +90,37 @@ const orderProcess = [
   ['07', 'Repeat Order', 'Use the approved specification as a reference when inventory needs replenishment.'],
 ] as const;
 
+const venueImages = [
+  {
+    src: '/assets/trampoline-park-socks/indoor-playground-grip-socks.jpg',
+    alt: 'Adult and child wearing branded grip socks in an indoor activity center',
+    caption: 'Indoor playground and family entertainment programs',
+  },
+  {
+    src: '/assets/trampoline-park-socks/trampoline-park-grip-socks-in-use.jpg',
+    alt: 'Child wearing bright green trampoline park grip socks while jumping',
+    caption: 'Trampoline parks serving children, youth and families',
+  },
+] as const;
+
+const orderEvidenceImages = [
+  {
+    src: '/assets/trampoline-park-socks/custom-trampoline-socks-digital-mockup.png',
+    alt: 'Digital mockup for custom branded trampoline socks',
+    caption: 'Artwork & digital mockup',
+  },
+  {
+    src: '/assets/trampoline-park-socks/custom-trampoline-socks-sample.png',
+    alt: 'Physical custom trampoline sock sample with logo',
+    caption: 'Physical sample review',
+  },
+  {
+    src: '/assets/trampoline-park-socks/trampoline-socks-wholesale-bulk-order.jpg',
+    alt: 'Wholesale trampoline socks individually packed for a bulk order',
+    caption: 'Bulk packing & shipment preparation',
+  },
+] as const;
+
 const faqs = [
   ['Are you a trampoline grip socks manufacturer?', 'Yes. PeakMotion manufactures custom trampoline park grip socks and supports OEM, wholesale and bulk programs for parks, indoor playgrounds, FEC operators and distributors.'],
   ['Can you manufacture custom trampoline park socks with our logo?', 'Yes. Your logo can be incorporated into the sock body, silicone grip artwork or packaging depending on the design and production method.'],
@@ -128,7 +159,7 @@ export default function TrampolineParkSocksPage() {
   };
 
   return (
-    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-27-trampoline-park-socks-v1">
+    <main className="bg-white text-[#0c1713]" data-content-version="2026-08-28-trampoline-images-v1">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
 
       <section className="overflow-hidden bg-[#f4f8ed] px-5 py-16 md:px-8 lg:py-24">
@@ -147,20 +178,24 @@ export default function TrampolineParkSocksPage() {
             </div>
             <p className="mt-3 text-xs text-slate-500">*Sample timing depends on confirmed artwork and specifications.</p>
           </div>
-          <div className="relative min-h-[480px] overflow-hidden rounded-[32px] bg-[#e8f3d9] shadow-[0_28px_70px_rgba(12,23,19,0.14)]">
-            <Image src="/assets/images/homepage-hero-peakmotion-grip-sock.png" alt="Custom trampoline park grip sock with full sole traction" fill priority sizes="(max-width: 1024px) 100vw, 46vw" className="object-contain" />
+          <div className="relative min-h-[480px] overflow-hidden rounded-[32px] bg-white shadow-[0_28px_70px_rgba(12,23,19,0.14)]">
+            <Image src="/assets/trampoline-park-socks/trampoline-grip-socks-manufacturer.jpg" alt="Custom trampoline park grip socks in multiple colors and grip patterns" fill priority sizes="(max-width: 1024px) 100vw, 46vw" className="object-contain p-4" />
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
         <div className="max-w-3xl"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Who We Serve</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Trampoline Socks Built for Park Operators & Commercial Buyers</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Whether you operate one venue or manage supply for multiple locations, we can plan the product around your branding, visitor sizes, order volume and replenishment needs.</p></div>
+        <div className="mt-10 grid gap-5 md:grid-cols-2">
+          {venueImages.map(image => <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6]"><div className="relative aspect-[16/10]"><Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /></div><figcaption className="px-5 py-4 text-sm font-bold text-slate-700">{image.caption}</figcaption></figure>)}
+        </div>
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-5">{buyerTypes.map(([title, text], index) => <article key={title} className="rounded-xl border border-slate-200 bg-[#f7f8f6] p-6"><span className="text-xs font-black text-[#679a20]">0{index + 1}</span><h3 className="mt-4 text-xl font-black">{title}</h3><p className="mt-3 text-sm leading-relaxed text-slate-600">{text}</p></article>)}</div>
       </section>
 
       <section className="bg-[#0c1713] px-5 py-16 text-white md:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Product Options</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Trampoline Socks Wholesale Options for Different Park Programs</h2><p className="mt-5 text-lg leading-relaxed text-slate-300">Choose the construction around your visitor profile, target cost, branding requirements and order volume.</p></div>
+          <figure className="mt-10 overflow-hidden rounded-2xl border border-white/15 bg-white"><div className="relative aspect-[16/8]"><Image src="/assets/trampoline-park-socks/custom-logo-grip-trampoline-socks.jpg" alt="Custom logo trampoline grip socks shown from the top and sole" fill sizes="(max-width: 1280px) 100vw, 80vw" className="object-contain p-3" /></div><figcaption className="border-t border-white/10 bg-white/5 px-5 py-4 text-sm font-bold text-slate-200">Custom colors, visible park branding and sole grip artwork can be coordinated in one product program.</figcaption></figure>
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-5">{productOptions.map(option => <article key={option.title} className="rounded-xl border border-white/15 bg-white/5 p-6"><h3 className="text-xl font-black">{option.title}</h3><p className="mt-3 text-sm leading-relaxed text-slate-300">{option.description}</p><ul className="mt-5 space-y-2 text-sm font-bold text-slate-200">{option.features.map(feature => <li key={feature} className="flex gap-2"><span className="text-[#b4ff2b]">✓</span><span>{feature}</span></li>)}</ul></article>)}</div>
           <a href="#quote" className="mt-9 inline-flex rounded-xl bg-[#b4ff2b] px-7 py-4 font-black uppercase tracking-wide !text-[#0c1713]">Request Product Options & Pricing</a>
         </div>
@@ -168,22 +203,22 @@ export default function TrampolineParkSocksPage() {
 
       <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Customization</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Custom Trampoline Socks Made for Your Park Brand</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Your logo, colors, grip pattern and size system can become one consistent park product instead of generic factory stock.</p><div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-xl bg-slate-100"><Image src="/assets/images/grip-socks-product.png" alt="Custom grip sock colors and silicone traction options" fill sizes="(max-width: 1024px) 100vw, 42vw" className="object-contain" /></div></div>
+          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Customization</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Custom Trampoline Socks Made for Your Park Brand</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Your logo, colors, grip pattern and size system can become one consistent park product instead of generic factory stock.</p><div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-xl border border-slate-200 bg-white"><Image src="/assets/trampoline-park-socks/custom-color-trampoline-park-socks.jpg" alt="Pink custom trampoline park sock showing the branded upper and full sole grip" fill sizes="(max-width: 1024px) 100vw, 42vw" className="object-contain p-3" /></div><div className="mt-4 grid grid-cols-2 gap-4"><div className="relative aspect-[3/2] overflow-hidden rounded-xl border border-slate-200 bg-white"><Image src="/assets/trampoline-park-socks/custom-logo-trampoline-socks.jpg" alt="Custom logo trampoline socks in coordinated park colors" fill sizes="(max-width: 640px) 50vw, 22vw" className="object-contain p-2" /></div><div className="relative aspect-[3/2] overflow-hidden rounded-xl border border-slate-200 bg-white"><Image src="/assets/trampoline-park-socks/custom-trampoline-socks-packaging.jpg" alt="Custom trampoline socks with branded retail packaging" fill sizes="(max-width: 640px) 50vw, 22vw" className="object-contain p-2" /></div></div></div>
           <div className="grid gap-5 sm:grid-cols-2">{customization.map(([title, text], index) => <article key={title} className={`rounded-xl border border-slate-200 p-7 ${index === 4 ? 'sm:col-span-2 bg-[#f4f8ed]' : 'bg-white'}`}><span className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Option 0{index + 1}</span><h3 className="mt-4 text-xl font-black">{title}</h3><p className="mt-3 leading-relaxed text-slate-600">{text}</p></article>)}</div>
         </div>
       </section>
 
       <section className="bg-[#f4f8ed] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div className="relative aspect-square overflow-hidden rounded-2xl bg-white"><Image src="/assets/blog/custom-grip-socks-cost/grip-display.jpg" alt="Custom silicone grip layouts and sock construction choices" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain" /></div>
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-white"><Image src="/assets/trampoline-park-socks/trampoline-grip-socks-silicone-closeup.jpg" alt="Close-up of silicone grip coverage on custom trampoline park socks" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain p-4" /></div>
           <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Grip & Controlled Traction</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Grip Designed for Controlled Traction & Regular Park Use</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">The sole layout is developed around practical traction, coverage, sock construction and intended venue use.</p><div className="mt-7 grid gap-4 sm:grid-cols-2">{[['Grip Coverage', 'Cover the key contact areas of the sole instead of treating grip as decoration.'], ['Silicone Options', 'Use dots, geometric layouts, text or logo-based artwork.'], ['Placement Control', 'Review position, coverage, logo clarity, consistency and finish during sampling.'], ['Construction for Active Use', 'Select yarn, elasticity, fit and reinforcement around use, durability and target cost.']].map(([title, text]) => <article key={title} className="rounded-lg border border-[#cfe2bd] bg-white p-5"><h3 className="font-black">{title}</h3><p className="mt-2 text-sm leading-relaxed text-slate-600">{text}</p></article>)}</div><p className="mt-7 rounded-lg border border-amber-200 bg-amber-50 p-5 text-sm leading-relaxed text-amber-900"><strong>Venue specification note:</strong> Final product specifications should be selected according to the operating requirements, footwear policy and applicable standards of your venue and market.</p></div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-2">
-          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Kids & Adult Sizes</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Trampoline Grip Socks for Kids, Youth & Adults</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Build a practical size range for your target visitors, then make sizes easy for staff to identify and replenish.</p><div className="mt-7 grid grid-cols-2 gap-3 text-center text-sm font-black sm:grid-cols-4">{['Kids', 'Youth', 'Adult', 'Large Adult'].map(size => <span key={size} className="rounded-xl bg-[#0c1713] px-4 py-4 text-white">{size}</span>)}</div><ul className="mt-7 grid gap-3 text-sm font-bold text-slate-700 sm:grid-cols-2">{['Color-coded cuffs', 'Different body colors', 'Visible size markings', 'Individual size labels', 'Size-sorted cartons', 'Quantity planning by size'].map(item => <li key={item} className="rounded-lg border border-slate-200 p-4">✓ {item}</li>)}</ul></div>
-          <div className="rounded-2xl bg-[#0c1713] p-8 text-white md:p-10"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Bulk & Repeat Supply</p><h2 className="mt-3 text-3xl font-black">A Trampoline Park Socks Supplier Built for Repeat Orders</h2><p className="mt-5 leading-relaxed text-slate-300">The first order matters, but an operating park also needs a clear replenishment route. Approved specifications help keep future yarn, dimensions, colors, logo placement, grip artwork, size range and packaging consistent.</p><div className="mt-7 grid gap-3 sm:grid-cols-2">{['Volume-based pricing', 'Multi-size production', 'Bulk or custom packing', 'Repeat-order scheduling', 'Multi-location planning', 'Worldwide shipping support'].map(item => <span key={item} className="rounded-lg border border-white/15 bg-white/5 p-4 text-sm font-bold">{item}</span>)}</div><a href="#quote" className="mt-8 inline-flex rounded-xl bg-[#b4ff2b] px-6 py-4 font-black uppercase tracking-wide !text-[#0c1713]">Get Bulk Pricing</a></div>
+          <div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Kids & Adult Sizes</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Trampoline Grip Socks for Kids, Youth & Adults</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Build a practical size range for your target visitors, then make sizes easy for staff to identify and replenish.</p><div className="relative mt-7 aspect-[6/5] overflow-hidden rounded-2xl border border-slate-200 bg-white"><Image src="/assets/trampoline-park-socks/trampoline-park-socks-size-range.jpg" alt="Trampoline park grip socks arranged in kids, youth and adult sizes" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain p-3" /></div><div className="mt-7 grid grid-cols-2 gap-3 text-center text-sm font-black sm:grid-cols-4">{['Kids', 'Youth', 'Adult', 'Large Adult'].map(size => <span key={size} className="rounded-xl bg-[#0c1713] px-4 py-4 text-white">{size}</span>)}</div><ul className="mt-7 grid gap-3 text-sm font-bold text-slate-700 sm:grid-cols-2">{['Color-coded cuffs', 'Different body colors', 'Visible size markings', 'Individual size labels', 'Size-sorted cartons', 'Quantity planning by size'].map(item => <li key={item} className="rounded-lg border border-slate-200 p-4">✓ {item}</li>)}</ul></div>
+          <div className="rounded-2xl bg-[#0c1713] p-8 text-white md:p-10"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#b4ff2b]">Bulk & Repeat Supply</p><h2 className="mt-3 text-3xl font-black">A Trampoline Park Socks Supplier Built for Repeat Orders</h2><p className="mt-5 leading-relaxed text-slate-300">The first order matters, but an operating park also needs a clear replenishment route. Approved specifications help keep future yarn, dimensions, colors, logo placement, grip artwork, size range and packaging consistent.</p><div className="relative mt-7 aspect-[6/5] overflow-hidden rounded-xl bg-white"><Image src="/assets/trampoline-park-socks/trampoline-socks-repeat-supply.jpg" alt="Stacks of color-coded trampoline grip socks prepared for repeat supply" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-contain" /></div><div className="mt-7 grid gap-3 sm:grid-cols-2">{['Volume-based pricing', 'Multi-size production', 'Bulk or custom packing', 'Repeat-order scheduling', 'Multi-location planning', 'Worldwide shipping support'].map(item => <span key={item} className="rounded-lg border border-white/15 bg-white/5 p-4 text-sm font-bold">{item}</span>)}</div><a href="#quote" className="mt-8 inline-flex rounded-xl bg-[#b4ff2b] px-6 py-4 font-black uppercase tracking-wide !text-[#0c1713]">Get Bulk Pricing</a></div>
         </div>
       </section>
 
@@ -195,6 +230,9 @@ export default function TrampolineParkSocksPage() {
 
       <section className="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
         <div className="max-w-3xl"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Order Process</p><h2 className="mt-3 text-3xl font-black md:text-5xl">How to Order Custom Trampoline Park Socks</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Move from project brief to repeat supply with one approved production reference.</p></div>
+        <div className="mt-10 grid gap-5 md:grid-cols-3">
+          {orderEvidenceImages.map(image => <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6]"><div className="relative aspect-[4/3]"><Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-3" /></div><figcaption className="border-t border-slate-200 px-5 py-4 text-sm font-bold text-slate-700">{image.caption}</figcaption></figure>)}
+        </div>
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">{orderProcess.map(([number, title, text], index) => <article key={number} className={`rounded-xl border p-6 ${index === 6 ? 'border-[#b4ff2b] bg-[#0c1713] text-white lg:col-span-2' : 'border-slate-200 bg-white'}`}><span className={`text-sm font-black ${index === 6 ? 'text-[#b4ff2b]' : 'text-[#679a20]'}`}>STEP {number}</span><h3 className="mt-4 text-xl font-black">{title}</h3><p className={`mt-3 text-sm leading-relaxed ${index === 6 ? 'text-slate-300' : 'text-slate-600'}`}>{text}</p></article>)}</div>
       </section>
 
