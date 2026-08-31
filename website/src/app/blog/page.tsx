@@ -18,6 +18,15 @@ const posts = [
     readTime: '20 min read',
   },
   {
+    title: 'Custom Sock Sample Cost: What Brands Should Expect Before Bulk Production',
+    href: '/blog/custom-sock-sample-cost',
+    desc: 'Understand sample fees, revisions, shipping, timelines and approval checks before moving a custom sock design into bulk production.',
+    img: '/assets/blog/custom-sock-sample-cost/custom-sock-sample-cost-before-bulk-production.jpg',
+    imageClassName: 'object-contain bg-white',
+    category: 'Sampling & Pricing',
+    readTime: '20 min read',
+  },
+  {
     title: 'How to Choose a Football Socks Manufacturer',
     href: '/blog/how-to-choose-football-socks-manufacturer',
     desc: 'Compare club logo capability, team colors, compression, sock length, sizing, MOQ, quality control and seasonal reorder support.',
