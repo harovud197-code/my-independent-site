@@ -22,7 +22,7 @@ const posts = [
     href: '/blog/custom-sock-sample-cost',
     desc: 'Understand sample fees, revisions, shipping, timelines and approval checks before moving a custom sock design into bulk production.',
     img: '/assets/blog/custom-sock-sample-cost/custom-sock-sample-cost-before-bulk-production.jpg',
-    imageClassName: 'object-contain bg-white',
+    imageClassName: 'object-cover object-center',
     category: 'Sampling & Pricing',
     readTime: '20 min read',
   },
