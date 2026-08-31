@@ -182,9 +182,8 @@ export default function CustomSockSampleCostPage() {
               <span>20 min read</span><span>Published August 31, 2026</span>
             </div>
           </div>
-          <div className="relative aspect-[3/2] overflow-hidden rounded-[2rem] border border-[#d9e6d5] bg-[#f3f7f1] shadow-[0_30px_85px_rgba(31,61,42,0.18)] ring-1 ring-white/80">
-            <Image src={heroImage} alt="Custom sock samples prepared for review before bulk production" fill priority sizes="(max-width: 1024px) 100vw, 52vw" className="object-cover object-center" />
-            <div aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-[2rem] ring-1 ring-inset ring-white/60" />
+          <div className="relative aspect-[3/2] overflow-hidden rounded-[2rem] border border-[#cbd9c7] bg-[#edf3eb] shadow-[0_30px_85px_rgba(31,61,42,0.18)]">
+            <Image src={heroImage} alt="Custom sock samples prepared for review before bulk production" fill priority sizes="(max-width: 1024px) 100vw, 52vw" className="scale-[1.035] object-cover object-center" />
           </div>
         </div>
       </header>
