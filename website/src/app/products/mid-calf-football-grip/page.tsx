@@ -1,3 +1,4 @@
+import { ProductShipmentSection } from '@/components/FactoryShipmentGallery';
 import Link from 'next/link';
 import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
@@ -112,6 +113,7 @@ export default function MidCalfFootballGripPage() {
           <img src={`${assetPath}/certifications.png`} alt="Quality certifications" className="h-auto w-full rounded-2xl bg-white" />
         </div>
       </section>
+      <ProductShipmentSection />
 
       <section className="mx-auto max-w-4xl px-5 py-20 md:px-8">
         <p className="text-center text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">FAQ</p>

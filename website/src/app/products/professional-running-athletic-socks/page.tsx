@@ -1,3 +1,4 @@
+import { ProductShipmentSection } from '@/components/FactoryShipmentGallery';
 import Link from 'next/link';
 import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
@@ -63,6 +64,7 @@ export default function ProfessionalRunningAthleticSocksPage() {
       <section className="bg-[#f7f8f6] py-20"><div className="mx-auto max-w-[1200px] space-y-14 px-5 md:px-8"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Custom Options</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Colors, applications and factory support</h2></div>
         {['colors.png', 'applications.png', 'factory.png', 'certifications.png'].map((image) => <img key={image} src={`${assetPath}/${image}`} alt={`Professional running socks ${image.replace('.png', '')}`} className="h-auto w-full rounded-2xl bg-white" />)}
       </div></section>
+      <ProductShipmentSection />
 
       <section className="mx-auto max-w-4xl px-5 py-20 md:px-8">
         <p className="text-center text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">FAQ</p>

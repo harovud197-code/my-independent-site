@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import Image from 'next/image';
 
 type FactoryEvidencePanelProps = {
@@ -88,7 +89,7 @@ export default function FactoryEvidencePanel({ product, moq, sampleLeadTime, bul
         </div>
         <p className="mt-5 text-sm leading-relaxed text-slate-500">Customer names, artwork and commercial terms are protected. Where a buyer permits it, we can share relevant anonymized product, packaging or inspection evidence during a quotation discussion.</p>
       </div>
-    </section>
+    <div className="mx-auto max-w-7xl"><FactoryShipmentGallery photos={['warehouse', 'loading']} title="Factory packing and dispatch reference" /></div>
+      </section>
   );
 }
-

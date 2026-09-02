@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -312,6 +313,7 @@ export default function CustomSockSampleCostPage() {
             </li>
           ))}
         </ol>
+        <FactoryShipmentGallery photos={['warehouse', 'loading']} title="After sample approval: bulk-order dispatch" />
         <p>For a real development example, see the <Link href="/case-studies/private-label-socks-brand-launch" className="font-bold text-[#397500] underline underline-offset-4">private label sock brand launch case study</Link>.</p>
 
         <h2>Is Paying for a Custom Sock Sample Worth It?</h2>

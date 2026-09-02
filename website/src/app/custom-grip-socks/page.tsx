@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -212,6 +213,7 @@ export default function CustomGripSocksPage() {
 
       <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]"><div><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">Factory Video</p><h2 className="mt-3 text-3xl font-black md:text-5xl">See How Custom Grip Socks Are Manufactured</h2><p className="mt-5 text-lg leading-relaxed text-slate-600">Watch the factory workflow behind custom grip socks, then send your product and wholesale requirements for a practical recommendation and quotation.</p><div className="mt-7 space-y-3 text-sm font-bold text-slate-700"><p className="rounded-lg border border-slate-200 bg-white p-4">Computerized sock knitting and production-floor workflow</p><p className="rounded-lg border border-slate-200 bg-white p-4">In-process checks for construction, silicone grip and finishing</p><p className="rounded-lg border border-slate-200 bg-white p-4">OEM support from product sampling through packing and shipment</p></div></div><div className="overflow-hidden rounded-lg bg-[#0c1713] shadow-[0_24px_55px_rgba(12,23,19,0.2)]"><video controls playsInline preload="metadata" poster={`${assetPath}/videos/custom-grip-socks-production-poster-card.jpg`} className="aspect-video w-full bg-black object-cover"><source src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/videos/factory-tour-2026-07-29.mp4" type="video/mp4" />Your browser does not support HTML video.</video><div className="border-t border-white/10 px-6 py-5 text-sm font-bold text-white">PeakMotion factory tour - press play to watch the production facility.</div></div></div>
+      <div className="mx-auto max-w-7xl"><FactoryShipmentGallery photos={['ready', 'loading']} /></div>
       </section>
 
       <MoqFramework

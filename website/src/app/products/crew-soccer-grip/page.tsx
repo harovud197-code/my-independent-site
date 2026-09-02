@@ -1,5 +1,6 @@
 'use client';
 
+import { ProductShipmentSection } from '@/components/FactoryShipmentGallery';
 import Image from 'next/image';
 import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 
@@ -145,6 +146,7 @@ Requirements: ${data.message}
            <Image src="/assets/images/training/certifications.png" alt="Certifications" fill className="object-contain" />
         </section>
       </div>
+      <ProductShipmentSection />
 
       <section className="mx-auto max-w-4xl px-5 py-20 lg:px-15">
         <p className="text-center text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">FAQ</p>

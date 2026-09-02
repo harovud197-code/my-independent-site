@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -170,6 +171,8 @@ export default function CustomSocksMoqExplainedPage() {
               <li><strong className="text-[#0c1713]">3. Review the route:</strong> Confirm the practical MOQ, sample scope, size split and lead time.</li>
               <li><strong className="text-[#0c1713]">4. Approve before bulk:</strong> Review the sample and final production details before the bulk order begins.</li>
             </ol>
+
+            <FactoryShipmentGallery photos={['warehouse']} title="Bulk orders prepared for dispatch" />
           </section>
 
           <section className="mt-16 rounded-2xl bg-[#0c1713] p-8 text-white md:p-10">

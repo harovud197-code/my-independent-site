@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
@@ -201,11 +202,13 @@ export default function PrivateLabelSocksGuide() {
             <div className="my-6 rounded-xl overflow-hidden aspect-[16/9] bg-gray-50 border border-gray-100 relative">
               <Image 
                 src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/blog-private-label-process-infographic.jpg?v=2" 
-                alt="5-step private label socks production process: Design, Sample, Production, Quality Check, and Packaging" 
+                alt="5-step private label socks production process: Design, Sample, Production, Quality Check, and Packaging"
                 fill
                 className="object-cover"
               />
             </div>
+
+            <FactoryShipmentGallery />
           </section>
 
           {/* Section 5 */}

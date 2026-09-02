@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -111,6 +112,7 @@ function renderArticle(markdown: string) {
       const title = heading[2];
       const id = slugify(title);
       if (level === 1) {
+        if (title === "12. What Information Should Be Printed on Sock Packaging?") nodes.push(<FactoryShipmentGallery key="freight-dispatch" photos={['warehouse', 'loading']} title="Carton volume and dispatch planning" />);
         nodes.push(<h2 id={id} key={`h2-${index}`} className="scroll-mt-28 pt-4 text-3xl font-black leading-tight text-[#0c1713] md:text-4xl">{renderInline(title)}</h2>);
         if (sectionImages[title]) nodes.push(<PackagingImage key={`image-${title}`} image={sectionImages[title]} />);
       } else if (level === 2) {

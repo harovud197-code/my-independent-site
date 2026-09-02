@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import Image from 'next/image';
@@ -392,6 +393,7 @@ export default function CustomGripSocksPilatesStudiosBuyingGuidePage() {
             <GuideSection number="15" id="reorder-system" title="Build a Simple Reorder System">
               <p>Do not wait until stock is almost gone. Track starting inventory, weekly sales, size sales, color sales, current stock, production time and freight time.</p>
               <p>Set a reorder point for dependable best sellers such as black, white, grey, beige and studio signature colors.</p>
+            <FactoryShipmentGallery photos={['warehouse', 'loading']} title="Plan repeat orders through dispatch" />
             </GuideSection>
 
             <GuideSection number="16" id="supplier-questions" title="Questions to Ask Before Choosing a Supplier">

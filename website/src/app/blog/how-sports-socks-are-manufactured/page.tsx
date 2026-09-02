@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
@@ -318,6 +319,8 @@ export default function HowSportsSocksAreManufactured() {
             <p className="text-slate-700 text-[17px] leading-relaxed mb-6">
               Sports socks are packed using custom labels, hang tags, retail boxes, or private label packaging according to customer requirements. Professional packaging not only protects the product but also enhances the brand&apos;s presentation in the retail market.
             </p>
+
+            <FactoryShipmentGallery />
           </section>
 
           <hr className="my-12 border-gray-100" />

@@ -1,5 +1,6 @@
 'use client';
 
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import { useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -243,6 +244,7 @@ export default function Home() {
             <Link href="/socks-manufacturing" className="inline-flex items-center justify-center rounded-xl bg-[#0c1713] px-7 py-4 text-sm font-black uppercase tracking-wide !text-white transition-colors hover:bg-[#1b3529]">Explore our full manufacturing capability</Link>
           </div>
         </div>
+      <div className="container"><FactoryShipmentGallery photos={['ready', 'loading']} /></div>
       </section>
 
       {/* OEM Section */}

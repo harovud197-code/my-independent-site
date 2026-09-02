@@ -9,7 +9,7 @@ const pageUrl = `${siteUrl}${pagePath}`;
 const heroImagePath = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/pilates-studio-grip-socks-lifestyle.jpg';
 const heroImageUrl = `${siteUrl}${heroImagePath}`;
 const qcImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/final-packing-check.png';
-const shippingImage = 'https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/shipping-cartons.jpg';
+const shippingImage = '/assets/factory-shipment/oem-socks-orders-ready-for-shipment-2.webp';
 const labeledGalleryBase = '/assets/blog/how-to-choose-pilates-grip-socks-supplier/labeled-gallery';
 const packagingImage = '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1.jpg';
 
@@ -326,7 +326,7 @@ export default function PilatesGripSocksSupplierGuidePage() {
               <p className="font-black text-[#0c1713]">Ask: “What exactly do you inspect before packing the socks?” A detailed answer is more useful than a general quality claim.</p>
               <div className="mt-7 grid gap-5 md:grid-cols-2">
                 <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white"><div className="relative aspect-[4/3] bg-[#f5f4f1]"><Image src={qcImage} alt="Factory worker completing a final packing and quality control check for a sock order" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /></div><figcaption className="p-5"><span className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Final QC & packing</span><p className="mt-2 text-base text-slate-600">Check finished pairs, branding, packaging and carton preparation against the approved specification.</p></figcaption></figure>
-                <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white"><div className="relative aspect-[4/3] bg-[#f5f4f1]"><Image src={shippingImage} alt="Bulk cartons of finished socks prepared for shipment" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /></div><figcaption className="p-5"><span className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Bulk shipment</span><p className="mt-2 text-base text-slate-600">Repeat production should preserve the approved colors, sizes, grip pattern, packing format and shipment records.</p></figcaption></figure>
+                <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white"><div className="relative aspect-[3/2] bg-[#f5f4f1]"><Image src={shippingImage} alt="Wrapped pallets of sock cartons in the dispatch warehouse" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /></div><figcaption className="p-5"><span className="text-xs font-black uppercase tracking-[0.16em] text-[#679a20]">Bulk shipment</span><p className="mt-2 text-base text-slate-600">Repeat production should preserve the approved colors, sizes, grip pattern, packing format and shipment records.</p></figcaption></figure>
               </div>
             </GuideSection>
 

@@ -1,3 +1,4 @@
+import { ProductShipmentSection } from '@/components/FactoryShipmentGallery';
 import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 import ProductPageEnhancements from '@/components/ProductPageEnhancements';
 import ProductQuoteForm from '@/components/ProductQuoteForm';
@@ -41,6 +42,7 @@ export default function SoccerSportsSocksPage() {
       <section className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-5 py-20 md:px-8 lg:grid-cols-2"><div><p className="mb-3 text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Product Details</p><h2 className="text-3xl font-black md:text-4xl">Specifications</h2><dl className="mt-8 overflow-hidden rounded-2xl border border-slate-200">{specifications.map(([label, value]) => <div key={label} className="grid grid-cols-[110px_1fr] gap-4 border-b border-slate-200 px-5 py-4 last:border-b-0"><dt className="font-bold">{label}</dt><dd className="text-slate-600">{value}</dd></div>)}</dl></div><div><p className="mb-3 text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">OEM Service</p><h2 className="text-3xl font-black md:text-4xl">Built for your team or brand</h2><Image src={`${assetPath}/oem.jpg`} alt="OEM soccer sock customization" width={1672} height={941} sizes="(max-width: 1024px) 100vw, 50vw" className="mt-8 h-auto w-full rounded-2xl" /></div></section>
 
       <section className="bg-[#f7f8f6] py-20"><div className="mx-auto max-w-[1200px] space-y-14 px-5 md:px-8"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Custom Options</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Colors, applications and factory support</h2></div>{['colors.jpg', 'applications.jpg', 'factory.jpg', 'certifications.jpg'].map((image) => <Image key={image} src={`${assetPath}/${image}`} alt="Soccer sock product information" width={1672} height={941} sizes="(max-width: 1200px) 100vw, 1200px" className="h-auto w-full rounded-2xl bg-white" />)}</div></section>
+      <ProductShipmentSection />
 
       <ProductPageEnhancements useCases={useCases} faqs={faqs} relatedLinks={[
         ['/football-socks-manufacturer', 'Football socks manufacturer', 'Explore team-sock customization, constructions and sourcing support.'],

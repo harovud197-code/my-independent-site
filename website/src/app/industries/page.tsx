@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -226,6 +227,7 @@ export default function IndustriesPage() {
           <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">{processSteps.map((step, index) => <li key={step} className="relative rounded-2xl border border-slate-200 bg-white p-6 text-center"><span className="text-sm font-black text-[#679a20]">0{index + 1}</span><strong className="mt-4 block">{step}</strong>{index < processSteps.length - 1 && <span aria-hidden="true" className="absolute -right-3 top-1/2 z-10 hidden h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-[#b4ff2b] text-sm font-black lg:flex">→</span>}</li>)}</ol>
           <div className="mt-10 text-center"><Link href="/socks-manufacturing" className="inline-flex rounded-xl bg-[#0c1713] px-7 py-4 text-sm font-black uppercase tracking-wide !text-white hover:bg-[#1b3529]">Explore Manufacturing Process</Link></div>
         </div>
+      <div className="mx-auto max-w-7xl"><FactoryShipmentGallery photos={['ready', 'handling']} /></div>
       </section>
 
       <section className="px-5 py-16 md:px-8 lg:py-24">

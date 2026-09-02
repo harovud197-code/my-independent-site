@@ -395,10 +395,10 @@ export default function HowToChoosePrivateLabelSocksManufacturerPage() {
               </figcaption>
             </figure>
             <figure className="overflow-hidden rounded-2xl border border-white/15 bg-white text-[#0c1713]">
-              <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f1ed]">
+              <div className="relative aspect-[3/2] overflow-hidden bg-[#f3f1ed]">
                 <Image
-                  src="https://pub-e03187bac82d42569911bb6f89c1d844.r2.dev/case-studies/private-label-socks-brand-launch/shipping-cartons.jpg"
-                  alt="Multiple finished private label sock cartons prepared for repeat bulk shipment"
+                  src="/assets/factory-shipment/oem-socks-orders-ready-for-shipment-2.webp"
+                  alt="Wrapped pallets of sock cartons in the dispatch warehouse"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover object-center"

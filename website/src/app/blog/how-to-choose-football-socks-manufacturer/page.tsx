@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -216,6 +217,7 @@ function renderArticle(markdown: string) {
       const title = heading[2];
       const id = slugify(title);
       if (level === 1) {
+        if (title === "17. Compare Football Socks Manufacturers Using the Same Specification") nodes.push(<FactoryShipmentGallery key="team-order-dispatch" photos={['ready', 'handling']} title="Bulk team orders: carton staging and handling" />);
         nodes.push(<h2 id={id} key={`h2-${index}`} className="scroll-mt-28 pt-4 text-3xl font-black leading-tight text-[#0c1713] md:text-4xl">{renderInline(title)}</h2>);
         const group = imageGroups[title];
         if (group) nodes.push(<ImageGallery key={`gallery-${title}`} eyebrow={group.eyebrow} images={group.images} />);

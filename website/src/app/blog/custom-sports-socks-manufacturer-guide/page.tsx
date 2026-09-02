@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
@@ -349,11 +350,13 @@ export default function CustomSportsSocksManufacturerGuide() {
                   <tr className="even:bg-slate-50/70 hover:bg-slate-100/50 transition-colors">
                     <td className="px-6 py-4 text-sm text-slate-900 font-bold">Shipping</td>
                     <td className="px-6 py-4 text-sm text-slate-700 font-semibold text-slate-800">5-20 Days</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <FactoryShipmentGallery />
+          </section>
 
           {/* Section: Choosing a Manufacturer */}
           <section className="mb-12 scroll-mt-20">

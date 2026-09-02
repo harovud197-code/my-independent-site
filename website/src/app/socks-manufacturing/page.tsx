@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -326,6 +327,7 @@ export default function SocksManufacturingPage() {
             </div>
           </div>
         </div>
+      <div className="mx-auto max-w-7xl"><FactoryShipmentGallery photos={['ready', 'warehouse', 'handling', 'loading']} title="Factory shipment: staging, handling and loading" /></div>
       </section>
 
       <section className="bg-[#0c1713] px-5 py-16 md:px-8 lg:py-20">

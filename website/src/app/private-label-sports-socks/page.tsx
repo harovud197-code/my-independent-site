@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -218,6 +219,7 @@ export default function PrivateLabelSportsSocksPage() {
           </div>
           <Visual src="packaging-options.png" alt="Examples of basic, brand and retail packaging options for private label sports socks" />
         </div>
+      <div className="mx-auto max-w-7xl"><FactoryShipmentGallery photos={['warehouse', 'loading']} title="Prepare private label orders for dispatch" /></div>
       </section>
 
       <section className="bg-[#f7f8f6] px-5 py-16 md:px-8 lg:py-24">

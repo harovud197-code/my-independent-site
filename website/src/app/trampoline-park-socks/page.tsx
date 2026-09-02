@@ -1,3 +1,4 @@
+import FactoryShipmentGallery from '@/components/FactoryShipmentGallery';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -234,6 +235,7 @@ export default function TrampolineParkSocksPage() {
           {orderEvidenceImages.map(image => <figure key={image.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-[#f7f8f6]"><div className="relative aspect-[4/3]"><Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-3" /></div><figcaption className="border-t border-slate-200 px-5 py-4 text-sm font-bold text-slate-700">{image.caption}</figcaption></figure>)}
         </div>
         <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">{orderProcess.map(([number, title, text], index) => <article key={number} className={`rounded-xl border p-6 ${index === 6 ? 'border-[#b4ff2b] bg-[#0c1713] text-white lg:col-span-2' : 'border-slate-200 bg-white'}`}><span className={`text-sm font-black ${index === 6 ? 'text-[#b4ff2b]' : 'text-[#679a20]'}`}>STEP {number}</span><h3 className="mt-4 text-xl font-black">{title}</h3><p className={`mt-3 text-sm leading-relaxed ${index === 6 ? 'text-slate-300' : 'text-slate-600'}`}>{text}</p></article>)}</div>
+      <div className="mx-auto max-w-7xl"><FactoryShipmentGallery photos={['warehouse', 'loading']} title="Bulk-order dispatch and repeat supply" /></div>
       </section>
 
       <section className="bg-[#f4f8ed] px-5 py-16 md:px-8 lg:py-24"><div className="mx-auto max-w-4xl"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.18em] text-[#679a20]">FAQ</p><h2 className="mt-3 text-3xl font-black md:text-5xl">Trampoline Grip Socks Manufacturer FAQ</h2></div><div className="mt-10 space-y-4">{faqs.map(([question, answer]) => <details key={question} className="group rounded-xl border border-[#cfe2bd] bg-white"><summary className="flex cursor-pointer list-none items-center justify-between gap-5 p-6 font-black"><span>{question}</span><span className="text-2xl text-[#679a20] transition-transform group-open:rotate-45">+</span></summary><p className="border-t border-[#e0ead7] px-6 py-5 leading-relaxed text-slate-600">{answer}</p></details>)}</div></div></section>

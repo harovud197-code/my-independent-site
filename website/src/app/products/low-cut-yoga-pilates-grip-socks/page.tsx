@@ -1,3 +1,4 @@
+import { ProductShipmentSection } from '@/components/FactoryShipmentGallery';
 import Link from 'next/link';
 import { ProductQuickFacts, productSeo } from '@/lib/product-seo';
 import ProductPageEnhancements from '@/components/ProductPageEnhancements';
@@ -54,6 +55,7 @@ export default function LowCutYogaPilatesGripSocksPage() {
       <section className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-5 py-20 md:px-8 lg:grid-cols-2"><div><p className="mb-3 text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Product Details</p><h2 className="text-3xl font-black md:text-4xl">Specifications</h2><dl className="mt-8 overflow-hidden rounded-2xl border border-slate-200">{specifications.map(([label, value]) => <div key={label} className="grid grid-cols-[110px_1fr] gap-4 border-b border-slate-200 px-5 py-4 last:border-b-0"><dt className="font-bold">{label}</dt><dd className="text-slate-600">{value}</dd></div>)}</dl></div><div><p className="mb-3 text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">OEM Service</p><h2 className="text-3xl font-black md:text-4xl">Built for your studio or brand</h2><Image src={`${assetPath}/oem.png`} alt="OEM Pilates sock customization" width={2048} height={768} sizes="(max-width: 1024px) 100vw, 50vw" className="mt-8 h-auto w-full rounded-2xl" /></div></section>
 
       <section className="bg-[#f7f8f6] py-20"><div className="mx-auto max-w-[1200px] space-y-14 px-5 md:px-8"><div className="text-center"><p className="text-sm font-black uppercase tracking-[0.15em] text-[#679a20]">Custom Options</p><h2 className="mt-3 text-3xl font-black md:text-4xl">Colors, applications and factory support</h2></div>{([{ image: 'colors.png', width: 2244, height: 701 }, { image: 'applications.png', width: 2048, height: 768 }, { image: 'factory.png', width: 2048, height: 768 }, { image: 'certifications.png', width: 2244, height: 701 }]).map(({ image, width, height }) => <Image key={image} src={`${assetPath}/${image}`} alt="Pilates grip sock product information" width={width} height={height} sizes="(max-width: 1200px) 100vw, 1200px" className="h-auto w-full rounded-2xl bg-white" />)}</div></section>
+      <ProductShipmentSection />
 
       <ProductPageEnhancements useCases={useCases} faqs={faqs} relatedLinks={[
         ['/yoga-pilates-grip-socks-supplier', 'Yoga & Pilates grip socks supplier', 'See studio applications, OEM support and broader customization capabilities.'],
