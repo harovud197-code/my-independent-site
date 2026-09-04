@@ -9,6 +9,15 @@ const whatsappUrl = 'https://wa.me/8617357769219?text=Hello%20PeakMotion%20Socks
 
 const posts = [
   {
+    title: 'Custom Socks Lead Time: From Sampling to Bulk Production',
+    href: '/blog/custom-socks-lead-time',
+    desc: 'Plan design confirmation, 7–15 day sampling, revisions, bulk production, quality control, packaging and shipping around a realistic delivery schedule.',
+    img: '/assets/blog/custom-socks-lead-time/custom-socks-sampling-and-bulk-production.webp',
+    imageClassName: 'object-cover object-center',
+    category: 'Production Planning',
+    readTime: '17 min read',
+  },
+  {
     title: 'Private Label Socks Packaging Guide',
     href: '/blog/private-label-socks-packaging-guide',
     desc: 'Compare paper bands, hang tags, bags, boxes, labels, barcodes, MOQ, cost and freight before approving retail sock packaging.',
@@ -307,7 +316,7 @@ export default function BlogPage() {
       <section className="bg-[#f7f8f6] px-5 py-12 md:px-8 md:py-16">
         <div className="mx-auto grid max-w-[1510px] overflow-hidden rounded-[24px] bg-white shadow-[0_14px_34px_rgba(12,23,19,0.12)] lg:grid-cols-[1fr_1fr]">
         <Link href={featured.href} className="relative block aspect-[4/3] overflow-hidden bg-[#f7f8f6]">
-          <Image src={featured.img} alt={featured.title} fill priority sizes="(max-width: 1024px) 100vw, 54vw" className="object-contain transition-transform duration-500 hover:scale-[1.02]" />
+          <Image src={featured.img} alt={featured.title} fill priority sizes="(max-width: 1024px) 100vw, 54vw" className={`${featured.imageClassName ?? 'object-cover'} transition-transform duration-500 hover:scale-[1.02]`} />
         </Link>
         <div className="flex flex-col justify-center space-y-5 px-7 py-9 md:px-12 md:py-12 lg:px-13 lg:py-14">
           <div className="flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-wider">
