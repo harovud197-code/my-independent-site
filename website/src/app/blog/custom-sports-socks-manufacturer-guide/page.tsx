@@ -163,7 +163,7 @@ export default function CustomSportsSocksManufacturerGuide() {
                 { name: 'Football Socks', href: '/products/mid-calf-football-grip' },
                 { name: 'Running Socks', href: '/products/professional-running-athletic-socks' },
                 { name: 'Basketball Socks', href: '/products/performance-basketball-socks' },
-                { name: 'Cycling Socks', href: '/cycling-socks' },
+                { name: 'Cycling Socks Guide', href: '/blog/cycling-socks-vs-running-socks' },
                 { name: 'Yoga & Pilates Grip Socks Supplier', href: '/yoga-pilates-grip-socks-supplier' },
               ].map((item, idx) => (
                 <li key={idx}>
