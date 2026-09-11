@@ -3,7 +3,8 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://peakmotionsocks.com';
   const publishedAt = new Date('2026-07-17T00:00:00.000Z');
-  const blogIndexUpdatedAt = new Date('2026-09-04T00:00:00.000Z');
+  const blogIndexUpdatedAt = new Date('2026-09-11T00:00:00.000Z');
+  const customSocksOrderSizeUpdatedAt = new Date('2026-09-10T00:00:00.000Z');
   const productStructuredDataUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
   const jacquardPageUpdatedAt = new Date('2026-07-24T00:00:00.000Z');
   const relatedArticleUpdatedAt = new Date('2026-07-21T00:00:00.000Z');
@@ -26,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const customSocksLeadTimeUpdatedAt = new Date('2026-09-04T00:00:00.000Z');
 
   const blogPosts = [
+    '50-vs-100-vs-500-custom-socks-moq',
     'best-materials-for-sports-socks',
     'custom-sports-socks-manufacturer-guide',
     'custom-socks-moq-explained',
@@ -52,7 +54,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogUrls = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post}`,
-    lastModified: post === 'custom-socks-lead-time'
+    lastModified: post === '50-vs-100-vs-500-custom-socks-moq'
+      ? customSocksOrderSizeUpdatedAt
+      : post === 'custom-socks-lead-time'
       ? customSocksLeadTimeUpdatedAt
       : post === 'custom-sock-sample-cost'
       ? customSockSampleCostUpdatedAt
