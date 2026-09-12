@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: 'PeakMotion Socks',
     type: 'article',
     publishedTime: '2026-08-21T00:00:00.000Z',
-    modifiedTime: '2026-08-21T00:00:00.000Z',
+    modifiedTime: '2026-09-12T00:00:00.000Z',
     images: [{ url: heroImageUrl, width: 1920, height: 1152, alt: 'Private label sock packaging preparation with bands, bags and printed cards' }],
   },
   twitter: {
@@ -51,22 +51,22 @@ type PackagingVisual = { src: string; alt: string; caption: string };
 
 const sectionImages: Record<string, PackagingVisual> = {
   '3. Paper Bands: A Practical Option for Startups': {
-    src: `${packagingBase}/private-label-socks-packaging-cost-options-4.jpg`,
+    src: `${packagingBase}/private-label-socks-packaging-cost-options-4-formline.png`,
     alt: 'Private label socks with custom paper bands and printed packaging inserts',
     caption: 'Paper bands and printed inserts provide a practical branded route for startup and repeat orders.',
   },
   '4. Hang Tags: Flexible and Easy to Use': {
-    src: `${packagingBase}/private-label-socks-packaging-cost-options-2.jpg`,
+    src: `${packagingBase}/private-label-socks-packaging-cost-options-2-formline.png`,
     alt: 'Custom socks displayed with hang tags, sleeves and retail packaging',
     caption: 'Hang tags and sleeves can carry size, barcode and brand information without a rigid box.',
   },
   '5. Polybags: Simple and Protective': {
-    src: `${packagingBase}/private-label-socks-packaging-cost-options-3.jpg`,
+    src: `${packagingBase}/private-label-socks-packaging-cost-options-3-formline.png`,
     alt: 'Custom socks packed in clear polybags with branded labels',
     caption: 'Clear bags keep pairs clean and organized while branded labels provide product identification.',
   },
   '6. Custom Boxes: Better for Premium Positioning': {
-    src: `${packagingBase}/private-label-socks-packaging-cost-options-1.jpg`,
+    src: `${packagingBase}/private-label-socks-packaging-cost-options-1-formline.png`,
     alt: 'Private label socks with bags, paper bands and retail box packaging options',
     caption: 'Retail boxes offer a stronger premium presentation but add cost, volume and packaging MOQ considerations.',
   },
@@ -171,7 +171,7 @@ export default function PrivateLabelSocksPackagingGuidePage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'Article', '@id': `${pageUrl}#article`, headline: 'Private Label Socks Packaging Guide: How to Choose the Right Packaging for Your Brand', description: metadata.description, image: heroImageUrl, datePublished: '2026-08-21', dateModified: '2026-08-21', author: { '@type': 'Organization', name: 'PeakMotion Socks', url: siteUrl }, publisher: { '@type': 'Organization', name: 'PeakMotion Socks', url: siteUrl }, mainEntityOfPage: pageUrl },
+      { '@type': 'Article', '@id': `${pageUrl}#article`, headline: 'Private Label Socks Packaging Guide: How to Choose the Right Packaging for Your Brand', description: metadata.description, image: heroImageUrl, datePublished: '2026-08-21', dateModified: '2026-09-12', author: { '@type': 'Organization', name: 'PeakMotion Socks', url: siteUrl }, publisher: { '@type': 'Organization', name: 'PeakMotion Socks', url: siteUrl }, mainEntityOfPage: pageUrl },
       { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl }, { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteUrl}/blog` }, { '@type': 'ListItem', position: 3, name: 'Private Label Socks Packaging Guide', item: pageUrl }] },
       { '@type': 'FAQPage', mainEntity: faqs.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) },
     ],
