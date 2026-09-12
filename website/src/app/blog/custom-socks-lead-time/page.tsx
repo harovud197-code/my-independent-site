@@ -8,7 +8,7 @@ import type { ReactNode } from 'react';
 const siteUrl = 'https://peakmotionsocks.com';
 const pageUrl = `${siteUrl}/blog/custom-socks-lead-time`;
 const imageBase = '/assets/blog/custom-socks-lead-time';
-const heroImage = `${imageBase}/custom-socks-sampling-and-bulk-production.webp`;
+const heroImage = `${imageBase}/northline-private-label-branding-edited.png`;
 
 export const metadata: Metadata = {
   title: 'Custom Socks Lead Time: Sampling to Bulk Production | PeakMotion',
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     url: pageUrl,
     type: 'article',
     publishedTime: '2026-09-04T00:00:00+08:00',
-    modifiedTime: '2026-09-04T00:00:00+08:00',
+    modifiedTime: '2026-09-12T00:00:00+08:00',
     images: [
       {
         url: `${siteUrl}${heroImage}`,
-        width: 1800,
-        height: 1200,
-        alt: 'Custom socks with private label packaging prepared for sample-to-bulk production planning',
+        width: 1536,
+        height: 1024,
+        alt: 'Northline custom performance socks with original private label packaging concepts',
       },
     ],
   },
@@ -312,7 +312,7 @@ export default function CustomSocksLeadTimePage() {
             <div className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold text-slate-500"><span>17 min read</span><span>Published September 4, 2026</span></div>
           </div>
           <figure className="overflow-hidden rounded-[2rem] border border-[#cbd9c7] bg-white shadow-[0_30px_85px_rgba(31,61,42,0.18)]">
-            <div className="relative aspect-[3/2] w-full"><Image src={heroImage} alt="Custom socks with private label packaging prepared for sample-to-bulk production planning" fill priority sizes="(max-width: 1024px) 100vw, 52vw" className="object-contain object-center" /></div>
+            <div className="relative aspect-[3/2] w-full"><Image src={heroImage} alt="Northline custom performance socks with original private label packaging concepts" fill priority sizes="(max-width: 1024px) 100vw, 52vw" className="object-contain object-center" /></div>
             <figcaption className="border-t border-slate-100 px-5 py-3 text-sm leading-6 text-slate-500">Product, sample and packaging decisions should be planned before bulk manufacturing.</figcaption>
           </figure>
         </div>

@@ -21,8 +21,8 @@ const posts = [
     title: 'Custom Socks Lead Time: From Sampling to Bulk Production',
     href: '/blog/custom-socks-lead-time',
     desc: 'Plan design confirmation, 7–15 day sampling, revisions, bulk production, quality control, packaging and shipping around a realistic delivery schedule.',
-    img: '/assets/blog/custom-socks-lead-time/custom-socks-sampling-and-bulk-production.webp',
-    imageClassName: 'object-cover object-center',
+    img: '/assets/blog/custom-socks-lead-time/northline-private-label-branding-edited.png',
+    imageClassName: 'object-contain object-center bg-[#f7f8f6]',
     category: 'Production Planning',
     readTime: '17 min read',
   },
@@ -349,7 +349,7 @@ export default function BlogPage() {
             {posts.slice(1).map((post) => (
               <article key={post.href} className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-[0_4px_18px_rgba(12,23,19,0.04)] transition-all hover:-translate-y-1 hover:shadow-lg">
                 <Link href={post.href} className="relative block aspect-[16/10] overflow-hidden bg-slate-100">
-                  <Image src={post.img} alt={post.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className={`${post.imageClassName ?? 'object-cover'} transition-transform duration-500 hover:scale-105`} />
+                  <Image src={post.img} alt={post.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className={post.imageClassName ?? 'object-cover'} />
                 </Link>
                 <div className="flex min-h-[270px] flex-col p-6">
                   <div className="mb-4 flex items-center justify-between gap-3 text-xs font-bold uppercase tracking-wider"><span className="text-[#4e7e1e]">{post.category}</span><span className="text-slate-400">{post.readTime}</span></div>
