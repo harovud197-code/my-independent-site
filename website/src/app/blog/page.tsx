@@ -30,7 +30,7 @@ const posts = [
     title: 'Private Label Socks Packaging Guide',
     href: '/blog/private-label-socks-packaging-guide',
     desc: 'Compare paper bands, hang tags, bags, boxes, labels, barcodes, MOQ, cost and freight before approving retail sock packaging.',
-    img: '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1.jpg',
+    img: '/assets/blog/custom-socks-manufacturing-cost/private-label-socks-packaging-cost-options-1-formline.png',
     imageClassName: 'object-contain bg-white',
     category: 'Packaging & Private Label',
     readTime: '20 min read',
